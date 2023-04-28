@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="scheduled_import_set">
-  <scheduled_import_set action="INSERT_OR_UPDATE">
-    <active>false</active>
-    <business_calendar/>
-    <concurrent_import>false</concurrent_import>
-    <condition><![CDATA[var glideWorkdayJobTracker = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_SERVICE_JOB_TRACKER_TABLE);
+    <scheduled_import_set action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <business_calendar/>
+        <concurrent_import>false</concurrent_import>
+        <condition><![CDATA[var glideWorkdayJobTracker = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_SERVICE_JOB_TRACKER_TABLE);
 glideWorkdayJobTracker.addQuery('job_state', 'running');
 glideWorkdayJobTracker.addQuery('workday_integration_service', new WorkdayPullToDosHelper().Workday_Integration_Service_Name_Pull_ToDos);
 glideWorkdayJobTracker.query();
@@ -14,15 +14,17 @@ if (glideWorkdayJobTracker.next()) {
     result = false;
 }
 result;]]></condition>
-    <conditional>true</conditional>
-    <data_source display_value="Workday Pull To-Dos">e8c5f6781bcf545067817669cc4bcb25</data_source>
-    <entered_time/>
-    <map/>
-    <name>Workday Pulled ToDos Scheduled Import</name>
-    <order/>
-    <parent/>
-    <partition_method>roundRobin</partition_method>
-    <partition_script><![CDATA[(function partitionHash(import_set_row) {
+        <conditional>true</conditional>
+        <data_source display_value="Workday Pull To-Dos">e8c5f6781bcf545067817669cc4bcb25</data_source>
+        <entered_time/>
+        <map/>
+        <name>Workday Pulled ToDos Scheduled Import</name>
+        <offset/>
+        <offset_type/>
+        <order/>
+        <parent/>
+        <partition_method>roundRobin</partition_method>
+        <partition_script><![CDATA[(function partitionHash(import_set_row) {
 
 	// Add your code here
 	
@@ -33,8 +35,8 @@ result;]]></condition>
 	 return import_set_row.sys_import_row;
 
 })(import_set_row);]]></partition_script>
-    <partition_size/>
-    <post_script><![CDATA[try {
+        <partition_size/>
+        <post_script><![CDATA[try {
 
 	var grMainJob = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_JOB_TRACKER_TABLE);
 	grMainJob.addQuery("state", "running");
@@ -80,8 +82,8 @@ result;]]></condition>
 	var message = ex.getMessage();
 	gs.error(message);
 }]]></post_script>
-    <post_script_bool>true</post_script_bool>
-    <pre_script><![CDATA[try {
+        <post_script_bool>true</post_script_bool>
+        <pre_script><![CDATA[try {
 	var grMainJob = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_JOB_TRACKER_TABLE);
 	grMainJob.addQuery("state", "running");
 	grMainJob.orderByDesc('sys_created_on');
@@ -222,29 +224,29 @@ result;]]></condition>
 	var msg = ex.getMessage();
 	gs.error(msg);
 }]]></pre_script>
-    <pre_script_bool>true</pre_script_bool>
-    <run_as/>
-    <run_as_tz/>
-    <run_dayofmonth>1</run_dayofmonth>
-    <run_dayofweek>1</run_dayofweek>
-    <run_period>1970-01-30 00:00:10</run_period>
-    <run_start>2021-02-10 08:05:27</run_start>
-    <run_time>1970-01-01 08:00:00</run_time>
-    <run_type>daily</run_type>
-    <synchronize_inserts>true</synchronize_inserts>
-    <sys_class_name>scheduled_import_set</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2020-03-23 08:08:35</sys_created_on>
-    <sys_id>7062af1cdbf78810205cdf6b5e9619b9</sys_id>
-    <sys_mod_count>352</sys_mod_count>
-    <sys_name>Workday Pulled ToDos Scheduled Import</sys_name>
-    <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-    <sys_update_name>scheduled_import_set_7062af1cdbf78810205cdf6b5e9619b9</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2021-02-15 06:40:11</sys_updated_on>
-    <time_zone/>
-    <upgrade_safe>false</upgrade_safe>
-  </scheduled_import_set>
+        <pre_script_bool>true</pre_script_bool>
+        <run_as/>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-30 00:00:10</run_period>
+        <run_start>2021-02-10 08:05:27</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <synchronize_inserts>true</synchronize_inserts>
+        <sys_class_name>scheduled_import_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-23 08:08:35</sys_created_on>
+        <sys_id>7062af1cdbf78810205cdf6b5e9619b9</sys_id>
+        <sys_mod_count>352</sys_mod_count>
+        <sys_name>Workday Pulled ToDos Scheduled Import</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>scheduled_import_set_7062af1cdbf78810205cdf6b5e9619b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-15 06:40:11</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </scheduled_import_set>
 </record_update>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_source">
     <sys_data_source action="INSERT_OR_UPDATE">
+        <batch_size/>
         <category/>
         <connection_timeout>0</connection_timeout>
         <connection_url>attachment://sys_data_source:e8c5f6781bcf545067817669cc4bcb25/</connection_url>
@@ -63,14 +64,15 @@
         <sys_id>e8c5f6781bcf545067817669cc4bcb25</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Workday Pull To-Dos</sys_name>
-        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_data_source_e8c5f6781bcf545067817669cc4bcb25</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-09-03 17:44:47</sys_updated_on>
         <table_name/>
         <type>File</type>
+        <use_batch_import>false</use_batch_import>
         <use_integrated_authentication>false</use_integrated_authentication>
         <use_last_run_datetime>false</use_last_run_datetime>
         <xpath_root_node/>

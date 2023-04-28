@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="worker_work_phone_communication_usage_type_id" label="Worker work phone communication usage type id" language="en" table="sn_hr_workday_configuration_worker_profile_sync">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>worker_work_phone_communication_usage_type_id</element>
+            <help/>
+            <hint/>
+            <label>Worker work phone communication usage type id</label>
+            <language>en</language>
+            <name>sn_hr_workday_configuration_worker_profile_sync</name>
+            <plural>Worker work phone communication usage type ids</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-04-28 09:19:48</sys_created_on>
+            <sys_id>8362546c87ea6910a5580f65dabb357e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Worker work phone communication usage type id</sys_name>
+            <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+            <sys_update_name>sys_documentation_sn_hr_workday_configuration_worker_profile_sync_worker_work_phone_communication_usage_type_id_en</sys_update_name>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-04-28 09:19:48</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="operation" table="var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>operation</element>
+            <name>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-04-28 09:20:41</sys_created_on>
+            <sys_id>04a2d0ac87ea6910a5580f65dabb3527</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>operation</sys_name>
+            <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7_operation</sys_update_name>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-04-28 09:20:41</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>operation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-07-08 05:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a300c63a1b35501067817669cc4bcb9e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-07-08 05:22:16</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>operation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Create</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-07-08 05:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2300c63a1b35501067817669cc4bcb9f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-07-08 05:22:16</sys_updated_on>
+            <value>create</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>operation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Update</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-07-08 05:22:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb00c63a1b35501067817669cc4bcb9f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-07-08 05:22:17</sys_updated_on>
+            <value>update</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>operation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Transform</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-07-08 05:38:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>14c3ceba1b35501067817669cc4bcbcd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-07-08 05:38:26</sys_updated_on>
+            <value>transform</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>operation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Get Import Set Run Status</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-08-14 13:07:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d87dc27e1baa941067817669cc4bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-08-14 13:07:50</sys_updated_on>
+            <value>getimportsetrunstatus</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,47 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Workday Worker Profile Sync Configuration" max_length="40" name="sn_hr_workday_configuration_worker_profile_sync" sizeclass="1" type="collection">
-        <element attributes="edge_encryption_enabled=true,encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Organization_Type_ID','COST_CENTER');" label="Department organization type id" max_length="40" name="department_organization_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Organization_Type_ID^EQ" reference_qual_condition="reference_id_type=Organization_Type_ID^EQ" type="reference">
+    <element label="Workday Worker Profile Sync Configuration" max_length="40" name="sn_hr_workday_configuration_worker_profile_sync" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Organization_Type_ID','COST_CENTER');" label="Department organization type id" max_length="32" name="department_organization_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Organization_Type_ID^EQ" reference_qual_condition="reference_id_type=Organization_Type_ID^EQ" type="reference">
             <choice/>
         </element>
-        <element hint="Enable the debug log.  Note: this will print lot of information to logs." label="Enable debugging" max_length="40" name="enable_debugging" type="boolean"/>
-        <element hint="If checked then the transform will run without any data being persisted." label="Enable dry run" max_length="40" name="enable_dry_run" type="boolean"/>
-        <element choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Communication_Usage_Type_ID','BUSINESS');" label="Location communication usage type id" max_length="40" name="location_communication_usage_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Communication_Usage_Type_ID^EQ" reference_qual_condition="reference_id_type=Communication_Usage_Type_ID^EQ" type="reference">
+        <element label="Enable debugging" max_length="40" name="enable_debugging" type="boolean"/>
+        <element label="Enable dry run" max_length="40" name="enable_dry_run" type="boolean"/>
+        <element attributes="encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Communication_Usage_Type_ID','BUSINESS');" label="Location communication usage type id" max_length="32" name="location_communication_usage_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Communication_Usage_Type_ID^EQ" reference_qual_condition="reference_id_type=Communication_Usage_Type_ID^EQ" type="reference">
             <choice/>
         </element>
-        <element choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Phone_Device_Type_ID','Fax');" label="Location fax phone device type id" max_length="40" name="location_fax_phone_device_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Phone_Device_Type_ID^EQ" reference_qual_condition="reference_id_type=Phone_Device_Type_ID^EQ" type="reference">
+        <element attributes="encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Phone_Device_Type_ID','Fax');" label="Location fax phone device type id" max_length="32" name="location_fax_phone_device_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Phone_Device_Type_ID^EQ" reference_qual_condition="reference_id_type=Phone_Device_Type_ID^EQ" type="reference">
             <choice/>
         </element>
-        <element choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Phone_Device_Type_ID','Landline');" label="Location phone device type id" max_length="40" name="location_phone_device_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Phone_Device_Type_ID^EQ" reference_qual_condition="reference_id_type=Phone_Device_Type_ID^EQ" type="reference">
+        <element attributes="encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Phone_Device_Type_ID','Landline');" label="Location phone device type id" max_length="32" name="location_phone_device_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Phone_Device_Type_ID^EQ" reference_qual_condition="reference_id_type=Phone_Device_Type_ID^EQ" type="reference">
             <choice/>
         </element>
-        <element choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Location_Usage_ID','BUSINESS SITE');" label="Location usage id" max_length="40" name="location_usage_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Location_Usage_ID^EQ" reference_qual_condition="reference_id_type=Location_Usage_ID^EQ" type="reference">
+        <element attributes="encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Location_Usage_ID','BUSINESS SITE');" label="Location usage id" max_length="32" name="location_usage_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Location_Usage_ID^EQ" reference_qual_condition="reference_id_type=Location_Usage_ID^EQ" type="reference">
             <choice/>
         </element>
-        <element default="28" label="Number of days to look ahead for upcoming onboarding and offboarding events" max_length="40" name="number_of_days_to_look_ahead_for_upcoming_onboarding_and_offboarding_events" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="28" label="Number of days to look ahead for upcoming onboarding and offboarding events" max_length="40" name="number_of_days_to_look_ahead_for_upcoming_onboarding_and_offboarding_events" type="string"/>
         <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
         <element choice="3" choice_field="time_zone" choice_table="sys_user" default="US/Pacific" label="Workday tenant time zone" mandatory="true" max_length="40" name="workday_tenant_time_zone" type="choice">
             <choice/>
         </element>
-        <element choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Communication_Usage_Type_ID','HOME');" label="Worker home address type reference communication usage type id" max_length="32" name="worker_home_address_type_reference_communication_usage_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Communication_Usage_Type_ID^EQ" reference_qual_condition="reference_id_type=Communication_Usage_Type_ID^EQ" type="reference">
+        <element attributes="encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Communication_Usage_Type_ID','HOME');" label="Worker home address type reference communication usage type id" max_length="32" name="worker_home_address_type_reference_communication_usage_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Communication_Usage_Type_ID^EQ" reference_qual_condition="reference_id_type=Communication_Usage_Type_ID^EQ" type="reference">
             <choice/>
         </element>
-        <element choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Communication_Usage_Type_ID','HOME');" label="Worker home email communication usage type id" max_length="40" name="worker_home_email_communication_usage_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Communication_Usage_Type_ID^EQ" reference_qual_condition="reference_id_type=Communication_Usage_Type_ID^EQ" type="reference">
+        <element attributes="encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Communication_Usage_Type_ID','HOME');" label="Worker home email communication usage type id" max_length="32" name="worker_home_email_communication_usage_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Communication_Usage_Type_ID^EQ" reference_qual_condition="reference_id_type=Communication_Usage_Type_ID^EQ" type="reference">
             <choice/>
         </element>
-        <element choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Communication_Usage_Type_ID','HOME');" label="Worker home phone communication usage type id" max_length="40" name="worker_home_phone_communication_usage_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Communication_Usage_Type_ID^EQ" reference_qual_condition="reference_id_type=Communication_Usage_Type_ID^EQ" type="reference">
+        <element attributes="encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Communication_Usage_Type_ID','HOME');" label="Worker home phone communication usage type id" max_length="32" name="worker_home_phone_communication_usage_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Communication_Usage_Type_ID^EQ" reference_qual_condition="reference_id_type=Communication_Usage_Type_ID^EQ" type="reference">
             <choice/>
         </element>
-        <element choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Phone_Device_Type_ID','Mobile');" label="Worker mobile phone device type id" max_length="40" name="worker_mobile_phone_device_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Phone_Device_Type_ID^EQ" reference_qual_condition="reference_id_type=Phone_Device_Type_ID^EQ" type="reference">
+        <element attributes="encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Phone_Device_Type_ID','Mobile');" label="Worker mobile phone device type id" max_length="32" name="worker_mobile_phone_device_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Phone_Device_Type_ID^EQ" reference_qual_condition="reference_id_type=Phone_Device_Type_ID^EQ" type="reference">
             <choice/>
         </element>
-        <element choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Phone_Device_Type_ID','Landline');" label="Worker phone device type id" max_length="40" name="worker_phone_device_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Phone_Device_Type_ID^EQ" reference_qual_condition="reference_id_type=Phone_Device_Type_ID^EQ" type="reference">
+        <element attributes="encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Phone_Device_Type_ID','Landline');" label="Worker phone device type id" max_length="32" name="worker_phone_device_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Phone_Device_Type_ID^EQ" reference_qual_condition="reference_id_type=Phone_Device_Type_ID^EQ" type="reference">
             <choice/>
         </element>
-        <element choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Communication_Usage_Type_ID','WORK');" label="Worker work email communication usage type id" max_length="40" name="worker_work_email_communication_usage_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Communication_Usage_Type_ID^EQ" reference_qual_condition="reference_id_type=Communication_Usage_Type_ID^EQ" type="reference">
+        <element attributes="encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Communication_Usage_Type_ID','WORK');" label="Worker work email communication usage type id" max_length="32" name="worker_work_email_communication_usage_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Communication_Usage_Type_ID^EQ" reference_qual_condition="reference_id_type=Communication_Usage_Type_ID^EQ" type="reference">
             <choice/>
         </element>
-        <element choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Communication_Usage_Type_ID','WORK');" label="Worker work phone communication usage type id" max_length="40" name="worker_work_phone_communication_usage_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Communication_Usage_Type_ID^EQ" reference_qual_condition="reference_id_type=Communication_Usage_Type_ID^EQ" type="reference">
+        <element attributes="encode_utf8=false" choice="3" default="javascript:new WorkdayConfigurationUtils().getDefaultReferenceID('Communication_Usage_Type_ID','WORK');" label="Worker work phone communication usage type id" max_length="32" name="worker_work_phone_communication_usage_type_id" reference="sn_hr_workday_reference_list" reference_qual="reference_id_type=Communication_Usage_Type_ID^EQ" reference_qual_condition="reference_id_type=Communication_Usage_Type_ID^EQ" type="reference">
             <choice/>
         </element>
+        <index name="index">
+            <element name="location_phone_device_type_id"/>
+        </index>
+        <index name="index2">
+            <element name="sys_domain"/>
+        </index>
+        <index name="index3">
+            <element name="worker_phone_device_type_id"/>
+        </index>
+        <index name="index4">
+            <element name="location_usage_id"/>
+        </index>
     </element>
 </database>

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="Job Profile Staging" max_length="40" name="sn_hr_workday_job_profile_staging" sizeclass="0" type="collection">
+    <element extends="sys_import_set_row" label="Job Profile Staging" max_length="40" name="sn_hr_workday_job_profile_staging" type="collection">
         <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
-        <element label="External id" max_length="40" name="u_external_id" type="string"/>
-        <element label="Job code" max_length="40" name="u_job_code" type="string"/>
-        <element label="Job level id" max_length="40" name="u_job_level_id" type="string"/>
-        <element label="Job title" max_length="40" name="u_job_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="External id" max_length="40" name="u_external_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Job code" max_length="40" name="u_job_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Job level id" max_length="40" name="u_job_level_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Job title" max_length="40" name="u_job_title" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
     </element>
 </database>

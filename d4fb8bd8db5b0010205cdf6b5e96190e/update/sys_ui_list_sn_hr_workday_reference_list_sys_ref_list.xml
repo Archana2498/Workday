@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>label</element>
-            <list_id display_value="sn_hr_workday_reference_list" element="NULL" name="sn_hr_workday_reference_list" parent="NULL" relationship="NULL" sys_domain="global" view="9f0621502c1300100c1dbc48b5c9f55a">e11fad48db6b1010127e3764e2961970</list_id>
+            <list_id display_value="sn_hr_workday_reference_list" element="NULL" name="sn_hr_workday_reference_list" parent="NULL" relationship="NULL" sys_domain="global" view="5888d250873011102b90baa8dabb3549">e11fad48db6b1010127e3764e2961970</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -18,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="sn_hr_workday_reference_list" element="NULL" name="sn_hr_workday_reference_list" parent="NULL" relationship="NULL" sys_domain="global" view="9f0621502c1300100c1dbc48b5c9f55a">e11fad48db6b1010127e3764e2961970</list_id>
+            <list_id display_value="sn_hr_workday_reference_list" element="NULL" name="sn_hr_workday_reference_list" parent="NULL" relationship="NULL" sys_domain="global" view="5888d250873011102b90baa8dabb3549">e11fad48db6b1010127e3764e2961970</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -48,14 +48,14 @@
             <sys_id>e11fad48db6b1010127e3764e2961970</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>sn_hr_workday_reference_list</sys_name>
-            <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+            <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
             <sys_policy/>
-            <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+            <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
             <sys_update_name>sys_ui_list_sn_hr_workday_reference_list_sys_ref_list</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2020-09-24 14:54:43</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">9f0621502c1300100c1dbc48b5c9f55a</view>
+            <view display_value="Reference List" name="sys_ref_list">5888d250873011102b90baa8dabb3549</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>
