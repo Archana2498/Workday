@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>56329a63db2b1410127e3764e29619f9</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_hr_workday_configuration_worker_profile_sync">
+    <sn_hr_workday_configuration_worker_profile_sync action="INSERT_OR_UPDATE">
+        <department_organization_type_id display_value="Cost Center">73f0e721dba31410127e3764e2961939</department_organization_type_id>
+        <domain>global</domain>
+        <location_communication_usage_type_id display_value="Business">63f0e721dba31410127e3764e2961901</location_communication_usage_type_id>
+        <location_fax_phone_device_type_id display_value="Fax">4c01e721dba31410127e3764e2961952</location_fax_phone_device_type_id>
+        <location_phone_device_type_id display_value="Landline">4001e721dba31410127e3764e2961953</location_phone_device_type_id>
+        <location_usage_id display_value="Business Site">b3f0e721dba31410127e3764e296190a</location_usage_id>
+        <number_of_days_to_look_ahead_for_upcoming_onboarding_and_offboarding_events>28</number_of_days_to_look_ahead_for_upcoming_onboarding_and_offboarding_events>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-05 14:27:57</sys_created_on>
+        <sys_id>56329a63db2b1410127e3764e29619f9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-06 04:05:12</sys_updated_on>
+        <workday_tenant_time_zone>US/Pacific</workday_tenant_time_zone>
+        <worker_home_address_type_reference_communication_usage_type_id display_value="Home">67f0e721dba31410127e3764e2961901</worker_home_address_type_reference_communication_usage_type_id>
+        <worker_home_email_communication_usage_type_id display_value="Home">67f0e721dba31410127e3764e2961901</worker_home_email_communication_usage_type_id>
+        <worker_home_phone_communication_usage_type_id display_value="Home">67f0e721dba31410127e3764e2961901</worker_home_phone_communication_usage_type_id>
+        <worker_mobile_phone_device_type_id display_value="Mobile">4801e721dba31410127e3764e2961952</worker_mobile_phone_device_type_id>
+        <worker_phone_device_type_id display_value="Landline">4001e721dba31410127e3764e2961953</worker_phone_device_type_id>
+        <worker_work_email_communication_usage_type_id display_value="Work">6ff0e721dba31410127e3764e2961900</worker_work_email_communication_usage_type_id>
+        <worker_work_phone_communication_usage_type_id display_value="Work">6ff0e721dba31410127e3764e2961900</worker_work_phone_communication_usage_type_id>
+    </sn_hr_workday_configuration_worker_profile_sync>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-06 06:52:11</sys_created_on>
+        <sys_id>d2b3bdf3db235410127e3764e2961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_metadata_link_d2b3bdf3db235410127e3764e2961946</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-06 06:52:11</sys_updated_on>
+        <tablename>sn_hr_workday_workday_configuration_</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Workday Configuration Pull To-Dos" max_length="40" name="sn_hr_workday_pull_todo_config" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="javascript: var gdt = new GlideDateTime();gdt.addMonthsLocalTime(-6);gdt.getValue()" label="Initial load start date time" mandatory="true" max_length="40" name="initial_load_start_datetime" type="glide_date_time"/>
+        <element default="javascript:current.load_interval.setDisplayValue('1 00:00:00');" label="Load interval" mandatory="true" max_length="40" name="load_interval" type="glide_duration"/>
+        <element default="SNIH_Inbox_Items" label="Workday to dos RAAS report name" mandatory="true" max_length="150" name="workday_to_dos_raas_report_name" type="string"/>
+        <element label="Workday to dos report owner username" mandatory="true" max_length="150" name="workday_to_dos_report_owner_username" type="string"/>
+        <element default="global" label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+    </element>
+</database>

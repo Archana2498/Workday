@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Workday Pull To-Dos">55dc1ae11b081810c9527669cc4bcb55</application>
+        <assessment/>
+        <device_type/>
+        <filter table="sn_hr_workday_service_job_tracker">workday_integration_service=pull_to_dos^EQ<item display_value="Pull To-Dos" endquery="false" field="workday_integration_service" goto="false" newquery="false" operator="=" or="false" value="pull_to_dos"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Workday Job Trackers</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sn_hr_workday_service_job_tracker</name>
+        <order>300</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>sn_hr_workday.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 05:42:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2d783a931bb81010c9527669cc4bcba6</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Workday Integration Service Job Tracker</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_app_module_2d783a931bb81010c9527669cc4bcba6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-08 05:43:01</sys_updated_on>
+        <timeline_page/>
+        <title>Workday Integration Service Job Tracker</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

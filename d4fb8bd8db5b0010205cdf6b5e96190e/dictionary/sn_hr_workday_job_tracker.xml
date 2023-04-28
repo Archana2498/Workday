@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Workday Integration Job Tracker" max_length="40" name="sn_hr_workday_job_tracker" sizeclass="3" type="collection">
+        <element label="Error message" max_length="1000" name="error_message" read_only="true" type="string"/>
+        <element label="Job ended at" max_length="40" name="job_ended_at" read_only="true" type="glide_date_time"/>
+        <element default="Workday" display="true" label="Job name" max_length="40" name="job_name" read_only="true" type="string"/>
+        <element label="Job started at" max_length="40" name="job_started_at" read_only="true" type="glide_date_time"/>
+        <element choice="1" default="running" label="State" max_length="40" name="state" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Complete" value="complete"/>
+                <element inactive_on_update="false" label="Failed" value="failed"/>
+                <element inactive_on_update="false" label="Hold" value="hold"/>
+                <element inactive_on_update="false" label="Running" value="running"/>
+            </choice>
+        </element>
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+    </element>
+</database>
