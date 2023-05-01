@@ -238,7 +238,7 @@ result;]]></condition>
 }]]></pre_script>
         <pre_script_bool>true</pre_script_bool>
         <record_source>ihimport</record_source>
-        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as/>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
@@ -252,14 +252,14 @@ result;]]></condition>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-24 07:34:25</sys_created_on>
         <sys_id>60f3538b4796a910901d3a34846d4346</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Workday Pull Job Change Request Scheduled Import</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>scheduled_import_set_60f3538b4796a910901d3a34846d4346</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-24 07:44:00</sys_updated_on>
+        <sys_updated_on>2023-04-25 08:02:56</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
         <use_child_connection>false</use_child_connection>

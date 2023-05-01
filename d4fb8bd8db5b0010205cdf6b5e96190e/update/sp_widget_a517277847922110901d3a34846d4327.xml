@@ -6,7 +6,10 @@
     var c = this;
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css>.no-wrap {&#13;
+        <css>.mt-5 {&#13;
+	margin-bottom:22px !important;&#13;
+}&#13;
+.no-wrap {&#13;
 	display: block !important;&#13;
     text-overflow: ellipsis;&#13;
     width: 100%;&#13;
@@ -73,6 +76,18 @@
     var workday_id = options.workday_id;
     data.widget_title = options.widget_title;
 
+    function isNumber(value) {
+        if (typeof value === "string") {
+            return !isNaN(value);
+        }
+    }
+
+    var column_count = options.column_count && isNumber(options.column_count) ? options.column_count : 3;
+    data.column_count = [];
+    for (var i = 0; i < column_count; i++) {
+        data.column_count.push(i);
+    }
+
     if (columns.length > 0 && !gs.nil(table_name) && !gs.nil(workday_id) && !gs.nil(data.widget_title)) {
         var app = new GlideRecord(table_name);
         app.addEncodedQuery('u_workday_id=' + workday_id);
@@ -95,38 +110,28 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-17 09:12:54</sys_created_on>
         <sys_id>a517277847922110901d3a34846d4327</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name>Custom Single Item Details</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sp_widget_a517277847922110901d3a34846d4327</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-21 08:06:46</sys_updated_on>
-        <template><![CDATA[<div ng-if="data.table_data.length>0">
+        <sys_updated_on>2023-04-26 13:14:17</sys_updated_on>
+        <template><![CDATA[<div class="mt-5" ng-if="data.table_data.length>0">
  	<div class="row">
   		<div class="col-sm-6 col-xs-6 mainboldText">{{data.widget_title}}</div>
   		<div class="col-sm-6 col-xs-6"></div>
+	</div>  	
+  <div class="row mt-4" ng-repeat="(indexX, table_row) in data.table_data" ng-if="indexX % data.column_count.length == 0">
+  	<div class="col-sm-4 col-xs-4" ng-repeat="(indexY, column) in data.column_count" ng-if="data.table_data[indexX + indexY]">
+  		<span class="smallText">{{data.table_data[indexX + indexY].name}}</span>
+  		<span class="boldText no-wrap" data-toggle="tooltip" data-placement="auto bottom" title="{{data.table_data[indexX + indexY].value}}">{{data.table_data[indexX + indexY].value}}</span>
+  	</div>  			    		
 	</div>
-  	<span ng-repeat="table_row in data.table_data track by $index">  	
-    	<div class="row mt-4" ng-show="$index % 3 == 0">
-  			<div class="col-sm-4 col-xs-4" ng-if="data.table_data[$index]">
-      			<span class="smallText">{{data.table_data[$index].name}}</span>
-        		<span class="boldText no-wrap" data-toggle="tooltip" data-placement="auto bottom" title="{{data.table_data[$index].value}}">{{data.table_data[$index].value}}</span>
-      		</div>
-      		<div class="col-sm-4 col-xs-4" ng-if="data.table_data[$index + 1]">
-      			<span class="smallText">{{data.table_data[$index + 1].name}}</span>
-        		<span class="boldText no-wrap" data-toggle="tooltip" data-placement="auto bottom" title="{{data.table_data[$index + 1].value}}">{{data.table_data[$index + 1].value}}</span>
-      		</div>
-      		<div class="col-sm-4 col-xs-4" ng-if="data.table_data[$index + 2]">
-      			<span class="smallText">{{data.table_data[$index + 2].name}}</span>
-        		<span class="boldText no-wrap" data-toggle="tooltip" data-placement="auto bottom" title="{{data.table_data[$index + 2].value}}">{{data.table_data[$index + 2].value}}</span>
-      		</div>
-		</div>
-  	</span>
 </div>
 
-<div ng-if="data.table_data.length==0">
+<div class="mt-5" ng-if="data.table_data.length==0">
 	${No item was found.}
 </div>
 

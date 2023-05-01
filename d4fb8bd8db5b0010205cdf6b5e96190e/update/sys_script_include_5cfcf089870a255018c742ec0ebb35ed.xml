@@ -10,7 +10,6 @@
         <script><![CDATA[var WorkdayApprovalToDosHelperUtilsSNC = Class.create();
 WorkdayApprovalToDosHelperUtilsSNC.prototype = {
     initialize: function() {},
-
     isReportActive: function(serviceJobName) {
         var jobTrackerRecord = new GlideRecord('sn_hr_workday_configuration_workday_approval_to_dos');
         jobTrackerRecord.addQuery('u_workday_integration_service_name', serviceJobName);
@@ -22,7 +21,6 @@ WorkdayApprovalToDosHelperUtilsSNC.prototype = {
             return false;
         }
     },
-
     getMainJobSysIdOfPullTodos: function(serviceJobName) {
         var jobTrackerRecord = new GlideRecord('sn_hr_workday_configuration_workday_approval_to_dos');
         jobTrackerRecord.addQuery('u_workday_integration_service_name', serviceJobName);
@@ -34,7 +32,6 @@ WorkdayApprovalToDosHelperUtilsSNC.prototype = {
         }
         return '';
     },
-
     completeToDosReportAndIsCompleteMainJob: function(serviceJobName, grMainJob) {
         var jobTrackerRecord = new GlideRecord('sn_hr_workday_configuration_workday_approval_to_dos');
         jobTrackerRecord.addQuery('u_workday_integration_service_name', serviceJobName);
@@ -55,55 +52,76 @@ WorkdayApprovalToDosHelperUtilsSNC.prototype = {
         }
         return true;
     },
-
     updateRecordClass: function(source, className) {
         var grToDo = new GlideRecord('sn_hr_workday_todo');
         grToDo.addEncodedQuery("u_workday_id=" + source.u_workdayid);
         grToDo.query();
-        gs.info('line 54' + grToDo.getRowCount());
-        gs.info('line 55' + className);
         grToDo.sys_class_name = className;
         grToDo.updateMultiple();
     },
-
     updateTimeOffFields: function(source, target, table) {
         var grToDoP = new GlideRecord(table);
         grToDoP.addEncodedQuery("u_workday_id=" + source.u_workdayid);
         grToDoP.query();
-        grToDoP.u_start_date = target.u_first_day_of_time_off;
-        grToDoP.u_end_date = target.u_last_day_of_time_off;
-        grToDoP.u_business_process_type = target.u_business_process_name;
-        grToDoP.u_requested_for = this.getUser(target.u_employee_id);
-        grToDoP.u_type_of_leave = target.u_time_off_type_for_time_off_entry;
-        grToDoP.u_total = target.u_time_off_total_units_hours > 0 ? target.u_time_off_total_units_hours : target.u_time_off_total_units_days;
-        grToDoP.u_time_off_plan_id = target.u_time_off_plan_id;
-        grToDoP.u_unit_of_time = target.u_unit_time;
-        grToDoP.u_todo_title = 'Time off request for ' + this.getNameOfUser(target.u_employee_id);
-        grToDoP.updateMultiple();
+        while (grToDoP.next()) {
+            grToDoP.u_start_date = target.u_first_day_of_time_off;
+            grToDoP.u_end_date = target.u_last_day_of_time_off;
+            grToDoP.u_type_of_leave = target.u_time_off_type_for_time_off_entry;
+            grToDoP.u_total = target.u_time_off_total_units_hours > 0 ? target.u_time_off_total_units_hours : target.u_time_off_total_units_days;
+            grToDoP.u_time_off_plan_id = target.u_time_off_plan_id;
+            grToDoP.u_unit_of_time = target.u_unit_time;
+            grToDoP.update();
+        }
     },
-
+    updateTerminationFields: function(source, target, toDoTable) {
+        var grToDoP = new GlideRecord(toDoTable);
+        grToDoP.addEncodedQuery("u_workday_id=" + source.u_workdayid);
+        grToDoP.query();
+        while (grToDoP.next()) {
+            grToDoP.u_position = target.u_position;
+            grToDoP.u_primary_reason = target.u_primary_reason;
+            grToDoP.update();
+        }
+    },
     updateJobRequisitionFields: function(source, target, toDoTable) {
         var grToDoP = new GlideRecord(toDoTable);
         grToDoP.addEncodedQuery("u_workday_id=" + source.u_workdayid);
         grToDoP.query();
-        grToDoP.u_request_type = target.u_business_process_type;
-        grToDoP.u_replacement_for = target.u_replacement_for;
-        grToDoP.u_hiring_manager = this.getUser(source.u_hiring_manager_employee_id);
-        grToDoP.updateMultiple();
+        while (grToDoP.next()) {
+            grToDoP.u_replacement_for = target.u_replacement_for;
+            grToDoP.u_hiring_manager = this.getUser(source.u_hiring_manager_employee_id);
+            grToDoP.update();
+        }
     },
-
     updateCorrectTimeOffFields: function(source, target, table) {
         var grToDoP = new GlideRecord(table);
         grToDoP.addEncodedQuery("u_workday_id=" + source.u_workdayid);
         grToDoP.query();
-        grToDoP.u_date = target.u_date;
-        grToDoP.u_day_of_the_week = target.u_day_of_the_week;
-        grToDoP.u_business_process_type = target.u_business_process_name;
-        grToDoP.u_requested_for = this.getUser(source.u_requested_for_employee_id);
-        grToDoP.u_correction_to_requested = target.u_total_units;
-        grToDoP.u_unit_of_time = target.u_unit;
-        grToDoP.u_leave_type = target.u_type;
-        grToDoP.updateMultiple();
+        while (grToDoP.next()) {
+            grToDoP.u_date = target.u_date;
+            grToDoP.u_day_of_the_week = target.u_day_of_the_week;
+            grToDoP.u_correction_to_requested = target.u_total_units;
+            grToDoP.u_unit_of_time = target.u_unit;
+            grToDoP.u_leave_type = target.u_type;
+            grToDoP.update();
+        }
+    },
+    updateSpendAuthorisationFields: function(source, target, table) {
+		gs.info('line 101'+table);
+        var grToDoP = new GlideRecord(table);
+        grToDoP.addEncodedQuery("u_workday_id=" + source.u_workdayid);
+        grToDoP.query();
+		gs.info('line 105'+grToDoP.getRowCount());
+        while (grToDoP.next()) {
+            grToDoP.u_start_date = target.u_start_date;
+            grToDoP.u_end_date = target.u_end_date;
+            grToDoP.u_company = target.u_company;
+            grToDoP.u_description = target.u_description;
+            grToDoP.u_business_purpose = target.u_business_purpose;
+            grToDoP.u_reimbursement_payment_type = target.u_reimbursement_payment_type;
+            grToDoP.u_justification = target.u_justification;
+            grToDoP.update();
+        }
     },
 
     updateLeaveOfAbsenceFields: function(source, target, table) {
@@ -115,25 +133,32 @@ WorkdayApprovalToDosHelperUtilsSNC.prototype = {
         var grToDoP = new GlideRecord(table);
         grToDoP.addEncodedQuery("u_workday_id=" + source.u_workdayid);
         grToDoP.query();
-        grToDoP.u_total = Math.floor(days) + ' days';
-        grToDoP.u_requested_for = this.getUser(source.u_requested_for_employee_id);
-        grToDoP.u_request_type = target.u_request_type;
-        grToDoP.u_leave_type = source.u_leave_type;
-        grToDoP.updateMultiple();
+        while (grToDoP.next()) {
+            grToDoP.u_total = Math.floor(days) + ' days';
+            grToDoP.u_leave_type = source.u_leave_type;
+            grToDoP.update();
+        }
     },
     updateCompensationFields: function(source, target, table) {
         var grToDoP = new GlideRecord(table);
         grToDoP.addEncodedQuery("u_workday_id=" + source.u_workdayid);
         grToDoP.query();
-        grToDoP.u_reason = target.u_business_process_reason;
-        grToDoP.name = target.u_worker;
-        grToDoP.u_business_process_type = target.u_business_process_type;
-        //grToDoP.u_requested_for = this.getUser(source.u_requested_for_employee_id);
-        grToDoP.u_position = target.u_position;
-        grToDoP.u_effective_date = target.u_effective;
-        grToDoP.u_employee_visibility_date = target.u_employee_visibility_date;
-        //grToDoP.u_next_pay_period = target.u_next_pay_period;
-        grToDoP.updateMultiple();
+        while (grToDoP.next()) {
+            grToDoP.u_reason = target.u_business_process_reason;
+            grToDoP.u_position = target.u_position;
+            grToDoP.u_effective_date = target.u_effective;
+            grToDoP.u_employee_visibility_date = target.u_employee_visibility_date;
+            grToDoP.update();
+        }
+    },
+    updateJobChangeFields: function(source, target, table) {
+        // var grToDoP = new GlideRecord(table);
+        // grToDoP.addEncodedQuery("u_workday_id=" + source.u_workdayid);
+        // grToDoP.query();
+        // while (grToDoP.next()) {
+        //     grToDoP.u_todo_title = this.getTodoTitle(grToDoP.u_request_type, grToDoP.u_requested_for.name);
+        //     grToDoP.update();
+        // }
     },
     insertComments: function(source) {
         var grComment = new GlideRecord(WorkdayApprovalToDosHelperSNC.Workday_Table_Name.WorkDay_Comment);
@@ -189,19 +214,31 @@ WorkdayApprovalToDosHelperUtilsSNC.prototype = {
             }
         }
     },
+    getUserDetails: function() {
+        var userID = gs.getUserID();
+        var userGR = new GlideRecord('sys_user');
+        userGR.addQuery('sys_id', userID);
+        userGR.query();
+        if (userGR.next()) {
+            var name = userGR.getValue('name');
+            var email = userGR.getValue('email');
+            return name + " (" + email + ") : ";
+        } else
+            return '';
+    },
     type: 'WorkdayApprovalToDosHelperUtilsSNC'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-05 05:11:22</sys_created_on>
         <sys_id>5cfcf089870a255018c742ec0ebb35ed</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>94</sys_mod_count>
         <sys_name>WorkdayApprovalToDosHelperUtilsSNC</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_script_include_5cfcf089870a255018c742ec0ebb35ed</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-21 08:55:26</sys_updated_on>
+        <sys_updated_on>2023-04-28 12:20:30</sys_updated_on>
     </sys_script_include>
 </record_update>

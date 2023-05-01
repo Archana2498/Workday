@@ -3,21 +3,21 @@
         <action_type display_value="Open URL">c6a6422b8702619018c742ec0ebb35c7</action_type>
         <active>true</active>
         <icon>external-link</icon>
-        <name>View report in Workday</name>
+        <name>View  full report in Workday</name>
         <sys_class_name>sn_ex_sp_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-13 05:00:26</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>2096022b8702619018c742ec0ebb3508</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>View report in Workday</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>View  full report in Workday</sys_name>
         <sys_overrides/>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sn_ex_sp_action_2096022b8702619018c742ec0ebb3508</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-13 05:00:26</sys_updated_on>
+        <sys_updated_on>2023-04-27 08:06:42</sys_updated_on>
         <table>sn_hr_workday_job_requisition_request_todos</table>
     </sn_ex_sp_action>
 </record_update>

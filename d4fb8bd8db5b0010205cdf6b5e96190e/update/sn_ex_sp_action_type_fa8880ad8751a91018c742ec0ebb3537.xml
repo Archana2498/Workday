@@ -2,19 +2,19 @@
     <sn_ex_sp_action_type action="INSERT_OR_UPDATE">
         <active>true</active>
         <client_parameters>action</client_parameters>
-        <client_script><![CDATA[var comment = "";
-var title ="${reject_request_heading}" ;
-var	message = "${Provide a reason for rejecting this request}";
-var	primaryButtonLabel = "${Reject}";
-if(action === 'approve'){
-	title = "${Approve request}";
-	message = "${Provide a reason for approving this request}";
-	primaryButtonLabel = "${Approve}";
-} 
+        <client_script><![CDATA[var comment = '';
+var title = "${reject_request_heading}";
+var message = "${Provide a reason for rejecting this request}";
+var primaryButtonLabel = "${Reject}";
+if (action === 'approve') {
+    title = "${Approve request}";
+    message = "${Provide a reason for approving this request}";
+    primaryButtonLabel = "${Approve}";
+}
 var answer = spModal.open({
     title: title,
     message: message,
-    input: true,
+	input:true,
     value: comment,
     buttons: [{
             label: "${Cancel}",
@@ -22,10 +22,12 @@ var answer = spModal.open({
         },
         {
             label: primaryButtonLabel,
-            primary: true,
+            primary: true
         }
     ]
-});]]></client_script>
+}).then(function() {
+        $('btn').prop('disabled', false);
+        });]]></client_script>
         <name>Workday Update with comments</name>
         <reverse_execution>true</reverse_execution>
         <server_parameters>State,sys_id</server_parameters>
@@ -33,6 +35,7 @@ var answer = spModal.open({
 var errorMessage = gs.getMessage("Request could not be approved try again.");
 var workdayId = '';
 var outputs = '';
+var wtHelper = new WorkdayApprovalToDosHelperUtils();
 var requestRecord = new GlideRecord(WorkdayApprovalToDosHelperSNC.Workday_Table_Name.Workday_Todos_Table);
 requestRecord.addQuery('sys_id', sys_id);
 requestRecord.query();
@@ -40,7 +43,7 @@ if (requestRecord.next()) {
     workdayId = requestRecord.getValue('u_workday_id');
     var inputs = {};
     inputs['workday_id'] = workdayId;
-    inputs['comment'] = clientScriptOutput;
+    inputs['comment'] = wtHelper.getUserDetails() + clientScriptOutput;
     if (State == 'approved') {
         outputs = sn_fd.FlowAPI.executeAction('sn_workday_hr_spke.approve_business_process', inputs);
         errorMessage = gs.getMessage(outputs.__action_status__.message + " Request could not be approved try again.");
@@ -51,16 +54,15 @@ if (requestRecord.next()) {
     }
     if (outputs.__action_status__.code == 0) {
         requestRecord.state = State;
-		if(State=='approved'){
-			requestRecord.workday_status='approved';
-		}
-		else{
-			requestRecord.workday_status='denied';	
-		}
+        if (State == 'approved') {
+            requestRecord.workday_status = 'approved';
+        } else {
+            requestRecord.workday_status = 'denied';
+        }
         if (requestRecord.update() == null) {
             gs.addErrorMessage(errorMessage);
         } else {
-			requestRecord.todo_state='complete';
+            requestRecord.todo_state = 'complete';
             gs.addInfoMessage(infoMessage);
         }
     } else {
@@ -72,7 +74,7 @@ if (requestRecord.next()) {
         <sys_created_on>2023-02-28 07:54:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>fa8880ad8751a91018c742ec0ebb3537</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>90</sys_mod_count>
         <sys_name>Workday Update with comments</sys_name>
         <sys_overrides/>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
@@ -80,6 +82,6 @@ if (requestRecord.next()) {
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sn_ex_sp_action_type_fa8880ad8751a91018c742ec0ebb3537</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-20 07:00:06</sys_updated_on>
+        <sys_updated_on>2023-04-28 10:19:03</sys_updated_on>
     </sn_ex_sp_action_type>
 </record_update>
