@@ -21,26 +21,6 @@
             <element>workday_integration_service</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Termination</label>
-            <language>en</language>
-            <name>sn_hr_workday_service_job_tracker</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-03-06 07:40:56</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>0d7f325b47dd2150901d3a34846d435c</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-03-06 07:41:03</sys_updated_on>
-            <value>termination</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>workday_integration_service</element>
-            <hint/>
-            <inactive>false</inactive>
             <label>Departments</label>
             <language>en</language>
             <name>sn_hr_workday_service_job_tracker</name>
@@ -241,7 +221,7 @@
             <element>workday_integration_service</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Time Off Requests</label>
+            <label>Time Off Request To-Dos</label>
             <language>en</language>
             <name>sn_hr_workday_service_job_tracker</name>
             <sequence>10</sequence>
@@ -251,10 +231,150 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>61ce3d4a47d92d10901d3a34846d436b</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-03 05:31:45</sys_updated_on>
+            <value>time_off_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Leave of Absence Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>11</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:01:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>04e99cfc8782e15018c742ec0ebb3547</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-03-02 05:46:17</sys_updated_on>
-            <value>time_off_requests</value>
+            <sys_updated_on>2023-04-04 08:09:44</sys_updated_on>
+            <value>leave_of_absence_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Correct Time Off Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>12</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:02:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>824a98fc8782e15018c742ec0ebb3545</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:09:54</sys_updated_on>
+            <value>correct_time_off_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Compensation Change Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>13</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:03:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd8a543087c2e15018c742ec0ebb3554</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:10:05</sys_updated_on>
+            <value>compensation_change_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Termination Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>14</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:04:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>addad83087c2e15018c742ec0ebb3592</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:10:49</sys_updated_on>
+            <value>termination_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Job Requisition Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>15</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:05:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d60b5c3087c2e15018c742ec0ebb35f0</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:11:01</sys_updated_on>
+            <value>job_requisition_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Job Change Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>16</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:06:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>893b107087c2e15018c742ec0ebb35ec</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:11:12</sys_updated_on>
+            <value>job_change_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Spend Authorization Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>17</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:07:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a76b107087c2e15018c742ec0ebb354a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:11:19</sys_updated_on>
+            <value>spend_authorization_request_to_dos</value>
         </sys_choice>
     </sys_choice>
 </record_update>

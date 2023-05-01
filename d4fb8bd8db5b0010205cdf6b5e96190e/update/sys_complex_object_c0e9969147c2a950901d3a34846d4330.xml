@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD00e99691dec2a950603edc4b8996bb30</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>d4fb8bd8db5b0010205cdf6b5e96190e</scope_name>
+        <serialized_content>{"FlowDesigner:FD00e99691dec2a950603edc4b8996bb30":{"$COCollectionField":[{"report_obj":{"is_active":"Boolean","is_active.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"boolean\",\"default_value\":\"\",\"label\":\"is_active\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"1230fd87-5741-42a5-8d62-4d51a4a2a882\"}"},"report_name":"String","report_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"report_name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"7ed3c860-e349-4307-9542-edbbcd26472f\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"report_status\",\"mandatory\":\"false\",\"child_name\":\"report_obj\",\"uiUniqueId\":\"c6c36471-23e9-4f7d-a2cf-b298623dacd3\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD00e99691dec2a950603edc4b8996bb30\",\"child_label\":\"report_obj\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"5186a949-907c-43f5-85f2-03bd62d3eb3e\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD00e99691dec2a950603edc4b8996bb30.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"report_status\",\"mandatory\":\"false\",\"child_name\":\"report_obj\",\"uiUniqueId\":\"c6c36471-23e9-4f7d-a2cf-b298623dacd3\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD00e99691dec2a950603edc4b8996bb30\",\"child_label\":\"report_obj\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"5186a949-907c-43f5-85f2-03bd62d3eb3e\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-06 06:35:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c0e9969147c2a950901d3a34846d4330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD00e99691dec2a950603edc4b8996bb30</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_complex_object_c0e9969147c2a950901d3a34846d4330</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-06 06:35:39</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

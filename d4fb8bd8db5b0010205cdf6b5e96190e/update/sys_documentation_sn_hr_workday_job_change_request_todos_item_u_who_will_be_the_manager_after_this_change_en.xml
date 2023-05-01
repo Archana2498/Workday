@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_who_will_be_the_manager_after_this_change" label="Who will be the manager after this change" language="en" table="sn_hr_workday_job_change_request_todos_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_who_will_be_the_manager_after_this_change</element>
+            <help/>
+            <hint/>
+            <label>Who will be the manager after this change</label>
+            <language>en</language>
+            <name>sn_hr_workday_job_change_request_todos_item</name>
+            <plural>Who will be the manager after this changes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-17 12:11:34</sys_created_on>
+            <sys_id>0c40d4cd87d2211018c742ec0ebb354c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Who will be the manager after this change</sys_name>
+            <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+            <sys_update_name>sys_documentation_sn_hr_workday_job_change_request_todos_item_u_who_will_be_the_manager_after_this_change_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-17 12:11:34</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -32,8 +32,7 @@ WorkdayApprovalToDosHelperSNC.Workday_Table_Name = {
     Leave_of_Absence_Request_ToDos_Item: 'sn_hr_workday_leave_of_absence_request_todos_item',
     Correct_Time_Off_Request_ToDos: 'sn_hr_workday_correct_time_off_request_todos',
     Compensation_Change_Request_ToDos: 'sn_hr_workday_compensation_change_request_todos',
-    Job_Change_Request_ToDos: 'sn_hr_workday_job_change_request_todos',
-	Job_Change_Request_ToDos_Item: 'sn_hr_workday_job_change_request_todos_item' ,
+    Job_Change_Request_ToDos: 'job_change_request_to_dos',
     Spend_Authorization_Request_ToDos: 'spend_authorization_request_to_dos',
     WorkDay_Comment: 'sn_hr_workday_workday_comment',
 	Workday_Approval_Report_Config_Table: 'sn_hr_workday_configuration_workday_approval_to_dos',
@@ -43,13 +42,13 @@ WorkdayApprovalToDosHelperSNC.Workday_Table_Name = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-31 08:11:11</sys_created_on>
         <sys_id>1b16731b87b1a11018c742ec0ebb359f</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>WorkdayApprovalToDosHelperSNC</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_script_include_1b16731b87b1a11018c742ec0ebb359f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-24 07:51:09</sys_updated_on>
+        <sys_updated_on>2023-04-21 07:26:53</sys_updated_on>
     </sys_script_include>
 </record_update>

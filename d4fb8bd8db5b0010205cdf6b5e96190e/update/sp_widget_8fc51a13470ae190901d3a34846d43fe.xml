@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.comment {
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #3C59E7;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.commentBtn {
+	border: 0px;
+  background: transparent;
+}
+.commentBtn:disabled {
+opacity:25%;
+}
+.table {
+	border-bottom: 0.1rem solid #DADDE2;
+}
+.table &gt; tbody &gt; tr &gt; th {
+	border-top: 0rem solid #DADDE2;
+  border-bottom: 0.1rem solid #DADDE2;
+}
+.table &gt; tbody &gt; tr &gt; td {
+	border-top: 0rem solid #DADDE2;
+}
+.mainboldText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 19.8px;
+color: #181A1F;
+display: flex;
+}
+.boldText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 23px;
+color: #181A1F;
+display: flex;
+  min-height: 23px;
+}
+.border {
+box-sizing: border-box;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+background: #FFFFFF;
+border: 1px solid #DADDE2;
+border-radius: 4px;
+  margin-bottom:16px;
+}
+.smallText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+color: #656E81;
+  display: flex;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>custom_termination_request_item_new</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Custom Termination Request Item New</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    //data.task_items = [];
+    //var report_name = options.raas_report_name;
+		//gs.info("DIV 1"+report_name);
+		//var app;
+    //var app = new GlideRecord("sn_hr_workday_time_off_request_todos_item");
+    //if (report_name == "Workday_Approval_Service_Name")
+	gs.info("wdid_Div - "+options.workday_id);
+        var app = new GlideRecord("sn_hr_workday_termination_request_todos_item");
+    //else app = new GlideRecord("sn_hr_workday_time_off_request_todos_item");
+    var workday_id = options.workday_id;
+		//var workday_id = '2b43053975381019f38f33ba0f410000';
+    app.addEncodedQuery('u_workday_id=' + workday_id);
+		app.setLimit(1);
+    app.query();
+    if (app.next()) {
+        //var task_item = {};
+        data.date = app.getValue('u_termination_date');
+        //if (report_name == 'Workday_Approval_Service_Name') {
+			data.last_day_of_work = app.getValue('u_last_day_of_work');
+			data.pay_through_date = app.getValue('u_pay_through_date');
+			data.resignation_date = app.getValue('u_resignation_date');
+			data.secondary_termination_reasons = app.getValue('u_secondary_termination_reasons');
+			data.notification_date = app.getValue('u_notification_date');
+			data.eligible_for_rehire = app.getValue('u_eligible_for_rehire');
+			data.close_position = app.getValue('u_close_position');
+			data.available_for_overlap = app.getValue('u_available_for_overlap');
+
+        /*} else {
+            //task_item.u_date = app.getValue('u_date');
+            task_item.u_day_of_the_week = app.getValue('u_day_of_the_week');
+            task_item.u_units_requested_this_coordinated_leave_time_off = app.getValue('u_units_requested_this_coordinated_leave_time_off');
+            task_item.u_unit_time = app.getValue('u_unit_time');
+            task_item.u_comment = app.getValue('u_comment');
+            task_item.u_comments = app.getValue('u_comments');
+        }*/
+        //data.task_items.push(task_item);
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-12 11:26:18</sys_created_on>
+        <sys_id>8fc51a13470ae190901d3a34846d43fe</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Custom Termination Request Item New</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sp_widget_8fc51a13470ae190901d3a34846d43fe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-12 14:49:08</sys_updated_on>
+        <template><![CDATA[<div>
+    <div class="row">
+  		<div class="col-sm-6 col-xs-6 mainboldText" style="margin-bottom: 16px;margin-top: 11px;">${Termination details}</div>
+  		<div class="col-sm-6 col-xs-6"></div>
+		</div>
+    <div class="row" style="margin-bottom: 16px;">
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Termination date}</span>
+        <span class="boldText">{{data.date}}</span>
+      </div>
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Last day of work}</span>
+        <span class="boldText">{{data.last_day_of_work}}</span>
+      </div>
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Pay through date}</span>
+        <span class="boldText">{{data.pay_through_date}}</span>
+      </div>
+		</div>
+    <div class="row" style="margin-bottom: 16px;">
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Resignation date}</span>
+        <span class="boldText">{{data.resignation_date}}</span>
+      </div>
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Secondary reason}</span>
+        <span class="boldText">{{data.secondary_termination_reasons}}</span>
+      </div>
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Notify by}</span>
+        <span class="boldText">{{data.notification_date}}</span>
+      </div>
+		</div>
+  <div class="row" style="margin-bottom: 16px;">
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Not eligible to rehire?}</span>
+        <span class="boldText">{{data.eligible_for_rehire}}</span>
+      </div>
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Close position?}</span>
+        <span class="boldText">{{data.close_position}}</span>
+      </div>
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Is this position available for overlap?}</span>
+        <span class="boldText">{{data.available_for_overlap}}</span>
+      </div>
+		</div>
+  </div>]]></template>
+    </sp_widget>
+</record_update>

@@ -22,27 +22,24 @@ var answer = spModal.open({
         },
         {
             label: primaryButtonLabel,
-            primary: true
+            primary: true,
         }
     ]
 });]]></client_script>
         <name>Workday Update with comments</name>
         <reverse_execution>true</reverse_execution>
         <server_parameters>State,sys_id</server_parameters>
-        <server_script><![CDATA[var serviceName='time_off_request_to_dos';
-var infoMessage = gs.getMessage("You have approved this request.");
+        <server_script><![CDATA[var infoMessage = gs.getMessage("You have approved this request.");
 var errorMessage = gs.getMessage("Request could not be approved try again.");
-var wd_id = '';
+var workdayId = '';
 var outputs = '';
-//var approvalHelper=new WorkdayApprovalToDosHelperSNC();
-gs.info('line 7 table name'+WorkdayApprovalToDosHelperSNC.Workday_Approval_Table_Name[serviceName]);
-var requestRecord = new GlideRecord(WorkdayApprovalToDosHelperSNC.Workday_Approval_Table_Name[serviceName]);
+var requestRecord = new GlideRecord(WorkdayApprovalToDosHelperSNC.Workday_Table_Name.Workday_Todos_Table);
 requestRecord.addQuery('sys_id', sys_id);
 requestRecord.query();
 if (requestRecord.next()) {
-    wd_id = requestRecord.getValue('u_workday_id');
+    workdayId = requestRecord.getValue('u_workday_id');
     var inputs = {};
-    inputs['workday_id'] = wd_id;
+    inputs['workday_id'] = workdayId;
     inputs['comment'] = clientScriptOutput;
     if (State == 'approved') {
         outputs = sn_fd.FlowAPI.executeAction('sn_workday_hr_spke.approve_business_process', inputs);
@@ -64,7 +61,7 @@ if (requestRecord.next()) {
             gs.addErrorMessage(errorMessage);
         } else {
 			requestRecord.todo_state='complete';
-            gs.addInfoMessage(gs.getMessage("You have approved this request."));
+            gs.addInfoMessage(infoMessage);
         }
     } else {
         gs.addErrorMessage(errorMessage);
@@ -75,7 +72,7 @@ if (requestRecord.next()) {
         <sys_created_on>2023-02-28 07:54:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>fa8880ad8751a91018c742ec0ebb3537</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name>Workday Update with comments</sys_name>
         <sys_overrides/>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
@@ -83,6 +80,6 @@ if (requestRecord.next()) {
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sn_ex_sp_action_type_fa8880ad8751a91018c742ec0ebb3537</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-10 11:41:20</sys_updated_on>
+        <sys_updated_on>2023-04-20 07:00:06</sys_updated_on>
     </sn_ex_sp_action_type>
 </record_update>

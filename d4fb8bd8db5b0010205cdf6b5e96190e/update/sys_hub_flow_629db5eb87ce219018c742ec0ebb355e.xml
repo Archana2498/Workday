@@ -1,0 +1,1966 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>27e44fd38782219018c742ec0ebb357c</copied_from>
+        <copied_from_name>Update Time Off Balance</copied_from_name>
+        <description/>
+        <internal_name>copy_of_update_time_off_balance</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.u_type_of_leave","label":"Trigger - Record Created or Updated➛Time Off Request Todos Record➛Leave type","reference":"","reference_display":"Leave type","type":"string","base_type":"string","parent_table_name":"sn_hr_workday_time_off_request_todos","column_name":"u_type_of_leave"},{"name":"7d6babe2-2950-4a56-a60c-a91a0012cf86.item.unitOfTimeReference.unitOfTimeDescription","label":"3 - For Each➛Time Off Plan Balance Record➛Unit Of Time Reference➛Unit Of Time Description","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"a5d8f014-4353-426f-916d-689ba9f68c91.item","label":"5 - For Each➛Time Off Plan Balance Position Record","reference_display":"Time Off Plan Balance Position Record","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Time Off Request Todos Record","reference":"sn_hr_workday_time_off_request_todos","reference_display":"Time Off Request Todos","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current.u_requested_for.correlation_id","label":"Trigger - Record Created or Updated➛Time Off Request Todos Record➛Requested For➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"correlation_id"},{"name":"c1949461-a050-4601-8d06-131a0c8ff9ba.timeoffplanbalancelist","label":"1 - Look up Time Off Balance➛Time Off Plan Balance List","reference_display":"Time Off Plan Balance List","type":"array.object","base_type":"array.object","attributes":{"sourceId":"2abcf3c1-f5ea-4282-ab25-68c5241f4f8a","child_name":"timeOffPlanBalanceData","uiUniqueId":"09989566-0cb7-4100-ab65-c363e5b2414b","uiTypeLabel":"Array.Object","co_type_name":"FD27020d25ccb4e050fb0030ee64f4c7d8","child_label":"Time Off Plan Balance Data","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"19a62663-8279-495d-9c82-fa92a5717b10","uiType":"array.object","child_type":"object","child_uiUniqueId":"fc195f5f-17d0-4f11-b09c-d36906895cc5"}},{"name":"b3294079-81b6-4c8c-8e8b-9020a795db97.item.timeOffPlanBalanceRecordList","label":"2➛Time Off Plan Balance Data➛Time Off Plan Balance Record List","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"7d6babe2-2950-4a56-a60c-a91a0012cf86.item.timeOffPlanReference.absencePlanID","label":"3➛Time Off Plan Balance Record➛Time Off Plan Reference➛Absence Plan ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Created or Updated_1.current.u_time_off_plan_id","label":"Trigger - Record Created or Updated➛Time Off Request Todos Record➛Time off plan ID","reference":"","reference_display":"Time off plan ID","type":"string","base_type":"string","parent_table_name":"sn_hr_workday_time_off_request_todos","column_name":"u_time_off_plan_id"},{"name":"7d6babe2-2950-4a56-a60c-a91a0012cf86.item.timeOffPlanBalancePositionRecordList","label":"3➛Time Off Plan Balance Record➛Time Off Plan Balance Position Record List","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"a5d8f014-4353-426f-916d-689ba9f68c91.item.timeOffPlanBalance","label":"5 - For Each➛Time Off Plan Balance Position Record➛Time Off Plan Balance","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Created or Updated_1.current.u_requested_for.employee_number","label":"Trigger - Record Created or Updated➛Time Off Request Todos Record➛Requested For➛Employee number","reference":"","reference_display":"Employee number","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"employee_number"}]</label_cache>
+        <master_snapshot>62f73e6b8746619018c742ec0ebb35e6</master_snapshot>
+        <name>Update Time Off Balance</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>1a7311a987daa11018c742ec0ebb35cc</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>629db5eb87ce219018c742ec0ebb355e</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Update Time Off Balance</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_hub_flow_629db5eb87ce219018c742ec0ebb355e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:16</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=629db5eb87ce219018c742ec0ebb355e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=629db5eb87ce219018c742ec0ebb355e"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sn_hr_workday_time_off_request_todos">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 06:22:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1a7311a987daa11018c742ec0ebb35cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:14</sys_updated_on>
+        <table>sn_hr_workday_time_off_request_todos</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>629db5eb87ce219018c742ec0ebb355e</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 06:22:14</sys_created_on>
+        <sys_id>167311a987daa11018c742ec0ebb35cd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:14</sys_updated_on>
+        <trigger display_value="">1a7311a987daa11018c742ec0ebb35cc</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=629db5eb87ce219018c742ec0ebb355e^sys_idNOT IN167311a987daa11018c742ec0ebb35cd"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=629db5eb87ce219018c742ec0ebb355e^sys_idNOT INdf9db5eb87ce219018c742ec0ebb35b8"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>df9db5eb87ce219018c742ec0ebb35b8</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:15</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=df9db5eb87ce219018c742ec0ebb35b8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>df9db5eb87ce219018c742ec0ebb35b8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>1b9db5eb87ce219018c742ec0ebb35b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:30</sys_updated_on>
+        <value>sn_hr_workday_time_off_request_todos</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>df9db5eb87ce219018c742ec0ebb35b8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>579db5eb87ce219018c742ec0ebb35b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:30</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>df9db5eb87ce219018c742ec0ebb35b8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:22</sys_created_on>
+        <sys_id>b0f7fa6b8746619018c742ec0ebb354c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:22</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=df9db5eb87ce219018c742ec0ebb35b8"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=629db5eb87ce219018c742ec0ebb355e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=629db5eb87ce219018c742ec0ebb355e^sys_idNOT IN6e9db5eb87ce219018c742ec0ebb355e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>629db5eb87ce219018c742ec0ebb355e</id>
+        <name>Copy of Update Time Off Balance</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:27</sys_created_on>
+        <sys_id>6e9db5eb87ce219018c742ec0ebb355e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6e9db5eb87ce219018c742ec0ebb355e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=629db5eb87ce219018c742ec0ebb355e^sys_idNOT IN0f9db5eb87ce219018c742ec0ebb3569,769db5eb87ce219018c742ec0ebb3566,8b9db5eb87ce219018c742ec0ebb356c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</model>
+        <model_id>629db5eb87ce219018c742ec0ebb355e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_629db5eb87ce219018c742ec0ebb355e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>0f9db5eb87ce219018c742ec0ebb3569</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</model>
+        <model_id>629db5eb87ce219018c742ec0ebb355e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_629db5eb87ce219018c742ec0ebb355e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:28</sys_created_on>
+        <sys_id>769db5eb87ce219018c742ec0ebb3566</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</model>
+        <model_id>629db5eb87ce219018c742ec0ebb355e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_629db5eb87ce219018c742ec0ebb355e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>8b9db5eb87ce219018c742ec0ebb356c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=629db5eb87ce219018c742ec0ebb355e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=629db5eb87ce219018c742ec0ebb355e"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=629db5eb87ce219018c742ec0ebb355e^sys_idNOT IN4d154a678702619018c742ec0ebb35fb,539db5eb87ce219018c742ec0ebb35a5,5f9db5eb87ce219018c742ec0ebb35b7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</flow>
+        <order>7</order>
+        <parent_ui_id>a5d8f014-4353-426f-916d-689ba9f68c91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:51:07</sys_created_on>
+        <sys_id>4d154a678702619018c742ec0ebb35fb</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:16</sys_updated_on>
+        <ui_id>05b60e30-92a8-4740-9b83-9474fdc4d7f8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4d154a678702619018c742ec0ebb35fb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4d154a678702619018c742ec0ebb35fb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:51:07</sys_created_on>
+        <sys_id>85154a678702619018c742ec0ebb35fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:51:07</sys_updated_on>
+        <value>sn_hr_workday_time_off_request_todos</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4d154a678702619018c742ec0ebb35fb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4d154a678702619018c742ec0ebb35fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:51:07</sys_created_on>
+        <sys_id>41154a678702619018c742ec0ebb35fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:51:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4d154a678702619018c742ec0ebb35fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:51:07</sys_created_on>
+        <sys_id>89154a678702619018c742ec0ebb35fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:51:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4d154a678702619018c742ec0ebb35fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:51:07</sys_created_on>
+        <sys_id>05154a678702619018c742ec0ebb35fe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:21:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>u_time_off_balance={{a5d8f014-4353-426f-916d-689ba9f68c91.item.timeOffPlanBalance}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4d154a678702619018c742ec0ebb35fb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4d154a678702619018c742ec0ebb35fb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look up Time Off Balance">5b54e24cdb930450db97f1471d9619ee</action_type>
+        <action_type_parent display_value="Look up Time Off Balance">63d6f14cdbdfc050db97f1471d9619b2</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</flow>
+        <order>1</order>
+        <parent_ui_id>61819c0a-397b-4e55-82f3-4325e8851349</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>539db5eb87ce219018c742ec0ebb35a5</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:15</sys_updated_on>
+        <ui_id>c1949461-a050-4601-8d06-131a0c8ff9ba</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=539db5eb87ce219018c742ec0ebb35a5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>539db5eb87ce219018c742ec0ebb35a5</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>179db5eb87ce219018c742ec0ebb35a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:30</sys_updated_on>
+        <value>-- None --</value>
+        <variable display_value="Organization Reference ID">a4527cb21bb4d01067817669cc4bcbe3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>539db5eb87ce219018c742ec0ebb35a5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>d79db5eb87ce219018c742ec0ebb35a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:30</sys_updated_on>
+        <value>-- None --</value>
+        <variable display_value="Time Off Plan Reference ID">d4527cb21bb4d01067817669cc4bcbdb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=539db5eb87ce219018c742ec0ebb35a5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>employee_id</field>
+        <id>539db5eb87ce219018c742ec0ebb35a5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>939db5eb87ce219018c742ec0ebb35a7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:53:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5b54e24cdb930450db97f1471d9619ee</table>
+        <value>{{Created or Updated_1.current.u_requested_for.employee_number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>organization_reference_id</field>
+        <id>539db5eb87ce219018c742ec0ebb35a5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>1f9db5eb87ce219018c742ec0ebb35a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5b54e24cdb930450db97f1471d9619ee</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>time_off_plan_reference_id</field>
+        <id>539db5eb87ce219018c742ec0ebb35a5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>df9db5eb87ce219018c742ec0ebb35a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5b54e24cdb930450db97f1471d9619ee</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=539db5eb87ce219018c742ec0ebb35a5^sys_idNOT IN539db5eb87ce219018c742ec0ebb35a6,d79db5eb87ce219018c742ec0ebb35a6"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>time_off_plan_reference_id</input_name>
+        <instance>539db5eb87ce219018c742ec0ebb35a5</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"time_off_plan_reference_id":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn \u0027\u0027;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>539db5eb87ce219018c742ec0ebb35a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:30</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>organization_reference_id</input_name>
+        <instance>539db5eb87ce219018c742ec0ebb35a5</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"organization_reference_id":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn \u0027\u0027;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>d79db5eb87ce219018c742ec0ebb35a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:30</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=539db5eb87ce219018c742ec0ebb35a5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</flow>
+        <order>6</order>
+        <parent_ui_id>a5d8f014-4353-426f-916d-689ba9f68c91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>5f9db5eb87ce219018c742ec0ebb35b7</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:16</sys_updated_on>
+        <ui_id>7456e7a8-c0b7-4c79-a550-b901f0629b5c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5f9db5eb87ce219018c742ec0ebb35b7"/>
+    <sys_element_mapping action="delete_multiple" query="id=5f9db5eb87ce219018c742ec0ebb35b7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>5f9db5eb87ce219018c742ec0ebb35b7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:30</sys_created_on>
+        <sys_id>1f9db5eb87ce219018c742ec0ebb35b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{a5d8f014-4353-426f-916d-689ba9f68c91.item.timeOffPlanBalance}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5f9db5eb87ce219018c742ec0ebb35b7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5f9db5eb87ce219018c742ec0ebb35b7"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=629db5eb87ce219018c742ec0ebb355e"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=629db5eb87ce219018c742ec0ebb355e^sys_idNOT IN039db5eb87ce219018c742ec0ebb3584,0b9db5eb87ce219018c742ec0ebb357e,0f9db5eb87ce219018c742ec0ebb358c,839db5eb87ce219018c742ec0ebb3581,8f9db5eb87ce219018c742ec0ebb3586,8f9db5eb87ce219018c742ec0ebb3589"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1aacbd6b87ce219018c742ec0ebb3514</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>b3294079-81b6-4c8c-8e8b-9020a795db97</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>039db5eb87ce219018c742ec0ebb3584</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:16</sys_updated_on>
+        <ui_id>7d6babe2-2950-4a56-a60c-a91a0012cf86</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=039db5eb87ce219018c742ec0ebb3584"/>
+    <sys_element_mapping action="delete_multiple" query="id=039db5eb87ce219018c742ec0ebb3584"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>039db5eb87ce219018c742ec0ebb3584</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>479db5eb87ce219018c742ec0ebb3586</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{b3294079-81b6-4c8c-8e8b-9020a795db97.item.timeOffPlanBalanceRecordList}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=039db5eb87ce219018c742ec0ebb3584"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=039db5eb87ce219018c742ec0ebb3584"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">aa4d7dab87ce219018c742ec0ebb35d6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>0b9db5eb87ce219018c742ec0ebb357e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:15</sys_updated_on>
+        <ui_id>61819c0a-397b-4e55-82f3-4325e8851349</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0b9db5eb87ce219018c742ec0ebb357e"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0b9db5eb87ce219018c742ec0ebb357e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0b9db5eb87ce219018c742ec0ebb357e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">aa4d7dab87ce219018c742ec0ebb35fd</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>0f9db5eb87ce219018c742ec0ebb358c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:16</sys_updated_on>
+        <ui_id>ac0f6b7e-dffb-444c-a1da-fa2c3223fe75</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0f9db5eb87ce219018c742ec0ebb358c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>0f9db5eb87ce219018c742ec0ebb358c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>4b9db5eb87ce219018c742ec0ebb358f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:29</sys_updated_on>
+        <value>1</value>
+        <variable display_value="enabled">dd70187cc36e20105553b740ad40dddc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>0f9db5eb87ce219018c742ec0ebb358c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>879db5eb87ce219018c742ec0ebb358f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:21:23</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Error Status">0f72a5a25b132010b61ea2013781c749</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=0f9db5eb87ce219018c742ec0ebb358c"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0f9db5eb87ce219018c742ec0ebb358c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0f9db5eb87ce219018c742ec0ebb358c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">5aacbd6b87ce219018c742ec0ebb350f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>61819c0a-397b-4e55-82f3-4325e8851349</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>839db5eb87ce219018c742ec0ebb3581</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:15</sys_updated_on>
+        <ui_id>b3294079-81b6-4c8c-8e8b-9020a795db97</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=839db5eb87ce219018c742ec0ebb3581"/>
+    <sys_element_mapping action="delete_multiple" query="id=839db5eb87ce219018c742ec0ebb3581"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>839db5eb87ce219018c742ec0ebb3581</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>c79db5eb87ce219018c742ec0ebb3583</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{c1949461-a050-4601-8d06-131a0c8ff9ba.timeoffplanbalancelist}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=839db5eb87ce219018c742ec0ebb3581"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=839db5eb87ce219018c742ec0ebb3581"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">66acbd6b87ce219018c742ec0ebb3517</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>7d6babe2-2950-4a56-a60c-a91a0012cf86</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>8f9db5eb87ce219018c742ec0ebb3586</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:16</sys_updated_on>
+        <ui_id>1f52ede3-8897-44c9-83f5-349785eb3ee9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8f9db5eb87ce219018c742ec0ebb3586"/>
+    <sys_element_mapping action="delete_multiple" query="id=8f9db5eb87ce219018c742ec0ebb3586"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>8f9db5eb87ce219018c742ec0ebb3586</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>479db5eb87ce219018c742ec0ebb3589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{7d6babe2-2950-4a56-a60c-a91a0012cf86.item.timeOffPlanReference.absencePlanID}}={{Created or Updated_1.current.u_time_off_plan_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8f9db5eb87ce219018c742ec0ebb3586"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8f9db5eb87ce219018c742ec0ebb3586"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2eacbd6b87ce219018c742ec0ebb351a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>1f52ede3-8897-44c9-83f5-349785eb3ee9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>8f9db5eb87ce219018c742ec0ebb3589</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:16</sys_updated_on>
+        <ui_id>a5d8f014-4353-426f-916d-689ba9f68c91</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8f9db5eb87ce219018c742ec0ebb3589"/>
+    <sys_element_mapping action="delete_multiple" query="id=8f9db5eb87ce219018c742ec0ebb3589"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>8f9db5eb87ce219018c742ec0ebb3589</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>c39db5eb87ce219018c742ec0ebb358c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{7d6babe2-2950-4a56-a60c-a91a0012cf86.item.timeOffPlanBalancePositionRecordList}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8f9db5eb87ce219018c742ec0ebb3589"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8f9db5eb87ce219018c742ec0ebb3589"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=629db5eb87ce219018c742ec0ebb355e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=629db5eb87ce219018c742ec0ebb355e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_629db5eb87ce219018c742ec0ebb355e^sys_idNOT IN4b9db5eb87ce219018c742ec0ebb357b,4f9db5eb87ce219018c742ec0ebb356b,cf9db5eb87ce219018c742ec0ebb3568"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_629db5eb87ce219018c742ec0ebb355e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>4b9db5eb87ce219018c742ec0ebb357b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_629db5eb87ce219018c742ec0ebb355e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>4f9db5eb87ce219018c742ec0ebb356b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_629db5eb87ce219018c742ec0ebb355e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:18:29</sys_created_on>
+        <sys_id>cf9db5eb87ce219018c742ec0ebb3568</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:18:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_629db5eb87ce219018c742ec0ebb355e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_629db5eb87ce219018c742ec0ebb355e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_629db5eb87ce219018c742ec0ebb355e"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=629db5eb87ce219018c742ec0ebb355e^sys_idNOT INda0832ab8746619018c742ec0ebb3578"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"da0832ab8746619018c742ec0ebb3578","name":"plan","plan_signature":null}}</plan>
+        <plan_id>629db5eb87ce219018c742ec0ebb355e</plan_id>
+        <snapshot>62f73e6b8746619018c742ec0ebb35e6</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da0832ab8746619018c742ec0ebb3578</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:14</sys_updated_on>
+        <trigger display_value="">1a7311a987daa11018c742ec0ebb35cc</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=629db5eb87ce219018c742ec0ebb355e"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>27e44fd38782219018c742ec0ebb357c</copied_from>
+        <copied_from_name/>
+        <description/>
+        <internal_name>update_time_off_balance</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.u_type_of_leave","label":"Trigger - Record Created or Updated➛Time Off Request Todos Record➛Leave type","reference":"","reference_display":"Leave type","type":"string","base_type":"string","parent_table_name":"sn_hr_workday_time_off_request_todos","column_name":"u_type_of_leave"},{"name":"7d6babe2-2950-4a56-a60c-a91a0012cf86.item.unitOfTimeReference.unitOfTimeDescription","label":"3 - For Each➛Time Off Plan Balance Record➛Unit Of Time Reference➛Unit Of Time Description","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"a5d8f014-4353-426f-916d-689ba9f68c91.item","label":"5 - For Each➛Time Off Plan Balance Position Record","reference_display":"Time Off Plan Balance Position Record","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Time Off Request Todos Record","reference":"sn_hr_workday_time_off_request_todos","reference_display":"Time Off Request Todos","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current.u_requested_for.correlation_id","label":"Trigger - Record Created or Updated➛Time Off Request Todos Record➛Requested For➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"correlation_id"},{"name":"c1949461-a050-4601-8d06-131a0c8ff9ba.timeoffplanbalancelist","label":"1 - Look up Time Off Balance➛Time Off Plan Balance List","reference_display":"Time Off Plan Balance List","type":"array.object","base_type":"array.object","attributes":{"sourceId":"2abcf3c1-f5ea-4282-ab25-68c5241f4f8a","child_name":"timeOffPlanBalanceData","uiUniqueId":"09989566-0cb7-4100-ab65-c363e5b2414b","uiTypeLabel":"Array.Object","co_type_name":"FD27020d25ccb4e050fb0030ee64f4c7d8","child_label":"Time Off Plan Balance Data","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"19a62663-8279-495d-9c82-fa92a5717b10","uiType":"array.object","child_type":"object","child_uiUniqueId":"fc195f5f-17d0-4f11-b09c-d36906895cc5"}},{"name":"b3294079-81b6-4c8c-8e8b-9020a795db97.item.timeOffPlanBalanceRecordList","label":"2➛Time Off Plan Balance Data➛Time Off Plan Balance Record List","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"7d6babe2-2950-4a56-a60c-a91a0012cf86.item.timeOffPlanReference.absencePlanID","label":"3➛Time Off Plan Balance Record➛Time Off Plan Reference➛Absence Plan ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Created or Updated_1.current.u_time_off_plan_id","label":"Trigger - Record Created or Updated➛Time Off Request Todos Record➛Time off plan ID","reference":"","reference_display":"Time off plan ID","type":"string","base_type":"string","parent_table_name":"sn_hr_workday_time_off_request_todos","column_name":"u_time_off_plan_id"},{"name":"7d6babe2-2950-4a56-a60c-a91a0012cf86.item.timeOffPlanBalancePositionRecordList","label":"3➛Time Off Plan Balance Record➛Time Off Plan Balance Position Record List","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"a5d8f014-4353-426f-916d-689ba9f68c91.item.timeOffPlanBalance","label":"5 - For Each➛Time Off Plan Balance Position Record➛Time Off Plan Balance","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Created or Updated_1.current.u_requested_for.employee_number","label":"Trigger - Record Created or Updated➛Time Off Request Todos Record➛Requested For➛Employee number","reference":"","reference_display":"Employee number","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"employee_number"}]</label_cache>
+        <master>true</master>
+        <name>Update Time Off Balance</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Update Time Off Balance">629db5eb87ce219018c742ec0ebb355e</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>62f73e6b8746619018c742ec0ebb35e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:06</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=62f73e6b8746619018c742ec0ebb35e6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=62f73e6b8746619018c742ec0ebb35e6"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=62f73e6b8746619018c742ec0ebb35e6^sys_idNOT IN3808be6b8746619018c742ec0ebb35ec"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>3808be6b8746619018c742ec0ebb35ec</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:14</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3808be6b8746619018c742ec0ebb35ec"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3808be6b8746619018c742ec0ebb35ec</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>3408be6b8746619018c742ec0ebb35ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+        <value>sn_hr_workday_time_off_request_todos</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3808be6b8746619018c742ec0ebb35ec</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>7008be6b8746619018c742ec0ebb35ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3808be6b8746619018c742ec0ebb35ec</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>bc08be6b8746619018c742ec0ebb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=3808be6b8746619018c742ec0ebb35ec"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=62f73e6b8746619018c742ec0ebb35e6"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=62f73e6b8746619018c742ec0ebb35e6^sys_idNOT INa6f73e6b8746619018c742ec0ebb35f3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>62f73e6b8746619018c742ec0ebb35e6</id>
+        <name>Update Time Off Balance</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:30</sys_created_on>
+        <sys_id>a6f73e6b8746619018c742ec0ebb35f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a6f73e6b8746619018c742ec0ebb35f3"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=62f73e6b8746619018c742ec0ebb35e6^sys_idNOT IN26f73e6b8746619018c742ec0ebb35f5,7bf77e6b8746619018c742ec0ebb35aa,7ff77e6b8746619018c742ec0ebb35d7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</model>
+        <model_id>62f73e6b8746619018c742ec0ebb35e6</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_62f73e6b8746619018c742ec0ebb35e6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:30</sys_created_on>
+        <sys_id>26f73e6b8746619018c742ec0ebb35f5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</model>
+        <model_id>62f73e6b8746619018c742ec0ebb35e6</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_62f73e6b8746619018c742ec0ebb35e6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:34</sys_created_on>
+        <sys_id>7bf77e6b8746619018c742ec0ebb35aa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</model>
+        <model_id>62f73e6b8746619018c742ec0ebb35e6</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_62f73e6b8746619018c742ec0ebb35e6</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:35</sys_created_on>
+        <sys_id>7ff77e6b8746619018c742ec0ebb35d7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=62f73e6b8746619018c742ec0ebb35e6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=62f73e6b8746619018c742ec0ebb35e6"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=62f73e6b8746619018c742ec0ebb35e6^sys_idNOT IN7408be6b8746619018c742ec0ebb35ea,a408be6b8746619018c742ec0ebb35d6,a808be6b8746619018c742ec0ebb35cd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</flow>
+        <order>7</order>
+        <parent_ui_id>a5d8f014-4353-426f-916d-689ba9f68c91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>7408be6b8746619018c742ec0ebb35ea</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:06</sys_updated_on>
+        <ui_id>05b60e30-92a8-4740-9b83-9474fdc4d7f8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7408be6b8746619018c742ec0ebb35ea"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7408be6b8746619018c742ec0ebb35ea</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>b008be6b8746619018c742ec0ebb35ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+        <value>sn_hr_workday_time_off_request_todos</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7408be6b8746619018c742ec0ebb35ea"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>7408be6b8746619018c742ec0ebb35ea</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>7c08be6b8746619018c742ec0ebb35eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>7408be6b8746619018c742ec0ebb35ea</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>b808be6b8746619018c742ec0ebb35eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>7408be6b8746619018c742ec0ebb35ea</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>3008be6b8746619018c742ec0ebb35ec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>u_time_off_balance={{a5d8f014-4353-426f-916d-689ba9f68c91.item.timeOffPlanBalance}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7408be6b8746619018c742ec0ebb35ea"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7408be6b8746619018c742ec0ebb35ea"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</flow>
+        <order>6</order>
+        <parent_ui_id>a5d8f014-4353-426f-916d-689ba9f68c91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>a408be6b8746619018c742ec0ebb35d6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:06</sys_updated_on>
+        <ui_id>7456e7a8-c0b7-4c79-a550-b901f0629b5c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a408be6b8746619018c742ec0ebb35d6"/>
+    <sys_element_mapping action="delete_multiple" query="id=a408be6b8746619018c742ec0ebb35d6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>a408be6b8746619018c742ec0ebb35d6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>6808be6b8746619018c742ec0ebb35d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{a5d8f014-4353-426f-916d-689ba9f68c91.item.timeOffPlanBalance}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a408be6b8746619018c742ec0ebb35d6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a408be6b8746619018c742ec0ebb35d6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look up Time Off Balance">5b54e24cdb930450db97f1471d9619ee</action_type>
+        <action_type_parent display_value="Look up Time Off Balance">63d6f14cdbdfc050db97f1471d9619b2</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</flow>
+        <order>1</order>
+        <parent_ui_id>61819c0a-397b-4e55-82f3-4325e8851349</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>a808be6b8746619018c742ec0ebb35cd</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:05</sys_updated_on>
+        <ui_id>c1949461-a050-4601-8d06-131a0c8ff9ba</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a808be6b8746619018c742ec0ebb35cd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a808be6b8746619018c742ec0ebb35cd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>6c08be6b8746619018c742ec0ebb35d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+        <value>-- None --</value>
+        <variable display_value="Time Off Plan Reference ID">d4527cb21bb4d01067817669cc4bcbdb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a808be6b8746619018c742ec0ebb35cd</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>a808be6b8746619018c742ec0ebb35d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+        <value>-- None --</value>
+        <variable display_value="Organization Reference ID">a4527cb21bb4d01067817669cc4bcbe3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a808be6b8746619018c742ec0ebb35cd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>employee_id</field>
+        <id>a808be6b8746619018c742ec0ebb35cd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>2808be6b8746619018c742ec0ebb35d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5b54e24cdb930450db97f1471d9619ee</table>
+        <value>{{Created or Updated_1.current.u_requested_for.employee_number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>organization_reference_id</field>
+        <id>a808be6b8746619018c742ec0ebb35cd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>a008be6b8746619018c742ec0ebb35d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5b54e24cdb930450db97f1471d9619ee</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>time_off_plan_reference_id</field>
+        <id>a808be6b8746619018c742ec0ebb35cd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>6408be6b8746619018c742ec0ebb35d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5b54e24cdb930450db97f1471d9619ee</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a808be6b8746619018c742ec0ebb35cd^sys_idNOT IN6808be6b8746619018c742ec0ebb35cf,ec08be6b8746619018c742ec0ebb35ce"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>organization_reference_id</input_name>
+        <instance>a808be6b8746619018c742ec0ebb35cd</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"organization_reference_id":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn \u0027\u0027;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>6808be6b8746619018c742ec0ebb35cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>time_off_plan_reference_id</input_name>
+        <instance>a808be6b8746619018c742ec0ebb35cd</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"time_off_plan_reference_id":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn \u0027\u0027;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:38</sys_created_on>
+        <sys_id>ec08be6b8746619018c742ec0ebb35ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:38</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a808be6b8746619018c742ec0ebb35cd"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=62f73e6b8746619018c742ec0ebb35e6"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=62f73e6b8746619018c742ec0ebb35e6^sys_idNOT IN0008be6b8746619018c742ec0ebb3547,0808be6b8746619018c742ec0ebb3502,0c08be6b8746619018c742ec0ebb3549,4c087e6b8746619018c742ec0ebb35fe,8c087e6b8746619018c742ec0ebb35fb,c408be6b8746619018c742ec0ebb3543"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2eacbd6b87ce219018c742ec0ebb351a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>1f52ede3-8897-44c9-83f5-349785eb3ee9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:36</sys_created_on>
+        <sys_id>0008be6b8746619018c742ec0ebb3547</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:06</sys_updated_on>
+        <ui_id>a5d8f014-4353-426f-916d-689ba9f68c91</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0008be6b8746619018c742ec0ebb3547"/>
+    <sys_element_mapping action="delete_multiple" query="id=0008be6b8746619018c742ec0ebb3547"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>0008be6b8746619018c742ec0ebb3547</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:36</sys_created_on>
+        <sys_id>4408be6b8746619018c742ec0ebb3549</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{7d6babe2-2950-4a56-a60c-a91a0012cf86.item.timeOffPlanBalancePositionRecordList}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0008be6b8746619018c742ec0ebb3547"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0008be6b8746619018c742ec0ebb3547"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1aacbd6b87ce219018c742ec0ebb3514</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>b3294079-81b6-4c8c-8e8b-9020a795db97</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:36</sys_created_on>
+        <sys_id>0808be6b8746619018c742ec0ebb3502</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:06</sys_updated_on>
+        <ui_id>7d6babe2-2950-4a56-a60c-a91a0012cf86</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0808be6b8746619018c742ec0ebb3502"/>
+    <sys_element_mapping action="delete_multiple" query="id=0808be6b8746619018c742ec0ebb3502"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>0808be6b8746619018c742ec0ebb3502</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:36</sys_created_on>
+        <sys_id>0008be6b8746619018c742ec0ebb3543</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{b3294079-81b6-4c8c-8e8b-9020a795db97.item.timeOffPlanBalanceRecordList}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0808be6b8746619018c742ec0ebb3502"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0808be6b8746619018c742ec0ebb3502"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">aa4d7dab87ce219018c742ec0ebb35fd</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:36</sys_created_on>
+        <sys_id>0c08be6b8746619018c742ec0ebb3549</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:06</sys_updated_on>
+        <ui_id>ac0f6b7e-dffb-444c-a1da-fa2c3223fe75</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0c08be6b8746619018c742ec0ebb3549"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>0c08be6b8746619018c742ec0ebb3549</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:36</sys_created_on>
+        <sys_id>1c08be6b8746619018c742ec0ebb354c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:05</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Error Status">0f72a5a25b132010b61ea2013781c749</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>0c08be6b8746619018c742ec0ebb3549</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:36</sys_created_on>
+        <sys_id>dc08be6b8746619018c742ec0ebb354c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:36</sys_updated_on>
+        <value>1</value>
+        <variable display_value="enabled">dd70187cc36e20105553b740ad40dddc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=0c08be6b8746619018c742ec0ebb3549"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0c08be6b8746619018c742ec0ebb3549"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0c08be6b8746619018c742ec0ebb3549"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">5aacbd6b87ce219018c742ec0ebb350f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>61819c0a-397b-4e55-82f3-4325e8851349</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:35</sys_created_on>
+        <sys_id>4c087e6b8746619018c742ec0ebb35fe</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:06</sys_updated_on>
+        <ui_id>b3294079-81b6-4c8c-8e8b-9020a795db97</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4c087e6b8746619018c742ec0ebb35fe"/>
+    <sys_element_mapping action="delete_multiple" query="id=4c087e6b8746619018c742ec0ebb35fe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>4c087e6b8746619018c742ec0ebb35fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:36</sys_created_on>
+        <sys_id>c808be6b8746619018c742ec0ebb3501</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{c1949461-a050-4601-8d06-131a0c8ff9ba.timeoffplanbalancelist}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4c087e6b8746619018c742ec0ebb35fe"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4c087e6b8746619018c742ec0ebb35fe"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">aa4d7dab87ce219018c742ec0ebb35d6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:35</sys_created_on>
+        <sys_id>8c087e6b8746619018c742ec0ebb35fb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:05</sys_updated_on>
+        <ui_id>61819c0a-397b-4e55-82f3-4325e8851349</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8c087e6b8746619018c742ec0ebb35fb"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8c087e6b8746619018c742ec0ebb35fb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8c087e6b8746619018c742ec0ebb35fb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">66acbd6b87ce219018c742ec0ebb3517</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Time Off Balance">62f73e6b8746619018c742ec0ebb35e6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>7d6babe2-2950-4a56-a60c-a91a0012cf86</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:36</sys_created_on>
+        <sys_id>c408be6b8746619018c742ec0ebb3543</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 06:22:06</sys_updated_on>
+        <ui_id>1f52ede3-8897-44c9-83f5-349785eb3ee9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c408be6b8746619018c742ec0ebb3543"/>
+    <sys_element_mapping action="delete_multiple" query="id=c408be6b8746619018c742ec0ebb3543"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c408be6b8746619018c742ec0ebb3543</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:36</sys_created_on>
+        <sys_id>c408be6b8746619018c742ec0ebb3546</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{7d6babe2-2950-4a56-a60c-a91a0012cf86.item.timeOffPlanReference.absencePlanID}}={{Created or Updated_1.current.u_time_off_plan_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c408be6b8746619018c742ec0ebb3543"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c408be6b8746619018c742ec0ebb3543"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=62f73e6b8746619018c742ec0ebb35e6"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=62f73e6b8746619018c742ec0ebb35e6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_62f73e6b8746619018c742ec0ebb35e6^sys_idNOT IN27f77e6b8746619018c742ec0ebb35a7,37f77e6b8746619018c742ec0ebb35dc,3bf77e6b8746619018c742ec0ebb35d4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_62f73e6b8746619018c742ec0ebb35e6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:34</sys_created_on>
+        <sys_id>27f77e6b8746619018c742ec0ebb35a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_62f73e6b8746619018c742ec0ebb35e6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:35</sys_created_on>
+        <sys_id>37f77e6b8746619018c742ec0ebb35dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_62f73e6b8746619018c742ec0ebb35e6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 08:33:35</sys_created_on>
+        <sys_id>3bf77e6b8746619018c742ec0ebb35d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 08:33:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_62f73e6b8746619018c742ec0ebb35e6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_62f73e6b8746619018c742ec0ebb35e6"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_62f73e6b8746619018c742ec0ebb35e6"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>629db5eb87ce219018c742ec0ebb355e</sys_id>
+        <latest_snapshot>62f73e6b8746619018c742ec0ebb35e6</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch1-03-01-2023_03-13-2023_1716.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

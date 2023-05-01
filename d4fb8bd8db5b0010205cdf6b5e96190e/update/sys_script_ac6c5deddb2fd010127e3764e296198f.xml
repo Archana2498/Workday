@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sn_hr_workday_service_job_tracker</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sn_hr_workday_service_job_tracker">job_stateCHANGESTOcompleted^pull_next_chunk=true^workday_integration_service=pull_to_dos^ORworkday_integration_service=time_off_request_to_dos^ORworkday_integration_service=leave_of_absence_request_to_dos^ORworkday_integration_service=correct_time_off_request_to_dos^ORworkday_integration_service=compensation_change_request_to_dos^ORworkday_integration_service=termination_request_to_dos^ORworkday_integration_service=job_requisition_request_to_dos^ORworkday_integration_service=job_change_request_to_dos^ORworkday_integration_service=spend_authorization_request_to_dos^job_stateCHANGESFROMrunning^EQ<item display_value="Completed" endquery="false" field="job_state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="completed"/>
+            <item endquery="false" field="pull_next_chunk" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item display_value="Pull To-Dos" endquery="false" field="workday_integration_service" goto="false" newquery="false" operator="=" or="false" value="pull_to_dos"/>
+            <item display_value="Time Off Request To-Dos" endquery="false" field="workday_integration_service" goto="false" newquery="false" operator="=" or="true" value="time_off_request_to_dos"/>
+            <item display_value="Leave of Absence Request To-Dos" endquery="false" field="workday_integration_service" goto="false" newquery="false" operator="=" or="true" value="leave_of_absence_request_to_dos"/>
+            <item display_value="Correct Time Off Request To-Dos" endquery="false" field="workday_integration_service" goto="false" newquery="false" operator="=" or="true" value="correct_time_off_request_to_dos"/>
+            <item display_value="Compensation Change Request To-Dos" endquery="false" field="workday_integration_service" goto="false" newquery="false" operator="=" or="true" value="compensation_change_request_to_dos"/>
+            <item display_value="Termination Request To-Dos" endquery="false" field="workday_integration_service" goto="false" newquery="false" operator="=" or="true" value="termination_request_to_dos"/>
+            <item display_value="Job Requisition Request To-Dos" endquery="false" field="workday_integration_service" goto="false" newquery="false" operator="=" or="true" value="job_requisition_request_to_dos"/>
+            <item display_value="Job Change Request To-Dos" endquery="false" field="workday_integration_service" goto="false" newquery="false" operator="=" or="true" value="job_change_request_to_dos"/>
+            <item display_value="Spend Authorization Request To-Dos" endquery="false" field="workday_integration_service" goto="false" newquery="false" operator="=" or="true" value="spend_authorization_request_to_dos"/>
+            <item display_value="Running" endquery="false" field="job_state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="running"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Chunking Load based on Config Parameter</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+	try {
+		var glide_scheduled_import = new GlideRecord("scheduled_import_set");
+		if (glide_scheduled_import.get(current.scheduled_import.sys_id))
+		{
+			gs.executeNow(glide_scheduled_import);
+		}
+	} catch (ex) {
+		var message = ex.getMessage();
+		gs.error(message);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-29 05:25:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ac6c5deddb2fd010127e3764e296198f</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>Chunking Load based on Config Parameter</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_script_ac6c5deddb2fd010127e3764e296198f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-06 11:47:01</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=ac6c5deddb2fd010127e3764e296198f"/>
+</record_update>

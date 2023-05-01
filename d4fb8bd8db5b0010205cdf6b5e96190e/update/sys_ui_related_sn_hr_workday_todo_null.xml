@@ -5,14 +5,14 @@
             <list_id display_value="Workday Todos - Default view" name="sn_hr_workday_todo" related_list="NULL" sys_domain="global" view="Default view">1d7d0f1e471d6d10901d3a34846d4330</list_id>
             <order_by/>
             <position>0</position>
-            <related_list>sn_hr_workday_time_off_requests.u_workday_todos</related_list>
+            <related_list>sn_hr_workday_time_off_request_parent.u_workdayto_dos</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-03-03 06:07:51</sys_created_on>
-            <sys_id>557d0f1e471d6d10901d3a34846d4332</sys_id>
+            <sys_created_on>2023-03-23 08:53:51</sys_created_on>
+            <sys_id>b733b67447f12150901d3a34846d4341</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-03-03 06:07:51</sys_updated_on>
+            <sys_updated_on>2023-03-23 08:53:51</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Workday Todos - Default view</calculated_name>
@@ -23,7 +23,7 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-03-03 06:07:51</sys_created_on>
+            <sys_created_on>2023-03-23 08:53:51</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>1d7d0f1e471d6d10901d3a34846d4330</sys_id>
@@ -34,7 +34,7 @@
             <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
             <sys_update_name>sys_ui_related_sn_hr_workday_todo_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-03-03 06:07:51</sys_updated_on>
+            <sys_updated_on>2023-03-23 08:53:51</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
