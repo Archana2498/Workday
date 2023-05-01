@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <is_extendable>false</is_extendable>
+        <label>Job Change Request Todos Item</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>sn_hr_workday_job_change_request_todos_item</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-17 12:00:27</sys_created_on>
+        <sys_id>a59d88c987d2211018c742ec0ebb35d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Job Change Request Todos Item</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_db_object_a59d88c987d2211018c742ec0ebb35d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-17 12:00:27</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="sn_hr_workday.job_change_request_todos_item_user" name="sn_hr_workday.job_change_request_todos_item_user">112d848987d2211018c742ec0ebb35d1</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+</record_update>
