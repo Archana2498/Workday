@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_units_requested_this_coordinated_leave_time_off" label="Units Requested This Coordinated Leave Time Off" language="en" table="sn_hr_workday_time_off_requests">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_units_requested_this_coordinated_leave_time_off</element>
+            <help/>
+            <hint/>
+            <label>Units Requested This Coordinated Leave Time Off</label>
+            <language>en</language>
+            <name>sn_hr_workday_time_off_requests</name>
+            <plural>Units Requested This Coordinated Leave Time Offs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-02 08:00:54</sys_created_on>
+            <sys_id>a3bd16c2475d2d10901d3a34846d436f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Units Requested This Coordinated Leave Time Off</sys_name>
+            <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+            <sys_update_name>sys_documentation_sn_hr_workday_time_off_requests_u_units_requested_this_coordinated_leave_time_off_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-02 08:00:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

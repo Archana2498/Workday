@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="scheduled_import_set">
+    <scheduled_import_set action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <business_calendar/>
+        <concurrent_import>false</concurrent_import>
+        <condition><![CDATA[var glideWorkdayJobTracker = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_SERVICE_JOB_TRACKER_TABLE);
+glideWorkdayJobTracker.addQuery('job_state', 'running');
+glideWorkdayJobTracker.addQuery('workday_integration_service', 'time_off_requests');
+glideWorkdayJobTracker.query();
+var result = true;
+if (glideWorkdayJobTracker.next()) {
+	gs.info(glideWorkdayJobTracker.scheduled_import+" - Scheduled Import is already running");
+    //gs.info(gs.getMessage("'{0}' - Scheduled Import is already running",[glideWorkdayJobTracker.scheduled_import]));
+    result = false;
+}
+result;]]></condition>
+        <conditional>true</conditional>
+        <connection_override/>
+        <data_source display_value="Workday Spend Authorisation Requests">94901f138791211018c742ec0ebb35b4</data_source>
+        <entered_time/>
+        <map/>
+        <max_drift/>
+        <name>Workday Spend Authorisation Requests Scheduled Import</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <order/>
+        <parent/>
+        <partition_method>roundRobin</partition_method>
+        <partition_script><![CDATA[(function partitionHash(import_set_row) {
+
+	// Add your code here
+	
+	// eg:
+	// return import_set_row.u_important_category;
+	// This would ensure all rows with the same 'u_important_category' value will be in the same Import Set.
+
+	 return import_set_row.sys_import_row;
+
+})(import_set_row);]]></partition_script>
+        <partition_size/>
+        <post_script><![CDATA[try {
+
+	var grMainJob = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_JOB_TRACKER_TABLE);
+	grMainJob.addQuery("state", "running");
+	grMainJob.orderByDesc('sys_created_on');
+	grMainJob.setLimit(1);
+	grMainJob.query();
+	if (grMainJob.next()) {
+
+		var newJobTrackerRecord = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_SERVICE_JOB_TRACKER_TABLE);
+		newJobTrackerRecord.addQuery("import_set", import_set.sys_id);
+		newJobTrackerRecord.query();
+		if (newJobTrackerRecord.next()) {
+			newJobTrackerRecord.scheduled_import = import_set.schedule_import;
+			var gr = new GlideRecord("sys_import_set_run");
+			gr.addQuery("set", import_set.sys_id);
+			gr.query();
+			if (gr.next()) {
+				newJobTrackerRecord.import_set_run = gr.sys_id;
+				if (newJobTrackerRecord.job_state == 'running' && (gr.state == 'complete' || gr.state == 'complete_with_errors')) {
+					newJobTrackerRecord.job_state = 'completed';
+					newJobTrackerRecord.job_ended_at = new GlideDateTime();
+					if (newJobTrackerRecord.pull_next_chunk == false) {
+						grMainJob.state = 'complete';
+						grMainJob.job_ended_at = new GlideDateTime();
+					}
+				} else if (newJobTrackerRecord.job_state == 'running' && (gr.state == 'cancelled' || gr.state == 'incomplete')) {
+					newJobTrackerRecord.job_state = 'failed';
+					newJobTrackerRecord.job_ended_at = new GlideDateTime();
+					newJobTrackerRecord.error_source = 'transformation_error';
+					newJobTrackerRecord.error_message = gs.getMessage('Tranformation error with import set-{0} as "{1}" state', [import_set.number, gr.state]);
+
+					grMainJob.state = 'failed';
+					grMainJob.error_message = gs.getMessage('Tranformation error with import set-{0} as "{1}" state', [import_set.number, gr.state]);
+					grMainJob.job_ended_at = new GlideDateTime();
+				}
+				newJobTrackerRecord.update();
+			}
+		}
+		grMainJob.update();
+	}
+
+} catch (ex) {
+	var message = ex.getMessage();
+	gs.error(message);
+}]]></post_script>
+        <post_script_bool>true</post_script_bool>
+        <pre_script><![CDATA[try {
+	var job_tracker = new ImportSetUtilsSNC().createJobTracker();
+
+	var grMainJob = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_JOB_TRACKER_TABLE);
+	grMainJob.addQuery("state", "running");
+	grMainJob.orderByDesc('sys_created_on');
+	grMainJob.setLimit(1);
+	grMainJob.query();
+	if (grMainJob.next()) {
+		var grMainJobSysId = grMainJob.sys_id;
+
+		try {
+			var attachment = new GlideSysAttachment();
+			var agr = attachment.getAttachments('sys_data_source', data_source.sys_id);
+			while (agr.next()) {
+				attachment.deleteAttachment(agr.getValue('sys_id'));
+			} //delete attachments exits already in data source
+
+
+			var newJobTrackerRecord = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_SERVICE_JOB_TRACKER_TABLE);
+			newJobTrackerRecord.initialize();
+			newJobTrackerRecord.import_set = import_set.sys_id;
+			newJobTrackerRecord.job_state = 'running';
+			newJobTrackerRecord.job_type = 'scheduled';
+			newJobTrackerRecord.workday_integration_service = 'time_off_requests';
+			newJobTrackerRecord.workday_integration_job_tracker = grMainJobSysId;
+			newJobTrackerRecord.job_started_at = new GlideDateTime();
+
+			//var pullNextChunk;
+			//initial load for specified configured parameter when no records are there in workday todos inbound table else take latest workday last functional updated date as start_date_time in action's input.
+			var glidePullToDosConfiguration = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_CONFIGURATIONS_TABLE);
+			glidePullToDosConfiguration.addQuery('active', true);
+			glidePullToDosConfiguration.orderByDesc('sys_created_on');
+			glidePullToDosConfiguration.setLimit(1);
+			glidePullToDosConfiguration.query();
+			if (glidePullToDosConfiguration.next()) {
+				var inputs = {};
+				//var startDateTimeJob,endDateTimeJob;
+				// var glideWorkdayJobTracker = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_SERVICE_JOB_TRACKER_TABLE);
+				// glideWorkdayJobTracker.addQuery('job_state', 'completed');
+				// glideWorkdayJobTracker.addQuery('workday_integration_service', 'time_off_requests');
+				// glideWorkdayJobTracker.orderByDesc('end_date_time_api_parameter');
+				// glideWorkdayJobTracker.setLimit(1);
+				// glideWorkdayJobTracker.query();
+				// if (glideWorkdayJobTracker.next()) {
+				// 	//inputs['start_date_time'] = new ImportSetUtils().getConvertedDateTime(new GlideDateTime(glideWorkdayJobTracker.end_date_time_api_parameter).getValue());
+				// 	startDateTimeJob =  new GlideDateTime(glideWorkdayJobTracker.end_date_time_api_parameter).getDisplayValue();
+				// 	var gdt = new GlideDateTime(glideWorkdayJobTracker.end_date_time_api_parameter.toString());
+				// 	var ms = glidePullToDosConfiguration.load_interval.dateNumericValue();
+				// 	gdt.add(ms);
+				// 	var endDateTime = gdt.getDisplayValue();
+				// 	if (gdt.getNumericValue() > new GlideDateTime(grMainJob.job_started_at).getNumericValue()) {
+				// 		//inputs['end_date_time'] = new ImportSetUtils().getConvertedDateTime(new GlideDateTime(grMainJob.job_started_at).getValue());
+				// 		endDateTimeJob = new GlideDateTime(grMainJob.job_started_at).getDisplayValue();
+				// 		pullNextChunk = false;
+				// 	} else {
+				// 		//inputs['end_date_time'] = new ImportSetUtils().getConvertedDateTime(gdt.getValue());
+				// 		endDateTimeJob = endDateTime;
+				// 		pullNextChunk = true;
+				// 	}
+				// } else {
+				// 	//inputs['start_date_time'] = new ImportSetUtils().getConvertedDateTime(new GlideDateTime(glidePullToDosConfiguration.initial_load_start_datetime).getValue());
+				// 	startDateTimeJob = new GlideDateTime(glidePullToDosConfiguration.initial_load_start_datetime).getDisplayValue();
+				// 	var gdt1 = new GlideDateTime(glidePullToDosConfiguration.initial_load_start_datetime.toString());
+				// 	var ms1 = glidePullToDosConfiguration.load_interval.dateNumericValue();
+				// 	gdt1.add(ms1);
+				// 	var endDateTime1 = gdt1.getDisplayValue();
+				// 	if (gdt1.getNumericValue() > new GlideDateTime(grMainJob.job_started_at).getNumericValue()) {
+				// 		//inputs['end_date_time'] = new ImportSetUtils().getConvertedDateTime(new GlideDateTime(grMainJob.job_started_at).getValue());
+				// 		endDateTimeJob = new GlideDateTime(grMainJob.job_started_at).getDisplayValue();
+				// 		pullNextChunk = false;
+				// 	} else {
+				// 		//inputs['end_date_time'] = new ImportSetUtils().getConvertedDateTime(gdt1.getValue());
+				// 		endDateTimeJob = endDateTime1;
+				// 		pullNextChunk = true;
+				// 	}
+				// }
+
+				// newJobTrackerRecord.start_date_time_api_parameter = startDateTimeJob;
+				// newJobTrackerRecord.end_date_time_api_parameter = endDateTimeJob;
+				// if (!gs.nil(pullNextChunk)) {
+				// 	newJobTrackerRecord.pull_next_chunk = pullNextChunk;
+				// }
+				newJobTrackerRecord.pull_next_chunk = false;
+				newJobTrackerRecord.insert();
+
+				inputs['report_owner_username'] = glidePullToDosConfiguration.workday_to_dos_report_owner_username;
+				inputs['report_name'] = 'RPT_Spend_Authorization_1';//glidePullToDosConfiguration.workday_to_dos_raas_report_name;
+				inputs['data_source_reference'] = data_source;
+				inputs['company_id'] = '3dcee98298ff0101130965238ba00000!d9b8fa82bd7d01011323a12483da0000!d9b8fa82bd7d01011281187ff1ea0000!03342b8bb77d0110432273ca9b760000!bdd303819b26010edea0d3fe83320000!fc0ab7aa240d0100f3c568e76705a40c!fc0ab7aa240d017a461a1ccb6705980c!decd29952eb20118cb83c8802137a217!0d2983ecf65901009b2598470e41150b!454ad13809f50117f1a674b8662ca70a!1b227accc63b01c9d7bd690cad1cda05!78792eab341301cf8560c0c0ed55470b!78792eab341301b31674f284ed553b0b!cb563949fba0100ee224be5223ba01e3!4f4692e5a6b010cda3fe49a9f8150478!cec75861e52e10cc7214c10a1a011d36!cec75861e52e10cc71fa7b75a9571d28!2e9744f5e71d105c2ab1ad798e0017df!c5c0a923e0b0102c82ce5535548f0af2!951f922be55e1025d0af7a1203a20bc0!951f922be55e1025d09500f221670bb1!2dd1b9fd0cc8100cd4f4751628970c1c!cfdefbbb550e4b37ae88ef0f6518041b!da6ca0283447453281694c10dcdba0c7!19b495c6f0f64ef49d67f42784a2b3cf!6b3bb4a12e854bf28686f45452567d7c!0f776cfe530d49c58715c274311d1070!5647f3970d7645c9b4bbe04d2e93682c!ac81a4d5978c460c96ffcb87885b6b88!c1d837d71a47477d9e07b5a3519db309!88a506bf886f40d7a9826b5a30571c2c!25f45082d07946aa81c17fcdedde4546!2de552bf69d5402e8f04ab38eaeab042!c23ca485b6cd43a7947e225c85d9c18c!1281d310f1854bc28d6bc5626c8687a7!a3791566edc54a39a850960aa6adf38c!17940d6703bd4b039055aa2b78aee9b2!ae327cc4afd44d4891296e4f77c275e4!e4859d59e6094f52a8f2e865cca82cef!8b43a22846d746aba21bd094988f9a30!b279c6b40e8946c09466a31f8adf89e8!4fbbf77aa8444e9594443e87075e3921!2dafb64e3b7848b78bc6981349c9376f!35d3663ed9d14fd68316d66c47d79ee1!88ef2288d1814145b4ba5e0d0b6dbd7b!f77c9719f42f4e12a6707175cf67f219!9aa286a0d84047eb9147586842cc50c1!57c224f67de64750b56347c77c341196!a4bb5f2c512649c68f072ef8035a6908!e414c42a39d245728c0216c9c5d6015a!1f1b95a9c63e45c78f38b57b22c776f1!cb550da820584750aae8f807882fa79a!748d31846b7410053f4aa860d65d0000!84a57f1d7268101112c1d57b4cc90000!84a57f1d72681010c376d36fdd2e0000!36472da497f0100fe1d43380185b0000!7af75bf72aa5010eb94c011b172b0000!7af75bf72aa5010eb8e05c3167450000!a5dcacaf7d2e010883b9c6b361770000';
+				inputs['workday_id']='4286baa46e5c46b8801a8e096bc97b72';
+				var outputs = sn_fd.FlowAPI.executeAction('sn_workday_hr_spke.look_up_spend_authorisation_requests', inputs, 1800000);
+				var status = outputs['status']; // Choice
+				var error_message = outputs['error_message'];
+
+				if (status == 'Error') {
+					var updateJobTrackerRecord1 = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_SERVICE_JOB_TRACKER_TABLE);
+					if (updateJobTrackerRecord1.get(newJobTrackerRecord.sys_id)) {
+						updateJobTrackerRecord1.job_state = 'failed';
+						updateJobTrackerRecord1.error_source = 'api_error';
+						updateJobTrackerRecord1.error_message = error_message;
+						updateJobTrackerRecord1.job_ended_at = new GlideDateTime();
+						updateJobTrackerRecord1.update();
+
+						grMainJob.state = 'failed';
+						grMainJob.error_message = error_message;
+						grMainJob.job_ended_at = new GlideDateTime();
+					}
+				}
+			} else {
+				// if (!gs.nil(pullNextChunk)) {
+				// 	newJobTrackerRecord.pull_next_chunk = pullNextChunk;
+				// }
+				newJobTrackerRecord.pull_next_chunk = false;
+				newJobTrackerRecord.error_source = 'configuration_error';
+				newJobTrackerRecord.job_state = 'failed';
+				newJobTrackerRecord.error_message = gs.getMessage("No active workday pull to-dos configuration record found");
+				newJobTrackerRecord.job_ended_at = new GlideDateTime();
+				newJobTrackerRecord.insert();
+
+				grMainJob.state = 'failed';
+				grMainJob.error_message = gs.getMessage("No active workday pull to-dos configuration record found");
+				grMainJob.job_ended_at = new GlideDateTime();
+			}
+		} catch (ex) {
+
+			var updateJobTrackerRecord3 = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_SERVICE_JOB_TRACKER_TABLE);
+			if (updateJobTrackerRecord3.get(newJobTrackerRecord.sys_id)) {
+				updateJobTrackerRecord3.job_state = 'failed';
+				updateJobTrackerRecord3.error_source = 'api_error';
+				updateJobTrackerRecord3.error_message = ex.getMessage() + "\n" + "Please check system error logs or flow designer executions";
+				updateJobTrackerRecord3.job_ended_at = new GlideDateTime();
+				updateJobTrackerRecord3.update();
+			}
+			grMainJob.state = 'failed';
+			grMainJob.error_message = ex.getMessage() + "\n" + "Please check system error logs or flow designer executions";
+			grMainJob.job_ended_at = new GlideDateTime();
+			grMainJob.update();
+			var message = ex.getMessage();
+			gs.error(message);
+		}
+		grMainJob.update();
+	}
+} catch (ex) {
+	var msg = ex.getMessage();
+	gs.error(msg);
+}]]></pre_script>
+        <pre_script_bool>true</pre_script_bool>
+        <record_source>regular</record_source>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-30 00:00:10</run_period>
+        <run_start>2021-02-10 08:05:27</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <show_connection_override>false</show_connection_override>
+        <synchronize_inserts>true</synchronize_inserts>
+        <sys_class_name>scheduled_import_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-09 11:18:29</sys_created_on>
+        <sys_id>1e1ecf1887a1e11018c742ec0ebb3504</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Workday Spend Authorisation Requests Scheduled Import</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>scheduled_import_set_1e1ecf1887a1e11018c742ec0ebb3504</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-09 11:35:01</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+        <use_child_connection>false</use_child_connection>
+    </scheduled_import_set>
+</record_update>

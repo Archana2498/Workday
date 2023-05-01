@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>custom_timeoff</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+	
+}]]></link>
+        <name>custom timeoff</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.task_items = [];
+  var app = new GlideRecord("sn_hr_workday_time_off_requests");
+	var sys_id = options.parant_id;
+	app.addEncodedQuery('u_workday_todos='+sys_id);
+  app.query();
+	while(app.next()){
+ 		var task_item = {};
+		task_item.u_comments = app.getValue('u_comments');
+		task_item.u_first_day_of_time_off = app.getValue('u_first_day_of_time_off');
+		task_item.u_last_day_of_time_off = app.getValue('u_last_day_of_time_off');
+		task_item.u_unitoftime = app.getValue('u_unitoftime');
+		task_item.u_units_requested_this_coordinated_leave_time_off = app.getValue('u_units_requested_this_coordinated_leave_time_off');
+		task_item.u_action_event = app.getValue('u_action_event');
+		
+		data.task_items.push(task_item);
+}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-26 10:55:56</sys_created_on>
+        <sys_id>5a6ed6b047152910901d3a34846d43c8</sys_id>
+        <sys_mod_count>76</sys_mod_count>
+        <sys_name>custom timeoff</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sp_widget_5a6ed6b047152910901d3a34846d43c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-02 12:33:32</sys_updated_on>
+        <template><![CDATA[<div>
+  <table class="table" ng-if="data.task_items.length>0">
+    <tr>
+      <th>Comments</th>
+    	<th>First Day</th>
+    	<th>Last Day</th>
+    	<th>Unit</th>
+    	<th>Count</th>
+    	<th>Action</th>
+		</tr>
+    <tr ng-repeat="task_item in data.task_items">
+      <td>{{task_item.u_comments}}</td>
+      <td>{{task_item.u_first_day_of_time_off}}</td>
+      <td>{{task_item.u_last_day_of_time_off}}</td>
+      <td>{{task_item.u_unitoftime}}</td>
+      <td>{{task_item.u_units_requested_this_coordinated_leave_time_off}}</td>
+      <td>{{task_item.u_action_event}}</td>
+    </tr>
+  </table>
+  <div ng-if="data.task_items.length==0">
+    No item was found.
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

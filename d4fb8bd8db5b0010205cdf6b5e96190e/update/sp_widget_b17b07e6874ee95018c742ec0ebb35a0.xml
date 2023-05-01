@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>custom_termination_request_item</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Custom Termination Request Item</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    data.task_items = [];
+    //var report_name = options.raas_report_name;
+		//gs.info("DIV 1"+report_name);
+		var app;
+    //var app = new GlideRecord("sn_hr_workday_time_off_request_todos_item");
+    //if (report_name == "Workday_Approval_Service_Name")
+        app = new GlideRecord("sn_hr_workday_termination_request_todos");
+    //else app = new GlideRecord("sn_hr_workday_time_off_request_todos_item");
+    var workday_id = options.workday_id;
+    app.addEncodedQuery('u_workday_id=' + workday_id);
+    app.query();
+    while (app.next()) {
+        var task_item = {};
+        task_item.u_date = app.getValue('u_date');
+        //if (report_name == 'Workday_Approval_Service_Name') {
+			task_item.u_last_day_of_work = app.getValue('u_last_day_of_work');
+			task_item.u_pay_through_date = app.getValue('u_pay_through_date');
+			task_item.u_resignation_date = app.getValue('u_resignation_date');
+			task_item.u_secondary_termination_reasons = app.getValue('u_secondary_termination_reasons');
+			task_item.u_notification_date = app.getValue('u_notification_date');
+			task_item.u_eligible_for_rehire = app.getValue('u_eligible_for_rehire');
+			task_item.u_close_position = app.getValue('u_close_position');
+			task_item.u_available_for_overlap = app.getValue('u_available_for_overlap');
+
+        /*} else {
+            //task_item.u_date = app.getValue('u_date');
+            task_item.u_day_of_the_week = app.getValue('u_day_of_the_week');
+            task_item.u_units_requested_this_coordinated_leave_time_off = app.getValue('u_units_requested_this_coordinated_leave_time_off');
+            task_item.u_unit_time = app.getValue('u_unit_time');
+            task_item.u_comment = app.getValue('u_comment');
+            task_item.u_comments = app.getValue('u_comments');
+        }*/
+        data.task_items.push(task_item);
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-04-10 07:29:53</sys_created_on>
+        <sys_id>b17b07e6874ee95018c742ec0ebb35a0</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Custom Termination Request Item</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sp_widget_b17b07e6874ee95018c742ec0ebb35a0</sys_update_name>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-04-10 11:54:04</sys_updated_on>
+        <template><![CDATA[<div>
+  <table class="table" ng-if="data.task_items.length>0">
+    <tr>
+      <th>Date</th>
+    	<th>Day of the week</th>
+    	<th>Requested units</th>
+    	<th>Unit of time</th>
+    	<th>Comment</th>
+      <th>Last day of work</th>
+      <th>Pay through date</th>
+      <th>Resignation date</th>
+      <th>Secondary reason</th>
+      <th>Notify by</th>
+      <th>Not eligible to rehire?</th>
+      <th>Close position?</th>
+      <th>Is this position available for overlap?</th>
+		</tr>
+    <tr ng-repeat="task_item in data.task_items">
+      <td>{{task_item.u_date}}</td>
+      <td>{{task_item.u_day_of_the_week}}</td>
+      <td>{{task_item.u_units_requested_this_coordinated_leave_time_off}}</td>
+      <td>{{task_item.u_unit_time}}</td>
+      <td>{{task_item.u_comment}}</td>
+      <td>{{task_item.u_last_day_of_work}}</td>
+      <td>{{task_item.u_pay_through_date}}</td>
+      <td>{{task_item.u_resignation_date}}</td>
+      <td>{{task_item.u_secondary_termination_reasons}}</td>
+      <td>{{task_item.u_notification_date}}</td>
+      <td>{{task_item.u_eligible_for_rehire}}</td>
+      <td>{{task_item.u_close_position}}</td>
+      <td>{{task_item.u_available_for_overlap}}</td>
+
+    </tr>
+  </table>
+  <div ng-if="data.task_items.length==0">
+    No item was found.
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

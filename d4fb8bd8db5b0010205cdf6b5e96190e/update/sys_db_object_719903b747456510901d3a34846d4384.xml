@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>true</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>true</delete_access>
+        <is_extendable>false</is_extendable>
+        <label>Time off requests</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>sn_hr_workday_time_off_requests</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-23 11:34:30</sys_created_on>
+        <sys_id>719903b747456510901d3a34846d4384</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Time off requests</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_db_object_719903b747456510901d3a34846d4384</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-27 06:58:43</sys_updated_on>
+        <update_access>true</update_access>
+        <user_role display_value="sn_hr_workday.time_off_requests_user" name="sn_hr_workday.time_off_requests_user">3b7bc7f747456510901d3a34846d4374</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+</record_update>
