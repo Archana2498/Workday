@@ -14,14 +14,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-19 15:51:26</sys_created_on>
         <sys_id>4b8553ad8796e11018c742ec0ebb3581</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>onAfter</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_transform_script_4b8553ad8796e11018c742ec0ebb3581</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-19 15:51:26</sys_updated_on>
+        <sys_updated_on>2023-05-03 05:34:29</sys_updated_on>
         <when>onAfter</when>
     </sys_transform_script>
 </record_update>

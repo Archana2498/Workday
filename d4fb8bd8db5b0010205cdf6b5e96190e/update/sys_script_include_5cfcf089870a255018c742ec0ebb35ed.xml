@@ -10,6 +10,9 @@
         <script><![CDATA[var WorkdayApprovalToDosHelperUtilsSNC = Class.create();
 WorkdayApprovalToDosHelperUtilsSNC.prototype = {
     initialize: function() {},
+    isResignation: function(source) {
+        return !gs.nil(source.u_action_event) && source.u_action_event.toLowerCase().startsWith("submit resignation");
+    },
     isReportActive: function(serviceJobName) {
         var jobTrackerRecord = new GlideRecord('sn_hr_workday_configuration_workday_approval_to_dos');
         jobTrackerRecord.addQuery('u_workday_integration_service_name', serviceJobName);
@@ -107,11 +110,11 @@ WorkdayApprovalToDosHelperUtilsSNC.prototype = {
         }
     },
     updateSpendAuthorisationFields: function(source, target, table) {
-		gs.info('line 101'+table);
+        gs.info('line 101' + table);
         var grToDoP = new GlideRecord(table);
         grToDoP.addEncodedQuery("u_workday_id=" + source.u_workdayid);
         grToDoP.query();
-		gs.info('line 105'+grToDoP.getRowCount());
+        gs.info('line 105' + grToDoP.getRowCount());
         while (grToDoP.next()) {
             grToDoP.u_start_date = target.u_start_date;
             grToDoP.u_end_date = target.u_end_date;
@@ -173,7 +176,7 @@ WorkdayApprovalToDosHelperUtilsSNC.prototype = {
             grComment.u_last_name = source.u_comment_by_person.split(" ")[1];
             grComment.u_workday_id = source.u_comment_workdayid;
             grComment.u_event_workday_id = source.u_workdayid;
-            grComment.u_commented_by = this.getUser(source.u_employee_id);
+            grComment.u_commented_by = this.getUser(source.u_comment_by_employee_id);
             grComment.insert();
         }
     },
@@ -232,13 +235,13 @@ WorkdayApprovalToDosHelperUtilsSNC.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-05 05:11:22</sys_created_on>
         <sys_id>5cfcf089870a255018c742ec0ebb35ed</sys_id>
-        <sys_mod_count>94</sys_mod_count>
+        <sys_mod_count>98</sys_mod_count>
         <sys_name>WorkdayApprovalToDosHelperUtilsSNC</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_script_include_5cfcf089870a255018c742ec0ebb35ed</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-28 12:20:30</sys_updated_on>
+        <sys_updated_on>2023-05-03 04:28:41</sys_updated_on>
     </sys_script_include>
 </record_update>
