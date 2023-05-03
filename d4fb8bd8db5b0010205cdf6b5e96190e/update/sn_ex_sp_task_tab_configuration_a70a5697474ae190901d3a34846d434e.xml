@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_task_tab_configuration">
+    <sn_ex_sp_task_tab_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <child_table/>
+        <fields/>
+        <name>Comments</name>
+        <order>150</order>
+        <script>false</script>
+        <source/>
+        <sys_class_name>sn_ex_sp_task_tab_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-12 11:45:20</sys_created_on>
+        <sys_id>a70a5697474ae190901d3a34846d434e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Comments</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sn_ex_sp_task_tab_configuration_a70a5697474ae190901d3a34846d434e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-12 11:45:20</sys_updated_on>
+        <table>sys_user</table>
+        <task_configuration display_value="Approval | Workday | Termination request">16181fa2470a2190901d3a34846d43fb</task_configuration>
+        <type>custom</type>
+        <visibility/>
+        <visibility_script><![CDATA[/**
+ * `answer` should be returned with true/false which validates if a tab is visible
+ * The `current` object refers to the current Task(extension) record 
+ **/ 
+(function(current, answer) { 
+
+	// write your code here 
+
+	answer = true; 
+	return answer; 
+ 
+})(current, answer);]]></visibility_script>
+        <widget display_value="Workday Comments">781e676687422d5018c742ec0ebb3502</widget>
+        <widget_parameters>{"tableName":"sn_hr_workday_workday_comment","workdayID":"{table.u_workday_id}","workdayUrl":"{table.todo_url}","userSysId":"{table.u_requested_for}"}</widget_parameters>
+    </sn_ex_sp_task_tab_configuration>
+</record_update>

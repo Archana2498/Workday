@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_task_tab_configuration">
+    <sn_ex_sp_task_tab_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <child_table/>
+        <fields/>
+        <name>Details</name>
+        <order>100</order>
+        <script>false</script>
+        <source/>
+        <sys_class_name>sn_ex_sp_task_tab_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 10:41:16</sys_created_on>
+        <sys_id>ca0b1f0c47a2ed10901d3a34846d43a0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Details</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sn_ex_sp_task_tab_configuration_ca0b1f0c47a2ed10901d3a34846d43a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 12:32:29</sys_updated_on>
+        <table>sys_user</table>
+        <task_configuration display_value="Approval l Workday | Spend authorisation request">8d599f8847a2ed10901d3a34846d439f</task_configuration>
+        <type>custom</type>
+        <visibility/>
+        <visibility_script><![CDATA[/**
+ * `answer` should be returned with true/false which validates if a tab is visible
+ * The `current` object refers to the current Task(extension) record 
+ **/ 
+(function(current, answer) { 
+
+	// write your code here 
+
+	answer = true; 
+	return answer; 
+ 
+})(current, answer);]]></visibility_script>
+        <widget display_value="Custom Multi Item Details">f11b0e6f8702619018c742ec0ebb3579</widget>
+        <widget_parameters>{"workday_id":"{table.u_workday_id}","columns":"u_expense_type, u_quantity, u_total_amount, u_memo, u_cash_advance_requested, u_project, u_cost_center, u_additional_worktags","table_name":"sn_hr_workday_spend_authorization_request_todos_item","show_comment":"false"}</widget_parameters>
+    </sn_ex_sp_task_tab_configuration>
+</record_update>

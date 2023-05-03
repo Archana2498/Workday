@@ -28,7 +28,7 @@
 	color: #181A1F;&#13;
 	display: flex;&#13;
   	margin-bottom: 16px;&#13;
-  	margin-top: 11px;&#13;
+  	margin-top: 16px;&#13;
 }&#13;
 .boldText {&#13;
 	font-family: 'Lato';&#13;
@@ -70,7 +70,7 @@
     //var columns = 'u_termination_date, u_last_day_of_work, u_pay_through_date, u_resignation_date, u_secondary_termination_reasons, u_notification_date, u_eligible_for_rehire, u_close_position, u_available_for_overlap';
     //var table_name = 'sn_hr_workday_termination_request_todos_item';
 
-    data.table_data = [];
+    data.table_data = [];		
     var columns = options.columns.split(",");
     var table_name = options.table_name;
     var workday_id = options.workday_id;
@@ -87,6 +87,8 @@
     for (var i = 0; i < column_count; i++) {
         data.column_count.push(i);
     }
+		var columnGrid = 12 / column_count;
+		data.classGrid = 'col-sm-' + columnGrid;
 
     if (columns.length > 0 && !gs.nil(table_name) && !gs.nil(workday_id) && !gs.nil(data.widget_title)) {
         var app = new GlideRecord(table_name);
@@ -110,23 +112,22 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-17 09:12:54</sys_created_on>
         <sys_id>a517277847922110901d3a34846d4327</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>73</sys_mod_count>
         <sys_name>Custom Single Item Details</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sp_widget_a517277847922110901d3a34846d4327</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-02 09:47:57</sys_updated_on>
-        <template><![CDATA[<div class="mt-5" ng-if="data.table_data.length>0">
+        <sys_updated_on>2023-05-03 07:37:16</sys_updated_on>
+        <template><![CDATA[<div ng-if="data.table_data.length>0">
  	<div class="row">
-  		<div class="col-sm-6 col-xs-6 mainboldText">{{data.widget_title}}</div>
-  		<div class="col-sm-6 col-xs-6"></div>
+      <div class="col-sm-12 col-xs-12"><h4 class="mainboldText">{{data.widget_title}}</h4></div>
 	</div>  	
   <div class="row" ng-repeat="(indexX, table_row) in data.table_data" ng-if="indexX % data.column_count.length == 0">
-  	<div class="col-sm-4 col-xs-12 mt-4" ng-repeat="(indexY, column) in data.column_count" ng-if="data.table_data[indexX + indexY]">
+  	<div class="{{data.classGrid}} col-xs-12 mt-4" ng-repeat="(indexY, column) in data.column_count" ng-if="data.table_data[indexX + indexY]">
   		<span class="smallText">{{data.table_data[indexX + indexY].name}}</span>
-  		<span class="boldText no-wrap" data-toggle="tooltip" data-placement="auto bottom" title="{{data.table_data[indexX + indexY].value}}">{{data.table_data[indexX + indexY].value}}</span>
+  		<span class="boldText no-wrap" data-toggle="tooltip" data-placement="auto bottom" title="{{data.table_data[indexX + indexY].value}}">{{data.table_data[indexX + indexY].value ? data.table_data[indexX + indexY].value : '${(empty)}'}}</span>
   	</div>  			    		
 	</div>
 </div>

@@ -254,14 +254,14 @@ result;]]></condition>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-23 08:08:35</sys_created_on>
         <sys_id>7062af1cdbf78810205cdf6b5e9619b9</sys_id>
-        <sys_mod_count>375</sys_mod_count>
+        <sys_mod_count>377</sys_mod_count>
         <sys_name>Workday Pull To-Dos Scheduled Import</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>scheduled_import_set_7062af1cdbf78810205cdf6b5e9619b9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-06 06:16:28</sys_updated_on>
+        <sys_updated_on>2023-04-21 10:50:00</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
         <use_child_connection>false</use_child_connection>

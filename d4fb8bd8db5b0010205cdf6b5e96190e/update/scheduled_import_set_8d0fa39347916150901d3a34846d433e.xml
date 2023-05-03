@@ -252,14 +252,14 @@ result;]]></condition>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-06 11:09:26</sys_created_on>
         <sys_id>8d0fa39347916150901d3a34846d433e</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Workday Pull Termination Request Scheduled Import</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>scheduled_import_set_8d0fa39347916150901d3a34846d433e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-19 14:01:06</sys_updated_on>
+        <sys_updated_on>2023-04-21 10:15:16</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
         <use_child_connection>false</use_child_connection>

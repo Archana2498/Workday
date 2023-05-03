@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_action_parameter">
     <sn_ex_sp_action_parameter action="INSERT_OR_UPDATE">
-        <action display_value="Reject">e1758e1b874eed5018c742ec0ebb3516</action>
+        <action display_value="Approve">294ff14a47e22510901d3a34846d4301</action>
         <field/>
-        <is_client>false</is_client>
+        <is_client>true</is_client>
         <is_display_value>false</is_display_value>
         <json/>
-        <name>sys_id</name>
+        <name>action</name>
         <parameter_type>string</parameter_type>
         <sys_class_name>sn_ex_sp_action_parameter</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-12 10:14:45</sys_created_on>
-        <sys_id>c495ca1b874eed5018c742ec0ebb3569</sys_id>
+        <sys_created_on>2023-05-03 09:08:08</sys_created_on>
+        <sys_id>7d5fb54a47e22510901d3a34846d4359</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>sys_id</sys_name>
+        <sys_name>action</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-        <sys_update_name>sn_ex_sp_action_parameter_c495ca1b874eed5018c742ec0ebb3569</sys_update_name>
+        <sys_update_name>sn_ex_sp_action_parameter_7d5fb54a47e22510901d3a34846d4359</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-12 10:14:45</sys_updated_on>
-        <table>sn_hr_workday_termination_request_todos</table>
-        <text/>
+        <sys_updated_on>2023-05-03 09:08:08</sys_updated_on>
+        <table/>
+        <text>approve</text>
     </sn_ex_sp_action_parameter>
 </record_update>

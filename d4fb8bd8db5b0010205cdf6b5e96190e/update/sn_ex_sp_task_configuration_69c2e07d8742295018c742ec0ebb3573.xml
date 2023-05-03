@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_task_configuration">
+    <sn_ex_sp_task_configuration action="INSERT_OR_UPDATE">
+        <action_group_record display_value="Test Action Group">84e0289f47c1e110901d3a34846d4360</action_group_record>
+        <active>false</active>
+        <additional_conditions/>
+        <common_info_fields>todo_state,workday_status,due_date</common_info_fields>
+        <external>true</external>
+        <fields>integration_todo_id,u_type_of_leave,u_start_date,u_end_date</fields>
+        <fields_reference/>
+        <info_custom_fields/>
+        <info_fields_type>fields</info_fields_type>
+        <internal_link/>
+        <link_to_task>true</link_to_task>
+        <name>Time Off Request Todos 2</name>
+        <page_parameters/>
+        <reference_column>extn_system</reference_column>
+        <reference_conditions/>
+        <reference_table>sn_hr_integr_fw_source</reference_table>
+        <sys_class_name>sn_ex_sp_task_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-07 11:14:11</sys_created_on>
+        <sys_id>69c2e07d8742295018c742ec0ebb3573</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Time Off Request Todos 2</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sn_ex_sp_task_configuration_69c2e07d8742295018c742ec0ebb3573</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-07 13:28:38</sys_updated_on>
+        <table>sn_hr_workday_time_off_request_todos</table>
+        <title>u_type_of_leave</title>
+        <title_custom/>
+        <title_type>field</title_type>
+        <to_do_configuration display_value="Time Off Request Todos">89f4b7608702e15018c742ec0ebb3554</to_do_configuration>
+        <url/>
+        <url_custom>https://www.google.com/</url_custom>
+        <url_source>custom</url_source>
+        <widget>false</widget>
+        <widget_parameters/>
+        <widget_record/>
+    </sn_ex_sp_task_configuration>
+</record_update>
