@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_crypto_caller_policy">
+    <sys_kmf_crypto_caller_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <approval_type/>
+        <check_script_hash>false</check_script_hash>
+        <crypto_module display_value="glide_encrypter">f5f407cd871d61109b8610683cbb3557</crypto_module>
+        <crypto_spec/>
+        <granular_operation/>
+        <identity_group_alias/>
+        <impersonation>false</impersonation>
+        <instance_recipient/>
+        <owner>aed9b198db4d55543050ac44d4961941</owner>
+        <policy_name>AutoGen-script-4ee52b3a871310108255ed4d87cb0ba6-sn_pagerduty_spoke.glide_encrypter</policy_name>
+        <result>reject</result>
+        <script_hash>UBF4w109sQMEtysFMBhkyh7Td2qV4leM0/mswzTRXVQ=</script_hash>
+        <script_table>sys_script_include</script_table>
+        <signature_data/>
+        <specify_purpose>false</specify_purpose>
+        <sys_class_name>sys_kmf_crypto_caller_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 11:18:31</sys_created_on>
+        <sys_id>fe8d9aca87266110d306cbb4dabb35b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_kmf_crypto_caller_policy_fe8d9aca87266110d306cbb4dabb35b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 11:18:31</sys_updated_on>
+        <target_role/>
+        <target_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</target_scope>
+        <target_script>4ee52b3a871310108255ed4d87cb0ba6</target_script>
+        <type>1</type>
+        <used>false</used>
+    </sys_kmf_crypto_caller_policy>
+</record_update>

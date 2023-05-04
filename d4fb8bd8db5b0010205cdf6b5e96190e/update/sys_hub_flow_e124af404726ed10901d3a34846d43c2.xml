@@ -6,8 +6,8 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <copied_from>33f7934847a2ed10901d3a34846d43e2</copied_from>
-        <copied_from_name>test subflow</copied_from_name>
+        <copied_from/>
+        <copied_from_name/>
         <description/>
         <internal_name>get_company_ids</internal_name>
         <label_cache>[{"name":"flow_variable.company_id","label":"Flow Variables➛Company ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f0b7b21c-3fca-4a7d-be2f-0ce394a09083"}},{"name":"8ffa6c78-7a54-4163-948c-37eed67955be.organization.OrganizationReference.Organization_ReferenceID","label":"1➛Organization➛Organization Reference➛Organization Reference ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"8ffa6c78-7a54-4163-948c-37eed67955be.organization.OrganizationReference.Organization_ReferenceWID","label":"1➛Organization➛Organization Reference➛Organization Reference WID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e124af404726ed10901d3a34846d43c2</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Get Company IDs</sys_name>
         <sys_overrides/>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_hub_flow_e124af404726ed10901d3a34846d43c2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-27 11:23:27</sys_updated_on>
+        <sys_updated_on>2023-05-03 11:16:06</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=e124af404726ed10901d3a34846d43c2"/>
@@ -461,7 +461,7 @@
         <sys_created_on>2023-04-27 11:21:37</sys_created_on>
         <sys_id>fdb4eb804726ed10901d3a34846d436b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Comapny IDs</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
@@ -949,7 +949,7 @@
         <sys_created_on>2023-04-27 11:23:23</sys_created_on>
         <sys_id>7f15e7c04726ed10901d3a34846d433b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Comapny IDs</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>

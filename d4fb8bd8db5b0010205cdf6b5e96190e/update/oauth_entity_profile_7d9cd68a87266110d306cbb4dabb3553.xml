@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <grant_type>authorization_code</grant_type>
+        <jwt_provider/>
+        <name>PagerDuty Profile</name>
+        <oauth_entity display_value="PagerDuty Spoke OAuth">f19cd68a87266110d306cbb4dabb3553</oauth_entity>
+        <saml2_assertion_producer/>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 11:14:21</sys_created_on>
+        <sys_id>7d9cd68a87266110d306cbb4dabb3553</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PagerDuty Profile</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>oauth_entity_profile_7d9cd68a87266110d306cbb4dabb3553</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 11:14:21</sys_updated_on>
+    </oauth_entity_profile>
+</record_update>
