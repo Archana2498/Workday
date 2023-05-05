@@ -11,7 +11,7 @@ if (action === 'approve') {
     message = "${Provide a reason for approving this request}";
     primaryButtonLabel = "${Approve}";
 }
-var answer = spModal.open({
+var answer = action === 'approve' ? true : spModal.open({
     title: title,
     message: message,
     input:true,
@@ -71,7 +71,7 @@ if (requestRecord.next()) {
         <sys_created_on>2023-02-28 07:54:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>fa8880ad8751a91018c742ec0ebb3537</sys_id>
-        <sys_mod_count>96</sys_mod_count>
+        <sys_mod_count>97</sys_mod_count>
         <sys_name>Workday Update with comments</sys_name>
         <sys_overrides/>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
@@ -79,6 +79,6 @@ if (requestRecord.next()) {
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sn_ex_sp_action_type_fa8880ad8751a91018c742ec0ebb3537</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 10:52:57</sys_updated_on>
+        <sys_updated_on>2023-05-05 05:37:28</sys_updated_on>
     </sn_ex_sp_action_type>
 </record_update>

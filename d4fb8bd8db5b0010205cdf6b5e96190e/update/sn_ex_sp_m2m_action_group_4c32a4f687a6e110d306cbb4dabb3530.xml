@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_ex_sp_m2m_action_group">
     <sn_ex_sp_m2m_action_group action="INSERT_OR_UPDATE">
-        <action display_value="View  full report in Workday">b28bb6cf4716a910901d3a34846d4363</action>
+        <action display_value="Approve">f842e4f687a6e110d306cbb4dabb35ba</action>
         <action_visibility>all</action_visibility>
-        <group display_value="Job Change Request Action Group">1d25148b475a6910901d3a34846d434e</group>
+        <group display_value="Spend Authorisation Request Action Group">a4f66bdc47662150901d3a34846d43de</group>
         <order>100</order>
         <primary>false</primary>
         <script/>
         <sys_class_name>sn_ex_sp_m2m_action_group</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-24 08:08:49</sys_created_on>
+        <sys_created_on>2023-05-05 10:19:28</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_id>e46b978347d6a910901d3a34846d438d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_id>4c32a4f687a6e110d306cbb4dabb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-        <sys_update_name>sn_ex_sp_m2m_action_group_e46b978347d6a910901d3a34846d438d</sys_update_name>
+        <sys_update_name>sn_ex_sp_m2m_action_group_4c32a4f687a6e110d306cbb4dabb3530</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-05 08:00:15</sys_updated_on>
+        <sys_updated_on>2023-05-05 10:19:28</sys_updated_on>
         <user_criteria/>
     </sn_ex_sp_m2m_action_group>
 </record_update>

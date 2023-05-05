@@ -6,18 +6,18 @@
         <name>Approve</name>
         <sys_class_name>sn_ex_sp_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-12 10:13:29</sys_created_on>
+        <sys_created_on>2023-05-04 15:22:56</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_id>9105861b874eed5018c742ec0ebb3573</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_id>10fe542e476ea11011ebca5c346d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-        <sys_update_name>sn_ex_sp_action_9105861b874eed5018c742ec0ebb3573</sys_update_name>
+        <sys_update_name>sn_ex_sp_action_10fe542e476ea11011ebca5c346d431e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-05 07:14:31</sys_updated_on>
-        <table>sn_hr_workday_termination_request_todos</table>
+        <sys_updated_on>2023-05-04 15:22:56</sys_updated_on>
+        <table>sn_hr_workday_job_change_request_todos</table>
     </sn_ex_sp_action>
 </record_update>
