@@ -71,7 +71,8 @@ WorkdayApprovalToDosHelperUtilsSNC.prototype = {
             grToDoP.u_end_date = target.u_last_day_of_time_off;
             grToDoP.u_type_of_leave = target.u_time_off_type_for_time_off_entry;
             grToDoP.u_total = target.u_time_off_total_units_hours > 0 ? target.u_time_off_total_units_hours : target.u_time_off_total_units_days;
-            grToDoP.u_time_off_plan_id = target.u_time_off_plan_id;
+            if (!gs.nil(target.u_time_off_plan_id))
+                grToDoP.u_time_off_plan_id = target.u_time_off_plan_id;
             grToDoP.u_unit_of_time = target.u_unit_time;
             grToDoP.update();
         }
@@ -171,7 +172,7 @@ WorkdayApprovalToDosHelperUtilsSNC.prototype = {
         if (!grComment.next()) {
             grComment.initialize();
             grComment.u_comments = source.u_comment;
-            grComment.u_commented_on = new GlideDateTime(source.u_comment_created_moment);
+            grComment.u_commented_on = new GlideDateTime(source.u_comment_created_moment.replace('T', ' '));
             grComment.u_first_name = source.u_comment_by_person.split(" ")[0];
             grComment.u_last_name = source.u_comment_by_person.split(" ")[1];
             grComment.u_workday_id = source.u_comment_workdayid;
@@ -235,13 +236,13 @@ WorkdayApprovalToDosHelperUtilsSNC.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-05 05:11:22</sys_created_on>
         <sys_id>5cfcf089870a255018c742ec0ebb35ed</sys_id>
-        <sys_mod_count>98</sys_mod_count>
+        <sys_mod_count>103</sys_mod_count>
         <sys_name>WorkdayApprovalToDosHelperUtilsSNC</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_script_include_5cfcf089870a255018c742ec0ebb35ed</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-03 04:28:41</sys_updated_on>
+        <sys_updated_on>2023-05-08 06:58:44</sys_updated_on>
     </sys_script_include>
 </record_update>
