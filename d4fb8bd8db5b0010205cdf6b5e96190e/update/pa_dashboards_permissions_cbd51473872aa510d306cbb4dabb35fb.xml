@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="INSERT_OR_UPDATE">
+        <dashboard display_value="Problem Overview">3d48f669538223008329ddeeff7b1253</dashboard>
+        <delete>true</delete>
+        <group/>
+        <identity>pa_admin</identity>
+        <read>false</read>
+        <role display_value="pa_admin" name="pa_admin">a4cc30b3bf101100b96dac808c073918</role>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-08 11:55:05</sys_created_on>
+        <sys_id>cbd51473872aa510d306cbb4dabb35fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>pa_admin</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_cbd51473872aa510d306cbb4dabb35fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-08 11:55:05</sys_updated_on>
+        <type>1</type>
+        <user/>
+        <write>true</write>
+    </pa_dashboards_permissions>
+</record_update>
