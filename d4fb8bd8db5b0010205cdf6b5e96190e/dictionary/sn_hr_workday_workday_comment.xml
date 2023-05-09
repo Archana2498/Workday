@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="31fd032e874ee95018c742ec0ebb3562" label="Workday Comment" max_length="40" name="sn_hr_workday_workday_comment" type="collection">
+        <element label="Comment" max_length="1500" name="u_comment" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Commented by" max_length="32" name="u_commented_by" reference="sys_user" type="reference"/>
+        <element label="Commented on" max_length="40" name="u_commented_on" type="glide_date_time"/>
+        <element label="Event workday ID" max_length="100" name="u_event_workday_id" type="string"/>
+        <element label="First name" max_length="255" name="u_first_name" type="string"/>
+        <element label="Last name" max_length="255" name="u_last_name" type="string"/>
+        <element label="Workday ID" max_length="255" name="u_workday_id" type="string"/>
+        <index name="index">
+            <element name="u_commented_by"/>
+        </index>
+    </element>
+</database>

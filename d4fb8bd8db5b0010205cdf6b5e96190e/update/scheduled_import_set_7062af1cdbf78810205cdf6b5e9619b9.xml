@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="scheduled_import_set">
-  <scheduled_import_set action="INSERT_OR_UPDATE">
-    <active>false</active>
-    <business_calendar/>
-    <concurrent_import>false</concurrent_import>
-    <condition><![CDATA[var glideWorkdayJobTracker = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_SERVICE_JOB_TRACKER_TABLE);
+    <scheduled_import_set action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <business_calendar/>
+        <concurrent_import>false</concurrent_import>
+        <condition><![CDATA[var glideWorkdayJobTracker = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_SERVICE_JOB_TRACKER_TABLE);
 glideWorkdayJobTracker.addQuery('job_state', 'running');
 glideWorkdayJobTracker.addQuery('workday_integration_service', new WorkdayPullToDosHelper().Workday_Integration_Service_Name_Pull_ToDos);
 glideWorkdayJobTracker.query();
@@ -14,15 +14,18 @@ if (glideWorkdayJobTracker.next()) {
     result = false;
 }
 result;]]></condition>
-    <conditional>true</conditional>
-    <data_source display_value="Workday Pull To-Dos">e8c5f6781bcf545067817669cc4bcb25</data_source>
-    <entered_time/>
-    <map/>
-    <name>Workday Pulled ToDos Scheduled Import</name>
-    <order/>
-    <parent/>
-    <partition_method>roundRobin</partition_method>
-    <partition_script><![CDATA[(function partitionHash(import_set_row) {
+        <conditional>true</conditional>
+        <connection_override/>
+        <data_source display_value="Workday Pull To-Dos">e8c5f6781bcf545067817669cc4bcb25</data_source>
+        <entered_time/>
+        <map/>
+        <name>Workday Pull To-Dos Scheduled Import</name>
+        <offset/>
+        <offset_type/>
+        <order/>
+        <parent/>
+        <partition_method>roundRobin</partition_method>
+        <partition_script><![CDATA[(function partitionHash(import_set_row) {
 
 	// Add your code here
 	
@@ -33,55 +36,67 @@ result;]]></condition>
 	 return import_set_row.sys_import_row;
 
 })(import_set_row);]]></partition_script>
-    <partition_size/>
-    <post_script><![CDATA[try {
+        <partition_size/>
+        <post_script><![CDATA[try {
+    var mainJobCompleted = false;
+    var grMainJob = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_JOB_TRACKER_TABLE);
+    grMainJob.addQuery("state", "running");
+    grMainJob.orderByDesc('sys_created_on');
+    grMainJob.setLimit(1);
+    grMainJob.query();
+    if (grMainJob.next()) {
 
-	var grMainJob = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_JOB_TRACKER_TABLE);
-	grMainJob.addQuery("state", "running");
-	grMainJob.orderByDesc('sys_created_on');
-	grMainJob.setLimit(1);
-	grMainJob.query();
-	if (grMainJob.next()) {
+        var newJobTrackerRecord = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_SERVICE_JOB_TRACKER_TABLE);
+        newJobTrackerRecord.addQuery("import_set", import_set.sys_id);
+        newJobTrackerRecord.query();
+        if (newJobTrackerRecord.next()) {
+            newJobTrackerRecord.scheduled_import = import_set.schedule_import;
+            var gr = new GlideRecord("sys_import_set_run");
+            gr.addQuery("set", import_set.sys_id);
+            gr.query();
+            if (gr.next()) {
+                newJobTrackerRecord.import_set_run = gr.sys_id;
+                if (newJobTrackerRecord.job_state == 'running' && (gr.state == 'complete' || gr.state == 'complete_with_errors')) {
+                    newJobTrackerRecord.job_state = 'completed';
+                    newJobTrackerRecord.job_ended_at = new GlideDateTime();
+                    if (newJobTrackerRecord.pull_next_chunk == false) {
+                        grMainJob.state = 'complete';
+                        grMainJob.job_ended_at = new GlideDateTime();
+                        mainJobCompleted = true;
+                    }
+                } else if (newJobTrackerRecord.job_state == 'running' && (gr.state == 'cancelled' || gr.state == 'incomplete')) {
+                    newJobTrackerRecord.job_state = 'failed';
+                    newJobTrackerRecord.job_ended_at = new GlideDateTime();
+                    newJobTrackerRecord.error_source = 'transformation_error';
+                    newJobTrackerRecord.error_message = gs.getMessage('Tranformation error with import set-{0} as "{1}" state', [import_set.number, gr.state]);
 
-		var newJobTrackerRecord = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_SERVICE_JOB_TRACKER_TABLE);
-		newJobTrackerRecord.addQuery("import_set", import_set.sys_id);
-		newJobTrackerRecord.query();
-		if (newJobTrackerRecord.next()) {
-			newJobTrackerRecord.scheduled_import = import_set.schedule_import;
-			var gr = new GlideRecord("sys_import_set_run");
-			gr.addQuery("set", import_set.sys_id);
-			gr.query();
-			if (gr.next()) {
-				newJobTrackerRecord.import_set_run = gr.sys_id;
-				if (newJobTrackerRecord.job_state == 'running' && (gr.state == 'complete' || gr.state == 'complete_with_errors')) {
-					newJobTrackerRecord.job_state = 'completed';
-					newJobTrackerRecord.job_ended_at = new GlideDateTime();
-					if (newJobTrackerRecord.pull_next_chunk == false) {
-						grMainJob.state = 'complete';
-						grMainJob.job_ended_at = new GlideDateTime();
-					}
-				} else if (newJobTrackerRecord.job_state == 'running' && (gr.state == 'cancelled' || gr.state == 'incomplete')) {
-					newJobTrackerRecord.job_state = 'failed';
-					newJobTrackerRecord.job_ended_at = new GlideDateTime();
-					newJobTrackerRecord.error_source = 'transformation_error';
-					newJobTrackerRecord.error_message = gs.getMessage('Tranformation error with import set-{0} as "{1}" state', [import_set.number, gr.state]);
+                    grMainJob.state = 'failed';
+                    grMainJob.error_message = gs.getMessage('Tranformation error with import set-{0} as "{1}" state', [import_set.number, gr.state]);
+                    grMainJob.job_ended_at = new GlideDateTime();
+                }
+                newJobTrackerRecord.update();
+            }
+        }
+        grMainJob.update();
+    }
 
-					grMainJob.state = 'failed';
-					grMainJob.error_message = gs.getMessage('Tranformation error with import set-{0} as "{1}" state', [import_set.number, gr.state]);
-					grMainJob.job_ended_at = new GlideDateTime();
-				}
-				newJobTrackerRecord.update();
-			}
-		}
-		grMainJob.update();
-	}
+    if (mainJobCompleted) {
+        try {
+            var inputs = {};
+            inputs['job_tracker'] = grMainJob; // GlideRecord of table: sn_hr_workday_job_tracker 
+            sn_fd.FlowAPI.getRunner().subflow('sn_hr_workday.trigger_workday_approval_todos_scheduled_import').inBackground().withInputs(inputs).run();
+        } catch (ex) {
+            gs.error(ex.message);
+        }
+    }
 
 } catch (ex) {
-	var message = ex.getMessage();
-	gs.error(message);
+    var message = ex.getMessage();
+    gs.error(message);
+    //gs.info('viv372872837283: ' + message);
 }]]></post_script>
-    <post_script_bool>true</post_script_bool>
-    <pre_script><![CDATA[try {
+        <post_script_bool>true</post_script_bool>
+        <pre_script><![CDATA[try {
 	var grMainJob = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_JOB_TRACKER_TABLE);
 	grMainJob.addQuery("state", "running");
 	grMainJob.orderByDesc('sys_created_on');
@@ -222,29 +237,32 @@ result;]]></condition>
 	var msg = ex.getMessage();
 	gs.error(msg);
 }]]></pre_script>
-    <pre_script_bool>true</pre_script_bool>
-    <run_as/>
-    <run_as_tz/>
-    <run_dayofmonth>1</run_dayofmonth>
-    <run_dayofweek>1</run_dayofweek>
-    <run_period>1970-01-30 00:00:10</run_period>
-    <run_start>2021-02-10 08:05:27</run_start>
-    <run_time>1970-01-01 08:00:00</run_time>
-    <run_type>daily</run_type>
-    <synchronize_inserts>true</synchronize_inserts>
-    <sys_class_name>scheduled_import_set</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2020-03-23 08:08:35</sys_created_on>
-    <sys_id>7062af1cdbf78810205cdf6b5e9619b9</sys_id>
-    <sys_mod_count>352</sys_mod_count>
-    <sys_name>Workday Pulled ToDos Scheduled Import</sys_name>
-    <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-    <sys_update_name>scheduled_import_set_7062af1cdbf78810205cdf6b5e9619b9</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2021-02-15 06:40:11</sys_updated_on>
-    <time_zone/>
-    <upgrade_safe>false</upgrade_safe>
-  </scheduled_import_set>
+        <pre_script_bool>true</pre_script_bool>
+        <record_source/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-30 00:00:10</run_period>
+        <run_start>2021-02-10 08:05:27</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <show_connection_override>false</show_connection_override>
+        <synchronize_inserts>true</synchronize_inserts>
+        <sys_class_name>scheduled_import_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-23 08:08:35</sys_created_on>
+        <sys_id>7062af1cdbf78810205cdf6b5e9619b9</sys_id>
+        <sys_mod_count>377</sys_mod_count>
+        <sys_name>Workday Pull To-Dos Scheduled Import</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>scheduled_import_set_7062af1cdbf78810205cdf6b5e9619b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 10:50:00</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+        <use_child_connection>false</use_child_connection>
+    </scheduled_import_set>
 </record_update>

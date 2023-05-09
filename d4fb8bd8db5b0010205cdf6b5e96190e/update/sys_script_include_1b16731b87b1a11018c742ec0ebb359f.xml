@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_hr_workday.WorkdayApprovalToDosHelperSNC</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>WorkdayApprovalToDosHelperSNC</name>
+        <script><![CDATA[var WorkdayApprovalToDosHelperSNC = Class.create();
+WorkdayApprovalToDosHelperSNC.prototype = {
+    type: 'WorkdayApprovalToDosHelperSNC'
+};
+WorkdayApprovalToDosHelperSNC.Workday_Approval_Service_Name = {
+    Time_Off_Request_ToDos: 'time_off_request_to_dos',
+    Leave_of_Absence_Request_ToDos: 'leave_of_absence_request_to_dos',
+    Correct_Time_Off_Request_ToDos: 'correct_time_off_request_to_dos',
+    Compensation_Change_Request_ToDos: 'compensation_change_request_to_dos',
+    Termination_Request_ToDos: 'termination_request_to_dos',
+    Job_Requisition_Request_ToDos: 'job_requisition_request_to_dos',
+    Job_Change_Request_ToDos: 'job_change_request_to_dos',
+    Spend_Authorization_Request_ToDos: 'spend_authorization_request_to_dos'
+};
+WorkdayApprovalToDosHelperSNC.Workday_Table_Name = {
+    Time_Off_Request_ToDos: 'sn_hr_workday_time_off_request_todos',
+    Time_Off_Request_ToDos_Item: 'sn_hr_workday_time_off_request_todos_item',
+    Termination_Request_ToDos: 'sn_hr_workday_termination_request_todos',
+    Termination_Request_ToDos_Item: 'sn_hr_workday_termination_request_todos_item',
+    Job_Requisition_Request_ToDos: 'sn_hr_workday_job_requisition_request_todos',
+    Job_Requisition_Request_ToDos_Item: 'sn_hr_workday_job_requisition_request_to_dos_item',
+    Leave_of_Absence_Request_ToDos: 'sn_hr_workday_leave_of_absence_request_todos',
+    Leave_of_Absence_Request_ToDos_Item: 'sn_hr_workday_leave_of_absence_request_todos_item',
+    Correct_Time_Off_Request_ToDos: 'sn_hr_workday_correct_time_off_request_todos',
+    Compensation_Change_Request_ToDos: 'sn_hr_workday_compensation_change_request_todos',
+    Job_Change_Request_ToDos: 'sn_hr_workday_job_change_request_todos',
+	Job_Change_Request_ToDos_Item: 'sn_hr_workday_job_change_request_todos_item' ,
+    Spend_Authorization_Request_ToDos: 'sn_hr_workday_spend_authorization_request_todos',
+    WorkDay_Comment: 'sn_hr_workday_workday_comment',
+	Workday_Approval_Report_Config_Table: 'sn_hr_workday_configuration_workday_approval_to_dos',
+	Workday_Todos_Table: 'sn_hr_workday_todo'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-31 08:11:11</sys_created_on>
+        <sys_id>1b16731b87b1a11018c742ec0ebb359f</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>WorkdayApprovalToDosHelperSNC</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_script_include_1b16731b87b1a11018c742ec0ebb359f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-26 18:06:04</sys_updated_on>
+    </sys_script_include>
+</record_update>

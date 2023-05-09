@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="008eba7347ca6590901d3a34846d43f7" label="Compensation Change Request ToDos Item" max_length="40" name="sn_hr_workday_compensation_change_request_todos_items" type="collection">
+        <element label="Action event" max_length="255" name="u_action_event" type="string"/>
+        <element label="Base pay change amount" max_length="255" name="u_base_pay_change_amount" type="string"/>
+        <element label="Base pay change percent" max_length="100" name="u_base_pay_change_percent" type="string"/>
+        <element label="Base Pay Current" max_length="255" name="u_base_pay_current" type="string"/>
+        <element label="Base pay proposed" max_length="255" name="u_base_pay_proposed" type="string"/>
+        <element label="Business process reason" max_length="255" name="u_business_process_reason" type="string"/>
+        <element label="Effective" max_length="40" name="u_effective" type="glide_date"/>
+        <element label="Employee visibility date" max_length="40" name="u_employee_visibility_date" type="glide_date"/>
+        <element label="Position" max_length="100" name="u_position" type="string"/>
+        <element label="Workday ID" max_length="100" name="u_workday_id" type="string"/>
+    </element>
+</database>

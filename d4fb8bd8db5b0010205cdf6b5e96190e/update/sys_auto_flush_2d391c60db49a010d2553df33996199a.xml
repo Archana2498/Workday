@@ -14,9 +14,9 @@
         <sys_id>2d391c60db49a010d2553df33996199a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sn_hr_workday_todo</sys_name>
-        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_auto_flush_2d391c60db49a010d2553df33996199a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-12-09 11:30:40</sys_updated_on>

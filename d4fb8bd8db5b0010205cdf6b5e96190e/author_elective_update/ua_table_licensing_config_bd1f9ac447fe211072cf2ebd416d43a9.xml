@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>sn_hr_workday_spend_authorisation_requests_staging</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-09 16:33:08</sys_created_on>
+        <sys_id>bd1f9ac447fe211072cf2ebd416d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_hr_workday_spend_authorisation_requests_staging</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>ua_table_licensing_config_bd1f9ac447fe211072cf2ebd416d43a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-09 16:33:08</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>b5713642dbe621d868c2c59705961942</instance_id>
+        <instance_name>wdappdev2</instance_name>
+        <name>ua_table_licensing_config_bd1f9ac447fe211072cf2ebd416d43a9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>sn_hr_workday_spend_authorisation_requests_staging</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-09 16:33:08</sys_created_on><sys_id>bd1f9ac447fe211072cf2ebd416d43a9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sn_hr_workday_spend_authorisation_requests_staging</sys_name><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_update_name>ua_table_licensing_config_bd1f9ac447fe211072cf2ebd416d43a9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-09 16:33:08</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>262448726</payload_hash>
+        <record_name>sn_hr_workday_spend_authorisation_requests_staging</record_name>
+        <reverted_from/>
+        <source>89d665004732211072cf2ebd416d43e5</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-05-09 12:27:19</sys_created_on>
+        <sys_id>22e3ba0047f2611072cf2ebd416d43a5</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>188007af8580000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Table Subscription Configuration</type>
+        <update_guid>eee3ba0057f261106fc8c535e751e3a4</update_guid>
+        <update_guid_history>eee3ba0057f261106fc8c535e751e3a4:262448726</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-09 18:04:07</sys_created_on>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>8fa560e4a171452091a3a6d2e2d0ce40</sys_id>
+        <sys_metadata>bd1f9ac447fe211072cf2ebd416d43a9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_hr_workday_spend_authorisation_requests_staging</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_bd1f9ac447fe211072cf2ebd416d43a9</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_bd1f9ac447fe211072cf2ebd416d43a9">22e3ba0047f2611072cf2ebd416d43a5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-09 18:04:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

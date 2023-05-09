@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ec81251d47da6110901d3a34846d4378</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <is_extendable>false</is_extendable>
+        <label>Leave of Absence Request Staging</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>sn_hr_workday_leave_of_absence_request_staging</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class display_value="Import Set Row" name="sys_import_set_row">37a7a1e0a920211076daa554cb57d9a4</super_class>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-18 12:45:50</sys_created_on>
+        <sys_id>ec81251d47da6110901d3a34846d4378</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Leave of Absence Request Staging</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_db_object_ec81251d47da6110901d3a34846d4378</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 10:40:38</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="sn_hr_workday.leave_of_absence_request_staging_user" name="sn_hr_workday.leave_of_absence_request_staging_user">a3a1e11d47da6110901d3a34846d4358</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 03:07:16</sys_created_on>
+        <sys_id>cbc652038792691018c742ec0ebb35e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Leave of Absence Request Staging</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_metadata_link_cbc652038792691018c742ec0ebb35e9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 03:07:16</sys_updated_on>
+        <tablename>sys_db_object</tablename>
+    </sys_metadata_link>
+</record_update>

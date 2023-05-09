@@ -228,9 +228,9 @@
             <sys_id>862556e3db2b1410127e3764e296195e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>sn_hr_workday_configuration_worker_profile_sync</sys_name>
-            <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+            <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
             <sys_policy/>
-            <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+            <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
             <sys_update_name>sys_ui_list_sn_hr_workday_configuration_worker_profile_sync_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2020-10-05 14:39:47</sys_updated_on>

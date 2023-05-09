@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="workday_integration_service" table="sn_hr_workday_service_job_tracker" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>workday_integration_service</element>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-02-17 10:22:23</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>workday_integration_service</sys_name>
+            <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+            <sys_update_name>sys_choice_sn_hr_workday_service_job_tracker_workday_integration_service</sys_update_name>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-02-17 10:22:23</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Departments</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-02-17 10:22:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1571c84a87cda11018c742ec0ebb3598</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-02-17 10:22:22</sys_updated_on>
+            <value>departments</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Locations</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-02-17 10:22:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5571c84a87cda11018c742ec0ebb3598</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-02-17 10:22:22</sys_updated_on>
+            <value>locations</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Job Profiles</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-02-17 10:22:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9571c84a87cda11018c742ec0ebb3598</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-02-17 10:22:22</sys_updated_on>
+            <value>job_profiles</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Worker Profiles</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-02-17 10:22:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d571c84a87cda11018c742ec0ebb3598</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-02-17 10:22:22</sys_updated_on>
+            <value>worker_profiles</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Jobs</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-02-17 10:22:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1971c84a87cda11018c742ec0ebb3598</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-02-17 10:22:22</sys_updated_on>
+            <value>jobs</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Effective Worker Profiles</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-02-17 10:22:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5971c84a87cda11018c742ec0ebb3598</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-02-17 10:22:22</sys_updated_on>
+            <value>effective_worker_profiles</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Effective Jobs</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-02-17 10:22:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9971c84a87cda11018c742ec0ebb3598</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-02-17 10:22:22</sys_updated_on>
+            <value>effective_jobs</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Future Worker Profiles</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-02-17 10:22:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d971c84a87cda11018c742ec0ebb3598</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-02-17 10:22:22</sys_updated_on>
+            <value>future_worker_profiles</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Future Jobs</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-02-17 10:22:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d71c84a87cda11018c742ec0ebb3598</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-02-17 10:22:22</sys_updated_on>
+            <value>future_jobs</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pull To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+            <sys_created_on>2023-02-17 10:22:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5d71c84a87cda11018c742ec0ebb3598</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+            <sys_updated_on>2023-02-17 10:22:22</sys_updated_on>
+            <value>pull_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Time Off Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-02 05:45:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61ce3d4a47d92d10901d3a34846d436b</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-03 05:31:45</sys_updated_on>
+            <value>time_off_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Leave of Absence Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>11</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:01:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>04e99cfc8782e15018c742ec0ebb3547</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:09:44</sys_updated_on>
+            <value>leave_of_absence_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Correct Time Off Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>12</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:02:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>824a98fc8782e15018c742ec0ebb3545</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:09:54</sys_updated_on>
+            <value>correct_time_off_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Compensation Change Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>13</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:03:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd8a543087c2e15018c742ec0ebb3554</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:10:05</sys_updated_on>
+            <value>compensation_change_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Termination Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>14</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:04:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>addad83087c2e15018c742ec0ebb3592</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:10:49</sys_updated_on>
+            <value>termination_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Job Requisition Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>15</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:05:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d60b5c3087c2e15018c742ec0ebb35f0</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:11:01</sys_updated_on>
+            <value>job_requisition_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Job Change Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>16</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:06:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>893b107087c2e15018c742ec0ebb35ec</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:11:12</sys_updated_on>
+            <value>job_change_request_to_dos</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>workday_integration_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Spend Authorization Request To-Dos</label>
+            <language>en</language>
+            <name>sn_hr_workday_service_job_tracker</name>
+            <sequence>17</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-04 08:07:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a76b107087c2e15018c742ec0ebb354a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-04 08:11:19</sys_updated_on>
+            <value>spend_authorization_request_to_dos</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

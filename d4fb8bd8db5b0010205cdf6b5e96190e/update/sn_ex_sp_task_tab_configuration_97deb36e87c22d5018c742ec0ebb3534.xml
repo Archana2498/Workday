@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_task_tab_configuration">
+    <sn_ex_sp_task_tab_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <child_table/>
+        <fields/>
+        <name>Details</name>
+        <order>100</order>
+        <script>false</script>
+        <source/>
+        <sys_class_name>sn_ex_sp_task_tab_configuration</sys_class_name>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-04-10 11:10:07</sys_created_on>
+        <sys_id>97deb36e87c22d5018c742ec0ebb3534</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Details</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sn_ex_sp_task_tab_configuration_97deb36e87c22d5018c742ec0ebb3534</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-17 12:52:40</sys_updated_on>
+        <table>sys_user</table>
+        <task_configuration display_value="Approval | Workday | Termination request">0ada13a6470a2190901d3a34846d43a4</task_configuration>
+        <type>custom</type>
+        <visibility/>
+        <visibility_script><![CDATA[/**
+ * `answer` should be returned with true/false which validates if a tab is visible
+ * The `current` object refers to the current Task(extension) record 
+ **/ 
+(function(current, answer) { 
+
+	// write your code here 
+
+	answer = true; 
+	return answer; 
+ 
+})(current, answer);]]></visibility_script>
+        <widget display_value="Custom Single Item Details">a517277847922110901d3a34846d4327</widget>
+        <widget_parameters>{"workday_id":"{table.u_workday_id}","columns":"u_termination_date, u_last_day_of_work, u_pay_through_date, u_resignation_date, u_secondary_termination_reasons, u_notification_date, u_eligible_for_rehire, u_close_position, u_available_for_overlap","table_name":"sn_hr_workday_termination_request_todos_item","widget_title":"Termination details"}</widget_parameters>
+    </sn_ex_sp_task_tab_configuration>
+</record_update>

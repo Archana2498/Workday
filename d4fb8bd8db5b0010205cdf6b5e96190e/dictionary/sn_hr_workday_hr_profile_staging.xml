@@ -1,40 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="HR Profile Staging" max_length="40" name="sn_hr_workday_hr_profile_staging" sizeclass="19" type="collection">
-        <element label="Currently active" max_length="40" name="currently_active" type="string"/>
-        <element label="Employee number" max_length="40" name="employee_number" type="string"/>
-        <element label="First name" max_length="40" name="first_name" type="string"/>
-        <element label="Full name" max_length="40" name="full_name" type="string"/>
-        <element label="Gender" max_length="40" name="gender" type="string"/>
-        <element label="Home mobile phone" max_length="40" name="home_mobile_phone" type="string"/>
-        <element label="Home phone" max_length="40" name="home_phone" type="string"/>
-        <element label="Last name" max_length="40" name="last_name" type="string"/>
-        <element label="Marital status" max_length="40" name="marital_status" type="string"/>
-        <element label="Middle name" max_length="40" name="middle_name" type="string"/>
-        <element label="Place of birth" max_length="60" name="place_of_birth" type="string"/>
-        <element label="Preferred first name" max_length="40" name="preferred_first_name" type="string"/>
-        <element label="Preferred last name" max_length="40" name="preferred_last_name" type="string"/>
-        <element label="Preferred middle name" max_length="40" name="preferred_middle_name" type="string"/>
-        <element label="Prefix" max_length="40" name="prefix" type="string"/>
-        <element label="Primary address city" max_length="80" name="primary_address_city" type="string"/>
-        <element label="Primary address country" max_length="80" name="primary_address_country" type="string"/>
-        <element label="Primary address state" max_length="80" name="primary_address_state" type="string"/>
-        <element label="Primary personal email" max_length="40" name="primary_personal_email" type="string"/>
-        <element label="Primary work email" max_length="40" name="primary_work_email" type="string"/>
-        <element label="Process type" max_length="40" name="process_type" type="string"/>
+    <element db_object_id="31e689c8c3326510238178f9d0013160" extends="sys_import_set_row" label="HR Profile Staging" max_length="40" name="sn_hr_workday_hr_profile_staging" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Currently active" max_length="40" name="currently_active" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Employee number" max_length="40" name="employee_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="First name" max_length="40" name="first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Full name" max_length="40" name="full_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Gender" max_length="40" name="gender" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Home mobile phone" max_length="40" name="home_mobile_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Home phone" max_length="40" name="home_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Last name" max_length="40" name="last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Marital status" max_length="40" name="marital_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Middle name" max_length="40" name="middle_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Place of birth" max_length="60" name="place_of_birth" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Preferred first name" max_length="40" name="preferred_first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Preferred last name" max_length="40" name="preferred_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Preferred middle name" max_length="40" name="preferred_middle_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Prefix" max_length="40" name="prefix" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Primary address city" max_length="80" name="primary_address_city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Primary address country" max_length="80" name="primary_address_country" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Primary address state" max_length="80" name="primary_address_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Primary personal email" max_length="40" name="primary_personal_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Primary work email" max_length="40" name="primary_work_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Process type" max_length="40" name="process_type" type="string"/>
         <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
-        <element label="Terminated" max_length="40" name="terminated" type="string"/>
-        <element label="Transaction log" max_length="80" name="transaction_log" type="string"/>
-        <element label="Country of birth" max_length="40" name="u_country_of_birth" type="string"/>
-        <element label="Date of birth" max_length="40" name="u_date_of_birth" type="glide_date"/>
-        <element label="Employment end date" max_length="40" name="u_employment_end_date" type="glide_date"/>
-        <element label="Employment start date" max_length="40" name="u_employment_start_date" type="glide_date"/>
-        <element label="Ethnicity" max_length="40" name="u_ethnicity" type="string"/>
-        <element label="External id" max_length="40" name="u_external_id" type="string"/>
-        <element label="Nationality" max_length="40" name="u_nationality" type="string"/>
-        <element label="Primary address full" max_length="100" name="u_primary_address_full" type="string"/>
-        <element label="Primary address zip" max_length="40" name="u_primary_address_zip" type="string"/>
-        <element label="Work mobile phone" max_length="40" name="work_mobile_phone" type="string"/>
-        <element label="Work phone" max_length="40" name="work_phone" type="string"/>
-        <element label="Hire Rescinded" max_length="40" name="u_hirerescinded" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Terminated" max_length="40" name="terminated" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Transaction log" max_length="80" name="transaction_log" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Country of birth" max_length="40" name="u_country_of_birth" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date of birth" max_length="40" name="u_date_of_birth" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Employment end date" max_length="40" name="u_employment_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Employment start date" max_length="40" name="u_employment_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Ethnicity" max_length="40" name="u_ethnicity" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="External id" max_length="40" name="u_external_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Hire Rescinded" max_length="40" name="u_hirerescinded" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Nationality" max_length="40" name="u_nationality" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Primary address full" max_length="100" name="u_primary_address_full" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Primary address zip" max_length="40" name="u_primary_address_zip" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Work mobile phone" max_length="40" name="work_mobile_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Work phone" max_length="40" name="work_phone" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
     </element>
 </database>

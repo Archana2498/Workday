@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ws_security_username_profile_outbound">
+    <ws_security_username_profile_outbound action="DELETE">
+        <name>Workday HR</name>
+        <password>﷞﷟﷒944587a047e2211011ebca5c346d43c3﷬﷔1﷬﷭aOAVNZ5Bw9grfIH0FU17JA==HQzO6beSdUMqQjzFe74nHgdmFlUxbvp4jAx_eg==﷮﷯</password>
+        <sys_class_name>ws_security_username_profile_outbound</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 12:20:37</sys_created_on>
+        <sys_id>a19b6a0a87666110d306cbb4dabb35ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Workday HR</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>ws_security_username_profile_outbound_a19b6a0a87666110d306cbb4dabb35ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 12:23:34</sys_updated_on>
+        <username>betty.liiut@bcone_gms1</username>
+    </ws_security_username_profile_outbound>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>ws_security_username_profile_outbound_a19b6a0a87666110d306cbb4dabb35ce</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ws_security_username_profile_outbound"><ws_security_username_profile_outbound action="INSERT_OR_UPDATE"><name>Workday HR</name><password>﷞﷟﷒944587a047e2211011ebca5c346d43c3﷬﷔1﷬﷭aOAVNZ5Bw9grfIH0FU17JA==HQzO6beSdUMqQjzFe74nHgdmFlUxbvp4jAx_eg==﷮﷯</password><sys_class_name>ws_security_username_profile_outbound</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-03 12:20:37</sys_created_on><sys_id>a19b6a0a87666110d306cbb4dabb35ce</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Workday HR</sys_name><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_update_name>ws_security_username_profile_outbound_a19b6a0a87666110d306cbb4dabb35ce</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-03 12:23:34</sys_updated_on><username>betty.liiut@bcone_gms1</username></ws_security_username_profile_outbound></record_update>]]></payload>
+        <payload_hash>-52037325</payload_hash>
+        <record_name>Workday HR</record_name>
+        <reverted_from/>
+        <source>aca9cb9187ae2110d306cbb4dabb3500</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 12:23:34</sys_created_on>
+        <sys_id>2f6ca64a87666110d306cbb4dabb35dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187e19162990000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 12:23:34</sys_updated_on>
+        <type>WS-Security Username Profiles (Outbound)</type>
+        <update_guid>276c264a9c666110fa4a7b1f4d338956</update_guid>
+        <update_guid_history>276c264a9c666110fa4a7b1f4d338956:-52037325,58cbea0a81666110cc2e2fd3806089cd:879104999</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">302f6eca87666110d306cbb4dabb359c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 12:35:23</sys_created_on>
+        <sys_db_object display_value="" name="ws_security_username_profile_outbound">ws_security_username_profile_outbound</sys_db_object>
+        <sys_id>1185b3619286405282ce972497648444</sys_id>
+        <sys_metadata>a19b6a0a87666110d306cbb4dabb35ce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workday HR</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>ws_security_username_profile_outbound_a19b6a0a87666110d306cbb4dabb35ce</sys_update_name>
+        <sys_update_version display_value="ws_security_username_profile_outbound_a19b6a0a87666110d306cbb4dabb35ce">2f6ca64a87666110d306cbb4dabb35dd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 12:35:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

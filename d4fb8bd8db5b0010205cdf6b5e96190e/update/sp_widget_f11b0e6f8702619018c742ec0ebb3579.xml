@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($uibModal, $scope) {
+    /* widget controller */
+    var c = this;
+
+    c.openModal = function(comment) {
+        c.modalInstance = $uibModal.open({
+            templateUrl: 'modalTemplate',
+            scope: $scope
+        });
+        $scope.content = comment;
+    };
+
+    c.closeModal = function() {
+        c.modalInstance.close();
+    };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.float-right {&#13;
+	float:right;&#13;
+}&#13;
+.row {&#13;
+	margin-top: 16px;&#13;
+}&#13;
+.comment {&#13;
+	font-family: 'FontAwesome';&#13;
+	font-style: normal;&#13;
+	font-weight: 400;&#13;
+	font-size: 16px;&#13;
+	line-height: 18px;&#13;
+	display: flex;&#13;
+	align-items: center;&#13;
+	text-align: center;&#13;
+	color: #3C59E7;&#13;
+	flex: none;&#13;
+	order: 0;&#13;
+	flex-grow: 0;&#13;
+}&#13;
+.commentBtn {&#13;
+	border: 0px;&#13;
+  background: transparent;&#13;
+}&#13;
+.commentBtn:disabled {&#13;
+opacity:25%;&#13;
+}&#13;
+.table-responsive {&#13;
+	width: auto;&#13;
+}&#13;
+.table {&#13;
+  	width: max-content;&#13;
+    max-width: none;&#13;
+	border-bottom: 0.1rem solid #DADDE2;&#13;
+  	min-width: 100%;&#13;
+}&#13;
+.table &gt; tbody &gt; tr &gt; th {&#13;
+	border-top: 0rem solid #DADDE2;&#13;
+  	border-bottom: 0.1rem solid #DADDE2;&#13;
+}&#13;
+.table &gt; tbody &gt; tr &gt; td {&#13;
+	border-top: 0rem solid #DADDE2;&#13;
+}&#13;
+.boldText {&#13;
+	font-family: 'Lato';&#13;
+	font-style: normal;&#13;
+	font-weight: 400;&#13;
+	font-size: 16px;&#13;
+	line-height: 23px;&#13;
+	color: #181A1F;&#13;
+	display: flex;&#13;
+  min-height: 23px;&#13;
+}&#13;
+.border {&#13;
+	box-sizing: border-box;&#13;
+	flex-direction: column;&#13;
+	justify-content: center;&#13;
+	align-items: flex-start;&#13;
+	padding-right: 16px;&#13;
+	padding-left: 16px;&#13;
+	padding-bottom: 16px;&#13;
+  padding-top: 0px;&#13;
+	gap: 16px;&#13;
+	background: #FFFFFF;&#13;
+	border: 1px solid #DADDE2;&#13;
+	border-radius: 4px;&#13;
+  margin-bottom:16px;&#13;
+}&#13;
+.smallText {&#13;
+	font-family: 'Lato';&#13;
+	font-style: normal;&#13;
+	font-weight: 400;&#13;
+	font-size: 12px;&#13;
+	line-height: 17px;&#13;
+	color: #656E81;&#13;
+  display: flex;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>custom_multi_item_details</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Custom Multi Item Details</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    //var workday_id = '8e57a1262f5510126e3835ef26d10000';
+    //var columns = 'u_date, u_day_of_the_week, u_units_requested_this_coordinated_leave_time_off, u_unit_time, u_comment';
+    //columns = columns.split(",");
+    //var table_name = 'sn_hr_workday_time_off_request_todos_item';
+    //data.show_comment = false;
+
+    data.table_data = [];
+    data.show_comment = options.show_comment && options.show_comment.trim() == 'true' ? 'true' : 'false';
+    var columns = options.columns.split(",");
+    var table_name = options.table_name;
+    var workday_id = options.workday_id;
+
+    if (columns.length > 0 && !gs.nil(table_name) && !gs.nil(workday_id)) {
+        var app = new GlideRecord(table_name);
+        app.addEncodedQuery('u_workday_id=' + workday_id);
+        app.query();
+        while (app.next()) {
+            var table_row = [];
+            for (var k = 0; k < columns.length; k++) {
+                if (app.isValidField(columns[k].trim())) {
+                    var column = {};
+                    column.name = app[columns[k].trim()].getLabel();
+                    column.value = app.getValue(columns[k].trim());
+                    table_row.push(column);
+                }
+            }
+            data.table_data.push(table_row);
+        }
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 05:19:30</sys_created_on>
+        <sys_id>f11b0e6f8702619018c742ec0ebb3579</sys_id>
+        <sys_mod_count>145</sys_mod_count>
+        <sys_name>Custom Multi Item Details</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sp_widget_f11b0e6f8702619018c742ec0ebb3579</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 13:39:09</sys_updated_on>
+        <template><![CDATA[<div class="table-responsive">
+<table class="table hidden-xs" ng-if="data.table_data.length>0">
+	<tr>
+    	<th ng-repeat="table_row in data.table_data[0]">
+      		<span ng-if="$index < data.table_data[0].length - 1 || data.show_comment == 'false'">
+        		{{table_row.name}}
+        	</span>
+      	</th>
+	</tr>
+    <tr ng-repeat="table_row in data.table_data">
+      	<td ng-repeat="column in table_row">
+        	<span ng-if="$index < table_row.length - 1 || data.show_comment == 'false'">
+          		{{column.value}}
+        	</span>
+        	<span ng-if="$index == (table_row.length - 1) && data.show_comment == 'true'">
+        		<button class="commentBtn" ng-disabled="!column.value" ng-click="c.openModal(column.value)">
+            		<i class="comment"></i>
+          		</button>
+        	</span>
+      	</td>
+    </tr>
+</table>
+</div>
+  
+<div ng-if="data.table_data.length>0" class="container-fluid border visible-xs" ng-repeat="table_row in data.table_data track by $index">
+	<span ng-repeat="column in table_row track by $index">
+    	<div class="row" ng-if="$index == 0 && data.show_comment == 'true'">
+        	<div class="col-sm-6 col-xs-6 boldText">{{column.value}}</div>
+        	<div class="col-sm-6 col-xs-6">
+          		<button class="commentBtn float-right" ng-disabled="!table_row[table_row.length - 1].value"
+            ng-click="c.openModal(table_row[table_row.length - 1].value)">
+            		<i class="comment"></i>
+          		</button>
+        	</div>
+      	</div>
+      	<div class="row" ng-if="($index > 0 && $index % 2 != 0 && data.show_comment == 'true') || ($index >= 0 && data.show_comment == 'false' && $index % 2 == 0)">
+        	<div class="col-sm-6 col-xs-6" ng-if="table_row[$index] && ($index != table_row.length - 1 || data.show_comment == 'false')">
+          		<span class="smallText">{{table_row[$index].name}}</span>
+          		<span class="boldText">{{table_row[$index].value}}</span>
+        	</div>
+        	<div class="col-sm-6 col-xs-6" ng-if="table_row[$index + 1] && ($index + 1 != table_row.length - 1 || data.show_comment == 'false')">
+          		<span class="smallText">{{table_row[($index + 1)].name}}</span>
+          		<span class="boldText">{{table_row[($index + 1)].value}}</span>
+        	</div>
+      	</div>
+  	</span>
+</div>
+  
+<div class="mt-5" ng-if="data.table_data.length==0">
+	${No item was found.}
+</div>
+
+<script type="text/ng-template" id="modalTemplate">
+<div class="panel panel-default">
+ 	<div class="panel-heading">
+  	<button type="button" class="close" ng-click="c.closeModal()">&times;</button>
+ 		<h4 class="panel-title">${Comment}</h4>
+  </div>
+ 	<div class="panel-body" id="divComment">
+		{{content}}
+  </div>
+ 	<div class="panel-footer text-right">
+ 		<button class="btn btn-primary" ng-click="c.closeModal()">${Close}</button>
+ 	</div>
+</div>
+ 
+<style>
+ 	.panel-default {
+ 		border-color: transparent;
+ 	}
+ 	.panel-default > .panel-heading, .panel-default > .panel-body, .panel-default > .panel-footer {
+ 		background-color: transparent;padding: 1.6rem;
+ 	}  
+  .modal-dialog {
+  	margin-top: 0;
+  	margin-bottom: 0;
+  	height: -webkit-fill-available;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+	}
+	.modal.fade .modal-dialog {
+  	transform: transform .3s ease-out;
+	}
+	.modal.in .modal-dialog {
+  	transform: translate(0, 0);
+	}
+</style>
+</script>]]></template>
+    </sp_widget>
+</record_update>

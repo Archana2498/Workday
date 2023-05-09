@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="550f36b347ca6590901d3a34846d43cd" extends="sn_hr_workday_todo" label="Compensation Change Request ToDos" max_length="40" name="sn_hr_workday_compensation_change_request_todos" type="collection">
+        <element label="Effective Date" max_length="40" name="u_effective_date" type="glide_date"/>
+        <element label="Employee Visibility date" max_length="40" name="u_employee_visibility_date" type="glide_date"/>
+        <element label="Position" max_length="100" name="u_position" type="string"/>
+        <element label="Reason" max_length="1000" name="u_reason" type="string"/>
+    </element>
+</database>

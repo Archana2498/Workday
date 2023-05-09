@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_transaction_status_id" label="Transaction status id" language="en" table="sn_hr_workday_configuration_workday_approval_to_dos">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_transaction_status_id</element>
+            <help/>
+            <hint/>
+            <label>Transaction status id</label>
+            <language>en</language>
+            <name>sn_hr_workday_configuration_workday_approval_to_dos</name>
+            <plural>Transaction status ids</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-03 13:44:25</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Transaction status id</sys_name>
+            <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+            <sys_update_name>sys_documentation_sn_hr_workday_configuration_workday_approval_to_dos_u_transaction_status_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-03 13:44:25</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

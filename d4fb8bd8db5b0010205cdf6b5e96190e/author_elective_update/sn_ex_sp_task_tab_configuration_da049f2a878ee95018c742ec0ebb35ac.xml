@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_task_tab_configuration">
+    <sn_ex_sp_task_tab_configuration action="DELETE">
+        <active>true</active>
+        <child_table/>
+        <fields/>
+        <name>Workday Approvals Request</name>
+        <order>100</order>
+        <script>false</script>
+        <source/>
+        <sys_class_name>sn_ex_sp_task_tab_configuration</sys_class_name>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-04-10 08:05:24</sys_created_on>
+        <sys_id>da049f2a878ee95018c742ec0ebb35ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Workday Approvals Request</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sn_ex_sp_task_tab_configuration_da049f2a878ee95018c742ec0ebb35ac</sys_update_name>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-04-10 08:24:04</sys_updated_on>
+        <table>sn_hr_workday_termination_request_todos</table>
+        <task_configuration display_value="Approval | Workday | Termination request">2201c3a647862190901d3a34846d43fb</task_configuration>
+        <type>custom</type>
+        <visibility/>
+        <visibility_script><![CDATA[/**
+ * `answer` should be returned with true/false which validates if a tab is visible
+ * The `current` object refers to the current Task(extension) record 
+ **/ 
+(function(current, answer) { 
+
+	// write your code here 
+
+	answer = true; 
+	return answer; 
+ 
+})(current, answer);]]></visibility_script>
+        <widget display_value="Workday Approvals Requests">b17b07e6874ee95018c742ec0ebb35a0</widget>
+        <widget_parameters>{"workday_id":"{table.u_workday_id}","raas_report_name":"Workday_Approval_Service_Name"}</widget_parameters>
+    </sn_ex_sp_task_tab_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>b5713642dbe621d868c2c59705961942</instance_id>
+        <instance_name>wdappdev2</instance_name>
+        <name>sn_ex_sp_task_tab_configuration_da049f2a878ee95018c742ec0ebb35ac</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sn_ex_sp_task_tab_configuration"&gt;&lt;sn_ex_sp_task_tab_configuration action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;child_table/&gt;&lt;fields/&gt;&lt;name&gt;Workday Approvals Request&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;false&lt;/script&gt;&lt;source/&gt;&lt;sys_class_name&gt;sn_ex_sp_task_tab_configuration&lt;/sys_class_name&gt;&lt;sys_created_by&gt;divyanshu.dutt@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-10 08:05:24&lt;/sys_created_on&gt;&lt;sys_id&gt;da049f2a878ee95018c742ec0ebb35ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Workday Approvals Request&lt;/sys_name&gt;&lt;sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="HR Service Delivery Integration with Workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_ex_sp_task_tab_configuration_da049f2a878ee95018c742ec0ebb35ac&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;divyanshu.dutt@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-10 08:24:04&lt;/sys_updated_on&gt;&lt;table&gt;sn_hr_workday_termination_request_todos&lt;/table&gt;&lt;task_configuration display_value="Approval | Workday | Termination request"&gt;2201c3a647862190901d3a34846d43fb&lt;/task_configuration&gt;&lt;type&gt;custom&lt;/type&gt;&lt;visibility/&gt;&lt;visibility_script&gt;&lt;![CDATA[/**
+ * `answer` should be returned with true/false which validates if a tab is visible
+ * The `current` object refers to the current Task(extension) record 
+ **/ 
+(function(current, answer) { 
+
+	// write your code here 
+
+	answer = true; 
+	return answer; 
+ 
+})(current, answer);]]&gt;&lt;/visibility_script&gt;&lt;widget display_value="Workday Approvals Requests"&gt;b17b07e6874ee95018c742ec0ebb35a0&lt;/widget&gt;&lt;widget_parameters&gt;{"workday_id":"{table.u_workday_id}","raas_report_name":"Workday_Approval_Service_Name"}&lt;/widget_parameters&gt;&lt;/sn_ex_sp_task_tab_configuration&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-255773934</payload_hash>
+        <record_name>Workday Approvals Request</record_name>
+        <reverted_from/>
+        <source>bbfe92c447fe211072cf2ebd416d4333</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-09 16:33:27</sys_created_on>
+        <sys_id>262fdec447fe211072cf2ebd416d431b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188015c53420000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-09 16:33:27</sys_updated_on>
+        <type>Tab Configuration</type>
+        <update_guid>db0913ae668ee9501689f6202d2ad934</update_guid>
+        <update_guid_history>db0913ae668ee9501689f6202d2ad934:-255773934,7dc41b6ae38ee950d95fb79202b8c473:-93164419</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Workday Approvals Request">032be60047b2611072cf2ebd416d4308</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-09 17:25:54</sys_created_on>
+        <sys_db_object display_value="" name="sn_ex_sp_task_tab_configuration">sn_ex_sp_task_tab_configuration</sys_db_object>
+        <sys_id>306999cf1c8e41cc8e9b575cdbd5b490</sys_id>
+        <sys_metadata>da049f2a878ee95018c742ec0ebb35ac</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workday Approvals Request</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sn_ex_sp_task_tab_configuration_da049f2a878ee95018c742ec0ebb35ac</sys_update_name>
+        <sys_update_version display_value="sn_ex_sp_task_tab_configuration_da049f2a878ee95018c742ec0ebb35ac">262fdec447fe211072cf2ebd416d431b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-09 17:25:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

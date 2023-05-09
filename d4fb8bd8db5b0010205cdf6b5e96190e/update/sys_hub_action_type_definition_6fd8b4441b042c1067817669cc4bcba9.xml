@@ -2,6 +2,7 @@
     <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
         <access>package_private</access>
         <acls/>
+        <action_status/>
         <action_template/>
         <active>true</active>
         <annotation/>
@@ -22,12 +23,12 @@
         <ih_action>false</ih_action>
         <internal_name>get_last_successful_run_date_time</internal_name>
         <label_cache>[{"name":"{{action.service}}","label":"action➛Service","type":"action","ref":""},{"name":"{{action.job}}","label":"action➛Job","type":"action","ref":""},{"name":"{{action.service_tracker}}","label":"action➛Service Tracker","type":"action","ref":""},{"name":"{{action.service_job_tracker}}","label":"action➛Service Job Tracker","type":"action","ref":"sn_hr_workday_service_job_tracker"},{"name":"{{step[8eae0800-cd80-492d-bb2d-d205efa38029].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[8eae0800-cd80-492d-bb2d-d205efa38029]._}}","label":"step➛Script step➛","type":"step","ref":""},{"name":"{{step[8eae0800-cd80-492d-bb2d-d205efa38029].last_successful_run_date}}","label":"step➛Script step➛last_successful_run_date","type":"step","ref":""},{"name":"{{step[8eae0800-cd80-492d-bb2d-d205efa38029].last_successful_run_date_time}}","label":"step➛Script step➛last_successful_run_date_time","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>85492b0f1bd06410fcab326c0a4bcb21</latest_snapshot>
         <master_snapshot>cbf878441b042c1067817669cc4bcbb4</master_snapshot>
         <name>Get Last Successful Run Date Time</name>
         <natlang/>
         <outputs/>
         <outputs/>
+        <pre_compiled>false</pre_compiled>
         <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -38,9 +39,9 @@
         <sys_mod_count>26</sys_mod_count>
         <sys_name>Get Last Successful Run Date Time</sys_name>
         <sys_overrides/>
-        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_6fd8b4441b042c1067817669cc4bcba9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-09 08:08:21</sys_updated_on>
@@ -61,7 +62,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
         <value/>
-        <variable display_value="">ffd8b4441b042c1067817669cc4bcbd1</variable>
+        <variable display_value="Last Successful Run Date">ffd8b4441b042c1067817669cc4bcbd1</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_definition</document>
@@ -75,7 +76,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
         <value/>
-        <variable display_value="">37d8b4441b042c1067817669cc4bcbd8</variable>
+        <variable display_value="Last Successful Run Date Time">37d8b4441b042c1067817669cc4bcbd8</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=6fd8b4441b042c1067817669cc4bcba9"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -106,6 +107,7 @@
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Get Last Successful Run Date Time">6fd8b4441b042c1067817669cc4bcba9</action>
         <cid>8eae0800-cd80-492d-bb2d-d205efa38029</cid>
+        <error_handling_type/>
         <extended_inputs/>
         <extended_inputs/>
         <extended_outputs/>
@@ -120,7 +122,7 @@
         <sys_created_on>2020-10-19 07:29:13</sys_created_on>
         <sys_id>a3d8b4441b042c1067817669cc4bcbb6</sys_id>
         <sys_mod_count>4</sys_mod_count>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-23 11:48:58</sys_updated_on>
     </sys_hub_step_instance>
@@ -142,7 +144,7 @@
   
 })(inputs, outputs);
 </value>
-        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -156,7 +158,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
         <value>35aa573fd7802200bdbaee5b5e610375</value>
-        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=a3d8b4441b042c1067817669cc4bcbb6"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -195,6 +197,8 @@
         <table>var__m_sys_hub_step_ext_input_a3d8b4441b042c1067817669cc4bcbb6</table>
         <value>{{action.service_job_tracker}}</value>
     </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_a3d8b4441b042c1067817669cc4bcbb6^id=a3d8b4441b042c1067817669cc4bcbb6"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=a3d8b4441b042c1067817669cc4bcbb6"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=a3d8b4441b042c1067817669cc4bcbb6^sys_idNOT INafd8b4441b042c1067817669cc4bcbb8"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -227,6 +231,7 @@
         <element>service_job_tracker</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -262,7 +267,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
@@ -273,6 +278,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -309,6 +315,7 @@
         <element>last_successful_run_date</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -344,7 +351,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:13</sys_updated_on>
@@ -355,6 +362,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -390,6 +398,7 @@
         <element>last_successful_run_date_time</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -425,7 +434,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
@@ -436,10 +445,13 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a3d8b4441b042c1067817669cc4bcbb6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_a3d8b4441b042c1067817669cc4bcbb6"/>
     <sys_hub_action_input action="delete_multiple" query="model=6fd8b4441b042c1067817669cc4bcba9^sys_idNOT IN6bd8b4441b042c1067817669cc4bcbae"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -472,6 +484,7 @@
         <element>service_job_tracker</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -507,7 +520,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:31:39</sys_updated_on>
@@ -518,10 +531,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6bd8b4441b042c1067817669cc4bcbae"/>
     <sys_hub_action_output action="delete_multiple" query="model=6fd8b4441b042c1067817669cc4bcba9^sys_idNOT IN37d8b4441b042c1067817669cc4bcbd8,ffd8b4441b042c1067817669cc4bcbd1"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -555,6 +570,7 @@
         <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -591,7 +607,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:31:39</sys_updated_on>
@@ -602,10 +618,13 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=37d8b4441b042c1067817669cc4bcbd8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=37d8b4441b042c1067817669cc4bcbd8"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -638,6 +657,7 @@
         <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -674,7 +694,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:31:39</sys_updated_on>
@@ -685,348 +705,15 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
-    <sys_hub_step_instance action="delete_multiple" query="action=6fd8b4441b042c1067817669cc4bcba9^sys_idNOT INa3d8b4441b042c1067817669cc4bcbb6"/>
-    <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Last Successful Run Date Time">6fd8b4441b042c1067817669cc4bcba9</action>
-        <cid>8eae0800-cd80-492d-bb2d-d205efa38029</cid>
-        <extended_inputs/>
-        <extended_inputs/>
-        <extended_outputs/>
-        <icon/>
-        <inputs/>
-        <label>Script step</label>
-        <order>1</order>
-        <outputs/>
-        <section/>
-        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:13</sys_created_on>
-        <sys_id>a3d8b4441b042c1067817669cc4bcbb6</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-23 11:48:58</sys_updated_on>
-    </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=a3d8b4441b042c1067817669cc4bcbb6"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>a3d8b4441b042c1067817669cc4bcbb6</document_key>
-        <order>600</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:14</sys_created_on>
-        <sys_id>bbd8b4441b042c1067817669cc4bcbce</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-23 11:48:58</sys_updated_on>
-        <value>(function execute(inputs, outputs) {
-    outputs.last_successful_run_date = new ImportSetUtilsSNC().getConvertedDate(inputs.service_job_tracker.getValue('start_date_time_api_parameter'));
-    outputs.last_successful_run_date_time = new ImportSetUtilsSNC().getConvertedDateTime(inputs.service_job_tracker.getValue('start_date_time_api_parameter'));
-  
-})(inputs, outputs);
-</value>
-        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>a3d8b4441b042c1067817669cc4bcbb6</document_key>
-        <order>400</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:14</sys_created_on>
-        <sys_id>f7d8b4441b042c1067817669cc4bcbce</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
-        <value>35aa573fd7802200bdbaee5b5e610375</value>
-        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=a3d8b4441b042c1067817669cc4bcbb6"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>a3d8b4441b042c1067817669cc4bcbb6</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:14</sys_created_on>
-        <sys_id>b3d8b4441b042c1067817669cc4bcbce</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>a3d8b4441b042c1067817669cc4bcbb6</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:14</sys_created_on>
-        <sys_id>77d8b4441b042c1067817669cc4bcbce</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>service_job_tracker</field>
-        <id>a3d8b4441b042c1067817669cc4bcbb6</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:14</sys_created_on>
-        <sys_id>37d8b4441b042c1067817669cc4bcbcf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
-        <table>var__m_sys_hub_step_ext_input_a3d8b4441b042c1067817669cc4bcbb6</table>
-        <value>{{action.service_job_tracker}}</value>
-    </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=a3d8b4441b042c1067817669cc4bcbb6^sys_idNOT INafd8b4441b042c1067817669cc4bcbb8"/>
-    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>service_job_tracker</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label/>
-        <mandatory>true</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Script step">a3d8b4441b042c1067817669cc4bcbb6</model>
-        <model_id>a3d8b4441b042c1067817669cc4bcbb6</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_a3d8b4441b042c1067817669cc4bcbb6</name>
-        <next_element/>
-        <order>0</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:13</sys_created_on>
-        <sys_id>afd8b4441b042c1067817669cc4bcbb8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=a3d8b4441b042c1067817669cc4bcbb6^sys_idNOT INabd8b4441b042c1067817669cc4bcbbf,ffd8b4441b042c1067817669cc4bcbc5"/>
-    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date,uiUniqueId=84b35bad-c0ad-4b5c-a3a4-f96e30d1357e</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>last_successful_run_date</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">glide_date</internal_type>
-        <label>last_successful_run_date</label>
-        <mandatory>true</mandatory>
-        <max_length>40</max_length>
-        <model display_value="Script step">a3d8b4441b042c1067817669cc4bcbb6</model>
-        <model_id>a3d8b4441b042c1067817669cc4bcbb6</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_a3d8b4441b042c1067817669cc4bcbb6</name>
-        <next_element/>
-        <order>1</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:13</sys_created_on>
-        <sys_id>abd8b4441b042c1067817669cc4bcbbf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:13</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_output>
-    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=b9b8dc87-290b-469a-a70b-b2b5e92b978e</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>last_successful_run_date_time</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">glide_date_time</internal_type>
-        <label>last_successful_run_date_time</label>
-        <mandatory>true</mandatory>
-        <max_length>40</max_length>
-        <model display_value="Script step">a3d8b4441b042c1067817669cc4bcbb6</model>
-        <model_id>a3d8b4441b042c1067817669cc4bcbb6</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_a3d8b4441b042c1067817669cc4bcbb6</name>
-        <next_element/>
-        <order>2</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:14</sys_created_on>
-        <sys_id>ffd8b4441b042c1067817669cc4bcbc5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ffd8b4441b042c1067817669cc4bcbd1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ffd8b4441b042c1067817669cc4bcbd1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6fd8b4441b042c1067817669cc4bcba9"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=6fd8b4441b042c1067817669cc4bcba9"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_6fd8b4441b042c1067817669cc4bcba9^sys_idNOT INabd8b4441b042c1067817669cc4bcbb3"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>service_job_tracker</element>
@@ -1042,15 +729,16 @@
         <sys_id>abd8b4441b042c1067817669cc4bcbb3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Service Job Tracker</sys_name>
-        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_action_input_6fd8b4441b042c1067817669cc4bcba9_service_job_tracker_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:13</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_6fd8b4441b042c1067817669cc4bcba9"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_6fd8b4441b042c1067817669cc4bcba9^sys_idNOT IN7fd8b4441b042c1067817669cc4bcbdc,bfd8b4441b042c1067817669cc4bcbd6"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>last_successful_run_date_time</element>
@@ -1066,9 +754,9 @@
         <sys_id>7fd8b4441b042c1067817669cc4bcbdc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Last Successful Run Date Time</sys_name>
-        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_action_output_6fd8b4441b042c1067817669cc4bcba9_last_successful_run_date_time_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
@@ -1089,15 +777,16 @@
         <sys_id>bfd8b4441b042c1067817669cc4bcbd6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Last Successful Run Date</sys_name>
-        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_action_output_6fd8b4441b042c1067817669cc4bcba9_last_successful_run_date_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:14</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_6fd8b4441b042c1067817669cc4bcba9"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=6fd8b4441b042c1067817669cc4bcba9^sys_idNOT INa7f8b8441b042c1067817669cc4bcb31"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Get Last Successful Run Date Time">6fd8b4441b042c1067817669cc4bcba9</action_id>
@@ -1117,6 +806,7 @@
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>package_private</access>
         <acls/>
+        <action_status/>
         <action_template/>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
@@ -1143,7 +833,7 @@
         <sys_overrides/>
         <sys_package/>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:31:47</sys_updated_on>
@@ -1164,7 +854,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:45</sys_updated_on>
         <value/>
-        <variable display_value="">5bf878441b042c1067817669cc4bcbed</variable>
+        <variable display_value="Last Successful Run Date Time">5bf878441b042c1067817669cc4bcbed</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_snapshot</document>
@@ -1178,7 +868,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:45</sys_updated_on>
         <value/>
-        <variable display_value="">9ff878441b042c1067817669cc4bcbe6</variable>
+        <variable display_value="Last Successful Run Date">9ff878441b042c1067817669cc4bcbe6</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=cbf878441b042c1067817669cc4bcbb4"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -1209,6 +899,7 @@
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Get Last Successful Run Date Time">cbf878441b042c1067817669cc4bcbb4</action>
         <cid>8eae0800-cd80-492d-bb2d-d205efa38029</cid>
+        <error_handling_type/>
         <extended_inputs/>
         <extended_inputs/>
         <extended_outputs/>
@@ -1223,7 +914,7 @@
         <sys_created_on>2020-10-19 07:29:44</sys_created_on>
         <sys_id>43f878441b042c1067817669cc4bcbca</sys_id>
         <sys_mod_count>4</sys_mod_count>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-23 11:49:02</sys_updated_on>
     </sys_hub_step_instance>
@@ -1245,7 +936,7 @@
   
 })(inputs, outputs);
 </value>
-        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -1259,7 +950,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
         <value>35aa573fd7802200bdbaee5b5e610375</value>
-        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=43f878441b042c1067817669cc4bcbca"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -1298,6 +989,8 @@
         <table>var__m_sys_hub_step_ext_input_43f878441b042c1067817669cc4bcbca</table>
         <value>{{action.service_job_tracker}}</value>
     </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_43f878441b042c1067817669cc4bcbca^id=43f878441b042c1067817669cc4bcbca"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=43f878441b042c1067817669cc4bcbca"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=43f878441b042c1067817669cc4bcbca^sys_idNOT IN8ff878441b042c1067817669cc4bcbcc"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1330,6 +1023,7 @@
         <element>service_job_tracker</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1365,7 +1059,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
@@ -1376,6 +1070,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1412,6 +1107,7 @@
         <element>last_successful_run_date</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1447,7 +1143,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
@@ -1458,6 +1154,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1493,6 +1190,7 @@
         <element>last_successful_run_date_time</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1528,7 +1226,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
@@ -1539,10 +1237,13 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=43f878441b042c1067817669cc4bcbca"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_43f878441b042c1067817669cc4bcbca"/>
     <sys_hub_action_input action="delete_multiple" query="model=cbf878441b042c1067817669cc4bcbb4^sys_idNOT IN0ff878441b042c1067817669cc4bcbb5"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1575,6 +1276,7 @@
         <element>service_job_tracker</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1610,7 +1312,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
@@ -1621,10 +1323,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0ff878441b042c1067817669cc4bcbb5"/>
     <sys_hub_action_output action="delete_multiple" query="model=cbf878441b042c1067817669cc4bcbb4^sys_idNOT IN5bf878441b042c1067817669cc4bcbed,9ff878441b042c1067817669cc4bcbe6"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1658,6 +1362,7 @@
         <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1694,7 +1399,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:45</sys_updated_on>
@@ -1705,10 +1410,13 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5bf878441b042c1067817669cc4bcbed"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5bf878441b042c1067817669cc4bcbed"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1741,6 +1449,7 @@
         <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1777,7 +1486,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
@@ -1788,348 +1497,15 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
-    <sys_hub_step_instance action="delete_multiple" query="action=cbf878441b042c1067817669cc4bcbb4^sys_idNOT IN43f878441b042c1067817669cc4bcbca"/>
-    <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Last Successful Run Date Time">cbf878441b042c1067817669cc4bcbb4</action>
-        <cid>8eae0800-cd80-492d-bb2d-d205efa38029</cid>
-        <extended_inputs/>
-        <extended_inputs/>
-        <extended_outputs/>
-        <icon/>
-        <inputs/>
-        <label>Script step</label>
-        <order>1</order>
-        <outputs/>
-        <section/>
-        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:44</sys_created_on>
-        <sys_id>43f878441b042c1067817669cc4bcbca</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-23 11:49:02</sys_updated_on>
-    </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=43f878441b042c1067817669cc4bcbca"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>43f878441b042c1067817669cc4bcbca</document_key>
-        <order>600</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:44</sys_created_on>
-        <sys_id>5bf878441b042c1067817669cc4bcbe3</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-23 11:49:02</sys_updated_on>
-        <value>(function execute(inputs, outputs) {
-    outputs.last_successful_run_date = new ImportSetUtilsSNC().getConvertedDate(inputs.service_job_tracker.getValue('start_date_time_api_parameter'));
-    outputs.last_successful_run_date_time = new ImportSetUtilsSNC().getConvertedDateTime(inputs.service_job_tracker.getValue('start_date_time_api_parameter'));
-  
-})(inputs, outputs);
-</value>
-        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>43f878441b042c1067817669cc4bcbca</document_key>
-        <order>400</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:44</sys_created_on>
-        <sys_id>97f878441b042c1067817669cc4bcbe3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
-        <value>35aa573fd7802200bdbaee5b5e610375</value>
-        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=43f878441b042c1067817669cc4bcbca"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>43f878441b042c1067817669cc4bcbca</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:44</sys_created_on>
-        <sys_id>53f878441b042c1067817669cc4bcbe3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>43f878441b042c1067817669cc4bcbca</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:44</sys_created_on>
-        <sys_id>17f878441b042c1067817669cc4bcbe3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>service_job_tracker</field>
-        <id>43f878441b042c1067817669cc4bcbca</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:44</sys_created_on>
-        <sys_id>d3f878441b042c1067817669cc4bcbe4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
-        <table>var__m_sys_hub_step_ext_input_43f878441b042c1067817669cc4bcbca</table>
-        <value>{{action.service_job_tracker}}</value>
-    </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=43f878441b042c1067817669cc4bcbca^sys_idNOT IN8ff878441b042c1067817669cc4bcbcc"/>
-    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>service_job_tracker</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>service_job_tracker</label>
-        <mandatory>true</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Script step">43f878441b042c1067817669cc4bcbca</model>
-        <model_id>43f878441b042c1067817669cc4bcbca</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_43f878441b042c1067817669cc4bcbca</name>
-        <next_element/>
-        <order>0</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:44</sys_created_on>
-        <sys_id>8ff878441b042c1067817669cc4bcbcc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=43f878441b042c1067817669cc4bcbca^sys_idNOT IN03f878441b042c1067817669cc4bcbd4,cbf878441b042c1067817669cc4bcbda"/>
-    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date,uiUniqueId=84b35bad-c0ad-4b5c-a3a4-f96e30d1357e</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>last_successful_run_date</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">glide_date</internal_type>
-        <label>last_successful_run_date</label>
-        <mandatory>true</mandatory>
-        <max_length>40</max_length>
-        <model display_value="Script step">43f878441b042c1067817669cc4bcbca</model>
-        <model_id>43f878441b042c1067817669cc4bcbca</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_43f878441b042c1067817669cc4bcbca</name>
-        <next_element/>
-        <order>1</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:44</sys_created_on>
-        <sys_id>03f878441b042c1067817669cc4bcbd4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_output>
-    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=b9b8dc87-290b-469a-a70b-b2b5e92b978e</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>last_successful_run_date_time</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">glide_date_time</internal_type>
-        <label>last_successful_run_date_time</label>
-        <mandatory>true</mandatory>
-        <max_length>40</max_length>
-        <model display_value="Script step">43f878441b042c1067817669cc4bcbca</model>
-        <model_id>43f878441b042c1067817669cc4bcbca</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_43f878441b042c1067817669cc4bcbca</name>
-        <next_element/>
-        <order>2</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-19 07:29:44</sys_created_on>
-        <sys_id>cbf878441b042c1067817669cc4bcbda</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9ff878441b042c1067817669cc4bcbe6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9ff878441b042c1067817669cc4bcbe6"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=cbf878441b042c1067817669cc4bcbb4"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=cbf878441b042c1067817669cc4bcbb4"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_cbf878441b042c1067817669cc4bcbb4^sys_idNOT IN4bf878441b042c1067817669cc4bcbc7"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>service_job_tracker</element>
@@ -2145,15 +1521,16 @@
         <sys_id>4bf878441b042c1067817669cc4bcbc7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Service Job Tracker</sys_name>
-        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_action_input_cbf878441b042c1067817669cc4bcbb4_service_job_tracker_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_cbf878441b042c1067817669cc4bcbb4"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_cbf878441b042c1067817669cc4bcbb4^sys_idNOT IN57f878441b042c1067817669cc4bcbf2,93f878441b042c1067817669cc4bcbec"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>last_successful_run_date_time</element>
@@ -2169,9 +1546,9 @@
         <sys_id>57f878441b042c1067817669cc4bcbf2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Last Successful Run Date Time</sys_name>
-        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_action_output_cbf878441b042c1067817669cc4bcbb4_last_successful_run_date_time_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:45</sys_updated_on>
@@ -2192,13 +1569,19 @@
         <sys_id>93f878441b042c1067817669cc4bcbec</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Last Successful Run Date</sys_name>
-        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_action_output_cbf878441b042c1067817669cc4bcbb4_last_successful_run_date_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-19 07:29:44</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_cbf878441b042c1067817669cc4bcbb4"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>6fd8b4441b042c1067817669cc4bcba9</sys_id>
+        <latest_snapshot>cbf878441b042c1067817669cc4bcbb4</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_action_type_definition>
 </record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Termination">0e2b8f9347116150901d3a34846d4376</application>
+        <filter/>
+        <name>Terminations</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>sn_hr_workday.termination_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-06 08:31:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>922b8f9347116150901d3a34846d439f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Terminations</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_ui_module_922b8f9347116150901d3a34846d439f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-06 08:31:44</sys_updated_on>
+        <table>sn_hr_workday_termination</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_ui_module_922b8f9347116150901d3a34846d439f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Termination">0e2b8f9347116150901d3a34846d4376</application><filter/><name>Terminations</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>sn_hr_workday.termination_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-06 08:31:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>922b8f9347116150901d3a34846d439f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Terminations</sys_name><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_update_name>sys_ui_module_922b8f9347116150901d3a34846d439f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-06 08:31:44</sys_updated_on><table>sn_hr_workday_termination</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>689938801</payload_hash>
+        <record_name>Terminations</record_name>
+        <reverted_from/>
+        <source>04b52ad587aa2110d306cbb4dabb3555</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-05-01 04:00:18</sys_created_on>
+        <sys_id>90162e1987aa2110d306cbb4dabb3550</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187d577eb260000001</sys_recorded_at>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-05-01 04:00:18</sys_updated_on>
+        <type>Module</type>
+        <update_guid>962b8f933211615065c2c8674e4655a1</update_guid>
+        <update_guid_history>962b8f933211615065c2c8674e4655a1:689938801</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 10:43:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>00c2cdd27d6244e4803f674ae4e05464</sys_id>
+        <sys_metadata>922b8f9347116150901d3a34846d439f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Terminations</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_ui_module_922b8f9347116150901d3a34846d439f</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_922b8f9347116150901d3a34846d439f">90162e1987aa2110d306cbb4dabb3550</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 10:43:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

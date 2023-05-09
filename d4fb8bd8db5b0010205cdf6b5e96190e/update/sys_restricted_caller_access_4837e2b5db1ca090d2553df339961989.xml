@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_restricted_caller_access">
     <sys_restricted_caller_access action="INSERT_OR_UPDATE">
+        <description/>
         <operation>read</operation>
+        <rca_type/>
         <source>99c8911ac0a8006f00395bca69c1a922</source>
         <source_scope display_value="Global">global</source_scope>
         <source_table>sys_script</source_table>
@@ -12,14 +14,14 @@
         <sys_id>4837e2b5db1ca090d2553df339961989</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>global</sys_name>
-        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_restricted_caller_access_4837e2b5db1ca090d2553df339961989</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-11 05:46:43</sys_updated_on>
-        <target name="sn_hr_workday_location_staging" target_table="sys_db_object">2c5391a61b39101067817669cc4bcbbe</target>
-        <target_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</target_scope>
+        <target name="sn_hr_workday_location_staging" target_table="sys_db_object">d1e649c8c3326510238178f9d0013163</target>
+        <target_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</target_scope>
         <target_table>sys_db_object</target_table>
         <target_type>1</target_type>
     </sys_restricted_caller_access>

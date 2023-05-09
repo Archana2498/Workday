@@ -8,23 +8,87 @@
         <description/>
         <name>WorkdayPullToDosHelper</name>
         <script><![CDATA[var WorkdayPullToDosHelper = Class.create();
-WorkdayPullToDosHelper.prototype = Object.extendsObject(sn_hr_workday.WorkdayPullToDosHelperSNC,{
-    initialize: function() {
-    },
+WorkdayPullToDosHelper.prototype = Object.extendsObject(sn_hr_workday.WorkdayPullToDosHelperSNC, {
+    initialize: function() {},
 
+    updateRecordClass: function(source, className) {
+        var grToDo = new GlideRecord('sn_hr_workday_todo');
+        grToDo.addEncodedQuery("u_workday_id=" + source.u_workdayid);
+        grToDo.query();
+        grToDo.sys_class_name = className;
+        grToDo.updateMultiple();
+    },
+    updateTimeOffFields: function(source, target) {
+        var grToDoP = new GlideRecord('sn_hr_workday_time_off_request_todos');
+        grToDoP.addEncodedQuery("u_workday_id=" + source.u_workdayid);
+        grToDoP.query();
+        grToDoP.u_start_date = target.u_first_day_of_time_off;
+        grToDoP.u_end_date = target.u_last_day_of_time_off;
+        grToDoP.u_business_process_type = target.u_business_process_name;
+        grToDoP.u_requested_for = wdIntHelper.getUserId(source.u_cf_employee_id);
+        grToDoP.u_type_of_leave = target.u_time_off_type_for_time_off_entry;
+        grToDoP.u_number_of_units = target.u_time_off_total_units_hour + ' ' + target.u_unit_time + '- ' + target.u_time_off_type_for_time_off_entry;
+        grToDoP.updateMultiple();
+    },
+    insertComments: function() {
+        var grComment = new GlideRecord('sn_hr_workday_workday_comment');
+        grComment.addEncodedQuery("u_workday_id=" + source.u_workdayid1);
+        grComment.setLimit(1);
+        grComment.query();
+        if (!grComment.next()) {
+            grComment.initialize();
+            grComment.u_comment = source.u_comment;
+            grComment.u_commented_on = new GlideDateTime(source.u_created_moment);
+            grComment.u_first_name = source.u_comment_by_person.split(" ")[0];
+            grComment.u_last_name = source.u_comment_by_person.split(" ")[1];
+            grComment.u_workday_id = source.u_workdayid1;
+            grComment.u_event_workday_id = source.u_workdayid;
+            grComment.u_commented_by = getUser(source.u_employee_id);
+            grComment.insert();
+        }
+    },
+    getUser: function(employeeNumber) {
+        var grUser = new GlideRecord('sys_user');
+        grUser.addEncodedQuery('employee_number=' + employeeNumber);
+        grUser.setLimit(1);
+        grUser.query();
+        if (grUser.next()) {
+            return grUser.sys_id;
+        } else {
+            return "";
+        }
+    },
+    addAttachment: function(source, className) {
+        var grtoAtt = new GlideRecord(className);
+        grtoAtt.addEncodedQuery("u_workday_id=" + source.u_workdayid);
+        grtoAtt.query();
+        while (grtoAtt.next()) {
+            var attachmentID = grtoAtt.u_attachment_ids.toString();
+            if (attachmentID.indexOf(source.u_attachment_workdayid.toString()) < 0 || grtoAtt.u_attachment_ids == "") {
+                var sysAttachment = new GlideRecord('sys_attachment');
+                sysAttachment.query();
+                if (sysAttachment.next()) {
+                    var attachment = new GlideSysAttachment();
+                    var agr = attachment.writeBase64(grtoAtt, source.u_filename, "", source.u_attachmentcontent);
+                    grtoAtt.u_attachment_ids = (grtoAtt.u_attachment_ids + "," + source.u_attachment_workdayid);
+                    grtoAtt.update();
+                }
+            }
+        }
+    },
     type: 'WorkdayPullToDosHelper'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-12-15 12:49:20</sys_created_on>
         <sys_id>e4c4eb9e1bc1a090ac98f2ff034bcbfa</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>WorkdayPullToDosHelper</sys_name>
-        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_script_include_e4c4eb9e1bc1a090ac98f2ff034bcbfa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-15 12:49:20</sys_updated_on>
+        <sys_updated_on>2023-04-12 13:11:27</sys_updated_on>
     </sys_script_include>
 </record_update>

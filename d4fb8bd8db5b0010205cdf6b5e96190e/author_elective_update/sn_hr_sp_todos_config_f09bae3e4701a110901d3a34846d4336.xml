@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_hr_sp_todos_config">
+    <sn_hr_sp_todos_config action="DELETE">
+        <active>true</active>
+        <applies_to>0</applies_to>
+        <condition table="sn_hr_workday_todo">todo_state=2^assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item display_value="Open" endquery="false" field="todo_state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <custom_detail/>
+        <custom_title>New Task</custom_title>
+        <detail_fields>external_status</detail_fields>
+        <detail_type>fields</detail_type>
+        <display_priority/>
+        <link_to_parent>true</link_to_parent>
+        <link_to_task>true</link_to_task>
+        <name>Workday To-Dos</name>
+        <parent_fields/>
+        <parent_table>sn_hr_workday_todo</parent_table>
+        <sys_class_name>sn_hr_sp_todos_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-20 06:43:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f09bae3e4701a110901d3a34846d4336</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Workday To-Dos</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sn_hr_sp_todos_config_f09bae3e4701a110901d3a34846d4336</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-02 12:05:10</sys_updated_on>
+        <tab>open</tab>
+        <table>sn_hr_workday_todo</table>
+        <title_field>todo_description</title_field>
+        <title_type>fields</title_type>
+    </sn_hr_sp_todos_config>
+    <sys_translated_text action="DELETE" query="documentkey=f09bae3e4701a110901d3a34846d4336"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>b5713642dbe621d868c2c59705961942</instance_id>
+        <instance_name>wdappdev2</instance_name>
+        <name>sn_hr_sp_todos_config_f09bae3e4701a110901d3a34846d4336</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_hr_sp_todos_config"><sn_hr_sp_todos_config action="INSERT_OR_UPDATE"><active>true</active><applies_to>0</applies_to><condition table="sn_hr_workday_todo">todo_state=2^assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item display_value="Open" endquery="false" field="todo_state" goto="false" newquery="false" operator="=" or="false" value="2"/><item endquery="false" field="assigned_to" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><custom_detail/><custom_title>New Task</custom_title><detail_fields>external_status</detail_fields><detail_type>fields</detail_type><display_priority/><link_to_parent>true</link_to_parent><link_to_task>true</link_to_task><name>Workday To-Dos</name><parent_fields/><parent_table>sn_hr_workday_todo</parent_table><sys_class_name>sn_hr_sp_todos_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-20 06:43:47</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f09bae3e4701a110901d3a34846d4336</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Workday To-Dos</sys_name><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_update_name>sn_hr_sp_todos_config_f09bae3e4701a110901d3a34846d4336</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-02 12:05:10</sys_updated_on><tab>open</tab><table>sn_hr_workday_todo</table><title_field>todo_description</title_field><title_type>fields</title_type></sn_hr_sp_todos_config><sys_translated_text action="delete_multiple" query="documentkey=f09bae3e4701a110901d3a34846d4336"/></record_update>]]></payload>
+        <payload_hash>-373294194</payload_hash>
+        <record_name>Workday To-Dos</record_name>
+        <reverted_from/>
+        <source>bbfe92c447fe211072cf2ebd416d4333</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-09 16:33:28</sys_created_on>
+        <sys_id>ba2fdec447fe211072cf2ebd416d4327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188015c53f00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-09 16:33:28</sys_updated_on>
+        <type>To-dos Configuration</type>
+        <update_guid>e1a5d74632116d10e2d5896d9ed59d4d</update_guid>
+        <update_guid_history>e1a5d74632116d10e2d5896d9ed59d4d:-373294194,6680639d00dd69108c39f36576750f50:32093045,341917f38885651069ca1c28e7fbcc82:244444922,19b8dbb3ae85651032e68d0760d86a8c:-1185716926,63681bb3488565103a61ad021b7d3187:-2147050327,3a3857b303856510c1b72284a73107c6:1279244451,85efaa33aa4165102cd518f299eb5a91:-1495392153,903ca67eda01a11053ff22843afe12bd:426421417</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-09 17:25:56</sys_created_on>
+        <sys_db_object display_value="" name="sn_hr_sp_todos_config">sn_hr_sp_todos_config</sys_db_object>
+        <sys_id>6f4204f59fd44e61b5e246f436e62439</sys_id>
+        <sys_metadata>f09bae3e4701a110901d3a34846d4336</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workday To-Dos</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sn_hr_sp_todos_config_f09bae3e4701a110901d3a34846d4336</sys_update_name>
+        <sys_update_version display_value="sn_hr_sp_todos_config_f09bae3e4701a110901d3a34846d4336">ba2fdec447fe211072cf2ebd416d4327</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-09 17:25:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function(spUtil) {
+
+    var c = this;
+
+    c.getComments = function() {
+        var input = {
+            action: "getComments",
+            tableName: c.data.tableName,
+            userSysId: c.data.userSysId,
+            workdayID: c.data.workdayID,
+            workdayUrl: c.data.workdayUrl
+        };
+        c.server.get(input).then(function(response) {
+            if (response) {
+                c.data.action = "";
+                c.data.reload = response.data.reload;
+                if (!c.data.reload) {
+                    c.data.commentsObj.loading = false;
+                    c.data.commentsObj.emptyState = true;
+                    if (response.data.commentsObj.comments && response.data.commentsObj.comments.length > 0) {
+                        c.data.commentsObj.comments = response.data.commentsObj.comments;
+                    }
+                    spUtil.get('comments', c.data.commentsObj).then(function(response) {
+                        c.data.commentsWidget = response;
+                    });
+                }
+            }
+        });
+    };
+
+    c.getComments();
+
+    c.openReportUrl = function() {
+        window.open(c.data.workdayUrl, '_blank');
+    };
+
+    c.reloadComments = function() {
+        c.data.reload = false;
+        c.getComments();
+    };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>$sp-space--xl: 24px !default;&#13;
+$sp-space--xs: 4px !default;&#13;
+$sp-space--sm: 8px !default;&#13;
+$sp-space--md: 12px !default;&#13;
+$background-primary: #ffffff !default;&#13;
+$gray-light: #656E81 !default;&#13;
+$headings-font-weight: 600 !default;&#13;
+$text-secondary: #474D5A !default;&#13;
+&#13;
+.comments-container {&#13;
+  background-color: $background-primary;&#13;
+&#13;
+  .error-state-container {&#13;
+    display: flex;&#13;
+    flex-direction: column;&#13;
+    align-items: center;&#13;
+    justify-content: center;&#13;
+    width: 100%;&#13;
+    padding: 64px;&#13;
+    background-color: $background-primary;&#13;
+    gap: $sp-space--md;&#13;
+&#13;
+    .fa-exclamation-circle {&#13;
+      font-size: 4.8rem;&#13;
+      color: $gray-light;&#13;
+    }&#13;
+    .error-title {&#13;
+      font-size: $font-size-h4;&#13;
+      font-weight: $headings-font-weight;&#13;
+    }&#13;
+    .error-title-secondary {&#13;
+        color: $text-secondary;&#13;
+    }&#13;
+    div {&#13;
+      margin-top: $sp-space--xs;&#13;
+      display: flex;&#13;
+      gap: $sp-space--sm;&#13;
+    }&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>workday-comments</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Workday Comments</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+    data.commentsObj = {};
+    data.commentsObj.comments = [];
+    data.commentsObj.loading = true;
+    data.commentsWidget = $sp.getWidget('comments', data.commentsObj);
+    data.workdayID = input && input.workdayID ? input.workdayID : options.workdayID;
+    data.userSysId = input && input.userSysId ? input.userSysId : options.userSysId;
+	data.tableName = input && input.tableName ? input.tableName : options.tableName;
+	data.workdayUrl = input && input.workdayUrl ? input.workdayUrl : options.workdayUrl;
+    data.reload = false;
+
+    if (input && input.action === 'getComments') {
+        var commentGr = new GlideRecord(input.tableName);
+        commentGr.addQuery('u_event_workday_id', input.workdayID);
+        commentGr.orderByDesc('u_commented_on');
+        commentGr.query();
+        if (commentGr.hasNext()) {
+            while (commentGr.next()) {
+                data.commentsObj.comments.push(getComments(commentGr));
+            }
+        } 
+    }
+
+    function getComments(commentGr) {
+		var firstName = gs.nil(commentGr.getValue('u_first_name'))?"":commentGr.getValue('u_first_name');
+		var lastName = gs.nil(commentGr.getValue('u_last_name'))?"":" "+commentGr.getValue('u_last_name');
+        return {
+            user_name: firstName+lastName,
+            created_on: commentGr.getDisplayValue('u_commented_on'),
+            comment: commentGr.getDisplayValue('u_comment')
+        };
+    }
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-10 09:58:49</sys_created_on>
+        <sys_id>781e676687422d5018c742ec0ebb3502</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Workday Comments</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sp_widget_781e676687422d5018c742ec0ebb3502</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 10:53:09</sys_updated_on>
+        <template><![CDATA[<div class="comments-container">
+  <div class="error-state-container" ng-if="data.reload">
+    <i class="fa fa-exclamation-circle"/>
+    <span class="error-title">${We're having trouble showing you the comments.}</span>
+    <span ng-if="data.workdayUrl" class="error-title-secondary">${You can always view the comments in Workday, or try again.}</span>
+    <div>
+      <button class="btn" ng-click="c.reloadComments()" ng-class="{ 'btn-primary' : data.workdayUrl, 'btn-default' : !data.data.workdayUrl}">${Try again}</button>
+      <button class="btn btn-default" ng-click="c.openReportUrl()" ng-if="data.workdayUrl">
+        ${View comments in Workday}
+        <i class="fa fa-external-link" title="${External link}"/>
+      </button>
+    </div>
+  </div>
+  <div ng-if="!data.reload">
+    <sp-widget widget="data.commentsWidget"></sp-widget>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

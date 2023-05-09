@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="cd08a8ef479ee910901d3a34846d43b3" extends="sys_import_set_row" label="Spend Authorization Request Staging" max_length="40" name="sn_hr_workday_spend_authorization_request_staging" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Action_Event" label="Action_Event" max_length="200" name="u_action_event" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Attachment_Content" label="Attachment_Content" max_length="400000" name="u_attachment_content" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Attachment_Content_Type" label="Attachment_Content_Type" max_length="100" name="u_attachment_content_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Attachment_Created_Moment" label="Attachment_Created_Moment" max_length="100" name="u_attachment_created_moment" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Attachment_Name" label="Attachment_Name" max_length="200" name="u_attachment_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Attachment_Uploaded_By" label="Attachment_Uploaded_By" max_length="40" name="u_attachment_uploaded_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Attachment_WorkdayID" label="Attachment_WorkdayID" max_length="40" name="u_attachment_workdayid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Business_Purpose" label="Business_Purpose" max_length="40" name="u_business_purpose" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cash_Advance_Requested" label="Cash_Advance_Requested" max_length="40" name="u_cash_advance_requested" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Comment" label="Comment" max_length="5000" name="u_comment" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Comment_By_Employee_ID" label="Comment_By_Employee_ID" max_length="40" name="u_comment_by_employee_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Comment_By_Person" label="Comment_By_Person" max_length="40" name="u_comment_by_person" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Comment_Created_Moment" label="Comment_Created_Moment" max_length="100" name="u_comment_created_moment" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Comment_WorkdayID" label="Comment_WorkdayID" max_length="40" name="u_comment_workdayid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Company" label="Company" max_length="40" name="u_company" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cost_Center" label="Cost_Center" max_length="40" name="u_cost_center" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description" max_length="40" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Expense_Item_as_Worktag" label="Expense_Item_as_Worktag" max_length="40" name="u_expense_item_as_worktag" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Justification" label="Justification" max_length="40" name="u_justification" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Line_Memo" label="Line_Memo" max_length="40" name="u_line_memo" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=project" label="project" max_length="40" name="u_project" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Quantity" label="Quantity" max_length="40" name="u_quantity" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Reimbursement_Payment_Type" label="Reimbursement_Payment_Type" max_length="40" name="u_reimbursement_payment_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Spend_End_Date" label="Spend_End_Date" max_length="40" name="u_spend_end_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Spend_Start_Date" label="Spend_Start_Date" max_length="40" name="u_spend_start_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=status" label="status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=total_amount" label="total_amount" max_length="40" name="u_total_amount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Transaction_Memo" label="Transaction_Memo" max_length="40" name="u_transaction_memo" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Unit_Cost" label="Unit_Cost" max_length="40" name="u_unit_cost" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=workdayID" label="workdayID" max_length="40" name="u_workdayid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Worktags" label="Worktags" max_length="40" name="u_worktags" type="string"/>
+    </element>
+</database>

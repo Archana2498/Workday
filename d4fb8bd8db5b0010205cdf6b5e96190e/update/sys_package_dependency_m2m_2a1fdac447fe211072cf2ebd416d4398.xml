@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">af95764ac3222110238178f9d0013168</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-09 16:33:11</sys_created_on>
+        <sys_id>2a1fdac447fe211072cf2ebd416d4398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-09 16:33:11</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

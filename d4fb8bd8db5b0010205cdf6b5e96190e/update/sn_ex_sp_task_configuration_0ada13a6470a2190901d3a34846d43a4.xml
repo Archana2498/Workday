@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_task_configuration">
+    <sn_ex_sp_task_configuration action="INSERT_OR_UPDATE">
+        <action_group_record display_value="Termination Approvals Action Group">e54d3d9f870eed5018c742ec0ebb358b</action_group_record>
+        <active>true</active>
+        <additional_conditions/>
+        <common_info_fields>u_request_type,u_created_date,due_date,workday_status</common_info_fields>
+        <external>true</external>
+        <fields>u_requested_for,u_position,u_primary_reason</fields>
+        <fields_reference/>
+        <info_custom_fields/>
+        <info_fields_type>fields</info_fields_type>
+        <internal_link/>
+        <link_to_task>true</link_to_task>
+        <name>Approval | Workday | Termination request</name>
+        <page_parameters/>
+        <reference_column>assigned_to</reference_column>
+        <reference_conditions/>
+        <reference_table>sys_user</reference_table>
+        <sys_class_name>sn_ex_sp_task_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-10 08:33:25</sys_created_on>
+        <sys_id>0ada13a6470a2190901d3a34846d43a4</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Approval | Workday | Termination request</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sn_ex_sp_task_configuration_0ada13a6470a2190901d3a34846d43a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 07:56:33</sys_updated_on>
+        <table>sn_hr_workday_termination_request_todos</table>
+        <title>u_todo_title</title>
+        <title_custom>Termination request for {table.u_requested_for}</title_custom>
+        <title_type>field</title_type>
+        <to_do_configuration display_value="Termination Request Todos">1026a391474aa950901d3a34846d432b</to_do_configuration>
+        <url/>
+        <url_custom>{table.todo_url}</url_custom>
+        <url_source>custom</url_source>
+        <widget>false</widget>
+        <widget_parameters/>
+        <widget_record/>
+    </sn_ex_sp_task_configuration>
+</record_update>

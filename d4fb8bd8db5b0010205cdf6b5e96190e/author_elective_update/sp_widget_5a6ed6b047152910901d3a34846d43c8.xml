@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($uibModal, $scope) {
+  /* widget controller */
+  var c = this;	
+	
+	c.openModal = function(comment) {
+ 	c.modalInstance = $uibModal.open({
+ 		templateUrl: 'modalTemplate',
+ 		scope: $scope
+ 	});
+	$scope.content = comment;
+ }
+	
+ 	c.closeModal = function() {
+ 		c.modalInstance.close();
+ 	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.comment {
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #3C59E7;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.commentBtn {
+	border: 0px;
+  background: transparent;
+}
+.commentBtn:disabled {
+opacity:25%;
+}
+.table {
+	border-bottom: 0.1rem solid #DADDE2;
+}
+.table &gt; tbody &gt; tr &gt; th {
+	border-top: 0rem solid #DADDE2;
+  border-bottom: 0.1rem solid #DADDE2;
+}
+.table &gt; tbody &gt; tr &gt; td {
+	border-top: 0rem solid #DADDE2;
+}
+.boldText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 23px;
+color: #181A1F;
+display: flex;
+}
+.border {
+box-sizing: border-box;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+background: #FFFFFF;
+border: 1px solid #DADDE2;
+border-radius: 4px;
+  margin-bottom:16px;
+}
+.smallText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+color: #656E81;
+  display: flex;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>custom_time_off_request_item</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+	
+}]]></link>
+        <name>Custom Time Off Request Item</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    data.task_items = [];
+    var app = new GlideRecord("sn_hr_workday_time_off_request_todos_item");
+    var workday_id = options.workday_id;
+		//var workday_id = '8e57a1262f5510126e3835ef26d10000';
+    app.addEncodedQuery('u_workday_id=' + workday_id);
+    app.query();
+    while (app.next()) {
+        var task_item = {};
+        task_item.u_date = app.getValue('u_date');
+        task_item.u_day_of_the_week = app.getValue('u_day_of_the_week');
+        task_item.u_units_requested_this_coordinated_leave_time_off = app.getValue('u_units_requested_this_coordinated_leave_time_off');
+        task_item.u_unit_time = app.getValue('u_unit_time');
+        task_item.u_comment = app.getValue('u_comment');
+
+        data.task_items.push(task_item);
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-26 10:55:56</sys_created_on>
+        <sys_id>5a6ed6b047152910901d3a34846d43c8</sys_id>
+        <sys_mod_count>207</sys_mod_count>
+        <sys_name>Custom Time Off Request Item</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sp_widget_5a6ed6b047152910901d3a34846d43c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 14:17:46</sys_updated_on>
+        <template><![CDATA[<div>
+  <table class="table hidden-xs" ng-if="data.task_items.length>0">
+    <tr>
+      <th>${Date}</th>
+    	<th>${Day of the week}</th>
+    	<th>${Requested}</th>
+    	<th>${Unit of time}</th>
+    	<th></th>
+		</tr>
+    <tr ng-repeat="task_item in data.task_items">
+      <td>{{task_item.u_date}}</td>
+      <td>{{task_item.u_day_of_the_week}}</td>
+      <td>{{task_item.u_units_requested_this_coordinated_leave_time_off}}</td>
+      <td>{{task_item.u_unit_time}}</td>
+      <td><button class="commentBtn" ng-disabled="!task_item.u_comment" ng-click="c.openModal(task_item.u_comment)"><i class="comment"></i></button></td>
+    </tr>
+  </table>
+  <div class="container-fluid border visible-xs" ng-if="data.task_items.length>0" ng-repeat="task_item in data.task_items">
+    <div class="row">
+  		<div class="col-sm-6 col-xs-6 boldText">{{task_item.u_date}}</div>
+  		<div class="col-sm-6 col-xs-6"><button style="float:right;" class="commentBtn" ng-disabled="!task_item.u_comment" ng-click="c.openModal(task_item.u_comment)"><i class="comment"></i></button></div>
+		</div>
+    <div class="row" style="margin-top: 16px;">
+  		<div class="col-sm-6 col-xs-6">
+      	<span class="smallText">${Day of the week}</span>
+        <span class="boldText">{{task_item.u_day_of_the_week}}</span>
+      </div>
+  		<div class="col-sm-6 col-xs-6">
+      	<span class="smallText">${Requested}</span>
+        <span class="boldText">{{task_item.u_units_requested_this_coordinated_leave_time_off}}</span>
+      </div>
+		</div>
+    <div class="row" style="margin-top: 16px;">
+  		<div class="col-sm-6 col-xs-6">
+      	<span class="smallText">${Unit of time}</span>
+        <span class="boldText">{{task_item.u_unit_time}}</span>
+      </div>
+		</div>
+  </div>
+  <div ng-if="data.task_items.length==0">
+    ${No item was found.}
+  </div>
+</div>
+
+<script type="text/ng-template" id="modalTemplate">
+<div class="panel panel-default">
+ 	<div class="panel-heading">
+  	<button type="button" class="close" ng-click="c.closeModal()">&times;</button>
+ 		<h4 class="panel-title">${Comment}</h4>
+  </div>
+ 	<div class="panel-body" id="divComment">
+		{{content}}
+  </div>
+ 	<div class="panel-footer text-right">
+ 		<button class="btn btn-primary" ng-click="c.closeModal()">${Close}</button>
+ 	</div>
+</div>
+ 
+<style>
+ 	.panel-default {
+ 		border-color: transparent;
+ 	}
+ 	.panel-default > .panel-heading, .panel-default > .panel-body, .panel-default > .panel-footer {
+ 		background-color: transparent;padding: 1.6rem;
+ 	}  
+  .modal-dialog {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal.fade .modal-dialog {
+  transform: transform .3s ease-out;
+}
+
+.modal.in .modal-dialog {
+  transform: translate(0, 0);
+}
+</style>
+</script>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>b5713642dbe621d868c2c59705961942</instance_id>
+        <instance_name>wdappdev2</instance_name>
+        <name>sp_widget_5a6ed6b047152910901d3a34846d43c8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function($uibModal, $scope) {
+  /* widget controller */
+  var c = this;	
+	
+	c.openModal = function(comment) {
+ 	c.modalInstance = $uibModal.open({
+ 		templateUrl: 'modalTemplate',
+ 		scope: $scope
+ 	});
+	$scope.content = comment;
+ }
+	
+ 	c.closeModal = function() {
+ 		c.modalInstance.close();
+ 	}
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.comment {
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #3C59E7;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.commentBtn {
+	border: 0px;
+  background: transparent;
+}
+.commentBtn:disabled {
+opacity:25%;
+}
+.table {
+	border-bottom: 0.1rem solid #DADDE2;
+}
+.table &amp;gt; tbody &amp;gt; tr &amp;gt; th {
+	border-top: 0rem solid #DADDE2;
+  border-bottom: 0.1rem solid #DADDE2;
+}
+.table &amp;gt; tbody &amp;gt; tr &amp;gt; td {
+	border-top: 0rem solid #DADDE2;
+}
+.boldText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 23px;
+color: #181A1F;
+display: flex;
+}
+.border {
+box-sizing: border-box;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+background: #FFFFFF;
+border: 1px solid #DADDE2;
+border-radius: 4px;
+  margin-bottom:16px;
+}
+.smallText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+color: #656E81;
+  display: flex;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;custom_time_off_request_item&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+	
+}]]&gt;&lt;/link&gt;&lt;name&gt;Custom Time Off Request Item&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    data.task_items = [];
+    var app = new GlideRecord("sn_hr_workday_time_off_request_todos_item");
+    var workday_id = options.workday_id;
+		//var workday_id = '8e57a1262f5510126e3835ef26d10000';
+    app.addEncodedQuery('u_workday_id=' + workday_id);
+    app.query();
+    while (app.next()) {
+        var task_item = {};
+        task_item.u_date = app.getValue('u_date');
+        task_item.u_day_of_the_week = app.getValue('u_day_of_the_week');
+        task_item.u_units_requested_this_coordinated_leave_time_off = app.getValue('u_units_requested_this_coordinated_leave_time_off');
+        task_item.u_unit_time = app.getValue('u_unit_time');
+        task_item.u_comment = app.getValue('u_comment');
+
+        data.task_items.push(task_item);
+    }
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-02-26 10:55:56&lt;/sys_created_on&gt;&lt;sys_id&gt;5a6ed6b047152910901d3a34846d43c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;207&lt;/sys_mod_count&gt;&lt;sys_name&gt;Custom Time Off Request Item&lt;/sys_name&gt;&lt;sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="HR Service Delivery Integration with Workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_5a6ed6b047152910901d3a34846d43c8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-13 14:17:46&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;table class="table hidden-xs" ng-if="data.task_items.length&gt;0"&gt;
+    &lt;tr&gt;
+      &lt;th&gt;${Date}&lt;/th&gt;
+    	&lt;th&gt;${Day of the week}&lt;/th&gt;
+    	&lt;th&gt;${Requested}&lt;/th&gt;
+    	&lt;th&gt;${Unit of time}&lt;/th&gt;
+    	&lt;th&gt;&lt;/th&gt;
+		&lt;/tr&gt;
+    &lt;tr ng-repeat="task_item in data.task_items"&gt;
+      &lt;td&gt;{{task_item.u_date}}&lt;/td&gt;
+      &lt;td&gt;{{task_item.u_day_of_the_week}}&lt;/td&gt;
+      &lt;td&gt;{{task_item.u_units_requested_this_coordinated_leave_time_off}}&lt;/td&gt;
+      &lt;td&gt;{{task_item.u_unit_time}}&lt;/td&gt;
+      &lt;td&gt;&lt;button class="commentBtn" ng-disabled="!task_item.u_comment" ng-click="c.openModal(task_item.u_comment)"&gt;&lt;i class="comment"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;div class="container-fluid border visible-xs" ng-if="data.task_items.length&gt;0" ng-repeat="task_item in data.task_items"&gt;
+    &lt;div class="row"&gt;
+  		&lt;div class="col-sm-6 col-xs-6 boldText"&gt;{{task_item.u_date}}&lt;/div&gt;
+  		&lt;div class="col-sm-6 col-xs-6"&gt;&lt;button style="float:right;" class="commentBtn" ng-disabled="!task_item.u_comment" ng-click="c.openModal(task_item.u_comment)"&gt;&lt;i class="comment"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;
+		&lt;/div&gt;
+    &lt;div class="row" style="margin-top: 16px;"&gt;
+  		&lt;div class="col-sm-6 col-xs-6"&gt;
+      	&lt;span class="smallText"&gt;${Day of the week}&lt;/span&gt;
+        &lt;span class="boldText"&gt;{{task_item.u_day_of_the_week}}&lt;/span&gt;
+      &lt;/div&gt;
+  		&lt;div class="col-sm-6 col-xs-6"&gt;
+      	&lt;span class="smallText"&gt;${Requested}&lt;/span&gt;
+        &lt;span class="boldText"&gt;{{task_item.u_units_requested_this_coordinated_leave_time_off}}&lt;/span&gt;
+      &lt;/div&gt;
+		&lt;/div&gt;
+    &lt;div class="row" style="margin-top: 16px;"&gt;
+  		&lt;div class="col-sm-6 col-xs-6"&gt;
+      	&lt;span class="smallText"&gt;${Unit of time}&lt;/span&gt;
+        &lt;span class="boldText"&gt;{{task_item.u_unit_time}}&lt;/span&gt;
+      &lt;/div&gt;
+		&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div ng-if="data.task_items.length==0"&gt;
+    ${No item was found.}
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type="text/ng-template" id="modalTemplate"&gt;
+&lt;div class="panel panel-default"&gt;
+ 	&lt;div class="panel-heading"&gt;
+  	&lt;button type="button" class="close" ng-click="c.closeModal()"&gt;&amp;times;&lt;/button&gt;
+ 		&lt;h4 class="panel-title"&gt;${Comment}&lt;/h4&gt;
+  &lt;/div&gt;
+ 	&lt;div class="panel-body" id="divComment"&gt;
+		{{content}}
+  &lt;/div&gt;
+ 	&lt;div class="panel-footer text-right"&gt;
+ 		&lt;button class="btn btn-primary" ng-click="c.closeModal()"&gt;${Close}&lt;/button&gt;
+ 	&lt;/div&gt;
+&lt;/div&gt;
+ 
+&lt;style&gt;
+ 	.panel-default {
+ 		border-color: transparent;
+ 	}
+ 	.panel-default &gt; .panel-heading, .panel-default &gt; .panel-body, .panel-default &gt; .panel-footer {
+ 		background-color: transparent;padding: 1.6rem;
+ 	}  
+  .modal-dialog {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal.fade .modal-dialog {
+  transform: transform .3s ease-out;
+}
+
+.modal.in .modal-dialog {
+  transform: translate(0, 0);
+}
+&lt;/style&gt;
+&lt;/script&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>572626587</payload_hash>
+        <record_name>Custom Time Off Request Item</record_name>
+        <reverted_from/>
+        <source>80bae28c4772611072cf2ebd416d435c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-09 17:25:56</sys_created_on>
+        <sys_id>6b2be60047b2611072cf2ebd416d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188018c5f6a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-09 17:25:56</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>35c640f7688e61903e6a511e25daea1b</update_guid>
+        <update_guid_history>35c640f7688e61903e6a511e25daea1b:572626587,651644b7f78e6190cc33535d007a6a9e:-1598646054,e8558433b08e6190ed156dcff4f135b6:1070850311,cd15c077928e6190d3db2dd7eb7d538a:-1731548617,a1d2c8b3388e6190d0e0ff8766736408:-1202180788,b9928433838e619021f7d0efaf4c9f9c:-26807846,b40244bfec4e61908371ef6169f9e8df:56136116,13c00cfbde4e61909505f621c81cffed:959559537,18a044bf234e61908472d065283d3fd9:1544205480,fdcab76b304e6190fc4bf804033e8e68:-1035799523,c0b1ab67beca6190b36b9456daabb273:1341100566,9d11ab6782ca6190927cb562145df36c:-1337599060,590d572385ca619046d5f27eff1ba551:243608876,2fec9723e8ca61902265d100b43116eb:404201818,cabc1723e3ca6190e40b0e224ac444ad:243608876,a99c1fef518a6190e02566101cd38c87:488425334,0eab1f6f228a6190559d11459f9ea568:-2018749180,721b532f948a6190351082cbaec143b8:-557415715,458a57eb2e8a61909cf456dd3d2f09cf:-1131244691,0699932fda8a619037f201ff1ab94f2f:-2147254796,cc69532fc38a6190b4066152b8d3aeae:159421845,ba199f2b008a619054cc4f2c35cd5a25:-420548789,3786d32b4a8a61909b6d085a83c94c23:-924355999,7df5532b738a619068d1361919403eaa:1694599721,89e55ba7d28a61903843f5fa9c54dc6a:2016666277,51055ba7f88a61903d0d9571231ca904:1931941583,89d417a7a78a6190a63a443dd6de926d:1030762985,7aa453a7738a6190eae8b85ce68b8833:-1957281399,82945b2f944a61909bf7a5df587fd098:-1601523703,85a9036faa0a61900962c795a934b929:1542176944,b469036fa30a6190bca5e098d82f41b4:-2089431248,01def26f46866190f7c790bac95129fc:1872063068,6aad3a6b9d866190e3bcc717cadcfdff:-1381317910,b5dcfa678c8661906ce8948576c761e0:-84985788,cdf3cb132a0ee1901b77b2167b77c885:684888953,6a630713bb0ee190cc47f8be85aa69b8:-1876663249,73ab6593fac2e190598486583487d041:792881503,7a5b2ddf9682e190972ff55272ea7be9:1567966596,0969e9dfae82e190385e2f3837e53ab8:331211772,8649a1df0e82e19086e9a3a1985bc60f:178201029,06682d9fcd82e190b9fdc4948c53b8bf:-1811751993,38f7259f9282e190da5f730092d1b11d:-582830045,f0876d5feb82e190122d29b7aca5e84d:672472002,fbe6e15f3082e19001f03961e2027ab0:272138175,2b666ddb0c82e1902e39a91d552cc528:-1665119298,ff2fdd5fbc42e1905020faed0e888179:182090030,226edd1f2042e190febaf135f624685f:1134127681,2a3b99d7ce42e19051191394a70b3cd3:-856986573,75ea511be342e1904177d0d2092b86ae:-538226074,334a1d97db42e190729b36cf4c155057:1829847837,7db991570342e19072773962a2722d4e:675917390,f74791573d42e19056c783e64c68c542:-1193711284,65375d179442e1904e1d6fa3c28937ad:-980236921,fcf6d1178842e1903dccf6e52cab982c:-381181079,0b16ddd37542e1907e629cd7ee0e7397:2116885073,1b0655d36842e19012fb4d49a6cb334c:1124261821,579555d37742e1901d042cd8b6d335f8:-773644333,84055d934142e190c0ada0ec9fb81cd4:2029032029,8d64dd53df42e19059ca9c438fa73d14:439932785,19d395537142e1904c7c77ba3615110d:-1211132255,ab5311531f42e190315b2722dfa4f579:-13396978,5923d9134742e190a8ab4ac08348ccfc:215882823,a9d25ddf2202e190b79213aecbf9a4a6:304673713,1031999f2602e190c9f3be56f4b8c16b:-215256974,775a891bd602e1909049e5155f5940aa:-1599388582,371ac51bda02e190142183ccdf50e768:1878831665,42f90dd7ac02e19056153dbabd010ef5:-1856873271,bfe9c9d72302e19058492a9d0c70c8fe:1878831665,3789cdd73b02e1902af0adc3b71bb509:1566295410,a0398d974402e190ba4c4131be2aa33f:-619220349,224849978a02e190bd7071c3598d4abc:1566295410,510809171202e190a3492b1ad171514b:-1263721118,4ed7c1179302e190c63d2d0ee6ee870f:791143474,f55581175602e190371c452d3bd00b7b:608805732,e8614b034e4aa190035aa282e9bdb188:1601622285,8211cfcfb20aa1908b750065d44df8cb:1783683405,fa16ca0f9946a1900302d811a8ab2978:1310701987,c8a5420f9146a1906d4ec245eeb45cb6:1921507306,b47546cbaa46a19095706bf79d811461:-958591846,740542cb7146a1902565e99512d9868d:-141938459,4c54ce8b7146a190cba7488ad9ee51ad:2021265425,6cc3c68b8b46a190607baf259b75082c:-969666522,c693064b6d46a190c9b126441ae7fee4:802879027,51728ac72446a190aa61f2b1465652e8:1008381241,49900ac73746a1904ceee55211824597:327768662,3fdebd47dc46a19058ee982192609f64:1369329701,87ddf507df46a1900d15337164493199:1398677580,bf5df5073446a190396c3ac72a0b3490:652800080,fbdc7dc34846a1900000e7917c3053d4:-1043375924,2cbcf5c30646a1908f53fe6dcaff20ff:2077170252,e70cb1c3f546a1907007097cd7120d8c:-355554332,810b7d433c46a19079179f210c32a208:1546971748,5fba7d43b546a190a2735fac25a8cf00:-879937656,857a3d039d46a1901515eebd0113fac1:1622856249,a46af543b246a190198ea540662d6008:1111819943,283a31434346a190c6bfd5e50ecf4d94:-2007817089,50e93d03f146a1904d4aad54ddfd746c:-992483229,ea99fdcf2706a19093884ccfd785ae40:914125269,95b839cfb906a19071a8ac76ab3c0ab9:-674560338,6b987dcf8b06a1908a329fbf67a324db:777895217,eb3839cf2206a190fac60ffa917f340b:572125981,85069d4fd882a19040e8811be8f8711f:272965088,bad51d8bfc82a190ba66fdacee7c9824:-1767257220,b175d98baf82a190f484ac93fb3012cf:1615509531,38f4998bfa82a190fe031448243d6551:1277601343,b9b4914b4a82a1905f9aef07b45b94f8:-392813716,85539d0b3d82a190b53590bfdada9611:407874124,1323dd0b8882a190953229d5b308f01e:-243937913,8703990bbf82a190f321f67ccb68ff79:1817861610,2882550b7382a190aa5ca128d6dcd113:-1753664247,d06d0dcb1702a190d1d72bf854b13a56:-890864614,ce5cc98b3802a1903c05ce0836e68087:-458553750,06fb4d4bcf02a190fadb0bf2cb6e0d66:-1289586437,4eab494b4f02a1900318492cc1bd32de:1753971371,da7b49c7b002a190cb26b79ec4c2729a:-1152865301,8ada8d875802a19076bbbfc6e2b46f73:2098178801,029ac1874a02a190e55b6a35c57455f4:-1182648693,e25a09474602a190fbd0b5384f70b8a2:-1981104710,b81a4d439b02a1905e89d79644da5f2f:190586236,744989036302a1909cec62571d3eca01:-859215329,32094903c702a1903aa1838ec2cbe1f9:1594248843,8328c14795ce61902104cf08beb698a9:781396215,35070147cfce61900ba8417b039fcc39:935476146,c57fb4fe48ce2190037fe8132cee9653:2130895307,c88efc7e0dce2190678979c3c540c08f:-248272264,40c4d5b42c422950851807400307c853:-1782632897,642f7be89102e150f63cad1e0ee5a842:355589941,314e33e8c102e15003444a8f271946d9:295079144,5a9db7a8bc02e15047feb956e8957a67:2001429772,f32dbb68e002e1504487ea311f246f0a:-505102939,150affa41f02e150ea5d6742dd6dff48:2051131923,112c9bca10116d105f2d4d93b83061a1:-1915147454,1ccbdf8a7a116d105e2f9a05ac2d6130:-66799423,713b5f8adf116d1026f8ba61913ebfa5:-515138838,5448530a23116d109245a865ff50fcc0:-77183218,3c17d7867f116d106ce6f7382099a00a:454031470,15e9141d7b9569109dbdc60567b9f4df:84778470,ecc9101de89569101096326590ade53a:514921722,6399101d2d9569100077b985e2985034:1948028809,8a695cd9c1956910b5d79f94ae3797af:-1916151119,1ae8d4d9f395691055b9e8a39ac3ba75:-1660405803,b6a7d4996c95691040a2702690f85af8:-872456483,18f410194b956910da8ab98885cbf19e:-301042647,3f2014d1c6956910c50056becdf9e5f9:-1123587975,f18f4c91bf956910b1f35c5247d52890:-760787754,e7ce089176956910b051c1da8e4f2f4d:-1327312298,80be0891c79569104c986a803ea3bb5b:1231818267,2b8e0c5175956910335e486c890293c9:-1905403451,46cc0051e6956910aa0cb0a165d610d3:1765226807,245cc811be9569100575366857c2856c:152323002,110c041180956910b0add7190ee9865c:38682060,21a9449d39556910f42edd77f6d378f7:-618636251,9489885d4c5569103d3df11c03404ade:1535523573,4198045dfe556910ac32c5756ede2ced:-618636251,c3288c1d9a5569107677d522aaff67e9:822105436,577784d9ee556910afdd6f7863a2a265:-718294366,2467441d705569100bf639908e7a9613:-342911925,a257001dd155691001bf581969c06bd0:223600930,ae2708d92f5569101eff8389dd1aa9f6:-965865326,41f30059c8556910b384d8e2871d899e:-1306775897,dcb3c0d574556910c67d658d1f62526c:1779528219,30b180d50655691080d56c7e0fd01120:1791147057,1012bf490e1569107718dbbc1d1cb7b6:1198369009,2d913749b11569100c1a0b5bc8efd16a:-1882491944,6dc03309ea156910deef08f8c7341dc1:1198369009,980b5b45dfd1691073c61adacc5496a6:-774047562,813a1b45cfd16910522155e6678666dc:-384760731,af1a57451fd1691006381d7e6832457b:-1648300189,70f9574540d16910b1bf3bb4e9578235:-164592829,db695f05bed169103c1a285e7af1fdac:-939125074,84a81bc1d9d16910d52d595bcd68cd37:-774047562,82869f4102d16910545594e90d6c14d5:2047896995,c5f5db41cbd1691053d5441813b25219:954074085,dbc5d741aed169109ba1d219378826fd:2047896995,49b4170112d1691086e19b5b4c273ea9:-907388941,6c341fcd26916910bc24f7919db09426:412516734,602387cd0a516910097f5a753625e933:-215332497,70e2c3cd84516910933be72c8fd924ee:1539530370,2bc207cd6c5169101a8fec27ce9a0729:38740834,72b243cde6516910bd9b90aadb940ee7:1844559944,ae9243cd785169106dd28d2a11b49ade:1855527403,5e624f8da9516910920845148c808407:-1482669100,ba32430de05169108acce2835b3f3a20:138788066,f7220b0d2e5169107d13ddd2d989467e:644684367,a20f3ac9185169104d1afaf8c5b9f09c:-215332497,58ee3ec94a51691094c26e9457d54804:-440129632,67cefec937516910fdecd18433553ac8:-2067045604,0b7efac957516910abf73155efc84afb:1443947089,662e76c9f65169100a4715786450b011:238238443,291ef6c9a4516910027df5077e30d608:193921392,22ddfe89d85169103681fda3115f55cd:-123197771,490d368978516910607f6f056f4a7da5:-1739147542,62ecba4964516910c84d92cb83847d68:641479154,e0acf28929516910f9f5039407482352:-1960586535,c98cba49b15169109e8f75277e46a517:-1791728615,fcab7ec52b516910efd1dc5a1399ef00:365233992,c6687a85295169106ba56a4ad551d5b3:-1711642584,f8383a8555516910a75741b0bd6b2be9:-179170769,6d18f6852c516910316eeaed47bd0054:-338126846,9f08f685775169103c083c4b2818b22c:-1874111006,7985b6054e5169108a298b663a102569:572182494,a8757205fd51691037f688d7117a8bf5:1797776510,7455bac17b516910c9a4793a30a6aa71:304734023,c1c43ec10f5169105b7809166572acd9:-1785117479,a46d5241ab116910bf3add59ca347133:60802619,05ec1e01a5116910e4ff4efa7f1f9682:-1694092824,8c4cd201a9116910f2d7cab5b64bab79:-355305652,207f92f059152910a723e04da7397f0c:1558036056</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-09 18:03:41</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>1c1e52b14d624de08933e2d1275ae110</sys_id>
+        <sys_metadata>5a6ed6b047152910901d3a34846d43c8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Custom Time Off Request Item</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sp_widget_5a6ed6b047152910901d3a34846d43c8</sys_update_name>
+        <sys_update_version display_value="sp_widget_5a6ed6b047152910901d3a34846d43c8">6b2be60047b2611072cf2ebd416d43a7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-09 18:03:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
