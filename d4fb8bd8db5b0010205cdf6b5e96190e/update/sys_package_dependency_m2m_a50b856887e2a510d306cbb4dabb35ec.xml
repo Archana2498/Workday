@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Enterprise Service Management Integrations Framework" source="sn_hr_integr_fw">08ca765153ed5010a86dddeeff7b1277</dependency>
+        <min_version>3.3.10-8</min_version>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-04-28 13:27:06</sys_created_on>
+        <sys_id>a50b856887e2a510d306cbb4dabb35ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-04-28 13:27:06</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

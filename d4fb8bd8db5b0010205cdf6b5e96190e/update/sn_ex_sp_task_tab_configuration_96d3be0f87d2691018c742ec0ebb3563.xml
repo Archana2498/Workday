@@ -20,7 +20,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-24 05:14:36</sys_updated_on>
         <table>sys_user</table>
-        <task_configuration display_value="Approval l Workday |Time off correction request">8a32b2cb87d2691018c742ec0ebb3568</task_configuration>
+        <task_configuration display_value="Approval l Workday | Time off correction request">8a32b2cb87d2691018c742ec0ebb3568</task_configuration>
         <type>attachments</type>
         <visibility/>
         <visibility_script><![CDATA[/**

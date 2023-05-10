@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Utility Category">cadfbc7a1b54a810ebac415dee4bcbc9</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p&gt;Builds Transaction Type Reference of data type Array Of Object, passed in the Look up workers call.&lt;/p&gt;&#13;
+&lt;p&gt;&lt;strong&gt;Inputs:&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;ul&gt;&#13;
+   &lt;li&gt;&lt;strong&gt;Transaction Type References&lt;/strong&gt; - Transaction Type References array of object.&lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+&lt;p&gt;&lt;strong&gt;Outputs:&lt;/strong&gt;&lt;/p&gt;&#13;
+&lt;ul&gt;&#13;
+   &lt;li&gt;&lt;strong&gt;Transaction Type References&lt;/strong&gt; - Transaction Type References array of object.&lt;/li&gt;&#13;
+&lt;/ul&gt;</description>
+        <ih_action>false</ih_action>
+        <internal_name>create_array_object_data</internal_name>
+        <label_cache>[{"name":"{{action.transaction_types}}","label":"action➛Transaction Types","type":"action","ref":""},{"name":"{{action.Transaction_Type_references}}","label":"action➛Transaction Type references","type":"action","ref":""},{"name":"{{action.transaction_type_references}}","label":"action➛Transaction Type Reference IDs","type":"action","ref":""},{"name":"{{action.transaction_type_references.Transaction_Type_Reference}}","label":"action➛Transaction Type Reference IDs➛Transaction Type Reference","type":"action","ref":""},{"name":"{{action.transaction_type_references.Transaction_Type_Reference_ID}}","label":"action➛Transaction Type Reference IDs➛Transaction Type Reference ID","type":"action","ref":""},{"name":"{{action.transaction_type_references.Transaction_Type_Reference.Transaction_Type_Reference_ID}}","label":"action➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference ID","type":"action","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references}}","label":"step➛Script step➛Transaction Type References","type":"step","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references.Transaction_Type_Reference}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference","type":"step","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references.transaction_type_reference.Transaction_Type_Reference_ID}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference ID","type":"step","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references.transaction_type_reference}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference","type":"step","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references.transaction_type_reference.transaction_type_reference_id}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference ID","type":"step","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references.Transaction_Type_Reference.transaction_type_reference_child1}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference_child1","type":"step","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references.Transaction_Type_Reference.Transaction_Type_Reference_ID}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference ID","type":"step","ref":""},{"name":"{{step[f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824].transaction_type_references}}","label":"step➛Script step➛Transaction Type References","type":"step","ref":""},{"name":"{{step[f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824].transaction_type_references.Transaction_Type_Reference}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference","type":"step","ref":""},{"name":"{{step[f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824].transaction_type_references.Transaction_Type_Reference.transaction_type_reference_child1}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference_child1","type":"step","ref":""},{"name":"{{step[f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824].transaction_type_references.Transaction_Type_Reference.Transaction_Type_Reference_ID}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference ID","type":"step","ref":""}]</label_cache>
+        <master_snapshot>99b2f2fadba39010127e3764e29619e5</master_snapshot>
+        <name>Build Transaction Type References</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 08:51:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e0527ebadba39010127e3764e29619e7</sys_id>
+        <sys_mod_count>67</sys_mod_count>
+        <sys_name>Build Transaction Type References</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_e0527ebadba39010127e3764e29619e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 07:58:25</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=e0527ebadba39010127e3764e29619e7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e0527ebadba39010127e3764e29619e7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>e0527ebadba39010127e3764e29619e7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 14:36:52</sys_created_on>
+        <sys_id>3b41004fdb679010127e3764e29619fd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:05:48</sys_updated_on>
+        <value/>
+        <variable display_value="Transaction Type References">89244f7adbe39010127e3764e29619c9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e0527ebadba39010127e3764e29619e7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>transaction_types_references</field>
+        <id>e0527ebadba39010127e3764e29619e7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 08:58:06</sys_created_on>
+        <sys_id>2dc3befadba39010127e3764e2961912</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 09:08:49</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e0527ebadba39010127e3764e29619e7</table>
+        <value>{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>transaction_type_references</field>
+        <id>e0527ebadba39010127e3764e29619e7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 10:09:39</sys_created_on>
+        <sys_id>ed244f7adbe39010127e3764e29619e7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:29:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e0527ebadba39010127e3764e29619e7</table>
+        <value>{{step[f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824].transaction_type_references}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=e0527ebadba39010127e3764e29619e7^sys_idNOT IN2d7d0047dba79010127e3764e29619e8"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Build Transaction Type References">e0527ebadba39010127e3764e29619e7</action>
+        <cid>f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824</cid>
+        <error_handling_type/>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:29:57</sys_created_on>
+        <sys_id>2d7d0047dba79010127e3764e29619e8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-29 09:01:36</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2d7d0047dba79010127e3764e29619e8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d7d0047dba79010127e3764e29619e8</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:29:57</sys_created_on>
+        <sys_id>617d0047dba79010127e3764e29619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:29:57</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+ outputs.transaction_type_references = inputs.input;
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d7d0047dba79010127e3764e29619e8</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:29:57</sys_created_on>
+        <sys_id>ad7d0047dba79010127e3764e29619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:29:57</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2d7d0047dba79010127e3764e29619e8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>2d7d0047dba79010127e3764e29619e8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:29:57</sys_created_on>
+        <sys_id>697d0047dba79010127e3764e29619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:29:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input</field>
+        <id>2d7d0047dba79010127e3764e29619e8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:29:57</sys_created_on>
+        <sys_id>e97d0047dba79010127e3764e29619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:29:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_2d7d0047dba79010127e3764e29619e8</table>
+        <value>{{action.transaction_type_references}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>2d7d0047dba79010127e3764e29619e8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:29:57</sys_created_on>
+        <sys_id>2d7d0047dba79010127e3764e29619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:29:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_2d7d0047dba79010127e3764e29619e8^id=2d7d0047dba79010127e3764e29619e8"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=2d7d0047dba79010127e3764e29619e8"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=2d7d0047dba79010127e3764e29619e8^sys_idNOT IN6d7d0047dba79010127e3764e29619ec"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>input</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">2d7d0047dba79010127e3764e29619e8</model>
+        <model_id>2d7d0047dba79010127e3764e29619e8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_2d7d0047dba79010127e3764e29619e8</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:29:57</sys_created_on>
+        <sys_id>6d7d0047dba79010127e3764e29619ec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-29 09:01:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2d7d0047dba79010127e3764e29619e8^sys_idNOT INa17d0047dba79010127e3764e29619f3"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Transaction Type Reference,child_name=Transaction_Type_Reference,child_type=object,child_type_label=Object,child_uiUniqueId=b6e4ee52-a3c3-44e9-bedf-9d474932dccc,co_type_name=FD657d00471ba79010db277c74c9a35af1,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=f308634a-fe42-4339-ba37-0f7ecc19886e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>transaction_type_references</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Transaction Type References</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Script step">2d7d0047dba79010127e3764e29619e8</model>
+        <model_id>2d7d0047dba79010127e3764e29619e8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2d7d0047dba79010127e3764e29619e8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:29:57</sys_created_on>
+        <sys_id>a17d0047dba79010127e3764e29619f3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-29 09:01:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2d7d0047dba79010127e3764e29619e8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_2d7d0047dba79010127e3764e29619e8"/>
+    <sys_hub_action_input action="delete_multiple" query="model=e0527ebadba39010127e3764e29619e7^sys_idNOT IN8db23ebadba39010127e3764e296197b"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Transaction Type Reference,child_name=Transaction_Type_Reference,child_type=object,child_type_label=Object,child_uiUniqueId=061dd88a-7894-4d87-b2ed-c0b531138639,co_type_name=FDd17d004739a7901009926776083255df,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=bfa94eab-ebae-4044-af54-1f8849e9e10e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>transaction_type_references</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Transaction Type References</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Build Transaction Type References">e0527ebadba39010127e3764e29619e7</model>
+        <model_id>e0527ebadba39010127e3764e29619e7</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_e0527ebadba39010127e3764e29619e7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 08:53:26</sys_created_on>
+        <sys_id>8db23ebadba39010127e3764e296197b</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-29 09:01:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8db23ebadba39010127e3764e296197b"/>
+    <sys_hub_action_output action="delete_multiple" query="model=e0527ebadba39010127e3764e29619e7^sys_idNOT IN89244f7adbe39010127e3764e29619c9"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Transaction Type Reference,child_name=Transaction_Type_Reference,child_type=object,child_type_label=Object,child_uiUniqueId=5a332089-4159-4f24-a8bb-2e9d3e1405d6,co_type_name=FDf57d404758a7901061aac656e8500c3a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceUiUniqueId=bfa94eab-ebae-4044-af54-1f8849e9e10e,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=1236a65a-ec17-4734-bb64-f5c6ed03ac07</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>transaction_type_references</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Transaction Type References</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Build Transaction Type References">e0527ebadba39010127e3764e29619e7</model>
+        <model_id>e0527ebadba39010127e3764e29619e7</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_e0527ebadba39010127e3764e29619e7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 10:09:37</sys_created_on>
+        <sys_id>89244f7adbe39010127e3764e29619c9</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-29 09:01:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=89244f7adbe39010127e3764e29619c9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=89244f7adbe39010127e3764e29619c9"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e0527ebadba39010127e3764e29619e7"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=e0527ebadba39010127e3764e29619e7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e0527ebadba39010127e3764e29619e7^sys_idNOT IN11b2f2fadba39010127e3764e29619bf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>transaction_type_references</element>
+        <help/>
+        <hint/>
+        <label>Transaction Type References</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e0527ebadba39010127e3764e29619e7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 08:53:26</sys_created_on>
+        <sys_id>11b2f2fadba39010127e3764e29619bf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Transaction Type References</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e0527ebadba39010127e3764e29619e7_transaction_type_references_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:29:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_e0527ebadba39010127e3764e29619e7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_e0527ebadba39010127e3764e29619e7^sys_idNOT IN01244f7adbe39010127e3764e29619cf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>transaction_type_references</element>
+        <help/>
+        <hint/>
+        <label>Transaction Type References</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e0527ebadba39010127e3764e29619e7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 10:09:37</sys_created_on>
+        <sys_id>01244f7adbe39010127e3764e29619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Transaction Type References</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e0527ebadba39010127e3764e29619e7_transaction_type_references_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 10:09:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_e0527ebadba39010127e3764e29619e7"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=e0527ebadba39010127e3764e29619e7^sys_idNOT INe1b236fadba39010127e3764e2961901"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Build Transaction Type References">e0527ebadba39010127e3764e29619e7</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"e1b236fadba39010127e3764e2961901","name":"plan"}}</plan>
+        <snapshot>867d4047dba79010127e3764e2961982</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 08:53:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e1b236fadba39010127e3764e2961901</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:04</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_array_object_data</internal_name>
+        <label_cache>[{"name":"{{action.transaction_types}}","label":"action➛Transaction Types","type":"action","ref":""},{"name":"{{action.Transaction_Type_references}}","label":"action➛Transaction Type references","type":"action","ref":""},{"name":"{{action.transaction_type_references}}","label":"action➛Transaction Type Reference IDs","type":"action","ref":""},{"name":"{{action.transaction_type_references.Transaction_Type_Reference}}","label":"action➛Transaction Type Reference IDs➛Transaction Type Reference","type":"action","ref":""},{"name":"{{action.transaction_type_references.Transaction_Type_Reference_ID}}","label":"action➛Transaction Type Reference IDs➛Transaction Type Reference ID","type":"action","ref":""},{"name":"{{action.transaction_type_references.Transaction_Type_Reference.Transaction_Type_Reference_ID}}","label":"action➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference ID","type":"action","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references}}","label":"step➛Script step➛Transaction Type References","type":"step","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references.Transaction_Type_Reference}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference","type":"step","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references.transaction_type_reference.Transaction_Type_Reference_ID}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference ID","type":"step","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references.transaction_type_reference}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference","type":"step","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references.transaction_type_reference.transaction_type_reference_id}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference ID","type":"step","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references.Transaction_Type_Reference.transaction_type_reference_child1}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference_child1","type":"step","ref":""},{"name":"{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references.Transaction_Type_Reference.Transaction_Type_Reference_ID}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference ID","type":"step","ref":""},{"name":"{{step[f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824].transaction_type_references}}","label":"step➛Script step➛Transaction Type References","type":"step","ref":""},{"name":"{{step[f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824].transaction_type_references.Transaction_Type_Reference}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference","type":"step","ref":""},{"name":"{{step[f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824].transaction_type_references.Transaction_Type_Reference.transaction_type_reference_child1}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference_child1","type":"step","ref":""},{"name":"{{step[f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824].transaction_type_references.Transaction_Type_Reference.Transaction_Type_Reference_ID}}","label":"step➛Script step➛Transaction Type References➛Transaction Type Reference➛Transaction Type Reference ID","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Build Transaction Type References</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Build Transaction Type References">e0527ebadba39010127e3764e29619e7</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 08:53:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>99b2f2fadba39010127e3764e29619e5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:01</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=99b2f2fadba39010127e3764e29619e5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=99b2f2fadba39010127e3764e29619e5"/>
+    <sys_element_mapping action="delete_multiple" query="id=99b2f2fadba39010127e3764e29619e5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>transaction_types_references</field>
+        <id>99b2f2fadba39010127e3764e29619e5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 09:08:51</sys_created_on>
+        <sys_id>7236767edba39010127e3764e2961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 09:08:51</sys_updated_on>
+        <table>var__m_sys_hub_action_output_99b2f2fadba39010127e3764e29619e5</table>
+        <value>{{step[4161094c-0255-4b46-8d0f-064c47cae7cf].transaction_type_references}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>transaction_type_references</field>
+        <id>99b2f2fadba39010127e3764e29619e5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 10:09:43</sys_created_on>
+        <sys_id>26248f7adbe39010127e3764e2961998</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:03</sys_updated_on>
+        <table>var__m_sys_hub_action_output_99b2f2fadba39010127e3764e29619e5</table>
+        <value>{{step[f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824].transaction_type_references}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=99b2f2fadba39010127e3764e29619e5^sys_idNOT INd27d8047dba79010127e3764e2961902"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Build Transaction Type References">99b2f2fadba39010127e3764e29619e5</action>
+        <cid>f2bbbc5a-6bb6-4ece-b8bb-fab583ac4824</cid>
+        <error_handling_type/>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:30:01</sys_created_on>
+        <sys_id>d27d8047dba79010127e3764e2961902</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:01</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d27d8047dba79010127e3764e2961902"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d27d8047dba79010127e3764e2961902</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:30:01</sys_created_on>
+        <sys_id>2e7d8047dba79010127e3764e2961921</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:01</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d27d8047dba79010127e3764e2961902</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:30:01</sys_created_on>
+        <sys_id>ee7d8047dba79010127e3764e2961921</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:01</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+ outputs.transaction_type_references = inputs.input;
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d27d8047dba79010127e3764e2961902"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>d27d8047dba79010127e3764e2961902</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:30:01</sys_created_on>
+        <sys_id>e67d8047dba79010127e3764e2961921</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>input</field>
+        <id>d27d8047dba79010127e3764e2961902</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:30:01</sys_created_on>
+        <sys_id>6a7d8047dba79010127e3764e2961922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:01</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_d27d8047dba79010127e3764e2961902</table>
+        <value>{{action.transaction_type_references}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>d27d8047dba79010127e3764e2961902</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:30:01</sys_created_on>
+        <sys_id>aa7d8047dba79010127e3764e2961921</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d27d8047dba79010127e3764e2961902^id=d27d8047dba79010127e3764e2961902"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=d27d8047dba79010127e3764e2961902"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=d27d8047dba79010127e3764e2961902^sys_idNOT IN127d8047dba79010127e3764e2961905"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>input</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>input</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">d27d8047dba79010127e3764e2961902</model>
+        <model_id>d27d8047dba79010127e3764e2961902</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_d27d8047dba79010127e3764e2961902</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:30:01</sys_created_on>
+        <sys_id>127d8047dba79010127e3764e2961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d27d8047dba79010127e3764e2961902^sys_idNOT INea7d8047dba79010127e3764e296190c"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Transaction Type Reference,child_name=Transaction_Type_Reference,child_type=object,child_type_label=Object,child_uiUniqueId=b6e4ee52-a3c3-44e9-bedf-9d474932dccc,co_type_name=FDae7d80470ea790100e76518c5410710a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=f308634a-fe42-4339-ba37-0f7ecc19886e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>transaction_type_references</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Transaction Type References</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Script step">d27d8047dba79010127e3764e2961902</model>
+        <model_id>d27d8047dba79010127e3764e2961902</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d27d8047dba79010127e3764e2961902</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:30:01</sys_created_on>
+        <sys_id>ea7d8047dba79010127e3764e296190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d27d8047dba79010127e3764e2961902"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_d27d8047dba79010127e3764e2961902"/>
+    <sys_hub_action_input action="delete_multiple" query="model=99b2f2fadba39010127e3764e29619e5^sys_idNOT INd5b2f2fadba39010127e3764e29619e8"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Transaction Type Reference,child_name=Transaction_Type_Reference,child_type=object,child_type_label=Object,child_uiUniqueId=061dd88a-7894-4d87-b2ed-c0b531138639,co_type_name=FD1e7d40475ea79010a1a984410c5cacec,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=bfa94eab-ebae-4044-af54-1f8849e9e10e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>transaction_type_references</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Transaction Type References</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Build Transaction Type References">99b2f2fadba39010127e3764e29619e5</model>
+        <model_id>99b2f2fadba39010127e3764e29619e5</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_99b2f2fadba39010127e3764e29619e5</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 08:53:27</sys_created_on>
+        <sys_id>d5b2f2fadba39010127e3764e29619e8</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d5b2f2fadba39010127e3764e29619e8"/>
+    <sys_hub_action_output action="delete_multiple" query="model=99b2f2fadba39010127e3764e29619e5^sys_idNOT IN4a248f7adbe39010127e3764e2961988"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Transaction Type Reference,child_name=Transaction_Type_Reference,child_type=object,child_type_label=Object,child_uiUniqueId=5a332089-4159-4f24-a8bb-2e9d3e1405d6,co_type_name=FD7a7d804782a790108db61e6c9d317f52,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceUiUniqueId=bfa94eab-ebae-4044-af54-1f8849e9e10e,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=1236a65a-ec17-4734-bb64-f5c6ed03ac07</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>transaction_type_references</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Transaction Type References</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Build Transaction Type References">99b2f2fadba39010127e3764e29619e5</model>
+        <model_id>99b2f2fadba39010127e3764e29619e5</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_99b2f2fadba39010127e3764e29619e5</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 10:09:41</sys_created_on>
+        <sys_id>4a248f7adbe39010127e3764e2961988</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4a248f7adbe39010127e3764e2961988"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4a248f7adbe39010127e3764e2961988"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=99b2f2fadba39010127e3764e29619e5"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=99b2f2fadba39010127e3764e29619e5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_99b2f2fadba39010127e3764e29619e5^sys_idNOT IN5db2f2fadba39010127e3764e29619ed"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>transaction_type_references</element>
+        <help/>
+        <hint/>
+        <label>Transaction Type References</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_99b2f2fadba39010127e3764e29619e5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 08:53:27</sys_created_on>
+        <sys_id>5db2f2fadba39010127e3764e29619ed</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Transaction Type References</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_99b2f2fadba39010127e3764e29619e5_transaction_type_references_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_99b2f2fadba39010127e3764e29619e5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_99b2f2fadba39010127e3764e29619e5^sys_idNOT IN8a248f7adbe39010127e3764e296198d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>transaction_type_references</element>
+        <help/>
+        <hint/>
+        <label>Transaction Type References</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_99b2f2fadba39010127e3764e29619e5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 10:09:42</sys_created_on>
+        <sys_id>8a248f7adbe39010127e3764e296198d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Transaction Type References</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_99b2f2fadba39010127e3764e29619e5_transaction_type_references_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 10:09:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_99b2f2fadba39010127e3764e29619e5"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>e0527ebadba39010127e3764e29619e7</sys_id>
+        <latest_snapshot>99b2f2fadba39010127e3764e29619e5</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch1-03-01-2023_03-13-2023_1716.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

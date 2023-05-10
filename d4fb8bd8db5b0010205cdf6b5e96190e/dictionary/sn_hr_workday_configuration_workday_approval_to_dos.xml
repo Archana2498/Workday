@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b1ed14a88782a15018c742ec0ebb3541" label="Configuration Workday Approval To-Dos" max_length="40" name="sn_hr_workday_configuration_workday_approval_to_dos" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Business process id" max_length="500" name="u_business_process_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Is Complete" max_length="40" name="u_is_complete" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Job Tracker" max_length="32" name="u_job_tracker" read_only="true" reference="sn_hr_workday_job_tracker" type="reference"/>
+        <element label="Report name" max_length="100" name="u_report_name" type="string"/>
+        <element label="Transaction status id" max_length="40" name="u_transaction_status_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="workday_integration_service" choice_table="sn_hr_workday_service_job_tracker" label="Workday integration service name" max_length="40" name="u_workday_integration_service_name" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="u_job_tracker"/>
+        </index>
+    </element>
+</database>

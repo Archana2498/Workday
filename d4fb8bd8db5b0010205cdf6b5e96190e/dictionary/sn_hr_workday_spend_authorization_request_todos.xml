@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d86af42b47122d10901d3a34846d43c6" extends="sn_hr_workday_todo" label="Spend Authorization Request Todos" max_length="40" name="sn_hr_workday_spend_authorization_request_todos" type="collection">
+        <element label="Attachment ids" max_length="5000" name="u_attachment_ids" type="string"/>
+        <element label="Business purpose" max_length="250" name="u_business_purpose" type="string"/>
+        <element label="Company" max_length="250" name="u_company" type="string"/>
+        <element label="Description" max_length="250" name="u_description" type="string"/>
+        <element label="End date" max_length="40" name="u_end_date" type="glide_date"/>
+        <element label="Justification" max_length="250" name="u_justification" type="string"/>
+        <element label="Reimbursement payment type" max_length="32" name="u_reimbursement_payment_type" type="string"/>
+        <element label="Start date" max_length="40" name="u_start_date" type="glide_date"/>
+    </element>
+</database>

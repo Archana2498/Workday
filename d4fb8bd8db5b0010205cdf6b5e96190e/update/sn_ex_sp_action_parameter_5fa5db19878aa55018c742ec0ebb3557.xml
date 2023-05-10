@@ -3,6 +3,7 @@
         <action display_value="Reject">d237446d8751a91018c742ec0ebb352b</action>
         <field>sys_id</field>
         <is_client>false</is_client>
+        <is_display_value>false</is_display_value>
         <json/>
         <name>sys_id</name>
         <parameter_type>table</parameter_type>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>test_subflow</internal_name>
+        <label_cache>[{"name":"flow_variable.company_id","label":"Flow Variables➛Company ID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f0b7b21c-3fca-4a7d-be2f-0ce394a09083"}},{"name":"8ffa6c78-7a54-4163-948c-37eed67955be.organization.OrganizationReference.Organization_ReferenceID","label":"1➛Organization➛Organization Reference➛Organization Reference ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"8ffa6c78-7a54-4163-948c-37eed67955be.organization.OrganizationReference.Organization_ReferenceWID","label":"1➛Organization➛Organization Reference➛Organization Reference WID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>test subflow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 10:26:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>33f7934847a2ed10901d3a34846d43e2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>test subflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_hub_flow_33f7934847a2ed10901d3a34846d43e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:06:44</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_variable_value action="DELETE" query="document_key=33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=33f7934847a2ed10901d3a34846d43e2^sys_idNOT IN33f7934847a2ed10901d3a34846d43e3"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>33f7934847a2ed10901d3a34846d43e2</id>
+        <name>test subflow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 10:26:03</sys_created_on>
+        <sys_id>33f7934847a2ed10901d3a34846d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 10:26:03</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=33f7934847a2ed10901d3a34846d43e3"/>
+    <sys_hub_flow_input action="DELETE" query="model=33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_hub_flow_output action="DELETE" query="model=33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_hub_action_instance action="DELETE" query="flow=33f7934847a2ed10901d3a34846d43e2^sys_idNOT IN5bc0e70447e2ed10901d3a34846d43a1,9add170047e2ed10901d3a34846d43c6,dedd170047e2ed10901d3a34846d43be"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="test subflow">33f7934847a2ed10901d3a34846d43e2</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 11:04:31</sys_created_on>
+        <sys_id>5bc0e70447e2ed10901d3a34846d43a1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:06:43</sys_updated_on>
+        <ui_id>11eed5d7-7fc2-435c-b796-a2507a9c88df</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=5bc0e70447e2ed10901d3a34846d43a1"/>
+    <sys_element_mapping action="DELETE" query="id=5bc0e70447e2ed10901d3a34846d43a1"/>
+    <sys_element_mapping action="DELETE">
+        <field>log_message</field>
+        <id>5bc0e70447e2ed10901d3a34846d43a1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 11:04:31</sys_created_on>
+        <sys_id>5fc0e70447e2ed10901d3a34846d43a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:04:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{flow_variable.company_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=5bc0e70447e2ed10901d3a34846d43a1"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=5bc0e70447e2ed10901d3a34846d43a1"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="test subflow">33f7934847a2ed10901d3a34846d43e2</flow>
+        <order>3</order>
+        <parent_ui_id>8ffa6c78-7a54-4163-948c-37eed67955be</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 10:51:37</sys_created_on>
+        <sys_id>9add170047e2ed10901d3a34846d43c6</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:06:43</sys_updated_on>
+        <ui_id>1409f90d-ae8e-4249-89c4-c058c0c1d493</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=9add170047e2ed10901d3a34846d43c6"/>
+    <sys_element_mapping action="DELETE" query="id=9add170047e2ed10901d3a34846d43c6"/>
+    <sys_element_mapping action="DELETE">
+        <field>log_message</field>
+        <id>9add170047e2ed10901d3a34846d43c6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 11:01:25</sys_created_on>
+        <sys_id>0a1063c047e2ed10901d3a34846d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:01:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{8ffa6c78-7a54-4163-948c-37eed67955be.organization.OrganizationReference.Organization_ReferenceWID}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=9add170047e2ed10901d3a34846d43c6"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=9add170047e2ed10901d3a34846d43c6"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Look up Organizations">76b3b0d91b751c1067817669cc4bcbab</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="test subflow">33f7934847a2ed10901d3a34846d43e2</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 10:51:36</sys_created_on>
+        <sys_id>dedd170047e2ed10901d3a34846d43be</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:06:43</sys_updated_on>
+        <ui_id>8ffa6c78-7a54-4163-948c-37eed67955be</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=dedd170047e2ed10901d3a34846d43be"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dedd170047e2ed10901d3a34846d43be</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 10:51:36</sys_created_on>
+        <sys_id>12dd170047e2ed10901d3a34846d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 10:51:36</sys_updated_on>
+        <value>COMPANY</value>
+        <variable display_value="Organization Type Reference ID">87b3b0d91b751c1067817669cc4bcbe0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dedd170047e2ed10901d3a34846d43be</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 10:51:37</sys_created_on>
+        <sys_id>1edd170047e2ed10901d3a34846d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 10:51:37</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"name$":"FDe70d2e68597ca0106d88503d2a14bcb4","$COCollectionField":[{"Transaction_Type_Reference_ID":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FDe70d2e68597ca0106d88503d2a14bcb4":{"$COCollectionField":[{"Transaction_Type_Reference":{"Transaction_Type_Reference_ID":"String","Transaction_Type_Reference_ID.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Transaction Type Reference ID\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Transaction Type References\",\"mandatory\":\"false\",\"child_name\":\"Transaction_Type_Reference\",\"uiUniqueId\":\"71d2e3e3-a4f1-458b-a052-e67ff344ce91\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDe70d2e68597ca0106d88503d2a14bcb4\",\"child_label\":\"Transaction Type Reference\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"68b4dc6a-25f9-4638-ab97-0fb0f4f16d10\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDe70d2e68597ca0106d88503d2a14bcb4.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Transaction Type References\",\"mandatory\":\"false\",\"child_name\":\"Transaction_Type_Reference\",\"uiUniqueId\":\"71d2e3e3-a4f1-458b-a052-e67ff344ce91\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDe70d2e68597ca0106d88503d2a14bcb4\",\"child_label\":\"Transaction Type Reference\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"68b4dc6a-25f9-4638-ab97-0fb0f4f16d10\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Transaction Type References">652aadac1b62101067817669cc4bcb55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dedd170047e2ed10901d3a34846d43be</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 10:51:37</sys_created_on>
+        <sys_id>5add170047e2ed10901d3a34846d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 10:51:37</sys_updated_on>
+        <value>10</value>
+        <variable display_value="Count">9686d9071b0e1c1067817669cc4bcbba</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dedd170047e2ed10901d3a34846d43be</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 10:51:37</sys_created_on>
+        <sys_id>96dd170047e2ed10901d3a34846d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 10:51:37</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"Effective_From":{"$cv":{"$c":"java.lang.String","$v":""}},"Updated_Through":{"$cv":{"$c":"java.lang.String","$v":""}},"Updated_From":{"$cv":{"$c":"java.lang.String","$v":""}},"Effective_Through":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD6b0d2e68317ca010ff96e1ea1a7797b2":{"Effective_From":"Date","Effective_From.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Date/Time\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"glide_date_time\",\"default_value\":\"\",\"label\":\"Effective From\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"Updated_Through":"Date","Updated_Through.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Date/Time\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"glide_date_time\",\"default_value\":\"\",\"label\":\"Updated Through\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"Updated_From":"Date","Updated_From.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Date/Time\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"glide_date_time\",\"default_value\":\"\",\"label\":\"Updated From\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"Effective_Through":"Date","Effective_Through.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Date/Time\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"glide_date_time\",\"default_value\":\"\",\"label\":\"Effective Through\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"}},"FlowDesigner:FD6b0d2e68317ca010ff96e1ea1a7797b2.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD6b0d2e68317ca010ff96e1ea1a7797b2\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Transaction Log Criteria Date Range Data\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"65000\",\"uiUniqueId\":\"6c3a9c26-77d7-4ac2-851a-8a2fe936c07e\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Transaction Log Criteria Date Range Data">c7b3b0d91b751c1067817669cc4bcbee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dedd170047e2ed10901d3a34846d43be</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 10:51:37</sys_created_on>
+        <sys_id>d2dd170047e2ed10901d3a34846d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 10:51:37</sys_updated_on>
+        <value>-- None --</value>
+        <variable display_value="Organization Reference ID">87b3b0d91b751c1067817669cc4bcbb2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_input_76b3b0d91b751c1067817669cc4bcbab^id=dedd170047e2ed10901d3a34846d43be"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=dedd170047e2ed10901d3a34846d43be^sys_idNOT IN56dd170047e2ed10901d3a34846d43c0,5add170047e2ed10901d3a34846d43c0"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>true</active>
+        <input_name>organization_reference_id</input_name>
+        <instance>dedd170047e2ed10901d3a34846d43be</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"organization_reference_id":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn \u0027\u0027;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 10:51:36</sys_created_on>
+        <sys_id>56dd170047e2ed10901d3a34846d43c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 10:51:36</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="DELETE">
+        <active>false</active>
+        <input_name>organization_type_reference_id</input_name>
+        <instance>dedd170047e2ed10901d3a34846d43be</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"organization_type_reference_id":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 10:51:36</sys_created_on>
+        <sys_id>5add170047e2ed10901d3a34846d43c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 10:51:36</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=dedd170047e2ed10901d3a34846d43be"/>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_hub_flow_logic action="DELETE" query="flow=33f7934847a2ed10901d3a34846d43e2^sys_idNOT IN93c0e70447e2ed10901d3a34846d4374"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">1bc0e70447e2ed10901d3a34846d4373</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="test subflow">33f7934847a2ed10901d3a34846d43e2</flow>
+        <flow_variable/>
+        <flow_variables_assigned>company_id</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>8ffa6c78-7a54-4163-948c-37eed67955be</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 11:04:30</sys_created_on>
+        <sys_id>93c0e70447e2ed10901d3a34846d4374</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:06:43</sys_updated_on>
+        <ui_id>28c9c654-8abc-49ff-bab9-21342f9ee18a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=93c0e70447e2ed10901d3a34846d4374"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_variable_33f7934847a2ed10901d3a34846d43e2^id=93c0e70447e2ed10901d3a34846d4374"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=93c0e70447e2ed10901d3a34846d4374"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=93c0e70447e2ed10901d3a34846d4374^sys_idNOT INd3c0e70447e2ed10901d3a34846d4375"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>true</active>
+        <input_name>company_id</input_name>
+        <instance>93c0e70447e2ed10901d3a34846d4374</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"company_id":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar companyIDs\u003dfd_data.flow_var.company_id;\ncompanyIDs\u003dfd_data._1__look_up_organizations.organization.OrganizationReference.Organization_ReferenceWID+\u0027!\u0027+companyIDs;\nreturn companyIDs;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 11:04:30</sys_created_on>
+        <sys_id>d3c0e70447e2ed10901d3a34846d4375</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:06:43</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_hub_flow_variable action="DELETE" query="model=33f7934847a2ed10901d3a34846d43e2^sys_idNOT IN7d1063c047e2ed10901d3a34846d4399"/>
+    <sys_hub_flow_variable action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f0b7b21c-3fca-4a7d-be2f-0ce394a09083</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>company_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Company ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="test subflow">33f7934847a2ed10901d3a34846d43e2</model>
+        <model_id>33f7934847a2ed10901d3a34846d43e2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_33f7934847a2ed10901d3a34846d43e2</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-27 11:01:24</sys_created_on>
+        <sys_id>7d1063c047e2ed10901d3a34846d4399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-27 11:01:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=33f7934847a2ed10901d3a34846d43e2"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_hub_flow_33f7934847a2ed10901d3a34846d43e2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;test_subflow&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"flow_variable.company_id","label":"Flow Variables➛Company ID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f0b7b21c-3fca-4a7d-be2f-0ce394a09083"}},{"name":"8ffa6c78-7a54-4163-948c-37eed67955be.organization.OrganizationReference.Organization_ReferenceID","label":"1➛Organization➛Organization Reference➛Organization Reference ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"8ffa6c78-7a54-4163-948c-37eed67955be.organization.OrganizationReference.Organization_ReferenceWID","label":"1➛Organization➛Organization Reference➛Organization Reference WID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;test subflow&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 10:26:03&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;33f7934847a2ed10901d3a34846d43e2&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;test subflow&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="HR Service Delivery Integration with Workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_33f7934847a2ed10901d3a34846d43e2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 11:06:44&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=33f7934847a2ed10901d3a34846d43e2^sys_idNOT IN33f7934847a2ed10901d3a34846d43e3"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;33f7934847a2ed10901d3a34846d43e2&lt;/id&gt;&lt;name&gt;test subflow&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 10:26:03&lt;/sys_created_on&gt;&lt;sys_id&gt;33f7934847a2ed10901d3a34846d43e3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 10:26:03&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=33f7934847a2ed10901d3a34846d43e3"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=33f7934847a2ed10901d3a34846d43e2^sys_idNOT IN5bc0e70447e2ed10901d3a34846d43a1,9add170047e2ed10901d3a34846d43c6,dedd170047e2ed10901d3a34846d43be"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="test subflow"&gt;33f7934847a2ed10901d3a34846d43e2&lt;/flow&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 11:04:31&lt;/sys_created_on&gt;&lt;sys_id&gt;5bc0e70447e2ed10901d3a34846d43a1&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="HR Service Delivery Integration with Workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 11:06:43&lt;/sys_updated_on&gt;&lt;ui_id&gt;11eed5d7-7fc2-435c-b796-a2507a9c88df&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=5bc0e70447e2ed10901d3a34846d43a1"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=5bc0e70447e2ed10901d3a34846d43a1"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;log_message&lt;/field&gt;&lt;id&gt;5bc0e70447e2ed10901d3a34846d43a1&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 11:04:31&lt;/sys_created_on&gt;&lt;sys_id&gt;5fc0e70447e2ed10901d3a34846d43a2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 11:04:31&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4&lt;/table&gt;&lt;value&gt;{{flow_variable.company_id}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=5bc0e70447e2ed10901d3a34846d43a1"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=5bc0e70447e2ed10901d3a34846d43a1"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="test subflow"&gt;33f7934847a2ed10901d3a34846d43e2&lt;/flow&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;8ffa6c78-7a54-4163-948c-37eed67955be&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 10:51:37&lt;/sys_created_on&gt;&lt;sys_id&gt;9add170047e2ed10901d3a34846d43c6&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_scope display_value="HR Service Delivery Integration with Workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 11:06:43&lt;/sys_updated_on&gt;&lt;ui_id&gt;1409f90d-ae8e-4249-89c4-c058c0c1d493&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=9add170047e2ed10901d3a34846d43c6"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=9add170047e2ed10901d3a34846d43c6"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;log_message&lt;/field&gt;&lt;id&gt;9add170047e2ed10901d3a34846d43c6&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 11:01:25&lt;/sys_created_on&gt;&lt;sys_id&gt;0a1063c047e2ed10901d3a34846d43af&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 11:01:25&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4&lt;/table&gt;&lt;value&gt;{{8ffa6c78-7a54-4163-948c-37eed67955be.organization.OrganizationReference.Organization_ReferenceWID}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=9add170047e2ed10901d3a34846d43c6"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=9add170047e2ed10901d3a34846d43c6"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look up Organizations"&gt;76b3b0d91b751c1067817669cc4bcbab&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="test subflow"&gt;33f7934847a2ed10901d3a34846d43e2&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 10:51:36&lt;/sys_created_on&gt;&lt;sys_id&gt;dedd170047e2ed10901d3a34846d43be&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_scope display_value="HR Service Delivery Integration with Workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 11:06:43&lt;/sys_updated_on&gt;&lt;ui_id&gt;8ffa6c78-7a54-4163-948c-37eed67955be&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=dedd170047e2ed10901d3a34846d43be"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;dedd170047e2ed10901d3a34846d43be&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 10:51:36&lt;/sys_created_on&gt;&lt;sys_id&gt;12dd170047e2ed10901d3a34846d43c2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 10:51:36&lt;/sys_updated_on&gt;&lt;value&gt;COMPANY&lt;/value&gt;&lt;variable display_value="Organization Type Reference ID"&gt;87b3b0d91b751c1067817669cc4bcbe0&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;dedd170047e2ed10901d3a34846d43be&lt;/document_key&gt;&lt;order&gt;5&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 10:51:37&lt;/sys_created_on&gt;&lt;sys_id&gt;1edd170047e2ed10901d3a34846d43c2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 10:51:37&lt;/sys_updated_on&gt;&lt;value&gt;{"version":"1.0","complexObject":{"name$":"FDe70d2e68597ca0106d88503d2a14bcb4","$COCollectionField":[{"Transaction_Type_Reference_ID":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FDe70d2e68597ca0106d88503d2a14bcb4":{"$COCollectionField":[{"Transaction_Type_Reference":{"Transaction_Type_Reference_ID":"String","Transaction_Type_Reference_ID.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Transaction Type Reference ID\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Transaction Type References\",\"mandatory\":\"false\",\"child_name\":\"Transaction_Type_Reference\",\"uiUniqueId\":\"71d2e3e3-a4f1-458b-a052-e67ff344ce91\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDe70d2e68597ca0106d88503d2a14bcb4\",\"child_label\":\"Transaction Type Reference\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"68b4dc6a-25f9-4638-ab97-0fb0f4f16d10\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDe70d2e68597ca0106d88503d2a14bcb4.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Transaction Type References\",\"mandatory\":\"false\",\"child_name\":\"Transaction_Type_Reference\",\"uiUniqueId\":\"71d2e3e3-a4f1-458b-a052-e67ff344ce91\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDe70d2e68597ca0106d88503d2a14bcb4\",\"child_label\":\"Transaction Type Reference\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"68b4dc6a-25f9-4638-ab97-0fb0f4f16d10\"}"}},"serializationFormat":"JSON"}&lt;/value&gt;&lt;variable display_value="Transaction Type References"&gt;652aadac1b62101067817669cc4bcb55&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;dedd170047e2ed10901d3a34846d43be&lt;/document_key&gt;&lt;order&gt;6&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 10:51:37&lt;/sys_created_on&gt;&lt;sys_id&gt;5add170047e2ed10901d3a34846d43c2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 10:51:37&lt;/sys_updated_on&gt;&lt;value&gt;10&lt;/value&gt;&lt;variable display_value="Count"&gt;9686d9071b0e1c1067817669cc4bcbba&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;dedd170047e2ed10901d3a34846d43be&lt;/document_key&gt;&lt;order&gt;4&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 10:51:37&lt;/sys_created_on&gt;&lt;sys_id&gt;96dd170047e2ed10901d3a34846d43c2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 10:51:37&lt;/sys_updated_on&gt;&lt;value&gt;{"version":"1.0","complexObject":{"Effective_From":{"$cv":{"$c":"java.lang.String","$v":""}},"Updated_Through":{"$cv":{"$c":"java.lang.String","$v":""}},"Updated_From":{"$cv":{"$c":"java.lang.String","$v":""}},"Effective_Through":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD6b0d2e68317ca010ff96e1ea1a7797b2":{"Effective_From":"Date","Effective_From.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Date/Time\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"glide_date_time\",\"default_value\":\"\",\"label\":\"Effective From\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"Updated_Through":"Date","Updated_Through.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Date/Time\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"glide_date_time\",\"default_value\":\"\",\"label\":\"Updated Through\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"Updated_From":"Date","Updated_From.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Date/Time\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"glide_date_time\",\"default_value\":\"\",\"label\":\"Updated From\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"Effective_Through":"Date","Effective_Through.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Date/Time\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"glide_date_time\",\"default_value\":\"\",\"label\":\"Effective Through\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"}},"FlowDesigner:FD6b0d2e68317ca010ff96e1ea1a7797b2.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD6b0d2e68317ca010ff96e1ea1a7797b2\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Transaction Log Criteria Date Range Data\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"65000\",\"uiUniqueId\":\"6c3a9c26-77d7-4ac2-851a-8a2fe936c07e\"}"}},"serializationFormat":"JSON"}&lt;/value&gt;&lt;variable display_value="Transaction Log Criteria Date Range Data"&gt;c7b3b0d91b751c1067817669cc4bcbee&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;dedd170047e2ed10901d3a34846d43be&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 10:51:37&lt;/sys_created_on&gt;&lt;sys_id&gt;d2dd170047e2ed10901d3a34846d43c2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 10:51:37&lt;/sys_updated_on&gt;&lt;value&gt;-- None --&lt;/value&gt;&lt;variable display_value="Organization Reference ID"&gt;87b3b0d91b751c1067817669cc4bcbb2&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_76b3b0d91b751c1067817669cc4bcbab^id=dedd170047e2ed10901d3a34846d43be"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=dedd170047e2ed10901d3a34846d43be^sys_idNOT IN56dd170047e2ed10901d3a34846d43c0,5add170047e2ed10901d3a34846d43c0"/&gt;&lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;input_name&gt;organization_reference_id&lt;/input_name&gt;&lt;instance&gt;dedd170047e2ed10901d3a34846d43be&lt;/instance&gt;&lt;referenced_table&gt;sys_hub_action_instance&lt;/referenced_table&gt;&lt;script&gt;{"organization_reference_id":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn \u0027\u0027;"}}&lt;/script&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 10:51:36&lt;/sys_created_on&gt;&lt;sys_id&gt;56dd170047e2ed10901d3a34846d43c0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 10:51:36&lt;/sys_updated_on&gt;&lt;/sys_hub_input_scripts&gt;&lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;input_name&gt;organization_type_reference_id&lt;/input_name&gt;&lt;instance&gt;dedd170047e2ed10901d3a34846d43be&lt;/instance&gt;&lt;referenced_table&gt;sys_hub_action_instance&lt;/referenced_table&gt;&lt;script&gt;{"organization_type_reference_id":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n"}}&lt;/script&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 10:51:36&lt;/sys_created_on&gt;&lt;sys_id&gt;5add170047e2ed10901d3a34846d43c0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 10:51:36&lt;/sys_updated_on&gt;&lt;/sys_hub_input_scripts&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=dedd170047e2ed10901d3a34846d43be"/&gt;&lt;sys_hub_sub_flow_instance action="delete_multiple" query="flow=33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=33f7934847a2ed10901d3a34846d43e2^sys_idNOT IN93c0e70447e2ed10901d3a34846d4374"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;1bc0e70447e2ed10901d3a34846d4373&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="test subflow"&gt;33f7934847a2ed10901d3a34846d43e2&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned&gt;company_id&lt;/flow_variables_assigned&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Set Flow Variables"&gt;4f787d1e0f9b0010ecf0cc52ff767ea0&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;8ffa6c78-7a54-4163-948c-37eed67955be&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 11:04:30&lt;/sys_created_on&gt;&lt;sys_id&gt;93c0e70447e2ed10901d3a34846d4374&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="HR Service Delivery Integration with Workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 11:06:43&lt;/sys_updated_on&gt;&lt;ui_id&gt;28c9c654-8abc-49ff-bab9-21342f9ee18a&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=93c0e70447e2ed10901d3a34846d4374"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_33f7934847a2ed10901d3a34846d43e2^id=93c0e70447e2ed10901d3a34846d4374"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=93c0e70447e2ed10901d3a34846d4374"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=93c0e70447e2ed10901d3a34846d4374^sys_idNOT INd3c0e70447e2ed10901d3a34846d4375"/&gt;&lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;input_name&gt;company_id&lt;/input_name&gt;&lt;instance&gt;93c0e70447e2ed10901d3a34846d4374&lt;/instance&gt;&lt;referenced_table&gt;sys_hub_flow_logic&lt;/referenced_table&gt;&lt;script&gt;{"company_id":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar companyIDs\u003dfd_data.flow_var.company_id;\ncompanyIDs\u003dfd_data._1__look_up_organizations.organization.OrganizationReference.Organization_ReferenceWID+\u0027!\u0027+companyIDs;\nreturn companyIDs;"}}&lt;/script&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 11:04:30&lt;/sys_created_on&gt;&lt;sys_id&gt;d3c0e70447e2ed10901d3a34846d4375&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 11:06:43&lt;/sys_updated_on&gt;&lt;/sys_hub_input_scripts&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=33f7934847a2ed10901d3a34846d43e2^sys_idNOT IN7d1063c047e2ed10901d3a34846d4399"/&gt;&lt;sys_hub_flow_variable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f0b7b21c-3fca-4a7d-be2f-0ce394a09083&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;company_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Company ID&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="test subflow"&gt;33f7934847a2ed10901d3a34846d43e2&lt;/model&gt;&lt;model_id&gt;33f7934847a2ed10901d3a34846d43e2&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_variable_33f7934847a2ed10901d3a34846d43e2&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_variable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-27 11:01:24&lt;/sys_created_on&gt;&lt;sys_id&gt;7d1063c047e2ed10901d3a34846d4399&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="HR Service Delivery Integration with Workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-27 11:01:24&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_variable&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=33f7934847a2ed10901d3a34846d43e2"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>556400103</payload_hash>
+        <record_name>test subflow</record_name>
+        <reverted_from/>
+        <source>ceeb8f1587ae2110d306cbb4dabb35d7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-01 06:46:44</sys_created_on>
+        <sys_id>562c039587ae2110d306cbb4dabb35cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187d6104a830000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-01 06:46:44</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>3741a384ade2ed103d9147394ea57027</update_guid>
+        <update_guid_history>3741a384ade2ed103d9147394ea57027:556400103,bbc0e704f6e2ed1019210b29a882d4c7:-1369572993,561063c0f1e2ed10e196253fd66ce7f6:-1072235245,a6dd1700dee2ed10aa1dd014bb9604da:1236966666,0008934845a2ed103e4b97dfd8277aeb:-1837609556</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 11:16:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>27e39b6ec14b480093915892d6400000</sys_id>
+        <sys_metadata>33f7934847a2ed10901d3a34846d43e2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test subflow</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_33f7934847a2ed10901d3a34846d43e2</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_33f7934847a2ed10901d3a34846d43e2">562c039587ae2110d306cbb4dabb35cd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 11:16:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

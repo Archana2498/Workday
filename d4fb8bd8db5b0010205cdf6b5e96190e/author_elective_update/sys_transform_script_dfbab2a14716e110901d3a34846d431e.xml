@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="DELETE">
+        <active>false</active>
+        <map display_value="HRSD Workday Pull Compensation Change Request">220872ed47d2e110901d3a34846d43ac</map>
+        <order>150</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+    if (source.u_attachment_name != "" && source.u_attachment_content != "") {
+        var wtHelper = new WorkdayApprovalToDosHelperUtils();
+        wtHelper.addAttachment(source, WorkdayApprovalToDosHelperSNC.Workday_Table_Name.Compensation_Change_Request_ToDos);
+    }
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 13:53:51</sys_created_on>
+        <sys_id>dfbab2a14716e110901d3a34846d431e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>onAfter</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_transform_script_dfbab2a14716e110901d3a34846d431e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 06:33:58</sys_updated_on>
+        <when>onAfter</when>
+    </sys_transform_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_transform_script_dfbab2a14716e110901d3a34846d431e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_script"&gt;&lt;sys_transform_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;map display_value="HRSD Workday Pull Compensation Change Request"&gt;220872ed47d2e110901d3a34846d43ac&lt;/map&gt;&lt;order&gt;150&lt;/order&gt;&lt;script&gt;&lt;![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+    if (source.u_attachment_name != "" &amp;&amp; source.u_attachment_content != "") {
+        var wtHelper = new WorkdayApprovalToDosHelperUtils();
+        wtHelper.addAttachment(source, WorkdayApprovalToDosHelperSNC.Workday_Table_Name.Compensation_Change_Request_ToDos);
+    }
+
+})(source, map, log, target);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_transform_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-19 13:53:51&lt;/sys_created_on&gt;&lt;sys_id&gt;dfbab2a14716e110901d3a34846d431e&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;onAfter&lt;/sys_name&gt;&lt;sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="HR Service Delivery Integration with Workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_script_dfbab2a14716e110901d3a34846d431e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-21 06:33:58&lt;/sys_updated_on&gt;&lt;when&gt;onAfter&lt;/when&gt;&lt;/sys_transform_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>476728676</payload_hash>
+        <record_name>onAfter</record_name>
+        <reverted_from/>
+        <source>6ec7ae9987aa2110d306cbb4dabb3568</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-05-01 04:11:06</sys_created_on>
+        <sys_id>e6886a9d87aa2110d306cbb4dabb35c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187d581ce340000001</sys_recorded_at>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-05-01 04:11:06</sys_updated_on>
+        <type>Transform Script</type>
+        <update_guid>79592f4a98da6510f932bd97087b61de</update_guid>
+        <update_guid_history>79592f4a98da6510f932bd97087b61de:476728676,f31d3e253816e11042192bf53d8cbda6:-1032481731,5e7b36a13016e1105ce0c299db175f02:-1904425566,79daf2a1e316e1106b4941ca0fcaf7f8:126447716</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-01 06:46:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_transform_script">sys_transform_script</sys_db_object>
+        <sys_id>029cc1d240b447ae93f6d7f5ee7eb1b9</sys_id>
+        <sys_metadata>dfbab2a14716e110901d3a34846d431e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onAfter</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_transform_script_dfbab2a14716e110901d3a34846d431e</sys_update_name>
+        <sys_update_version display_value="sys_transform_script_dfbab2a14716e110901d3a34846d431e">e6886a9d87aa2110d306cbb4dabb35c9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-01 06:46:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

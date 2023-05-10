@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="import_set_run_status" label="Import Set Run Status" language="en" table="var__m_sys_hub_flow_output_010287601bcc6c1067817669cc4bcb31">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>import_set_run_status</element>
+            <help/>
+            <hint/>
+            <label>Import Set Run Status</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_010287601bcc6c1067817669cc4bcb31</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Import Set Run Status</sys_name>
+            <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_010287601bcc6c1067817669cc4bcb31_import_set_run_status_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

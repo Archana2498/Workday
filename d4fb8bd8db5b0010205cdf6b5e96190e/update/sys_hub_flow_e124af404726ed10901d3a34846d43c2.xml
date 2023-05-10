@@ -158,10 +158,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-27 11:19:10</sys_created_on>
         <sys_id>0624ef404726ed10901d3a34846d433d</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-27 11:23:27</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-04 06:44:05</sys_updated_on>
         <ui_id>8ffa6c78-7a54-4163-948c-37eed67955be</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0624ef404726ed10901d3a34846d433d"/>
@@ -475,9 +475,9 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e124af404726ed10901d3a34846d43c2"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e124af404726ed10901d3a34846d43c2^sys_idNOT IN34252bc04726ed10901d3a34846d434c"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@1afa77c</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"34252bc04726ed10901d3a34846d434c","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Get Company IDs">e124af404726ed10901d3a34846d43c2</plan_id>
-        <snapshot>e315e7c04726ed10901d3a34846d430d</snapshot>
+        <snapshot>a458625687e2a110d306cbb4dabb352f</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-27 11:23:27</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -963,6 +963,6 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>e124af404726ed10901d3a34846d43c2</sys_id>
         <latest_snapshot>e315e7c04726ed10901d3a34846d430d</latest_snapshot>
-        <compiler_build/>
+        <compiler_build>glide-utah-12-21-2022__patch1-03-01-2023_03-13-2023_1716.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

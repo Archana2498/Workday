@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_task_configuration">
     <sn_ex_sp_task_configuration action="INSERT_OR_UPDATE">
-        <action_group_record display_value="Test Action Group">84e0289f47c1e110901d3a34846d4360</action_group_record>
+        <action_group_record display_value="Time Off Approvals Action Group">84e0289f47c1e110901d3a34846d4360</action_group_record>
         <active>false</active>
         <additional_conditions/>
         <common_info_fields>workday_created_moment,workday_status,due_date</common_info_fields>

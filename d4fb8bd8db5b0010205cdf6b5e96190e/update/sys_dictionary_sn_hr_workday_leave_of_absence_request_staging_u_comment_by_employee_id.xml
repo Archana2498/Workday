@@ -47,7 +47,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-03 11:31:55</sys_created_on>
-        <sys_id>4790aa0247ea611011ebca5c346d438a</sys_id>
         <sys_name>Comment_By_Employee_ID</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>

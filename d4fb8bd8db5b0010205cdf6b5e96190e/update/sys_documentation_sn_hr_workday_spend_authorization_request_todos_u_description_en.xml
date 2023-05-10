@@ -11,7 +11,6 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2023-04-26 06:37:36</sys_created_on>
-            <sys_id>2b1a9dff47166d10901d3a34846d437e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Description</sys_name>
             <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>

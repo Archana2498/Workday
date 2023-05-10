@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_ex_sp_m2m_action_group">
     <sn_ex_sp_m2m_action_group action="INSERT_OR_UPDATE">
-        <action display_value="View report in Workday">2096022b8702619018c742ec0ebb3508</action>
+        <action display_value="View  full report in Workday">2096022b8702619018c742ec0ebb3508</action>
         <action_visibility>all</action_visibility>
-        <group display_value="Job Requisition View Report">7967ce2b8702619018c742ec0ebb356e</group>
+        <group display_value="Job Requisition Request Action Group">7967ce2b8702619018c742ec0ebb356e</group>
         <order>100</order>
         <primary>true</primary>
         <script/>

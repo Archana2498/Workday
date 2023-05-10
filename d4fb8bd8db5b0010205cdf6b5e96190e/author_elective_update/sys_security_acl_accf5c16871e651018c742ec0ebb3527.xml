@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on sn_hr_workday_leave_of_absence_request_todos</description>
+        <name>sn_hr_workday_leave_of_absence_request_todos</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 10:31:43</sys_created_on>
+        <sys_id>accf5c16871e651018c742ec0ebb3527</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>sn_hr_workday_leave_of_absence_request_todos</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_security_acl_accf5c16871e651018c742ec0ebb3527</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 08:41:18</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_security_acl_accf5c16871e651018c742ec0ebb3527</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on sn_hr_workday_leave_of_absence_request_todos</description><name>sn_hr_workday_leave_of_absence_request_todos</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-21 10:31:43</sys_created_on><sys_id>accf5c16871e651018c742ec0ebb3527</sys_id><sys_mod_count>2</sys_mod_count><sys_name>sn_hr_workday_leave_of_absence_request_todos</sys_name><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_update_name>sys_security_acl_accf5c16871e651018c742ec0ebb3527</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-03 08:41:18</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-1818314748</payload_hash>
+        <record_name>sn_hr_workday_leave_of_absence_request_todos</record_name>
+        <reverted_from/>
+        <source>876d42ce472a611011ebca5c346d4330</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 10:10:45</sys_created_on>
+        <sys_id>5e0eca82476a611011ebca5c346d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187e117cbb90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 10:10:45</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>ff897dcedda225101600b466b5a58e8d</update_guid>
+        <update_guid_history>ff897dcedda225101600b466b5a58e8d:-1818314748,4d79f9ce29a22510336c50620ab81b2e:-2052222851,a4cf5c162d1e651050e405de3bd0742a:-1818314748</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 13:33:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>2fe31ef8821f4e21929c55832475de51</sys_id>
+        <sys_metadata>accf5c16871e651018c742ec0ebb3527</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_hr_workday_leave_of_absence_request_todos</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent display_value="sn_hr_workday_leave_of_absence_request_todos">2343881547566110901d3a34846d43fe</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_security_acl_accf5c16871e651018c742ec0ebb3527</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_accf5c16871e651018c742ec0ebb3527">5e0eca82476a611011ebca5c346d43e4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 13:33:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

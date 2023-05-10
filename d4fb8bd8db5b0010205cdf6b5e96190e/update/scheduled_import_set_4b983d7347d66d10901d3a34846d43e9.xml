@@ -244,7 +244,7 @@ result;]]></condition>
 }]]></pre_script>
         <pre_script_bool>true</pre_script_bool>
         <record_source>regular</record_source>
-        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as display_value="">6816f79cc0a8016401c5a33be04be441</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>

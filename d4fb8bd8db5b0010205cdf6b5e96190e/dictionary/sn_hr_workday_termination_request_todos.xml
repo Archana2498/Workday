@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="af1149ec8706a15018c742ec0ebb3558" extends="sn_hr_workday_todo" label="Termination Request Todos" max_length="40" name="sn_hr_workday_termination_request_todos" type="collection">
+        <element label="Attachment IDs" max_length="4000" name="u_attachment_ids" type="string"/>
+        <element label="Position" max_length="40" name="u_position" type="string"/>
+        <element label="Primary Reason" max_length="4000" name="u_primary_reason" type="string"/>
+    </element>
+</database>

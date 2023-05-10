@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="35b27a558746a55018c742ec0ebb358f" label="Job Requisition Request Todos Item" max_length="40" name="sn_hr_workday_job_requisition_request_todos_item" type="collection">
+        <element label="Compensation grade" max_length="40" name="u_compensation_grade" type="string"/>
+        <element label="Cost centre" max_length="40" name="u_cost_centre" type="string"/>
+        <element label="Job title" max_length="100" name="u_job_title" type="string"/>
+        <element label="Justification" max_length="100" name="u_justification" type="string"/>
+        <element label="Location" max_length="40" name="u_location" type="string"/>
+        <element label="Number of positions" max_length="40" name="u_number_of_positions" type="string"/>
+        <element label="Organization" max_length="100" name="u_organization" type="string"/>
+        <element label="Positions created" max_length="250" name="u_positions_created" type="string"/>
+        <element label="Position request reason" max_length="250" name="u_position_request_reason" type="string"/>
+        <element label="Replacement For" max_length="40" name="u_replacement_for" type="string"/>
+        <element label="Workday ID" max_length="40" name="u_workday_id" type="string"/>
+    </element>
+</database>

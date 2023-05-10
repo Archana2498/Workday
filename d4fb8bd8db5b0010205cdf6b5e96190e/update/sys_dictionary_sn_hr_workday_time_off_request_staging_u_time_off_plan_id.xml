@@ -47,7 +47,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2023-04-19 07:18:53</sys_created_on>
-        <sys_id>5070292d871ea11018c742ec0ebb35b7</sys_id>
         <sys_name>Time_off_plan_ID</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>

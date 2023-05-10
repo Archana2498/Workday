@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9a0bc56887e2a510d306cbb4dabb35af" extends="sys_import_set_row" label="Department Staging" max_length="40" name="sn_hr_workday_department_staging" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Cost center" max_length="100" name="cost_center" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Cost center description" max_length="100" name="cost_center_description" type="string"/>
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element attributes="edge_encryption_enabled=true" label="Department id" max_length="40" name="u_department_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="External id" max_length="40" name="u_external_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
+    </element>
+</database>

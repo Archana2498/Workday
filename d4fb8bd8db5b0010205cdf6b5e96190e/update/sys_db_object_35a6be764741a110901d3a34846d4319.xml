@@ -17,7 +17,7 @@
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
-        <super_class display_value="HR Case" name="sn_hr_core_case">14318cc687cda11018c742ec0ebb3519</super_class>
+        <super_class display_value="HR Case" name="sn_hr_core_case">0c6aa52847c9111011ebca5c346d432f</super_class>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-02-20 07:30:06</sys_created_on>

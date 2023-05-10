@@ -35,7 +35,7 @@
 	return answer; 
  
 })(current, answer);]]></visibility_script>
-        <widget display_value="Custom Time Off Request Item">5a6ed6b047152910901d3a34846d43c8</widget>
+        <widget/>
         <widget_parameters>{"workday_id":"{table.u_workday_id}"}</widget_parameters>
     </sn_ex_sp_task_tab_configuration>
 </record_update>

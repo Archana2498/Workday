@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.comment {
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #3C59E7;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.commentBtn {
+	border: 0px;
+  background: transparent;
+}
+.commentBtn:disabled {
+opacity:25%;
+}
+.table {
+	border-bottom: 0.1rem solid #DADDE2;
+}
+.table &gt; tbody &gt; tr &gt; th {
+	border-top: 0rem solid #DADDE2;
+  border-bottom: 0.1rem solid #DADDE2;
+}
+.table &gt; tbody &gt; tr &gt; td {
+	border-top: 0rem solid #DADDE2;
+}
+.mainboldText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 19.8px;
+color: #181A1F;
+display: flex;
+}
+.boldText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 23px;
+color: #181A1F;
+display: flex;
+  min-height: 23px;
+}
+.border {
+box-sizing: border-box;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+background: #FFFFFF;
+border: 1px solid #DADDE2;
+border-radius: 4px;
+  margin-bottom:16px;
+}
+.smallText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+color: #656E81;
+  display: flex;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>custom_termination_request_item_new</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Custom Termination Request Item New</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    //data.task_items = [];
+    //var report_name = options.raas_report_name;
+		//gs.info("DIV 1"+report_name);
+		//var app;
+    //var app = new GlideRecord("sn_hr_workday_time_off_request_todos_item");
+    //if (report_name == "Workday_Approval_Service_Name")
+	gs.info("wdid_Div - "+options.workday_id);
+        var app = new GlideRecord("sn_hr_workday_termination_request_todos_item");
+    //else app = new GlideRecord("sn_hr_workday_time_off_request_todos_item");
+    var workday_id = options.workday_id;
+		//var workday_id = '2b43053975381019f38f33ba0f410000';
+    app.addEncodedQuery('u_workday_id=' + workday_id);
+		app.setLimit(1);
+    app.query();
+    if (app.next()) {
+        //var task_item = {};
+        data.date = app.getValue('u_termination_date');
+        //if (report_name == 'Workday_Approval_Service_Name') {
+			data.last_day_of_work = app.getValue('u_last_day_of_work');
+			data.pay_through_date = app.getValue('u_pay_through_date');
+			data.resignation_date = app.getValue('u_resignation_date');
+			data.secondary_termination_reasons = app.getValue('u_secondary_termination_reasons');
+			data.notification_date = app.getValue('u_notification_date');
+			data.eligible_for_rehire = app.getValue('u_eligible_for_rehire');
+			data.close_position = app.getValue('u_close_position');
+			data.available_for_overlap = app.getValue('u_available_for_overlap');
+
+        /*} else {
+            //task_item.u_date = app.getValue('u_date');
+            task_item.u_day_of_the_week = app.getValue('u_day_of_the_week');
+            task_item.u_units_requested_this_coordinated_leave_time_off = app.getValue('u_units_requested_this_coordinated_leave_time_off');
+            task_item.u_unit_time = app.getValue('u_unit_time');
+            task_item.u_comment = app.getValue('u_comment');
+            task_item.u_comments = app.getValue('u_comments');
+        }*/
+        //data.task_items.push(task_item);
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-12 11:26:18</sys_created_on>
+        <sys_id>8fc51a13470ae190901d3a34846d43fe</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Custom Termination Request Item New</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sp_widget_8fc51a13470ae190901d3a34846d43fe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-12 14:49:08</sys_updated_on>
+        <template><![CDATA[<div>
+    <div class="row">
+  		<div class="col-sm-6 col-xs-6 mainboldText" style="margin-bottom: 16px;margin-top: 11px;">${Termination details}</div>
+  		<div class="col-sm-6 col-xs-6"></div>
+		</div>
+    <div class="row" style="margin-bottom: 16px;">
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Termination date}</span>
+        <span class="boldText">{{data.date}}</span>
+      </div>
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Last day of work}</span>
+        <span class="boldText">{{data.last_day_of_work}}</span>
+      </div>
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Pay through date}</span>
+        <span class="boldText">{{data.pay_through_date}}</span>
+      </div>
+		</div>
+    <div class="row" style="margin-bottom: 16px;">
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Resignation date}</span>
+        <span class="boldText">{{data.resignation_date}}</span>
+      </div>
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Secondary reason}</span>
+        <span class="boldText">{{data.secondary_termination_reasons}}</span>
+      </div>
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Notify by}</span>
+        <span class="boldText">{{data.notification_date}}</span>
+      </div>
+		</div>
+  <div class="row" style="margin-bottom: 16px;">
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Not eligible to rehire?}</span>
+        <span class="boldText">{{data.eligible_for_rehire}}</span>
+      </div>
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Close position?}</span>
+        <span class="boldText">{{data.close_position}}</span>
+      </div>
+  		<div class="col-sm-4 col-xs-4">
+      	<span class="smallText">${Is this position available for overlap?}</span>
+        <span class="boldText">{{data.available_for_overlap}}</span>
+      </div>
+		</div>
+  </div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sp_widget_8fc51a13470ae190901d3a34846d43fe</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.comment {
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #3C59E7;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.commentBtn {
+	border: 0px;
+  background: transparent;
+}
+.commentBtn:disabled {
+opacity:25%;
+}
+.table {
+	border-bottom: 0.1rem solid #DADDE2;
+}
+.table &amp;gt; tbody &amp;gt; tr &amp;gt; th {
+	border-top: 0rem solid #DADDE2;
+  border-bottom: 0.1rem solid #DADDE2;
+}
+.table &amp;gt; tbody &amp;gt; tr &amp;gt; td {
+	border-top: 0rem solid #DADDE2;
+}
+.mainboldText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 19.8px;
+color: #181A1F;
+display: flex;
+}
+.boldText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 23px;
+color: #181A1F;
+display: flex;
+  min-height: 23px;
+}
+.border {
+box-sizing: border-box;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 16px;
+background: #FFFFFF;
+border: 1px solid #DADDE2;
+border-radius: 4px;
+  margin-bottom:16px;
+}
+.smallText {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+color: #656E81;
+  display: flex;
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;custom_termination_request_item_new&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Custom Termination Request Item New&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    //data.task_items = [];
+    //var report_name = options.raas_report_name;
+		//gs.info("DIV 1"+report_name);
+		//var app;
+    //var app = new GlideRecord("sn_hr_workday_time_off_request_todos_item");
+    //if (report_name == "Workday_Approval_Service_Name")
+	gs.info("wdid_Div - "+options.workday_id);
+        var app = new GlideRecord("sn_hr_workday_termination_request_todos_item");
+    //else app = new GlideRecord("sn_hr_workday_time_off_request_todos_item");
+    var workday_id = options.workday_id;
+		//var workday_id = '2b43053975381019f38f33ba0f410000';
+    app.addEncodedQuery('u_workday_id=' + workday_id);
+		app.setLimit(1);
+    app.query();
+    if (app.next()) {
+        //var task_item = {};
+        data.date = app.getValue('u_termination_date');
+        //if (report_name == 'Workday_Approval_Service_Name') {
+			data.last_day_of_work = app.getValue('u_last_day_of_work');
+			data.pay_through_date = app.getValue('u_pay_through_date');
+			data.resignation_date = app.getValue('u_resignation_date');
+			data.secondary_termination_reasons = app.getValue('u_secondary_termination_reasons');
+			data.notification_date = app.getValue('u_notification_date');
+			data.eligible_for_rehire = app.getValue('u_eligible_for_rehire');
+			data.close_position = app.getValue('u_close_position');
+			data.available_for_overlap = app.getValue('u_available_for_overlap');
+
+        /*} else {
+            //task_item.u_date = app.getValue('u_date');
+            task_item.u_day_of_the_week = app.getValue('u_day_of_the_week');
+            task_item.u_units_requested_this_coordinated_leave_time_off = app.getValue('u_units_requested_this_coordinated_leave_time_off');
+            task_item.u_unit_time = app.getValue('u_unit_time');
+            task_item.u_comment = app.getValue('u_comment');
+            task_item.u_comments = app.getValue('u_comments');
+        }*/
+        //data.task_items.push(task_item);
+    }
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-12 11:26:18&lt;/sys_created_on&gt;&lt;sys_id&gt;8fc51a13470ae190901d3a34846d43fe&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Custom Termination Request Item New&lt;/sys_name&gt;&lt;sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="HR Service Delivery Integration with Workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_8fc51a13470ae190901d3a34846d43fe&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-12 14:49:08&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+    &lt;div class="row"&gt;
+  		&lt;div class="col-sm-6 col-xs-6 mainboldText" style="margin-bottom: 16px;margin-top: 11px;"&gt;${Termination details}&lt;/div&gt;
+  		&lt;div class="col-sm-6 col-xs-6"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+    &lt;div class="row" style="margin-bottom: 16px;"&gt;
+  		&lt;div class="col-sm-4 col-xs-4"&gt;
+      	&lt;span class="smallText"&gt;${Termination date}&lt;/span&gt;
+        &lt;span class="boldText"&gt;{{data.date}}&lt;/span&gt;
+      &lt;/div&gt;
+  		&lt;div class="col-sm-4 col-xs-4"&gt;
+      	&lt;span class="smallText"&gt;${Last day of work}&lt;/span&gt;
+        &lt;span class="boldText"&gt;{{data.last_day_of_work}}&lt;/span&gt;
+      &lt;/div&gt;
+  		&lt;div class="col-sm-4 col-xs-4"&gt;
+      	&lt;span class="smallText"&gt;${Pay through date}&lt;/span&gt;
+        &lt;span class="boldText"&gt;{{data.pay_through_date}}&lt;/span&gt;
+      &lt;/div&gt;
+		&lt;/div&gt;
+    &lt;div class="row" style="margin-bottom: 16px;"&gt;
+  		&lt;div class="col-sm-4 col-xs-4"&gt;
+      	&lt;span class="smallText"&gt;${Resignation date}&lt;/span&gt;
+        &lt;span class="boldText"&gt;{{data.resignation_date}}&lt;/span&gt;
+      &lt;/div&gt;
+  		&lt;div class="col-sm-4 col-xs-4"&gt;
+      	&lt;span class="smallText"&gt;${Secondary reason}&lt;/span&gt;
+        &lt;span class="boldText"&gt;{{data.secondary_termination_reasons}}&lt;/span&gt;
+      &lt;/div&gt;
+  		&lt;div class="col-sm-4 col-xs-4"&gt;
+      	&lt;span class="smallText"&gt;${Notify by}&lt;/span&gt;
+        &lt;span class="boldText"&gt;{{data.notification_date}}&lt;/span&gt;
+      &lt;/div&gt;
+		&lt;/div&gt;
+  &lt;div class="row" style="margin-bottom: 16px;"&gt;
+  		&lt;div class="col-sm-4 col-xs-4"&gt;
+      	&lt;span class="smallText"&gt;${Not eligible to rehire?}&lt;/span&gt;
+        &lt;span class="boldText"&gt;{{data.eligible_for_rehire}}&lt;/span&gt;
+      &lt;/div&gt;
+  		&lt;div class="col-sm-4 col-xs-4"&gt;
+      	&lt;span class="smallText"&gt;${Close position?}&lt;/span&gt;
+        &lt;span class="boldText"&gt;{{data.close_position}}&lt;/span&gt;
+      &lt;/div&gt;
+  		&lt;div class="col-sm-4 col-xs-4"&gt;
+      	&lt;span class="smallText"&gt;${Is this position available for overlap?}&lt;/span&gt;
+        &lt;span class="boldText"&gt;{{data.available_for_overlap}}&lt;/span&gt;
+      &lt;/div&gt;
+		&lt;/div&gt;
+  &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1225322494</payload_hash>
+        <record_name>Custom Termination Request Item New</record_name>
+        <reverted_from/>
+        <source>6ec7ae9987aa2110d306cbb4dabb3568</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-05-01 04:10:21</sys_created_on>
+        <sys_id>6f58e65d87aa2110d306cbb4dabb354f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187d5811f8b0000001</sys_recorded_at>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-05-01 04:10:21</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>d35487534f0ee190c6140bfeb5bf77be</update_guid>
+        <update_guid_history>d35487534f0ee190c6140bfeb5bf77be:1225322494,cd4f1613ee8ae190c51ecb49df4ca551:-1117503106,ab1e125f4c4ae1905e4fa797cd638110:-1060721918,198dd25be44ae190108a16d2d2514404:774414306,1bcc525b274ae1909b6ea899600f513c:1192954267,1c1c921b2d4ae190bde1424495ad34b0:1952522426,5ebb121bcc4ae190048a873a78c299ad:1288206900,49a85a1f360ae190e675ec2ff5304291:-1199953888,17481edb5d0ae19096423f394b9abefe:307478922,7ff6ded3100ae1908ba73b83b2dd9708:618000099,1cf5d253490ae1908726d273165a63c5:722365906</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Custom Termination Request Item New">c19ad28a47aa611011ebca5c346d4361</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 11:05:33</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>32c40602c1fb4c7ca58fbd1195189b64</sys_id>
+        <sys_metadata>8fc51a13470ae190901d3a34846d43fe</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Custom Termination Request Item New</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sp_widget_8fc51a13470ae190901d3a34846d43fe</sys_update_name>
+        <sys_update_version display_value="sp_widget_8fc51a13470ae190901d3a34846d43fe">6f58e65d87aa2110d306cbb4dabb354f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 11:05:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

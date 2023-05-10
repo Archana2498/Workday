@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>sn_hr_workday.ImportSetUtilsSNC</api_name>
+        <caller_access>2</caller_access>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ImportSetUtilsSNC</name>
+        <script><![CDATA[gs.include('moment.js');
+gs.include('moment-timezone-with-data-1970-2030');
+var ImportSetUtilsSNC = Class.create();
+ImportSetUtilsSNC.prototype = {
+    initialize: function() {
+        this.configs = new WorkdayConfigurationUtils().getProfileSyncConfigurations();
+    },
+    createImportSet: function(tableName, subflow) {
+        var importSetGr = new GlideRecord('sys_import_set');
+        importSetGr.initialize();
+        importSetGr.table_name = tableName;
+        importSetGr.mode = 'asynchronous';
+        importSetGr.short_description = 'Subflow -' + subflow;
+        return importSetGr.insert();
+    },
+    updateImportSet: function(importSetSysID, state) {
+        var importSetGr = new GlideRecord('sys_import_set');
+        if (importSetGr.get(importSetSysID)) {
+            importSetGr.state = state;
+            if (state == 'loaded') {
+                importSetGr.load_completed = new GlideDateTime();
+            }
+            importSetGr.update();
+        }
+    },
+    transformImportSet: function(importSetSysID) {
+        var importSetGr = new GlideRecord('sys_import_set');
+        if (importSetGr.get(importSetSysID)) {
+            var importSetRun = new GlideImportSetRun(importSetSysID);
+            var importLog = new GlideImportLog(importSetRun, "Workday Integration Transform");
+            var transformer = new GlideImportSetTransformer();
+            transformer.setLogger(importLog);
+            transformer.setImportSetRun(importSetRun);
+            transformer.setImportSetID(importSetGr.getValue('sys_id'));
+            transformer.transformAllMaps(importSetGr);
+        }
+    },
+    getImportSetRunStatus: function(importSetSysID) {
+        var importSetRunGr = new GlideRecord('sys_import_set_run');
+        importSetRunGr.addQuery('set', importSetSysID);
+        importSetRunGr.query();
+        if (importSetRunGr.next()) {
+            return importSetRunGr.getValue('state');
+        }
+    },
+    createJobTracker: function() {
+        var trackerGr = new GlideRecord('sn_hr_workday_job_tracker');
+        trackerGr.job_name = 'Workday';
+        trackerGr.state = 'running';
+        trackerGr.job_started_at = new GlideDateTime();
+        trackerGr.insert();
+        return trackerGr;
+    },
+
+    createServiceJobTracker: function(job, service, setSysID, retrieveAll, futurePull) {
+        var serviceTrackerGr = new GlideRecord('sn_hr_workday_service_job_tracker');
+        serviceTrackerGr.job_started_at = new GlideDateTime();
+        serviceTrackerGr.import_set = setSysID;
+        serviceTrackerGr.workday_integration_service = service;
+        serviceTrackerGr.workday_integration_job_tracker = job.sys_id;
+		if(!retrieveAll)
+			serviceTrackerGr.start_date_time_api_parameter = this.getLastSuccessfulJobRunDate(service, job);
+		serviceTrackerGr.end_date_time_api_parameter = job.job_started_at;
+		if(futurePull){
+			serviceTrackerGr.start_date_time_api_parameter = job.job_started_at;
+			serviceTrackerGr.end_date_time_api_parameter = this.getFutureDateTime();
+		}
+		serviceTrackerGr.is_dry_run = this.configs.enable_dry_run;
+        serviceTrackerGr.job_state = 'running';
+        serviceTrackerGr.insert();
+        return serviceTrackerGr;
+    },
+
+    getLastSuccessfulJobRunDate: function(service, job) {
+        var serviceTrackerGr = new GlideRecord('sn_hr_workday_service_job_tracker');
+        serviceTrackerGr.addQuery('workday_integration_service', service);
+        serviceTrackerGr.addQuery('workday_integration_job_tracker', '!=', job.sys_id);
+        serviceTrackerGr.addQuery('job_state', 'completed');
+		serviceTrackerGr.addQuery('is_dry_run',false);
+        serviceTrackerGr.orderByDesc('job_started_at');
+        serviceTrackerGr.query();
+        if (serviceTrackerGr.next()) {
+            var jobTracker = new GlideRecord('sn_hr_workday_job_tracker');
+            if (jobTracker.get(serviceTrackerGr.workday_integration_job_tracker))
+                return jobTracker.job_started_at;
+        }
+        return job.job_started_at;
+    },
+
+    getFutureDateTime: function() {
+        var numOfDays = Number(this.configs.number_of_days_to_look_ahead_for_upcoming_onboarding_and_offboarding_events);
+        var gdt = new GlideDateTime();
+        gdt.addDaysUTC(numOfDays);
+        return gdt.getValue();
+    },
+
+    getConvertedDate: function(date) {
+        var tz = this.configs.getValue('workday_tenant_time_zone');
+        return moment.utc(date).tz(tz).format('YYYY-MM-DD');
+    },
+
+    getConvertedDateTime: function(date) {
+        var tz = this.configs.getValue('workday_tenant_time_zone');
+        return moment.utc(date).tz(tz).format('YYYY-MM-DD HH:mm:ss');
+    },
+	
+	checkJobStatus:function(){
+		var job = new GlideRecord('sn_hr_workday_job_tracker');
+		job.addQuery('state','running');
+		job.query();
+		if(job.hasNext()){
+			return true;
+		}
+		return false;
+	},
+
+    type: 'ImportSetUtilsSNC'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-14 14:38:05</sys_created_on>
+        <sys_id>4612e6b61b2e941067817669cc4bcbc3</sys_id>
+        <sys_mod_count>49</sys_mod_count>
+        <sys_name>ImportSetUtilsSNC</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_script_include_4612e6b61b2e941067817669cc4bcbc3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-07 10:37:06</sys_updated_on>
+    </sys_script_include>
+</record_update>

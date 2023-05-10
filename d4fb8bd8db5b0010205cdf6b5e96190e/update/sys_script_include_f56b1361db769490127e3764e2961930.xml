@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>sn_hr_workday.WorkdayFutureWorkerSyncUtilsSNC</api_name>
+        <caller_access>2</caller_access>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>WorkdayFutureWorkerSyncUtilsSNC</name>
+        <script><![CDATA[var WorkdayFutureWorkerSyncUtilsSNC = Class.create();
+WorkdayFutureWorkerSyncUtilsSNC.prototype = Object.extendsObject(WorkdayWorkerSyncUtilsSNC,{
+    initialize: function() {
+		// Do Nothing
+	},
+
+    postProcessAllRecords: function(importSetId) {
+        // Do Nothing
+    },
+	
+	transform: function(source, target) {
+		this.processEmploymentStatus(source, target);
+		//this.postProcessTransform(source,target);
+	},
+
+    /**
+     * Process the employment status. (this is called from the parent - during transform)
+     */
+    processEmploymentStatus: function(source, target) {
+        if (source.terminated == "1") {
+            if (source.u_employment_end_date >= this.getCurrentDate())
+                this.updateUserActive(target, true);
+            else
+                this.updateUserActive(target, false);
+
+        } else if (source.u_employment_start_date > this.getCurrentDate()) {
+            //New hire process this as on boarding.
+            this.updateUserActive(target, true);
+        } else if (source.u_hirerescinded == "1") {
+            this.rescindSysUser(target);
+        }
+    },
+
+    updateUserActive: function(target, active) {
+        var user = new GlideRecord('sys_user');
+        if (user.get(target.user)) {
+            user.active = active;
+            user.update();
+        }
+    },
+    type: 'WorkdayFutureWorkerSyncUtilsSNC'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-23 07:51:45</sys_created_on>
+        <sys_id>f56b1361db769490127e3764e2961930</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>WorkdayFutureWorkerSyncUtilsSNC</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_script_include_f56b1361db769490127e3764e2961930</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-07 11:26:48</sys_updated_on>
+    </sys_script_include>
+</record_update>

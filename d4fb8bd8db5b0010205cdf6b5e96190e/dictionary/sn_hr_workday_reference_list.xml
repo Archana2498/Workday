@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c60bc56887e2a510d306cbb4dabb3595" label="Workday Reference ID List" max_length="40" name="sn_hr_workday_reference_list" type="collection">
+        <element display="true" label="Label" max_length="40" name="label" type="translated_text"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Reference id type" max_length="40" name="reference_id_type" type="string"/>
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4e0bc56887e2a510d306cbb4dabb355b" extends="sys_import_set_row" label="HR Job Staging" max_length="40" name="sn_hr_workday_hr_job_staging" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Contingent type id" max_length="40" name="contingent_type_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Employee type id" max_length="40" name="employee_type_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Process type" max_length="40" name="process_type" type="string"/>
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element attributes="edge_encryption_enabled=true" label="Business title" max_length="40" name="u_business_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Correlation id" max_length="40" name="u_correlation_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Department" max_length="40" name="u_department" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Employment type" max_length="40" name="u_employment_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="HR profile" max_length="40" name="u_hr_profile" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Job code" max_length="40" name="u_job_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Job end date" max_length="40" name="u_job_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Job start date" max_length="40" name="u_job_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Location" max_length="40" name="u_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Manager" max_length="40" name="u_manager" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Position" max_length="40" name="u_position" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Position code" max_length="40" name="u_position_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Primary" max_length="40" name="u_primary" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Probation end date" max_length="40" name="u_probation_end_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Probation period" max_length="40" name="u_probation_period" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="User" max_length="40" name="u_user" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Work mobile phone" max_length="80" name="work_mobile_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Work phone" max_length="80" name="work_phone" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
+    </element>
+</database>

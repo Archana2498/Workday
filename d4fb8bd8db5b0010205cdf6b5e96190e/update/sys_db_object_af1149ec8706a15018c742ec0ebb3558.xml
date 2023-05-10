@@ -17,7 +17,7 @@
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
-        <super_class display_value="Workday Todos" name="sn_hr_workday_todo">f471884a87cda11018c742ec0ebb35ad</super_class>
+        <super_class display_value="Workday Todos" name="sn_hr_workday_todo">210b856887e2a510d306cbb4dabb35c9</super_class>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-03 16:15:08</sys_created_on>

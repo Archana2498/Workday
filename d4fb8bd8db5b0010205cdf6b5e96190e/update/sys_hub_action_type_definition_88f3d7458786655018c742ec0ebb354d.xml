@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>88f3d7458786655018c742ec0ebb354d</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Update Job Tracker In To-Dos Report </sys_name>
         <sys_overrides/>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_88f3d7458786655018c742ec0ebb354d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-21 10:20:05</sys_updated_on>
+        <sys_updated_on>2023-05-03 10:10:19</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -155,18 +155,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=a99e9b0187c6655018c742ec0ebb35fe"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>a99e9b0187c6655018c742ec0ebb35fe</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-05 16:57:22</sys_created_on>
-        <sys_id>e19edb0187c6655018c742ec0ebb35c6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-05 16:57:22</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>job_tracker</field>
         <id>a99e9b0187c6655018c742ec0ebb35fe</id>
         <sys_created_by>admin</sys_created_by>
@@ -178,20 +166,7 @@
         <table>var__m_sys_hub_step_ext_input_a99e9b0187c6655018c742ec0ebb35fe</table>
         <value>{{action.job_tracker.sys_id}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>a99e9b0187c6655018c742ec0ebb35fe</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-05 16:57:22</sys_created_on>
-        <sys_id>a59edb0187c6655018c742ec0ebb35c6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-05 16:57:22</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=a99e9b0187c6655018c742ec0ebb35fe"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=a99e9b0187c6655018c742ec0ebb35fe"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=a99e9b0187c6655018c742ec0ebb35fe^sys_idNOT INa363f309870a655018c742ec0ebb351e"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -565,7 +540,7 @@
         <sys_created_on>2023-04-05 16:57:22</sys_created_on>
         <sys_id>699e9b0187c6655018c742ec0ebb35fc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Job Tracker</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
@@ -590,7 +565,7 @@
         <sys_created_on>2023-04-05 18:28:27</sys_created_on>
         <sys_id>3763f309870a655018c742ec0ebb352c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
@@ -613,7 +588,7 @@
         <sys_created_on>2023-04-05 18:28:27</sys_created_on>
         <sys_id>7363f309870a655018c742ec0ebb3532</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
@@ -793,18 +768,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=ea9e1f0187c6655018c742ec0ebb3537"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>ea9e1f0187c6655018c742ec0ebb3537</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-05 16:57:26</sys_created_on>
-        <sys_id>ae9e1f0187c6655018c742ec0ebb3541</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-05 16:57:26</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>job_tracker</field>
         <id>ea9e1f0187c6655018c742ec0ebb3537</id>
         <sys_created_by>admin</sys_created_by>
@@ -816,20 +779,7 @@
         <table>var__m_sys_hub_step_ext_input_ea9e1f0187c6655018c742ec0ebb3537</table>
         <value>{{action.job_tracker.sys_id}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>ea9e1f0187c6655018c742ec0ebb3537</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-05 16:57:26</sys_created_on>
-        <sys_id>629e1f0187c6655018c742ec0ebb3542</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-05 16:57:26</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=ea9e1f0187c6655018c742ec0ebb3537"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=ea9e1f0187c6655018c742ec0ebb3537"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=ea9e1f0187c6655018c742ec0ebb3537^sys_idNOT IN6073f309870a655018c742ec0ebb35ad"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1203,7 +1153,7 @@
         <sys_created_on>2023-04-05 16:57:26</sys_created_on>
         <sys_id>aa9e1f0187c6655018c742ec0ebb351c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Job Tracker</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
@@ -1228,7 +1178,7 @@
         <sys_created_on>2023-04-05 16:57:27</sys_created_on>
         <sys_id>229e1f0187c6655018c742ec0ebb354f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
@@ -1251,7 +1201,7 @@
         <sys_created_on>2023-04-05 16:57:26</sys_created_on>
         <sys_id>669e1f0187c6655018c742ec0ebb3549</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>

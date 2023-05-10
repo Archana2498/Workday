@@ -5,7 +5,7 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
-        <map display_value="Time Off Request Item">6873c67a8771e5d018c742ec0ebb3597</map>
+        <map display_value="HRSD Workday Pull Time Off Request">6873c67a8771e5d018c742ec0ebb3597</map>
         <reference_value_field/>
         <source_field>u_time_off_typ_time_off_entry</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {

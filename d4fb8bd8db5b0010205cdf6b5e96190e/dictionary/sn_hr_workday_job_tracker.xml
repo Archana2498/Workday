@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="640b456887e2a510d306cbb4dabb359b" label="Workday Integration Job Tracker" max_length="40" name="sn_hr_workday_job_tracker" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Error message" max_length="1000" name="error_message" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Job ended at" max_length="40" name="job_ended_at" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" default="Workday" display="true" label="Job name" max_length="40" name="job_name" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Job started at" max_length="40" name="job_started_at" read_only="true" type="glide_date_time"/>
+        <element choice="1" default="running" label="State" max_length="40" name="state" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Complete" value="complete"/>
+                <element inactive_on_update="false" label="Failed" value="failed"/>
+                <element inactive_on_update="false" label="Hold" value="hold"/>
+                <element inactive_on_update="false" label="Running" value="running"/>
+            </choice>
+        </element>
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_action_parameter">
+    <sn_ex_sp_action_parameter action="DELETE">
+        <action display_value="Reject">e1758e1b874eed5018c742ec0ebb3516</action>
+        <field/>
+        <is_client>false</is_client>
+        <is_display_value>false</is_display_value>
+        <json/>
+        <name>sys_id</name>
+        <parameter_type>string</parameter_type>
+        <sys_class_name>sn_ex_sp_action_parameter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-12 10:14:45</sys_created_on>
+        <sys_id>c495ca1b874eed5018c742ec0ebb3569</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_id</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sn_ex_sp_action_parameter_c495ca1b874eed5018c742ec0ebb3569</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-12 10:14:45</sys_updated_on>
+        <table>sn_hr_workday_termination_request_todos</table>
+        <text/>
+    </sn_ex_sp_action_parameter>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sn_ex_sp_action_parameter_c495ca1b874eed5018c742ec0ebb3569</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_action_parameter"><sn_ex_sp_action_parameter action="INSERT_OR_UPDATE"><action display_value="Reject">e1758e1b874eed5018c742ec0ebb3516</action><field/><is_client>false</is_client><is_display_value>false</is_display_value><json/><name>sys_id</name><parameter_type>string</parameter_type><sys_class_name>sn_ex_sp_action_parameter</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-12 10:14:45</sys_created_on><sys_id>c495ca1b874eed5018c742ec0ebb3569</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_id</sys_name><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_update_name>sn_ex_sp_action_parameter_c495ca1b874eed5018c742ec0ebb3569</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-12 10:14:45</sys_updated_on><table>sn_hr_workday_termination_request_todos</table><text/></sn_ex_sp_action_parameter></record_update>]]></payload>
+        <payload_hash>-885161934</payload_hash>
+        <record_name>sys_id</record_name>
+        <reverted_from/>
+        <source>6ec7ae9987aa2110d306cbb4dabb3568</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-05-01 04:10:19</sys_created_on>
+        <sys_id>8758a65d87aa2110d306cbb4dabb35ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187d58116d50000001</sys_recorded_at>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-05-01 04:10:19</sys_updated_on>
+        <type>Action parameter</type>
+        <update_guid>0495ca1bbb4eed50b6f663ba8daba86a</update_guid>
+        <update_guid_history>0495ca1bbb4eed50b6f663ba8daba86a:-885161934,482cd005d7d62110285dfd87934a2329:-307697602,0495ca1bbb4eed50b6f663ba8daba86a:-885161934</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 10:10:07</sys_created_on>
+        <sys_db_object display_value="" name="sn_ex_sp_action_parameter">sn_ex_sp_action_parameter</sys_db_object>
+        <sys_id>5577f49f38f14284818230a3fc64fe90</sys_id>
+        <sys_metadata>c495ca1b874eed5018c742ec0ebb3569</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_id</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sn_ex_sp_action_parameter_c495ca1b874eed5018c742ec0ebb3569</sys_update_name>
+        <sys_update_version display_value="sn_ex_sp_action_parameter_c495ca1b874eed5018c742ec0ebb3569">8758a65d87aa2110d306cbb4dabb35ab</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 10:10:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

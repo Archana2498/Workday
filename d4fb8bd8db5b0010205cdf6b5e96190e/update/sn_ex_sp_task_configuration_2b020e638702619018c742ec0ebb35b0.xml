@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_task_configuration">
     <sn_ex_sp_task_configuration action="INSERT_OR_UPDATE">
-        <action_group_record display_value="Job Requisition View Report">7967ce2b8702619018c742ec0ebb356e</action_group_record>
+        <action_group_record display_value="Job Requisition Request Action Group">7967ce2b8702619018c742ec0ebb356e</action_group_record>
         <active>true</active>
         <additional_conditions/>
         <common_info_fields>u_request_type,u_created_date,due_date,workday_status</common_info_fields>

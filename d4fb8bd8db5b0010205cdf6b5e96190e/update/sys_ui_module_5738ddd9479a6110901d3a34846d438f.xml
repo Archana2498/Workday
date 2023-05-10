@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
     <sys_ui_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Workday Pull To-Dos">6eba6afa4701a110901d3a34846d436d</application>
+        <application display_value="">6eba6afa4701a110901d3a34846d436d</application>
         <filter/>
         <name>Leave of Absence Request Todos Items</name>
         <order/>

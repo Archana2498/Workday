@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_action_parameter">
     <sn_ex_sp_action_parameter action="INSERT_OR_UPDATE">
-        <action display_value="View full report in Workday">2096022b8702619018c742ec0ebb3508</action>
+        <action display_value="View  full report in Workday">2096022b8702619018c742ec0ebb3508</action>
         <field>todo_url</field>
         <is_client>true</is_client>
         <is_display_value>false</is_display_value>

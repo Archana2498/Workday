@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on sn_hr_workday_workday_spend_authorisation_requests</description>
+        <name>sn_hr_workday_workday_spend_authorisation_requests</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-09 10:34:04</sys_created_on>
+        <sys_id>2fe30bdc8761e11018c742ec0ebb3558</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_hr_workday_workday_spend_authorisation_requests</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_security_acl_2fe30bdc8761e11018c742ec0ebb3558</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-09 10:34:04</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_security_acl_2fe30bdc8761e11018c742ec0ebb3558</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on sn_hr_workday_workday_spend_authorisation_requests</description><name>sn_hr_workday_workday_spend_authorisation_requests</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-09 10:34:04</sys_created_on><sys_id>2fe30bdc8761e11018c742ec0ebb3558</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sn_hr_workday_workday_spend_authorisation_requests</sys_name><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_update_name>sys_security_acl_2fe30bdc8761e11018c742ec0ebb3558</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-09 10:34:04</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-889362079</payload_hash>
+        <record_name>sn_hr_workday_workday_spend_authorisation_requests</record_name>
+        <reverted_from/>
+        <source>04b52ad587aa2110d306cbb4dabb3555</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-05-01 03:59:58</sys_created_on>
+        <sys_id>9ff56a1987aa2110d306cbb4dabb3516</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187d5779b6b0000001</sys_recorded_at>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-05-01 03:59:58</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>2be30bdc5d61e1103958e5b0737f795a</update_guid>
+        <update_guid_history>2be30bdc5d61e1103958e5b0737f795a:-889362079</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 10:51:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>753131869f9e42f88bae052fac3d6190</sys_id>
+        <sys_metadata>2fe30bdc8761e11018c742ec0ebb3558</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_hr_workday_workday_spend_authorisation_requests</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent display_value="">abe30bdc8761e11018c742ec0ebb3582</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_security_acl_2fe30bdc8761e11018c742ec0ebb3558</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_2fe30bdc8761e11018c742ec0ebb3558">9ff56a1987aa2110d306cbb4dabb3516</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 10:51:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="310b856887e2a510d306cbb4dabb35f9" label="Workday Integration Service Job Tracker" max_length="40" name="sn_hr_workday_service_job_tracker" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="End date time api parameter" max_length="40" name="end_date_time_api_parameter" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Error message" max_length="4000" name="error_message" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Error source" max_length="100" name="error_source" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="API Error" sequence="10" value="api_error"/>
+                <element inactive_on_update="false" label="Transformation Error" sequence="20" value="transformation_error"/>
+                <element inactive_on_update="false" label="Configuration Error" sequence="30" value="configuration_error"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Import set" max_length="32" name="import_set" read_only="true" reference="sys_import_set" type="reference"/>
+        <element attributes="encode_utf8=false" label="Import set run" max_length="32" name="import_set_run" read_only="true" reference="sys_import_set_run" type="reference"/>
+        <element label="Is dry run" max_length="40" name="is_dry_run" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Job ended at" max_length="40" name="job_ended_at" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Job started at" max_length="40" name="job_started_at" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Job state" max_length="100" name="job_state" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Running" sequence="10" value="running"/>
+                <element inactive_on_update="false" label="Completed" sequence="20" value="completed"/>
+                <element inactive_on_update="false" label="Failed" sequence="30" value="failed"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Job type" max_length="100" name="job_type" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Scheduled" sequence="10" value="scheduled"/>
+                <element inactive_on_update="false" label="Manual" sequence="20" value="manual"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Pull next chunk" max_length="40" name="pull_next_chunk" read_only="true" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Scheduled import" max_length="32" name="scheduled_import" read_only="true" reference="scheduled_import_set" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Start date time api parameter" max_length="40" name="start_date_time_api_parameter" read_only="true" type="glide_date_time"/>
+        <element default="global" label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element attributes="encode_utf8=false" label="Workday integration job tracker" max_length="32" name="workday_integration_job_tracker" read_only="true" reference="sn_hr_workday_job_tracker" type="reference"/>
+        <element choice="1" label="Workday integration service" max_length="40" name="workday_integration_service" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Departments" sequence="0" value="departments"/>
+                <element inactive_on_update="false" label="Locations" sequence="1" value="locations"/>
+                <element inactive_on_update="false" label="Job Profiles" sequence="2" value="job_profiles"/>
+                <element inactive_on_update="false" label="Worker Profiles" sequence="3" value="worker_profiles"/>
+                <element inactive_on_update="false" label="Jobs" sequence="4" value="jobs"/>
+                <element inactive_on_update="false" label="Effective Worker Profiles" sequence="5" value="effective_worker_profiles"/>
+                <element inactive_on_update="false" label="Effective Jobs" sequence="6" value="effective_jobs"/>
+                <element inactive_on_update="false" label="Future Worker Profiles" sequence="7" value="future_worker_profiles"/>
+                <element inactive_on_update="false" label="Future Jobs" sequence="8" value="future_jobs"/>
+                <element inactive_on_update="false" label="Pull To-Dos" sequence="9" value="pull_to_dos"/>
+                <element inactive_on_update="false" label="Time Off Request To-Dos" sequence="10" value="time_off_request_to_dos"/>
+                <element inactive_on_update="false" label="Leave of Absence Request To-Dos" sequence="11" value="leave_of_absence_request_to_dos"/>
+                <element inactive_on_update="false" label="Correct Time Off Request To-Dos" sequence="12" value="correct_time_off_request_to_dos"/>
+                <element inactive_on_update="false" label="Compensation Change Request To-Dos" sequence="13" value="compensation_change_request_to_dos"/>
+                <element inactive_on_update="false" label="Termination Request To-Dos" sequence="14" value="termination_request_to_dos"/>
+                <element inactive_on_update="false" label="Job Requisition Request To-Dos" sequence="15" value="job_requisition_request_to_dos"/>
+                <element inactive_on_update="false" label="Job Change Request To-Dos" sequence="16" value="job_change_request_to_dos"/>
+                <element inactive_on_update="false" label="Spend Authorization Request To-Dos" sequence="17" value="spend_authorization_request_to_dos"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="import_set"/>
+        </index>
+        <index name="index2">
+            <element name="import_set_run"/>
+        </index>
+        <index name="index3">
+            <element name="scheduled_import"/>
+        </index>
+        <index name="index4">
+            <element name="sys_domain"/>
+        </index>
+    </element>
+</database>

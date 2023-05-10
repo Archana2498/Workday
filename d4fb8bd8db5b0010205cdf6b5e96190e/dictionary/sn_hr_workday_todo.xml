@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="210b856887e2a510d306cbb4dabb35c9" extends="sn_hr_integr_fw_todo_inbound" label="Workday Todos" max_length="40" name="sn_hr_workday_todo" type="collection">
+        <element label="Workday completed by admin" max_length="40" name="completed_by_admin_workday" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Last functionally updated workday" max_length="40" name="last_functionally_updated_workday" type="glide_date_time"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;    if (!gs.nil(current.workday_created_moment)) {&#10;        var gdt = new GlideDateTime(current.workday_created_moment).getDate();&#10;        return gdt.getValue();&#10;    } else&#10;        return '';&#10;})(current);" label="Created date" max_length="40" name="u_created_date" type="glide_date" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Requested for" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element label="Requested for employee number" max_length="40" name="u_requested_for_employee_number" type="string"/>
+        <element label="Request type" max_length="100" name="u_request_type" type="string"/>
+        <element label="Todo title" max_length="250" name="u_todo_title" type="string"/>
+        <element label="Workday ID" max_length="100" name="u_workday_id" type="string"/>
+        <element label="Workday unique id to be updated" max_length="40" name="wd_unique_id_to_be_updated" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Workday completed by ID" max_length="40" name="workday_completed_by_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Workday task created moment" max_length="150" name="workday_created_moment" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Workday task ID" max_length="250" name="workday_integration_todo_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Workday previous assignee ID" max_length="40" name="workday_old_assignee_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="100" name="workday_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Awaiting Action" sequence="10" value="awaiting_action"/>
+                <element inactive_on_update="false" label="In Progress" sequence="20" value="in_progress"/>
+                <element inactive_on_update="false" label="Saved for Later" sequence="30" value="saved_for_later"/>
+                <element inactive_on_update="false" label="Approved" sequence="40" value="approved"/>
+                <element inactive_on_update="false" label="Approvers Added" sequence="50" value="approvers_added"/>
+                <element inactive_on_update="false" label="Canceled" sequence="60" value="canceled"/>
+                <element inactive_on_update="false" label="Declined" sequence="70" value="declined"/>
+                <element inactive_on_update="false" label="Denied" sequence="80" value="denied"/>
+                <element inactive_on_update="false" label="Manually Advanced" sequence="90" value="manually_advanced"/>
+                <element inactive_on_update="false" label="Manually Skipped" sequence="100" value="manually_skipped"/>
+                <element inactive_on_update="false" label="Manually Terminated" sequence="110" value="manually_terminated"/>
+                <element inactive_on_update="false" label="Manual Send Back" sequence="120" value="manual_send_back"/>
+                <element inactive_on_update="false" label="Sent Back" sequence="130" value="sent_back"/>
+                <element inactive_on_update="false" label="Step Completed" sequence="140" value="step_completed"/>
+                <element inactive_on_update="false" label="Submitted" sequence="150" value="submitted"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Workday current assignee ID" max_length="40" name="workday_user_id" type="string"/>
+        <index name="index">
+            <element name="u_requested_for"/>
+        </index>
+        <index name="index2">
+            <element name="workday_integration_todo_id"/>
+        </index>
+    </element>
+</database>

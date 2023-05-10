@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-17 12:11:26</sys_created_on>
-        <sys_id>5a2f4c4d87d2211018c742ec0ebb35f2</sys_id>
         <sys_name>Who will be the manager after this change</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
         <sys_policy/>
