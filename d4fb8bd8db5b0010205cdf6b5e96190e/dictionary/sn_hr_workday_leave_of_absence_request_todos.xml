@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="54724cd147566110901d3a34846d4338" extends="sn_hr_workday_todo" label="Leave of Absence Request Todos" max_length="40" name="sn_hr_workday_leave_of_absence_request_todos" type="collection">
-        <element label="Attachment ids" max_length="5000" name="u_attachment_ids" type="string"/>
-        <element label="Leave type" max_length="250" name="u_leave_type" type="string"/>
-        <element label="Total" max_length="40" name="u_total" type="string"/>
-    </element>
-</database>

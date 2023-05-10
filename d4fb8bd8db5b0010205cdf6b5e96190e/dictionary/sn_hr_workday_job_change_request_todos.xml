@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="e8d8c0c187d2211018c742ec0ebb35ef" extends="sn_hr_workday_todo" label="Job Change Request Todos" max_length="40" name="sn_hr_workday_job_change_request_todos" type="collection">
-        <element label="Attachment ids" max_length="5000" name="u_attachment_ids" type="string"/>
-    </element>
-</database>

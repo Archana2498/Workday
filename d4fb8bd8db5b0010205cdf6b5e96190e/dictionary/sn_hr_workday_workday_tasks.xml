@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="eceaaefa4701a110901d3a34846d43aa" extends="task" label="Workday Tasks" max_length="40" name="sn_hr_workday_workday_tasks" type="collection">
-        <element label="Task Name" max_length="40" name="u_task_name" type="string"/>
-        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Workday To-Dos" max_length="32" name="u_workday_to_dos" reference="sn_hr_workday_todo" type="reference"/>
-    </element>
-</database>
