@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-orlando-12-11-2019__patch7a-10-02-2020</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>transform_import_set</internal_name>
+        <label_cache>[{"name":"79896fc9-4cbc-4327-bbc4-2c21dd1485e3.importsetrunstatus","label":"2➛ImportSetRunStatus","reference_display":"ImportSetRunStatus","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2063ceaa-3bf3-4dc4-b850-2773e8c1d46d"}},{"name":"79896fc9-4cbc-4327-bbc4-2c21dd1485e3.set","label":"2➛set","reference_display":"set","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f7d76abb-513a-459f-affc-6c9e207f9dba"}},{"name":"4846731d-028e-4e24-82da-9808b6869eed.importsetrunstatus","label":"1➛ImportSetRunStatus","reference_display":"ImportSetRunStatus","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2063ceaa-3bf3-4dc4-b850-2773e8c1d46d"}},{"name":"4846731d-028e-4e24-82da-9808b6869eed.set","label":"1➛set","reference_display":"set","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f7d76abb-513a-459f-affc-6c9e207f9dba"}},{"name":"subflow.import_set","label":"Input➛Import Set","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7172a4f3-85ea-449d-857a-6d3590d1a414"}},{"name":"subflow.import_set_table","label":"Input➛Import Set Table","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"072120d4-9a99-44a3-b8d1-dd58d0f9b26f"}},{"name":"2690cb08-ec6c-4fa3-bb47-3d1dae6f0a8a.importsetrunstatus","label":"1➛ImportSetRunStatus","reference_display":"ImportSetRunStatus","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"2063ceaa-3bf3-4dc4-b850-2773e8c1d46d"}},{"name":"2690cb08-ec6c-4fa3-bb47-3d1dae6f0a8a.set","label":"1➛set","reference_display":"set","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"f7d76abb-513a-459f-affc-6c9e207f9dba"}}]</label_cache>
+        <latest_snapshot>7ba9e74f1bd06410fcab326c0a4bcb07</latest_snapshot>
+        <master_snapshot>010287601bcc6c1067817669cc4bcb31</master_snapshot>
+        <name>Transform Import Set</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:39:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>41c08bec1b8c6c1067817669cc4bcb36</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Transform Import Set</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_hub_flow_41c08bec1b8c6c1067817669cc4bcb36</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:59</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=41c08bec1b8c6c1067817669cc4bcb36"/>
+    <sys_variable_value action="delete_multiple" query="document_key=41c08bec1b8c6c1067817669cc4bcb36"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=41c08bec1b8c6c1067817669cc4bcb36^sys_idNOT IN280247601bcc6c1067817669cc4bcbd7,600247601bcc6c1067817669cc4bcbda,a00247601bcc6c1067817669cc4bcbd3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="ImportSetHelper">5199d2e61bf9101067817669cc4bcbd7</action_type>
+        <action_type_parent/>
+        <comment>Get import set run status</comment>
+        <compiled_snapshot>5199d2e61bf9101067817669cc4bcbd7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Transform Import Set">41c08bec1b8c6c1067817669cc4bcb36</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>280247601bcc6c1067817669cc4bcbd7</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-10 14:19:14</sys_updated_on>
+        <ui_id>79896fc9-4cbc-4327-bbc4-2c21dd1485e3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=280247601bcc6c1067817669cc4bcbd7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>280247601bcc6c1067817669cc4bcbd7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>a00247601bcc6c1067817669cc4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <value>getimportsetrunstatus</value>
+        <variable display_value="">2b00c63a1b35501067817669cc4bcb9a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=280247601bcc6c1067817669cc4bcbd7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_set_sysid</field>
+        <id>280247601bcc6c1067817669cc4bcbd7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>200247601bcc6c1067817669cc4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value>{{subflow.import_set}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>operation</field>
+        <id>280247601bcc6c1067817669cc4bcbd7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>6c0247601bcc6c1067817669cc4bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">a40247601bcc6c1067817669cc4bcbd9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Transform Import Set">41c08bec1b8c6c1067817669cc4bcb36</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>import_set_run_status</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>600247601bcc6c1067817669cc4bcbda</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:58</sys_updated_on>
+        <ui_id>621d22a0-9b35-42d7-84e9-028ffec954a1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=600247601bcc6c1067817669cc4bcbda"/>
+    <sys_element_mapping action="delete_multiple" query="id=600247601bcc6c1067817669cc4bcbda"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_set_run_status</field>
+        <id>600247601bcc6c1067817669cc4bcbda</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>6c0247601bcc6c1067817669cc4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_41c08bec1b8c6c1067817669cc4bcb36</table>
+        <value>{{79896fc9-4cbc-4327-bbc4-2c21dd1485e3.importsetrunstatus}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="ImportSetHelper">5199d2e61bf9101067817669cc4bcbd7</action_type>
+        <action_type_parent/>
+        <comment>Transform import set</comment>
+        <compiled_snapshot>5199d2e61bf9101067817669cc4bcbd7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Transform Import Set">41c08bec1b8c6c1067817669cc4bcb36</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>a00247601bcc6c1067817669cc4bcbd3</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-10 14:19:14</sys_updated_on>
+        <ui_id>4846731d-028e-4e24-82da-9808b6869eed</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a00247601bcc6c1067817669cc4bcbd3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a00247601bcc6c1067817669cc4bcbd3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>2c0247601bcc6c1067817669cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <value>transform</value>
+        <variable display_value="">2b00c63a1b35501067817669cc4bcb9a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a00247601bcc6c1067817669cc4bcbd3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_set_sysid</field>
+        <id>a00247601bcc6c1067817669cc4bcbd3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>a80247601bcc6c1067817669cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value>{{subflow.import_set}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>operation</field>
+        <id>a00247601bcc6c1067817669cc4bcbd3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>e40247601bcc6c1067817669cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=41c08bec1b8c6c1067817669cc4bcb36^sys_idNOT INc5c08bec1b8c6c1067817669cc4bcb37"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>41c08bec1b8c6c1067817669cc4bcb36</id>
+        <name>Transform Import Set</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:39:55</sys_created_on>
+        <sys_id>c5c08bec1b8c6c1067817669cc4bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:39:55</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=41c08bec1b8c6c1067817669cc4bcb36^sys_idNOT INd00207601bcc6c1067817669cc4bcbfd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7172a4f3-85ea-449d-857a-6d3590d1a414</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>import_set</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Import Set</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Transform Import Set">41c08bec1b8c6c1067817669cc4bcb36</model>
+        <model_id>41c08bec1b8c6c1067817669cc4bcb36</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_41c08bec1b8c6c1067817669cc4bcb36</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:20</sys_created_on>
+        <sys_id>d00207601bcc6c1067817669cc4bcbfd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=41c08bec1b8c6c1067817669cc4bcb36^sys_idNOT IN940247601bcc6c1067817669cc4bcbbf"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0e61d0be-8bde-4b8b-be86-b845b034ae59</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>import_set_run_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Import Set Run Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Transform Import Set">41c08bec1b8c6c1067817669cc4bcb36</model>
+        <model_id>41c08bec1b8c6c1067817669cc4bcb36</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_41c08bec1b8c6c1067817669cc4bcb36</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>940247601bcc6c1067817669cc4bcbbf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=41c08bec1b8c6c1067817669cc4bcb36^sys_idNOT IN280247601bcc6c1067817669cc4bcbd7,a00247601bcc6c1067817669cc4bcbd3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="ImportSetHelper">5199d2e61bf9101067817669cc4bcbd7</action_type>
+        <action_type_parent/>
+        <comment>Get import set run status</comment>
+        <compiled_snapshot>5199d2e61bf9101067817669cc4bcbd7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Transform Import Set">41c08bec1b8c6c1067817669cc4bcb36</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>280247601bcc6c1067817669cc4bcbd7</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-10 14:19:14</sys_updated_on>
+        <ui_id>79896fc9-4cbc-4327-bbc4-2c21dd1485e3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=280247601bcc6c1067817669cc4bcbd7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>280247601bcc6c1067817669cc4bcbd7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>a00247601bcc6c1067817669cc4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <value>getimportsetrunstatus</value>
+        <variable display_value="">2b00c63a1b35501067817669cc4bcb9a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=280247601bcc6c1067817669cc4bcbd7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_set_sysid</field>
+        <id>280247601bcc6c1067817669cc4bcbd7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>200247601bcc6c1067817669cc4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value>{{subflow.import_set}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>operation</field>
+        <id>280247601bcc6c1067817669cc4bcbd7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>6c0247601bcc6c1067817669cc4bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="ImportSetHelper">5199d2e61bf9101067817669cc4bcbd7</action_type>
+        <action_type_parent/>
+        <comment>Transform import set</comment>
+        <compiled_snapshot>5199d2e61bf9101067817669cc4bcbd7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Transform Import Set">41c08bec1b8c6c1067817669cc4bcb36</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>a00247601bcc6c1067817669cc4bcbd3</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-10 14:19:14</sys_updated_on>
+        <ui_id>4846731d-028e-4e24-82da-9808b6869eed</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a00247601bcc6c1067817669cc4bcbd3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a00247601bcc6c1067817669cc4bcbd3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>2c0247601bcc6c1067817669cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <value>transform</value>
+        <variable display_value="">2b00c63a1b35501067817669cc4bcb9a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a00247601bcc6c1067817669cc4bcbd3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_set_sysid</field>
+        <id>a00247601bcc6c1067817669cc4bcbd3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>a80247601bcc6c1067817669cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value>{{subflow.import_set}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>operation</field>
+        <id>a00247601bcc6c1067817669cc4bcbd3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>e40247601bcc6c1067817669cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=41c08bec1b8c6c1067817669cc4bcb36^sys_idNOT IN600247601bcc6c1067817669cc4bcbda"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">a40247601bcc6c1067817669cc4bcbd9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Transform Import Set">41c08bec1b8c6c1067817669cc4bcb36</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>import_set_run_status</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>600247601bcc6c1067817669cc4bcbda</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:58</sys_updated_on>
+        <ui_id>621d22a0-9b35-42d7-84e9-028ffec954a1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=600247601bcc6c1067817669cc4bcbda"/>
+    <sys_element_mapping action="delete_multiple" query="id=600247601bcc6c1067817669cc4bcbda"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_set_run_status</field>
+        <id>600247601bcc6c1067817669cc4bcbda</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>6c0247601bcc6c1067817669cc4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_41c08bec1b8c6c1067817669cc4bcb36</table>
+        <value>{{79896fc9-4cbc-4327-bbc4-2c21dd1485e3.importsetrunstatus}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_41c08bec1b8c6c1067817669cc4bcb36^sys_idNOT IN500247601bcc6c1067817669cc4bcb02"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>import_set</element>
+        <help/>
+        <hint/>
+        <label>Import Set</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_41c08bec1b8c6c1067817669cc4bcb36</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:20</sys_created_on>
+        <sys_id>500247601bcc6c1067817669cc4bcb02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import Set</sys_name>
+        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_41c08bec1b8c6c1067817669cc4bcb36_import_set_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_41c08bec1b8c6c1067817669cc4bcb36^sys_idNOT IN180247601bcc6c1067817669cc4bcbc7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>import_set_run_status</element>
+        <help/>
+        <hint/>
+        <label>Import Set Run Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_41c08bec1b8c6c1067817669cc4bcb36</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:21</sys_created_on>
+        <sys_id>180247601bcc6c1067817669cc4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import Set Run Status</sys_name>
+        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_41c08bec1b8c6c1067817669cc4bcb36_import_set_run_status_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=41c08bec1b8c6c1067817669cc4bcb36^sys_idNOT IN550287601bcc6c1067817669cc4bcba4"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"550287601bcc6c1067817669cc4bcba4","name":"plan"}}</plan>
+        <plan_id display_value="Transform Import Set">41c08bec1b8c6c1067817669cc4bcb36</plan_id>
+        <snapshot>7ba9e74f1bd06410fcab326c0a4bcb07</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>550287601bcc6c1067817669cc4bcba4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:58</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>transform_import_set</internal_name>
+        <label_cache>[{"name":"79896fc9-4cbc-4327-bbc4-2c21dd1485e3.importsetrunstatus","label":"2➛ImportSetRunStatus","reference_display":"ImportSetRunStatus","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2063ceaa-3bf3-4dc4-b850-2773e8c1d46d"}},{"name":"79896fc9-4cbc-4327-bbc4-2c21dd1485e3.set","label":"2➛set","reference_display":"set","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f7d76abb-513a-459f-affc-6c9e207f9dba"}},{"name":"4846731d-028e-4e24-82da-9808b6869eed.importsetrunstatus","label":"1➛ImportSetRunStatus","reference_display":"ImportSetRunStatus","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2063ceaa-3bf3-4dc4-b850-2773e8c1d46d"}},{"name":"4846731d-028e-4e24-82da-9808b6869eed.set","label":"1➛set","reference_display":"set","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f7d76abb-513a-459f-affc-6c9e207f9dba"}},{"name":"subflow.import_set","label":"Input➛Import Set","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7172a4f3-85ea-449d-857a-6d3590d1a414"}},{"name":"subflow.import_set_table","label":"Input➛Import Set Table","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"072120d4-9a99-44a3-b8d1-dd58d0f9b26f"}},{"name":"2690cb08-ec6c-4fa3-bb47-3d1dae6f0a8a.importsetrunstatus","label":"1➛ImportSetRunStatus","reference_display":"ImportSetRunStatus","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"2063ceaa-3bf3-4dc4-b850-2773e8c1d46d"}},{"name":"2690cb08-ec6c-4fa3-bb47-3d1dae6f0a8a.set","label":"1➛set","reference_display":"set","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"f7d76abb-513a-459f-affc-6c9e207f9dba"}}]</label_cache>
+        <master>true</master>
+        <name>Transform Import Set</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Transform Import Set">41c08bec1b8c6c1067817669cc4bcb36</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>010287601bcc6c1067817669cc4bcb31</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:57</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=010287601bcc6c1067817669cc4bcb31"/>
+    <sys_variable_value action="delete_multiple" query="document_key=010287601bcc6c1067817669cc4bcb31"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=010287601bcc6c1067817669cc4bcb31^sys_idNOT IN550287601bcc6c1067817669cc4bcb89,c90287601bcc6c1067817669cc4bcb79,dd0287601bcc6c1067817669cc4bcb84"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="ImportSetHelper">5199d2e61bf9101067817669cc4bcbd7</action_type>
+        <action_type_parent display_value="Import Set Helper">8b2d46ee1bb9101067817669cc4bcbdf</action_type_parent>
+        <comment>Get import set run status</comment>
+        <compiled_snapshot>5199d2e61bf9101067817669cc4bcbd7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Transform Import Set">010287601bcc6c1067817669cc4bcb31</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>550287601bcc6c1067817669cc4bcb89</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:57</sys_updated_on>
+        <ui_id>79896fc9-4cbc-4327-bbc4-2c21dd1485e3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=550287601bcc6c1067817669cc4bcb89"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>550287601bcc6c1067817669cc4bcb89</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>dd0287601bcc6c1067817669cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <value>getimportsetrunstatus</value>
+        <variable display_value="">2b00c63a1b35501067817669cc4bcb9a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=550287601bcc6c1067817669cc4bcb89"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_set_sysid</field>
+        <id>550287601bcc6c1067817669cc4bcb89</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>5d0287601bcc6c1067817669cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value>{{subflow.import_set}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>operation</field>
+        <id>550287601bcc6c1067817669cc4bcb89</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>990287601bcc6c1067817669cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">a40247601bcc6c1067817669cc4bcbd9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Transform Import Set">010287601bcc6c1067817669cc4bcb31</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>import_set_run_status</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>c90287601bcc6c1067817669cc4bcb79</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:57</sys_updated_on>
+        <ui_id>621d22a0-9b35-42d7-84e9-028ffec954a1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c90287601bcc6c1067817669cc4bcb79"/>
+    <sys_element_mapping action="delete_multiple" query="id=c90287601bcc6c1067817669cc4bcb79"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_set_run_status</field>
+        <id>c90287601bcc6c1067817669cc4bcb79</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>190287601bcc6c1067817669cc4bcb7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_010287601bcc6c1067817669cc4bcb31</table>
+        <value>{{79896fc9-4cbc-4327-bbc4-2c21dd1485e3.importsetrunstatus}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="ImportSetHelper">5199d2e61bf9101067817669cc4bcbd7</action_type>
+        <action_type_parent display_value="Import Set Helper">8b2d46ee1bb9101067817669cc4bcbdf</action_type_parent>
+        <comment>Transform import set</comment>
+        <compiled_snapshot>5199d2e61bf9101067817669cc4bcbd7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Transform Import Set">010287601bcc6c1067817669cc4bcb31</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>dd0287601bcc6c1067817669cc4bcb84</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:57</sys_updated_on>
+        <ui_id>4846731d-028e-4e24-82da-9808b6869eed</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=dd0287601bcc6c1067817669cc4bcb84"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dd0287601bcc6c1067817669cc4bcb84</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>590287601bcc6c1067817669cc4bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <value>transform</value>
+        <variable display_value="">2b00c63a1b35501067817669cc4bcb9a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=dd0287601bcc6c1067817669cc4bcb84"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_set_sysid</field>
+        <id>dd0287601bcc6c1067817669cc4bcb84</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>d50287601bcc6c1067817669cc4bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value>{{subflow.import_set}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>operation</field>
+        <id>dd0287601bcc6c1067817669cc4bcb84</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>150287601bcc6c1067817669cc4bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=010287601bcc6c1067817669cc4bcb31^sys_idNOT IN0d0287601bcc6c1067817669cc4bcb31"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>010287601bcc6c1067817669cc4bcb31</id>
+        <name>Transform Import Set</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:23</sys_created_on>
+        <sys_id>0d0287601bcc6c1067817669cc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:23</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=010287601bcc6c1067817669cc4bcb31^sys_idNOT IN010287601bcc6c1067817669cc4bcb33"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7172a4f3-85ea-449d-857a-6d3590d1a414</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>import_set</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Import Set</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Transform Import Set">010287601bcc6c1067817669cc4bcb31</model>
+        <model_id>010287601bcc6c1067817669cc4bcb31</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_010287601bcc6c1067817669cc4bcb31</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:23</sys_created_on>
+        <sys_id>010287601bcc6c1067817669cc4bcb33</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=010287601bcc6c1067817669cc4bcb31^sys_idNOT INcd0287601bcc6c1067817669cc4bcb5e"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0e61d0be-8bde-4b8b-be86-b845b034ae59</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>import_set_run_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Import Set Run Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Transform Import Set">010287601bcc6c1067817669cc4bcb31</model>
+        <model_id>010287601bcc6c1067817669cc4bcb31</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_010287601bcc6c1067817669cc4bcb31</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>cd0287601bcc6c1067817669cc4bcb5e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=010287601bcc6c1067817669cc4bcb31^sys_idNOT IN550287601bcc6c1067817669cc4bcb89,dd0287601bcc6c1067817669cc4bcb84"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="ImportSetHelper">5199d2e61bf9101067817669cc4bcbd7</action_type>
+        <action_type_parent display_value="Import Set Helper">8b2d46ee1bb9101067817669cc4bcbdf</action_type_parent>
+        <comment>Get import set run status</comment>
+        <compiled_snapshot>5199d2e61bf9101067817669cc4bcbd7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Transform Import Set">010287601bcc6c1067817669cc4bcb31</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>550287601bcc6c1067817669cc4bcb89</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:57</sys_updated_on>
+        <ui_id>79896fc9-4cbc-4327-bbc4-2c21dd1485e3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=550287601bcc6c1067817669cc4bcb89"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>550287601bcc6c1067817669cc4bcb89</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>dd0287601bcc6c1067817669cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <value>getimportsetrunstatus</value>
+        <variable display_value="">2b00c63a1b35501067817669cc4bcb9a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=550287601bcc6c1067817669cc4bcb89"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_set_sysid</field>
+        <id>550287601bcc6c1067817669cc4bcb89</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>5d0287601bcc6c1067817669cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value>{{subflow.import_set}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>operation</field>
+        <id>550287601bcc6c1067817669cc4bcb89</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>990287601bcc6c1067817669cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="ImportSetHelper">5199d2e61bf9101067817669cc4bcbd7</action_type>
+        <action_type_parent display_value="Import Set Helper">8b2d46ee1bb9101067817669cc4bcbdf</action_type_parent>
+        <comment>Transform import set</comment>
+        <compiled_snapshot>5199d2e61bf9101067817669cc4bcbd7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Transform Import Set">010287601bcc6c1067817669cc4bcb31</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>dd0287601bcc6c1067817669cc4bcb84</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:57</sys_updated_on>
+        <ui_id>4846731d-028e-4e24-82da-9808b6869eed</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=dd0287601bcc6c1067817669cc4bcb84"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dd0287601bcc6c1067817669cc4bcb84</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>590287601bcc6c1067817669cc4bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <value>transform</value>
+        <variable display_value="">2b00c63a1b35501067817669cc4bcb9a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=dd0287601bcc6c1067817669cc4bcb84"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_set_sysid</field>
+        <id>dd0287601bcc6c1067817669cc4bcb84</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>d50287601bcc6c1067817669cc4bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value>{{subflow.import_set}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>operation</field>
+        <id>dd0287601bcc6c1067817669cc4bcb84</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>150287601bcc6c1067817669cc4bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5199d2e61bf9101067817669cc4bcbd7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=010287601bcc6c1067817669cc4bcb31^sys_idNOT INc90287601bcc6c1067817669cc4bcb79"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">a40247601bcc6c1067817669cc4bcbd9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Transform Import Set">010287601bcc6c1067817669cc4bcb31</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>import_set_run_status</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>c90287601bcc6c1067817669cc4bcb79</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 09:43:57</sys_updated_on>
+        <ui_id>621d22a0-9b35-42d7-84e9-028ffec954a1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c90287601bcc6c1067817669cc4bcb79"/>
+    <sys_element_mapping action="delete_multiple" query="id=c90287601bcc6c1067817669cc4bcb79"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>import_set_run_status</field>
+        <id>c90287601bcc6c1067817669cc4bcb79</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>190287601bcc6c1067817669cc4bcb7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_010287601bcc6c1067817669cc4bcb31</table>
+        <value>{{79896fc9-4cbc-4327-bbc4-2c21dd1485e3.importsetrunstatus}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_010287601bcc6c1067817669cc4bcb31^sys_idNOT IN8d0287601bcc6c1067817669cc4bcb37"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>import_set</element>
+        <help/>
+        <hint/>
+        <label>Import Set</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_010287601bcc6c1067817669cc4bcb31</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:23</sys_created_on>
+        <sys_id>8d0287601bcc6c1067817669cc4bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import Set</sys_name>
+        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_010287601bcc6c1067817669cc4bcb31_import_set_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_010287601bcc6c1067817669cc4bcb31^sys_idNOT IN0d0287601bcc6c1067817669cc4bcb66"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>import_set_run_status</element>
+        <help/>
+        <hint/>
+        <label>Import Set Run Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_010287601bcc6c1067817669cc4bcb31</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-21 06:45:24</sys_created_on>
+        <sys_id>0d0287601bcc6c1067817669cc4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import Set Run Status</sys_name>
+        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_010287601bcc6c1067817669cc4bcb31_import_set_run_status_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-21 06:45:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

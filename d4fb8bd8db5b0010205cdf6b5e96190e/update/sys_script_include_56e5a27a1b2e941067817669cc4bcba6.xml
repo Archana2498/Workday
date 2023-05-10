@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>public</access>
+    <active>true</active>
+    <api_name>sn_hr_workday.WorkdayWorkerSyncUtilsSNC</api_name>
+    <caller_access>2</caller_access>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>WorkdayWorkerSyncUtilsSNC</name>
+    <script><![CDATA[var WorkdayWorkerSyncUtilsSNC = Class.create();
+WorkdayWorkerSyncUtilsSNC.prototype = {
+    initialize: function() {
+        this.configs = new WorkdayConfigurationUtils().getProfileSyncConfigurations();
+    },
+
+    transform: function(source, target) {
+        if (this.shouldSkipTransform(source, target)) {
+            ignore = true;
+            return;
+        }
+        this.processEmploymentStatus(source, target);
+        this.postProcessTransform(source, target);
+    },
+
+    /**
+     * This is for customers to add custom logic.
+     */
+    postProcessTransform: function(source, target) {},
+
+    // Should this record be skipped ?
+    shouldSkipTransform: function(source, target) {
+        //do not insert a new profile for terminated workers and future hires
+        //The future hires will not have a start date in the Use queue - so we need to account for it..
+        if ((((source.terminated == "1") && action == "insert") || (source.currently_active == "false" && !source.u_employment_start_date) || (source.u_employment_start_date > this.getCurrentDate())) && source.u_hirerescinded == "0") {
+            ignore = true;
+            return true;
+        } else
+            return false;
+    },
+
+    processEmploymentStatus: function(source, target) {
+        //If a worker is terminated, set the employment status and end date
+        if (source.terminated == "1") {
+            this.logDebug(">>>>>>>>>>>>>SET EMPLOYEE END DATE >>>>>>>>>>>>>>>>>>>>>>>");
+            target.employment_end_date = source.u_employment_end_date;
+        }
+    },
+
+    createSysUserForHrProfile: function(source, target) {
+        var sid = "";
+        var sysGlideRecord;
+        var userName;
+        this.logDebug("Target User  " + target.user + "  " + source.employee_number);
+        if (target) {
+            if (target.user) {
+                this.updateUser(source, target.user);
+                if ((source.terminated == "1" || source.currently_active == "false") && (source.u_employment_end_date && this.getCurrentDate() > source.u_employment_end_date))
+                    this.terminateSysUser(target);
+				else if (source.u_hirerescinded == "1")
+                    this.rescindSysUser(target);
+                return;
+            }
+        }
+
+        /**
+         * If profile already exists with same first name, last name and
+         * personal email combination, then update the user for the profile
+         **/
+        this.logDebug("Is Profile Found " + source.employee_number);
+        var profile = this.getProfile(source);
+        if (profile) {
+            this.logDebug("Profile Found " + profile.user + source.employee_number);
+            this.updateUser(source, profile.user);
+            target.user = profile.user;
+            if (source.terminated == "1" && (source.u_employment_end_date && this.getCurrentDate() > source.u_employment_end_date))
+                this.terminateSysUser(target);
+			else if (source.u_hirerescinded == "1")
+                this.rescindSysUser(target);
+            return;
+        }
+
+        //If the profile is terminated, do not create sys_user account
+        if (source.terminated == "1" && (source.u_employment_end_date && this.getCurrentDate() > source.u_employment_end_date)) {
+            return 'ignore'; // Ignore the current source record. This was causing error in Import Set - "Data Policy exception, Mandatory Field User"
+        }
+
+        // First search sys_user
+        sysGlideRecord = this.getSysUser(source);
+        if (sysGlideRecord) {
+            sid = sysGlideRecord.sys_id;
+        } else {
+            // User does not exist in sys_user
+            // create it
+            userName = this.getUserName(source);
+            if (!userName) {
+                gs.error("Generated username is null for " + source.pref_first_name + " " + source.pref_last_name + ' ' + source.employee_number);
+            } else {
+                sysGlideRecord = this.createUser(source, userName);
+                if (sysGlideRecord) {
+                    sid = sysGlideRecord.insert();
+                }
+            }
+
+        }
+        target.user = sid;
+    },
+
+    /**
+     * Get the new UserName.
+     * You can extend this script and override this logic if needed.
+     */
+    getUserName: function(source) {
+        return new sn_hr_core.hr_SysUser().generateUserName(source.getValue('preferred_first_name').trim(), source.getValue('preferred_last_name').trim());
+    },
+
+    getProfile: function(source) {
+        var fname = source.first_name;
+        var lname = source.last_name;
+        var email = source.primary_personal_email;
+        var empId = source.getValue('employee_number').trim();
+        var hrProfile = new GlideRecord('sn_hr_core_profile');
+        hrProfile.addQuery('user.first_name', fname); // From sys_user table
+        hrProfile.addQuery('user.last_name', lname); // From sys_user table
+        if (email && email != 'NULL')
+            hrProfile.addQuery('personal_email', email);
+        hrProfile.addQuery('user.employee_number', empId);
+        hrProfile.query();
+        return (hrProfile.next()) ? hrProfile : null;
+    },
+
+    getUserSysID: function(empID) {
+        var sysUser = new GlideRecord('sys_user');
+        sysUser.addQuery('employee_number', empID);
+        sysUser.query();
+        if (sysUser.next()) {
+            return sysUser.getValue('sys_id');
+        }
+    },
+
+    // At a time only one primary job must exist for Workday, make all other jobs as non primary
+    updateOtherJobs: function(source, target) {
+        var jobs = new GlideRecord('sn_hr_core_job'); // Search other jobs for the hr profile
+        jobs.addQuery('hr_profile.employee_number', source.u_hr_profile); // same profile
+        jobs.addQuery('job_start_date', '<', this.getCurrentDate());
+        jobs.addQuery('sys_id', '!=', target.sys_id);
+        jobs.addQuery('primary', true);
+        jobs.query();
+        while (jobs.next()) {
+            jobs.primary = false; // Make non primary
+            jobs.update();
+        }
+    },
+
+    checkIfAnyOtherPrimaryJobs: function(source, target) {
+        var jobs = new GlideRecord('sn_hr_core_job'); // Search other jobs for the hr profile
+        jobs.addQuery('hr_profile.employee_number', source.u_hr_profile);
+        jobs.addQuery('primary', true);
+        jobs.setLimit(1);
+        jobs.query();
+        if (jobs.hasNext()) {
+            return true;
+        }
+        return false;
+    },
+
+    /**
+     * Method to update sys_user record
+     * 
+     * Override this method to modify different columns in sys_user table
+     */
+    updateUser: function(source, userSysId) {
+        var sysUser = new GlideRecord('sys_user');
+        var updated = false;
+        var importFields = ["primary_work_email", "full_name", "first_name", "last_name", "middle_name", "work_phone", "home_mobile_phone", "employee_number", "prefix", "gender"];
+        var userFields = ["email", "name", "first_name", "last_name", "middle_name", "phone", "mobile_phone", "employee_number", "introduction", "gender"];
+        if (sysUser.get(userSysId)) {
+            for (var i = 0; i < importFields.length; ++i) {
+                var importField = importFields[i];
+                var userField = userFields[i];
+                if (sysUser[userField] != source[importField]) {
+                    updated = true;
+                    sysUser[userField] = source[importField];
+                }
+            }
+            // When rehired or coverted to full time
+            if (!sysUser.active && source.terminated == "false") {
+                updated = true;
+                sysUser.active = true;
+            }
+
+            // When on leave deactivate profile, 
+			// Dont consider future profiles coming in effective workers flow i.e Employement Start Date must not be empty
+            if (sysUser.active && source.currently_active == "false" && source.terminated == "false" && source.u_employment_start_date) {
+                updated = true;
+                sysUser.active = false;
+            }
+
+            if (updated) {
+				this.logDebug('Updating user with username:' + sysUser.user_name);
+                sysUser.update();
+            }
+        }
+    },
+
+    createUser: function(source, userName) {
+        var sid;
+        var sysUsrName;
+		this.logDebug('Creating user with username:' + userName);
+        sysUsrName = new GlideRecord('sys_user');
+        sysUsrName.initialize();
+        sysUsrName.email = source.primary_work_email;
+        sysUsrName.phone = source.work_phone;
+        sysUsrName.mobile_phone = source.work_mobile_phone;
+        sysUsrName.name = source.full_name;
+        sysUsrName.introduction = source.prefix;
+        sysUsrName.user_name = userName;
+        sysUsrName.first_name = source.first_name;
+        sysUsrName.last_name = source.last_name;
+        sysUsrName.middle_name = source.middle_name;
+        sysUsrName.employee_number = source.employee_number;
+        if (source.currently_active == "1")
+            sysUsrName.active = true;
+        if (source.gender)
+            sysUsrName.gender = this.getGenderInformation(source.gender);
+
+        var usrPassword = new sn_hr_core.hr_SysUser().generatePassword();
+        sysUsrName.user_password.setDisplayValue(usrPassword);
+        return sysUsrName;
+    },
+
+    /**
+     * Determine whether sys_user record exist for this profile
+     */
+    getSysUser: function(source) {
+        var email = '';
+        var empId = '';
+        if (source.getValue('primary_work_email'))
+            email = source.getValue('primary_work_email').trim();
+        if (source.getValue('employee_number'))
+            empId = source.getValue('employee_number').trim();
+        var sysUsrQry = new GlideRecord('sys_user');
+        if (source.getValue('first_name'))
+            sysUsrQry.addQuery("first_name", source.getValue('first_name').trim());
+        if (source.getValue('last_name'))
+            sysUsrQry.addQuery("last_name", source.getValue('last_name').trim());
+        if (email && email != 'NULL')
+            sysUsrQry.addQuery("email", email);
+        sysUsrQry.addQuery("employee_number", empId);
+        sysUsrQry.query();
+        return sysUsrQry.next() ? sysUsrQry : null;
+    },
+
+    /**
+     * Update the Gender Information
+     */
+    getGenderInformation: function(gender) {
+        var varFemale = "female";
+        var varMale = "male";
+        var varF = "f";
+        var varM = "m";
+
+        if (gender.toLowerCase() == varFemale.toLowerCase() || gender.toLowerCase() == varF.toLowerCase())
+            return 'Female';
+        else if (gender.toLowerCase() == varMale.toLowerCase() || gender.toLowerCase() == varM.toLowerCase())
+            return 'Male';
+        else
+            return '';
+    },
+
+    // Contingent to FTE
+    // Reuse true
+    checkIfReuseWorkerIDTrue: function(source, target) {
+        // Reuse true
+        var logPrefix = "Reuse worker id is true, ";
+        try {
+            if (source.terminated == "1" && source.process_type != 'future') { // If effective or update profiles
+
+                // We are here because there are more than one record for the source employeeId
+                // Now we have to decide if the source record has to be processed or not
+                //
+                // There are three cases to consider:
+                //
+                // Case 1:
+                // If all the records are in terminated state, then we do not ignore current
+                // source record
+                //
+                // Case 2:
+                // One record has terminated value 'true' and also one of the
+                // record has terminated value 'false'.
+                //
+                // In this situation, we would to skip processing of source record only if
+                // the input source record has terminated value 'true'. We will not skip
+                // processing if the value is 'false'
+                //
+                // Case 3:
+                // If all the records are not in terminated state, then we do not ignore current
+                // source record
+                //
+
+                var profileGr = new GlideRecord('sn_hr_workday_hr_profile_staging');
+                profileGr.addQuery('sys_import_set', source.sys_import_set);
+                profileGr.addQuery('employee_number', source.employee_number);
+                profileGr.addQuery('terminated', false);
+                profileGr.setLimit(1);
+                profileGr.query();
+
+                if (profileGr.hasNext()) {
+                    // We will set ignore' value 'true', if the source record is terminated or
+                    // else we just return.
+                    ignore = true;
+                    this.logDebug(logPrefix + "There is more than one record for Employee Number - '" + source.employee_number + "' in current transaction: Import set-'" + source.sys_import_set + "'");
+                    this.logDebug(logPrefix + "Processing source record:'" + source.employee_number + "' with terminate flag '" +
+                        source.terminated + "' has been skipped.");
+                    return true;
+                }
+            } else if (source.process_type == 'future') { // Ignore future profiles, only insert Jobs
+                if (source.u_employment_start_date > new WorkdayWorkerSyncUtils().getCurrentDate()) {
+                    var profileGr1 = new GlideRecord('sn_hr_core_profile');
+                    profileGr1.addQuery('employee_number', source.employee_number);
+                    profileGr1.addQuery('employment_type', 'contingent'); // If it is contingent
+                    profileGr1.setLimit(1);
+                    profileGr1.query();
+                    if (profileGr1.hasNext()) {
+                        this.logDebug(logPrefix + "Processing source record:'" + source.employee_number + "' has been skipped. Profiles converted to full time with future date are skipped.");
+                        ignore = true;
+                        return true;
+                    }
+                }
+            }
+			return false;
+        } catch (err) {
+            gs.error(logPrefix + err);
+        }
+    },
+
+    getValueFromInput: function(inputValue) {
+        if (typeof inputValue === 'object' && inputValue)
+            return inputValue;
+        else if (typeof inputValue === 'string' || typeof inputValue === 'number')
+            return inputValue.toString().trim();
+        else
+            return '';
+    },
+
+    getFlowSysID: function(flow_name, type) {
+        var gr = new GlideRecord('sys_hub_flow');
+        gr.addQuery('internal_name', flow_name);
+        gr.addQuery('type', type);
+        gr.query();
+        if (gr.next()) {
+            return '&sysparm_fixed_query=flow=' + gr.getValue('sys_id');
+        }
+    },
+
+    /**
+     * Terminate sys_user record.
+     */
+    terminateSysUser: function(target) {
+        var sysUser = new GlideRecord('sys_user');
+        if (sysUser.get(target.user)) {
+            sysUser.active = false;
+            sysUser.locked_out = true;
+            sysUser.update();
+        }
+    },
+
+	/**
+     * Rescind sys_user record.
+     */
+    rescindSysUser: function(target) {
+        var sysUser = new GlideRecord('sys_user');
+        if (sysUser.get(target.user)) {
+            sysUser.active = false;
+            sysUser.update();
+        }
+    },
+	
+    getCurrentDate: function() {
+        var jobTracker = new GlideRecord('sn_hr_workday_job_tracker');
+        jobTracker.orderByDesc('job_started_at');
+        jobTracker.query();
+        if (jobTracker.next()) {
+            var utc = jobTracker.getValue('job_started_at');
+            var date = new ImportSetUtils().getConvertedDate(utc);
+            var gd = new GlideDate();
+            gd.setValue(date);
+            return gd;
+        }
+    },
+
+    logDebug: function(str) {
+        if (this.configs.enable_debugging) {
+            gs.info(str);
+        }
+    },
+
+    type: 'WorkdayWorkerSyncUtilsSNC'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-08-14 14:54:45</sys_created_on>
+    <sys_id>56e5a27a1b2e941067817669cc4bcba6</sys_id>
+    <sys_mod_count>102</sys_mod_count>
+    <sys_name>WorkdayWorkerSyncUtilsSNC</sys_name>
+    <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+    <sys_update_name>sys_script_include_56e5a27a1b2e941067817669cc4bcba6</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2022-09-07 11:34:36</sys_updated_on>
+  </sys_script_include>
+</record_update>

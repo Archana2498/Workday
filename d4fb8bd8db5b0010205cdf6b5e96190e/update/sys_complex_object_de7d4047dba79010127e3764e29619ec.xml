@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD1e7d40475ea79010a1a984410c5cacec</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>d4fb8bd8db5b0010205cdf6b5e96190e</scope_name>
+        <serialized_content>{"FlowDesigner:FD1e7d40475ea79010a1a984410c5cacec":{"$COCollectionField":[{"Transaction_Type_Reference":{"Transaction_Type_Reference_ID":"String","Transaction_Type_Reference_ID.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Transaction Type Reference ID\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Transaction Type References\",\"mandatory\":\"false\",\"child_name\":\"Transaction_Type_Reference\",\"uiUniqueId\":\"bfa94eab-ebae-4044-af54-1f8849e9e10e\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD1e7d40475ea79010a1a984410c5cacec\",\"child_label\":\"Transaction Type Reference\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"061dd88a-7894-4d87-b2ed-c0b531138639\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD1e7d40475ea79010a1a984410c5cacec.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Transaction Type References\",\"mandatory\":\"false\",\"child_name\":\"Transaction_Type_Reference\",\"uiUniqueId\":\"bfa94eab-ebae-4044-af54-1f8849e9e10e\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD1e7d40475ea79010a1a984410c5cacec\",\"child_label\":\"Transaction Type Reference\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"061dd88a-7894-4d87-b2ed-c0b531138639\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-03 15:30:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de7d4047dba79010127e3764e29619ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD1e7d40475ea79010a1a984410c5cacec</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_complex_object_de7d4047dba79010127e3764e29619ec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-03 15:30:01</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

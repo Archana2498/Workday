@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+  <sys_transform_script action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <map display_value="HRSD Workday Pull Inbox Items">d74ba2b01bcf545067817669cc4bcb08</map>
+    <order>100</order>
+    <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+    if (action == 'update' && !gs.nil(source.u_old_assignee) && !gs.nil(source.u_completed_by) && target.completed_by_admin_workday == false) {
+        if (source.u_old_assignee != source.u_completed_by) { //--flag as assigned_to is empty to later delete these records for those users who has not completed the task/to-do
+            //target.deleteRecord();
+            target.integration_todo_id = "";
+            target.assigned_to = "";
+            target.workday_status = "";
+            target.update();
+        } else {
+            if (source.u_state == 'Sent Back') { //--When todo is "withdrawn" by the user then only 1 row comes as sentback, have to delete rest existing
+                var grDeleteRecords = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_TODO_INBOUND_TABLE);
+                grDeleteRecords.addQuery('workday_integration_todo_id', source.u_integration_todo_id);
+                grDeleteRecords.addQuery('workday_status', 'IN', 'awaiting_action,in_progress');
+                grDeleteRecords.addQuery('sys_id', '!=', target.sys_id);
+                grDeleteRecords.query();
+                if (grDeleteRecords.hasNext()) {
+                    grDeleteRecords.setValue('integration_todo_id', 'NULL');
+                    grDeleteRecords.setValue('assigned_to', 'NULL');
+                    grDeleteRecords.setValue('workday_status', 'NULL');
+                    grDeleteRecords.updateMultiple();
+                }
+            }
+
+            if (source.u_previous_state == 'In Progress' || source.u_previous_state == 'Saved for Later') { //This will fix Open/Awaiting Action for all users who received the to-do in their Inbox from Workday except for the user who did the 'Save for Later" and then completed the to-do.
+                var grRemoveOnlyAssignTo = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_TODO_INBOUND_TABLE);
+                grRemoveOnlyAssignTo.addQuery('workday_integration_todo_id', source.u_integration_todo_id);
+                grRemoveOnlyAssignTo.addQuery('workday_created_moment', source.u_created_moment);
+                grRemoveOnlyAssignTo.addQuery('workday_status', 'awaiting_action');
+                grRemoveOnlyAssignTo.query();
+                if (grRemoveOnlyAssignTo.hasNext()) {
+                    grRemoveOnlyAssignTo.setValue('assigned_to', 'NULL');
+                    grRemoveOnlyAssignTo.updateMultiple();
+                }
+            }
+        }
+    }
+
+})(source, map, log, target);]]></script>
+    <sys_class_name>sys_transform_script</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-09-02 07:02:39</sys_created_on>
+    <sys_id>8810be741bcf545067817669cc4bcb98</sys_id>
+    <sys_mod_count>58</sys_mod_count>
+    <sys_name>onAfter</sys_name>
+    <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+    <sys_update_name>sys_transform_script_8810be741bcf545067817669cc4bcb98</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2022-05-04 04:57:06</sys_updated_on>
+    <when>onAfter</when>
+  </sys_transform_script>
+</record_update>

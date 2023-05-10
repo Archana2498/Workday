@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Workday Reference ID List" max_length="40" name="sn_hr_workday_reference_list" sizeclass="64" type="collection">
+        <element display="true" label="Label" max_length="40" name="label" type="translated_text"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Reference id type" max_length="40" name="reference_id_type" type="string"/>
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+    </element>
+</database>

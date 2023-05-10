@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>b3f0e721dba31410127e3764e296190a</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_hr_workday_reference_list">
+    <sn_hr_workday_reference_list action="INSERT_OR_UPDATE">
+        <label>Business Site</label>
+        <name>BUSINESS SITE</name>
+        <reference_id_type>Location_Usage_ID</reference_id_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-29 15:03:16</sys_created_on>
+        <sys_id>b3f0e721dba31410127e3764e296190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-29 15:03:16</sys_updated_on>
+    </sn_hr_workday_reference_list>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-06 07:30:01</sys_created_on>
+        <sys_id>106c313fdb235410127e3764e296191d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Business Site</sys_name>
+        <sys_package display_value="HRSD Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HRSD Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_metadata_link_106c313fdb235410127e3764e296191d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-06 07:30:01</sys_updated_on>
+        <tablename>sn_hr_workday_reference_list</tablename>
+    </sys_metadata_link>
+</record_update>
