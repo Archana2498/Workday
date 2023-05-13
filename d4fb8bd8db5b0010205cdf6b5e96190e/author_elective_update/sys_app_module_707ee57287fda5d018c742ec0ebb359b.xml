@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Workday Pull To-Dos">55dc1ae11b081810c9527669cc4bcb55</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Time off Request stagings</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sn_hr_workday_time_off_request_staging</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>sn_hr_workday.time_off_request_staging_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 09:01:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>707ee57287fda5d018c742ec0ebb359b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Time off Request Stagings</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_app_module_707ee57287fda5d018c742ec0ebb359b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-06 11:31:39</sys_updated_on>
+        <timeline_page/>
+        <title>Time off Request Stagings</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_app_module_707ee57287fda5d018c742ec0ebb359b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Workday Pull To-Dos">55dc1ae11b081810c9527669cc4bcb55</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Time off Request stagings</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>sn_hr_workday_time_off_request_staging</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>sn_hr_workday.time_off_request_staging_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-29 09:01:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>707ee57287fda5d018c742ec0ebb359b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Time off Request Stagings</sys_name><sys_overrides/><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_update_name>sys_app_module_707ee57287fda5d018c742ec0ebb359b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-06 11:31:39</sys_updated_on><timeline_page/><title>Time off Request Stagings</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1081126096</payload_hash>
+        <record_name>Time off Request Stagings</record_name>
+        <reverted_from/>
+        <source>6ec7ae9987aa2110d306cbb4dabb3568</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-05-01 04:10:23</sys_created_on>
+        <sys_id>7b58e65d87aa2110d306cbb4dabb35b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187d58124080000001</sys_recorded_at>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-05-01 04:10:23</sys_updated_on>
+        <type>Module</type>
+        <update_guid>04ad5b95f50aa95000fed785d85eb51e</update_guid>
+        <update_guid_history>04ad5b95f50aa95000fed785d85eb51e:-1081126096,fbd8b1763b31e5d0bdc175c7abf5a888:498469459,8d7ee5728ffda5d0d32871195b7d3b9c:-1652917613</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Time off Request Stagings">f8b0bea487766910d306cbb4dabb355c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-11 07:07:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>32533202e1a2406db696e4aed13371b9</sys_id>
+        <sys_metadata>707ee57287fda5d018c742ec0ebb359b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Time off Request Stagings</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_app_module_707ee57287fda5d018c742ec0ebb359b</sys_update_name>
+        <sys_update_version display_value="sys_app_module_707ee57287fda5d018c742ec0ebb359b">7b58e65d87aa2110d306cbb4dabb35b4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-11 07:07:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

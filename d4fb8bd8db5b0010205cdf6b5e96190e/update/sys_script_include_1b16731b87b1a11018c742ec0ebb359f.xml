@@ -43,13 +43,13 @@ WorkdayApprovalToDosHelperSNC.Workday_Table_Name = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-31 08:11:11</sys_created_on>
         <sys_id>1b16731b87b1a11018c742ec0ebb359f</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>WorkdayApprovalToDosHelperSNC</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_script_include_1b16731b87b1a11018c742ec0ebb359f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-26 18:06:04</sys_updated_on>
+        <sys_updated_on>2023-05-12 13:51:36</sys_updated_on>
     </sys_script_include>
 </record_update>

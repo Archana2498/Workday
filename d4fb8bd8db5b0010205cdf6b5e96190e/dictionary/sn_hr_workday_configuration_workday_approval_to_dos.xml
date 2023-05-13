@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="b1ed14a88782a15018c742ec0ebb3541" label="Configuration Workday Approval To-Dos" max_length="40" name="sn_hr_workday_configuration_workday_approval_to_dos" type="collection">
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
         <element attributes="edge_encryption_enabled=true" label="Active" max_length="40" name="u_active" type="boolean"/>
         <element label="Business process id" max_length="500" name="u_business_process_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Is Complete" max_length="40" name="u_is_complete" read_only="true" type="boolean"/>
@@ -10,6 +11,9 @@
             <choice/>
         </element>
         <index name="index">
+            <element name="sys_domain"/>
+        </index>
+        <index name="index2">
             <element name="u_job_tracker"/>
         </index>
     </element>

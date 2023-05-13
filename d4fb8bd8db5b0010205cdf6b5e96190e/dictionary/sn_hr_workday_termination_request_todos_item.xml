@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="b2b505e08746a15018c742ec0ebb35ac" label="Termination Request Todos Item" max_length="40" name="sn_hr_workday_termination_request_todos_item" type="collection">
+    <element attributes="domain_master=sn_hr_workday_termination_request_todos" db_object_id="b2b505e08746a15018c742ec0ebb35ac" label="Termination Request Todos Item" max_length="40" name="sn_hr_workday_termination_request_todos_item" type="collection">
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
         <element label="Action Event" max_length="40" name="u_action_event" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Is this position available for overlap?" max_length="40" name="u_available_for_overlap" type="choice">
             <choice>
@@ -26,5 +27,8 @@
         <element label="Secondary Termination Reasons" max_length="4000" name="u_secondary_termination_reasons" type="string"/>
         <element label="Termination Date" max_length="40" name="u_termination_date" type="glide_date"/>
         <element label="Workday ID" max_length="40" name="u_workday_id" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
     </element>
 </database>

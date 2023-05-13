@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="5f83e0218702e55018c742ec0ebb35a4" label="Correct Time Off Request Todos Item" max_length="40" name="sn_hr_workday_correct_time_off_request_todos_item" type="collection">
+    <element attributes="domain_master=sn_hr_workday_correct_time_off_request_todos" db_object_id="5f83e0218702e55018c742ec0ebb35a4" label="Correct Time Off Request Todos Item" max_length="40" name="sn_hr_workday_correct_time_off_request_todos_item" type="collection">
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
         <element label="Action event" max_length="100" name="u_action_event" type="string"/>
         <element label="Correction to requested" max_length="40" name="u_correction_to_requested" type="string"/>
         <element label="Created moment" max_length="40" name="u_created_moment" type="string"/>
@@ -8,5 +9,8 @@
         <element label="Type" max_length="40" name="u_type" type="string"/>
         <element label="Unit of time" max_length="40" name="u_unit_of_time" type="string"/>
         <element label="Workday ID" max_length="50" name="u_workday_id" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
     </element>
 </database>

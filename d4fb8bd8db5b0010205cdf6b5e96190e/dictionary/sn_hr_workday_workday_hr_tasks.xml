@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="35a6be764741a110901d3a34846d4319" extends="sn_hr_core_case" label="Workday HR Tasks" max_length="40" name="sn_hr_workday_workday_hr_tasks" type="collection">
-        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Workday To-Dos" max_length="32" name="u_workday_to_dos" reference="sn_hr_workday_todo" type="reference"/>
-    </element>
-</database>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Workday Pull To-Dos">55dc1ae11b081810c9527669cc4bcb55</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Termination Request Todos s</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sn_hr_workday_termination_request_todos</name>
+        <order>230</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>sn_hr_workday.termination_request_todos_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-03 16:15:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dfb185208746a15018c742ec0ebb3583</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Termination Request Todos</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_app_module_dfb185208746a15018c742ec0ebb3583</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-11 08:41:04</sys_updated_on>
+        <timeline_page/>
+        <title>Termination Request Todos</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_app_module_dfb185208746a15018c742ec0ebb3583</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Workday Pull To-Dos">55dc1ae11b081810c9527669cc4bcb55</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Termination Request Todos s</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>sn_hr_workday_termination_request_todos</name><order>230</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>sn_hr_workday.termination_request_todos_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-03 16:15:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dfb185208746a15018c742ec0ebb3583</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Termination Request Todos</sys_name><sys_overrides/><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_update_name>sys_app_module_dfb185208746a15018c742ec0ebb3583</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-11 08:41:04</sys_updated_on><timeline_page/><title>Termination Request Todos</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-985975327</payload_hash>
+        <record_name>Termination Request Todos</record_name>
+        <reverted_from/>
+        <source>0c2920c48776e510d306cbb4dabb35df</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-11 08:41:04</sys_created_on>
+        <sys_id>e236cb6887b66910d306cbb4dabb351e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18809f890610000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-11 08:41:04</sys_updated_on>
+        <type>Module</type>
+        <update_guid>2a36cb6823b669104222384f1e04aa1d</update_guid>
+        <update_guid_history>2a36cb6823b669104222384f1e04aa1d:-985975327,7fd33e685076691064f1b41ffc4a6f6b:-1318121965,cf3d5395c70aa950b857cecf95102ba8:-1338986468,6bdc9755840aa950b267478cad9d1455:1903781814,9bb18520d646a150d8fe42b3d11e7885:1384551516</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Termination Request Todos">b24d3b64877a6910d306cbb4dabb3582</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-11 12:41:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>137e823fa893473e836d40fa0af5bad9</sys_id>
+        <sys_metadata>dfb185208746a15018c742ec0ebb3583</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Termination Request Todos</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_app_module_dfb185208746a15018c742ec0ebb3583</sys_update_name>
+        <sys_update_version display_value="sys_app_module_dfb185208746a15018c742ec0ebb3583">e236cb6887b66910d306cbb4dabb351e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-11 12:41:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

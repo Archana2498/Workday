@@ -1,114 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="bb729b638726a510d306cbb4dabb358b" sys_domain="global" table="sn_hr_workday_termination_request_staging" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_action_event</element>
+            <element>u_workdayid</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>8c829f638726a510d306cbb4dabb3575</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0e4a20c14736a91011ebca5c346d4352</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
+            <element>sys_import_state</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>04829f638726a510d306cbb4dabb3576</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>024a20c14736a91011ebca5c346d4353</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
-            <type>.begin_split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_workdayid</element>
+            <element>sys_mod_count</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>84829f638726a510d306cbb4dabb3576</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>064a20c14736a91011ebca5c346d4353</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_primary_termination_reason</element>
+            <element>sys_row_error</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>08829f638726a510d306cbb4dabb3576</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0a4a20c14736a91011ebca5c346d4353</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_termination_date</element>
+            <element>sys_class_name</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>88829f638726a510d306cbb4dabb3576</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0e4a20c14736a91011ebca5c346d4353</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_notification_date</element>
+            <element>u_available_for_overlap</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>0c829f638726a510d306cbb4dabb3576</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>024a20c14736a91011ebca5c346d4354</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_notice_period</element>
+            <element>u_close_position</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>8c829f638726a510d306cbb4dabb3576</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>064a20c14736a91011ebca5c346d4354</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_recommended_termination_date</element>
+            <element>u_eligible_for_rehire</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>00829f638726a510d306cbb4dabb3577</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0a4a20c14736a91011ebca5c346d4354</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,111 +116,111 @@
             <element>u_last_day_of_work</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>80829f638726a510d306cbb4dabb3577</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0e4a20c14736a91011ebca5c346d4354</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_notice_period</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>024a20c14736a91011ebca5c346d4355</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_notification_date</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>064a20c14736a91011ebca5c346d4355</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_pay_through_date</element>
-            <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>04829f638726a510d306cbb4dabb3577</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>84829f638726a510d306cbb4dabb3577</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_eligible_for_rehire</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>08829f638726a510d306cbb4dabb3577</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0a4a20c14736a91011ebca5c346d4355</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_regrettable</element>
-            <position>12</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>88829f638726a510d306cbb4dabb3577</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_close_position</element>
-            <position>13</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>0c829f638726a510d306cbb4dabb3577</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_available_for_overlap</element>
-            <position>14</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>8c829f638726a510d306cbb4dabb3577</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_position</element>
-            <position>15</position>
+            <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>00829f638726a510d306cbb4dabb3578</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0e4a20c14736a91011ebca5c346d4355</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_primary_termination_reason</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>024a20c14736a91011ebca5c346d4356</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_recommended_termination_date</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>064a20c14736a91011ebca5c346d4356</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_regrettable</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0a4a20c14736a91011ebca5c346d4356</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -228,181 +228,181 @@
             <element>u_resignation_date</element>
             <position>16</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>80829f638726a510d306cbb4dabb3578</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0e4a20c14736a91011ebca5c346d4356</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_termination_date</element>
+            <position>17</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>024a20c14736a91011ebca5c346d4357</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_attachment_name</element>
+            <position>18</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>064a20c14736a91011ebca5c346d4357</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_comment</element>
+            <position>19</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0a4a20c14736a91011ebca5c346d4357</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_comment_by_employee_id</element>
+            <position>20</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0e4a20c14736a91011ebca5c346d4357</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_comment_by_person</element>
+            <position>21</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>024a20c14736a91011ebca5c346d4358</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_comment_created_moment</element>
+            <position>22</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>064a20c14736a91011ebca5c346d4358</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_comment_workdayid</element>
+            <position>23</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0a4a20c14736a91011ebca5c346d4358</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_document_cat_ss_attachment_</element>
+            <position>24</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0e4a20c14736a91011ebca5c346d4358</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_resignation_notice_period</element>
+            <position>25</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>024a20c14736a91011ebca5c346d4359</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_resignation__ification_date</element>
-            <position>17</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>04829f638726a510d306cbb4dabb3578</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>18</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>84829f638726a510d306cbb4dabb3578</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_secondary_termination_reason</element>
-            <position>19</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>08829f638726a510d306cbb4dabb3578</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>20</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>88829f638726a510d306cbb4dabb3578</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_resignation_notice_period</element>
-            <position>21</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>0c829f638726a510d306cbb4dabb3578</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_resignation_termination_date</element>
-            <position>22</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>8c829f638726a510d306cbb4dabb3578</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>23</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>00829f638726a510d306cbb4dabb3579</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_resignation__ination_reason</element>
-            <position>24</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>80829f638726a510d306cbb4dabb3579</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>25</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>14829f638726a510d306cbb4dabb3579</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_resignation__nation_reasons</element>
             <position>26</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>94829f638726a510d306cbb4dabb3579</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>064a20c14736a91011ebca5c346d4359</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>27</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>18829f638726a510d306cbb4dabb3579</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_resignation_position</element>
-            <position>28</position>
+            <position>27</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>98829f638726a510d306cbb4dabb3579</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0a4a20c14736a91011ebca5c346d4359</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_resignation__ination_reason</element>
+            <position>28</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0e4a20c14736a91011ebca5c346d4359</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -410,307 +410,55 @@
             <element>u_resignation_resignation_date</element>
             <position>29</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>1c829f638726a510d306cbb4dabb3579</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>024a20c14736a91011ebca5c346d435a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
+            <element>u_resignation__nation_reasons</element>
             <position>30</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>9c829f638726a510d306cbb4dabb3579</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>064a20c14736a91011ebca5c346d435a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
-            <type>.split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_comment_by_person</element>
+            <element>u_resignation_termination_date</element>
             <position>31</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>10829f638726a510d306cbb4dabb357a</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0a4a20c14736a91011ebca5c346d435a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
+            <element>u_secondary_termination_reason</element>
             <position>32</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>90829f638726a510d306cbb4dabb357a</sys_id>
+            <sys_created_on>2023-05-12 10:36:42</sys_created_on>
+            <sys_id>0e4a20c14736a91011ebca5c346d435a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_comment</element>
-            <position>33</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>14829f638726a510d306cbb4dabb357a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>34</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>94829f638726a510d306cbb4dabb357a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_comment_workdayid</element>
-            <position>35</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>18829f638726a510d306cbb4dabb357a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>36</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>98829f638726a510d306cbb4dabb357a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_comment_by_employee_id</element>
-            <position>37</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>1c829f638726a510d306cbb4dabb357a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>38</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>9c829f638726a510d306cbb4dabb357a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_comment_created_moment</element>
-            <position>39</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>10829f638726a510d306cbb4dabb357b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_attachment_created_moment</element>
-            <position>40</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>90829f638726a510d306cbb4dabb357b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_attachment_name</element>
-            <position>41</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>14829f638726a510d306cbb4dabb357b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>42</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>94829f638726a510d306cbb4dabb357b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_document_cat_ss_attachment_</element>
-            <position>43</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>18829f638726a510d306cbb4dabb357b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_attachment_uploaded_by</element>
-            <position>44</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>98829f638726a510d306cbb4dabb357b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>45</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>1c829f638726a510d306cbb4dabb357b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_attachment_workdayid</element>
-            <position>46</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>9c829f638726a510d306cbb4dabb357b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>47</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>10829f638726a510d306cbb4dabb357c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_attachment_content_type</element>
-            <position>48</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:47</sys_created_on>
-            <sys_id>90829f638726a510d306cbb4dabb357c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_attachment_content</element>
-            <position>49</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:48</sys_created_on>
-            <sys_id>14829f638726a510d306cbb4dabb357c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:48</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_secondary_te_nation_reasons</element>
-            <position>50</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-08 07:00:48</sys_created_on>
-            <sys_id>94829f638726a510d306cbb4dabb357c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="sn_hr_workday_termination_request_staging" sys_domain="global" view="Default view">bb729b638726a510d306cbb4dabb358b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-08 07:00:48</sys_updated_on>
+            <sys_updated_on>2023-05-12 10:36:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="d68a193347566d10901d3a34846d430f" label="Spend Authorization Request Todos Item" max_length="40" name="sn_hr_workday_spend_authorization_request_todos_item" type="collection">
+    <element attributes="domain_master=sn_hr_workday_spend_authorization_request_todos" db_object_id="d68a193347566d10901d3a34846d430f" label="Spend Authorization Request Todos Item" max_length="40" name="sn_hr_workday_spend_authorization_request_todos_item" type="collection">
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
         <element label="Additional worktags" max_length="250" name="u_additional_worktags" type="string"/>
         <element label="Business purpose" max_length="250" name="u_business_purpose" type="string"/>
         <element label="Cash advance requested" max_length="32" name="u_cash_advance_requested" type="string"/>
@@ -16,5 +17,8 @@
         <element label="Start date" max_length="32" name="u_start_date" type="glide_date"/>
         <element label="Total amount" max_length="32" name="u_total_amount" type="string"/>
         <element label="Workday ID" max_length="32" name="u_workday_id" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
     </element>
 </database>

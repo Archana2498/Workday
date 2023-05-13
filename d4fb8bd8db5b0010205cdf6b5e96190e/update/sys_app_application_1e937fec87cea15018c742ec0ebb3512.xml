@@ -7,7 +7,7 @@
         <hint/>
         <name>Correct Time Off Request Staging</name>
         <order>100</order>
-        <roles>sn_hr_workday.correct_time_off_request_staging_user</roles>
+        <roles/>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>srishti.agrawal1@snc</sys_created_by>
         <sys_created_on>2023-04-04 05:12:13</sys_created_on>

@@ -4,14 +4,14 @@
         <action_visibility>all</action_visibility>
         <group display_value="Job Change Request Action Group">1d25148b475a6910901d3a34846d434e</group>
         <order>100</order>
-        <primary>false</primary>
+        <primary>true</primary>
         <script/>
         <sys_class_name>sn_ex_sp_m2m_action_group</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-24 08:08:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>e46b978347d6a910901d3a34846d438d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
@@ -19,7 +19,7 @@
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sn_ex_sp_m2m_action_group_e46b978347d6a910901d3a34846d438d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-05 08:00:15</sys_updated_on>
+        <sys_updated_on>2023-05-11 06:48:57</sys_updated_on>
         <user_criteria/>
     </sn_ex_sp_m2m_action_group>
 </record_update>

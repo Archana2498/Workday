@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="DELETE">
+        <operation>read</operation>
+        <source_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-11 14:21:26</sys_created_on>
+        <sys_id>b2c3907887ba6910d306cbb4dabb3508</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>sn_hr_integr_fw_todo_inbound</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_scope_privilege_b2c3907887ba6910d306cbb4dabb3508</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-11 14:27:46</sys_updated_on>
+        <target_name>sn_hr_integr_fw_todo_inbound</target_name>
+        <target_scope display_value="Enterprise Service Management Integrations Framework">08ca765153ed5010a86dddeeff7b1277</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_scope_privilege_b2c3907887ba6910d306cbb4dabb3508</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-11 14:21:26</sys_created_on><sys_id>b2c3907887ba6910d306cbb4dabb3508</sys_id><sys_mod_count>6</sys_mod_count><sys_name>sn_hr_integr_fw_todo_inbound</sys_name><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_update_name>sys_scope_privilege_b2c3907887ba6910d306cbb4dabb3508</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-11 14:27:46</sys_updated_on><target_name>sn_hr_integr_fw_todo_inbound</target_name><target_scope display_value="Enterprise Service Management Integrations Framework">08ca765153ed5010a86dddeeff7b1277</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+        <payload_hash>-68945538</payload_hash>
+        <record_name>sn_hr_integr_fw_todo_inbound</record_name>
+        <reverted_from/>
+        <source>0c2920c48776e510d306cbb4dabb35df</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-11 14:27:46</sys_created_on>
+        <sys_id>459598b887ba6910d306cbb4dabb35b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1880b35f9d50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-11 14:27:46</sys_updated_on>
+        <type>Cross scope privilege</type>
+        <update_guid>899598b8c6ba6910a3ea330481b33eb0</update_guid>
+        <update_guid_history>899598b8c6ba6910a3ea330481b33eb0:-68945538,5c05dc7865ba6910ba4aa45b59f0f9a4:1585816145,7dd498787fba6910a26fcbf99797cfef:1928214199,e1b45c78c9ba6910199aead679e54eea:1631979143,5a94d47841ba691093df5c5f9fa0c423:1585816145,b83450782dba691038a8a7642e40babd:1928214199,dc2450789cba6910483355359ef592d3:327782423</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-11 14:44:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_scope_privilege">sys_scope_privilege</sys_db_object>
+        <sys_id>3ed60afb30be4506b43fb9f73182a044</sys_id>
+        <sys_metadata>b2c3907887ba6910d306cbb4dabb3508</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_hr_integr_fw_todo_inbound</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_scope_privilege_b2c3907887ba6910d306cbb4dabb3508</sys_update_name>
+        <sys_update_version display_value="sys_scope_privilege_b2c3907887ba6910d306cbb4dabb3508">459598b887ba6910d306cbb4dabb35b1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-11 14:44:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

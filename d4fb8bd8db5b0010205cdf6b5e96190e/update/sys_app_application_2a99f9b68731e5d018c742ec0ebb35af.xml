@@ -7,7 +7,7 @@
         <hint/>
         <name>Time Off Request Todos Item</name>
         <order>100</order>
-        <roles>sn_hr_workday.time_off_request_todos_item_user</roles>
+        <roles/>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-29 09:49:50</sys_created_on>

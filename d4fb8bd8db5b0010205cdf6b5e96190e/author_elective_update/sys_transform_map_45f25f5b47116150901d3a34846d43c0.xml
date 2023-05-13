@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="DELETE">
+        <active>true</active>
+        <copy_empty_fields>true</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>Workday Pull Termination Details</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>true</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	var gr = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_TODO_INBOUND_TABLE);
+	gr.addQuery('u_workday_id', source.u_workdayid);
+	gr.query();
+	if(gr.next()){
+		target.u_workday_todos = gr.getValue('sys_id');
+	}
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>sn_hr_workday_termination_staging</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-06 09:09:22</sys_created_on>
+        <sys_id>45f25f5b47116150901d3a34846d43c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workday Pull Termination Details</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_transform_map_45f25f5b47116150901d3a34846d43c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-06 09:09:22</sys_updated_on>
+        <target_table>sn_hr_workday_termination</target_table>
+    </sys_transform_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_transform_map_45f25f5b47116150901d3a34846d43c0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_map"&gt;&lt;sys_transform_map action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;copy_empty_fields&gt;true&lt;/copy_empty_fields&gt;&lt;create_new_record_on_empty_coalesce_fields&gt;false&lt;/create_new_record_on_empty_coalesce_fields&gt;&lt;enforce_mandatory_fields&gt;No&lt;/enforce_mandatory_fields&gt;&lt;name&gt;Workday Pull Termination Details&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;run_business_rules&gt;true&lt;/run_business_rules&gt;&lt;run_script&gt;true&lt;/run_script&gt;&lt;script&gt;&lt;![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	var gr = new GlideRecord(new WorkdayPullToDosHelper().WORKDAY_TODO_INBOUND_TABLE);
+	gr.addQuery('u_workday_id', source.u_workdayid);
+	gr.query();
+	if(gr.next()){
+		target.u_workday_todos = gr.getValue('sys_id');
+	}
+
+})(source, target, map, log, action==="update");]]&gt;&lt;/script&gt;&lt;source_table&gt;sn_hr_workday_termination_staging&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_map&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-06 09:09:22&lt;/sys_created_on&gt;&lt;sys_id&gt;45f25f5b47116150901d3a34846d43c0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Workday Pull Termination Details&lt;/sys_name&gt;&lt;sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="HR Service Delivery Integration with Workday"&gt;d4fb8bd8db5b0010205cdf6b5e96190e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_map_45f25f5b47116150901d3a34846d43c0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-06 09:09:22&lt;/sys_updated_on&gt;&lt;target_table&gt;sn_hr_workday_termination&lt;/target_table&gt;&lt;/sys_transform_map&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1870007317</payload_hash>
+        <record_name>Workday Pull Termination Details</record_name>
+        <reverted_from/>
+        <source>04b52ad587aa2110d306cbb4dabb3555</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-05-01 04:00:16</sys_created_on>
+        <sys_id>fb062e1987aa2110d306cbb4dabb3507</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187d577e39a0000001</sys_recorded_at>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-05-01 04:00:16</sys_updated_on>
+        <type>Table Transform Map</type>
+        <update_guid>6dc31f9bee1161500d6288ae60244f1d</update_guid>
+        <update_guid_history>6dc31f9bee1161500d6288ae60244f1d:1870007317</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-11 09:01:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_transform_map">sys_transform_map</sys_db_object>
+        <sys_id>74f8baca67a84dc99452bbc4c1ffc681</sys_id>
+        <sys_metadata>45f25f5b47116150901d3a34846d43c0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workday Pull Termination Details</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_transform_map_45f25f5b47116150901d3a34846d43c0</sys_update_name>
+        <sys_update_version display_value="sys_transform_map_45f25f5b47116150901d3a34846d43c0">fb062e1987aa2110d306cbb4dabb3507</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-11 09:01:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

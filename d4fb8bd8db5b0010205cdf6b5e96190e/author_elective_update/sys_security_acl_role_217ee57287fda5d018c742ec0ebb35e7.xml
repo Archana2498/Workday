@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 09:01:09</sys_created_on>
+        <sys_id>217ee57287fda5d018c742ec0ebb35e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_hr_workday_time_off_request_staging.sn_hr_workday.time_off_request_staging_user</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_security_acl display_value="sn_hr_workday_time_off_request_staging">a97ee57287fda5d018c742ec0ebb35e3</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_217ee57287fda5d018c742ec0ebb35e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-29 09:01:09</sys_updated_on>
+        <sys_user_role display_value="sn_hr_workday.time_off_request_staging_user" name="sn_hr_workday.time_off_request_staging_user">947e653287fda5d018c742ec0ebb35d5</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_security_acl_role_217ee57287fda5d018c742ec0ebb35e7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-29 09:01:09</sys_created_on><sys_id>217ee57287fda5d018c742ec0ebb35e7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sn_hr_workday_time_off_request_staging.sn_hr_workday.time_off_request_staging_user</sys_name><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_security_acl display_value="sn_hr_workday_time_off_request_staging">a97ee57287fda5d018c742ec0ebb35e3</sys_security_acl><sys_update_name>sys_security_acl_role_217ee57287fda5d018c742ec0ebb35e7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-29 09:01:09</sys_updated_on><sys_user_role display_value="sn_hr_workday.time_off_request_staging_user" name="sn_hr_workday.time_off_request_staging_user">947e653287fda5d018c742ec0ebb35d5</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-2095885906</payload_hash>
+        <record_name>sn_hr_workday_time_off_request_staging.sn_hr_workday.time_off_request_staging_user</record_name>
+        <reverted_from/>
+        <source>6ec7ae9987aa2110d306cbb4dabb3568</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-05-01 04:10:57</sys_created_on>
+        <sys_id>5888669d87aa2110d306cbb4dabb35cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187d581a9f60000001</sys_recorded_at>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-05-01 04:10:57</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>697ee57299fda5d03051cedb8748eee8</update_guid>
+        <update_guid_history>697ee57299fda5d03051cedb8748eee8:-2095885906</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="sn_hr_workday_time_off_request_staging.sn_hr_workday.time_off_request_staging_us">fc02083847b6691011ebca5c346d4385</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-11 13:02:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>b702689f13914d8495c61f5f971f7890</sys_id>
+        <sys_metadata>217ee57287fda5d018c742ec0ebb35e7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_hr_workday_time_off_request_staging.sn_hr_workday.time_off_request_staging_user</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent display_value="sn_hr_workday_time_off_request_staging">a97ee57287fda5d018c742ec0ebb35e3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_217ee57287fda5d018c742ec0ebb35e7</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_217ee57287fda5d018c742ec0ebb35e7">5888669d87aa2110d306cbb4dabb35cb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-11 13:02:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

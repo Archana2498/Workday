@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="b1e058018716211018c742ec0ebb3555" extends="sys_import_set_row" label="Job Change Request Staging" max_length="40" name="sn_hr_workday_job_change_request_staging" type="collection">
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Action_Event" label="Action_Event" max_length="40" name="u_action_event" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Attachment_Content" label="Attachment_Content" max_length="400000" name="u_attachment_content" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Attachment_Content_Type" label="Attachment_Content_Type" max_length="40" name="u_attachment_content_type" type="string"/>
@@ -18,5 +19,8 @@
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Who_will_be_the_manager_after_this_change" label="Who_will_be_the_manager_after_this_change" max_length="40" name="u_who_will_be__er_this_change" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Why_are_you_making_this_change" label="Why_are_you_making_this_change" max_length="500" name="u_why_are_you__ng_this_change" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=workdayID" label="workdayID" max_length="40" name="u_workdayid" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
     </element>
 </database>

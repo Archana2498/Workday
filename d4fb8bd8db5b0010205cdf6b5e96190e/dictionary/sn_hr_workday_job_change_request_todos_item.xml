@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="a59d88c987d2211018c742ec0ebb35d0" label="Job Change Request Todos Item" max_length="40" name="sn_hr_workday_job_change_request_todos_item" type="collection">
+    <element attributes="domain_master=&#9;sn_hr_workday_job_change_request_todos" db_object_id="a59d88c987d2211018c742ec0ebb35d0" label="Job Change Request Todos Item" max_length="40" name="sn_hr_workday_job_change_request_todos_item" type="collection">
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
         <element label="Action Event" max_length="40" name="u_action_event" type="string"/>
         <element label="When do you want this change to take effect" max_length="500" name="u_when_do_you_want_this_change_to_take_effect" type="string"/>
         <element label="Where will this person be located after this change" max_length="40" name="u_where_will_this_person_be_located_after_this_change" type="string"/>
@@ -7,5 +8,8 @@
         <element label="Who will be the manager after this change" max_length="40" name="u_who_will_be_the_manager_after_this_change" type="string"/>
         <element label="Why are you making this change" max_length="500" name="u_why_are_you_making_this_change" type="string"/>
         <element label="Workday ID" max_length="40" name="u_workday_id" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
     </element>
 </database>

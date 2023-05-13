@@ -4,7 +4,7 @@
         <hint/>
         <name>Compensation Change Request ToDos Items</name>
         <order/>
-        <roles>sn_hr_workday.compensation_change_request_todos_user</roles>
+        <roles/>
         <sys_class_name>sys_ui_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-14 03:43:30</sys_created_on>

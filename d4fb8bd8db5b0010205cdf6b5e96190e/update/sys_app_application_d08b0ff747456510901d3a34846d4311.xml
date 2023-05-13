@@ -7,7 +7,7 @@
         <hint/>
         <name>Time off requests</name>
         <order>100</order>
-        <roles>sn_hr_workday.time_off_requests_user</roles>
+        <roles/>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-02-23 11:34:30</sys_created_on>

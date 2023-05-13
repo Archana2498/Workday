@@ -10,6 +10,13 @@
         <script><![CDATA[var WorkdayApprovalToDosHelperUtilsSNC = Class.create();
 WorkdayApprovalToDosHelperUtilsSNC.prototype = {
     initialize: function() {},
+    isOrWasApprover: function(workdayID) {
+        var todoInboundGr = new GlideRecord('sn_hr_workday_todo');
+        todoInboundGr.addQuery('u_workday_id', workdayID);
+        todoInboundGr.addQuery('assigned_to', gs.getUserID());
+        todoInboundGr.query();
+        return todoInboundGr.hasNext();
+    },
     isResignation: function(source) {
         return !gs.nil(source.u_action_event) && source.u_action_event.toLowerCase().startsWith("submit resignation");
     },
@@ -236,13 +243,13 @@ WorkdayApprovalToDosHelperUtilsSNC.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-05 05:11:22</sys_created_on>
         <sys_id>5cfcf089870a255018c742ec0ebb35ed</sys_id>
-        <sys_mod_count>103</sys_mod_count>
+        <sys_mod_count>108</sys_mod_count>
         <sys_name>WorkdayApprovalToDosHelperUtilsSNC</sys_name>
         <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
         <sys_update_name>sys_script_include_5cfcf089870a255018c742ec0ebb35ed</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-08 06:58:44</sys_updated_on>
+        <sys_updated_on>2023-05-12 13:41:21</sys_updated_on>
     </sys_script_include>
 </record_update>

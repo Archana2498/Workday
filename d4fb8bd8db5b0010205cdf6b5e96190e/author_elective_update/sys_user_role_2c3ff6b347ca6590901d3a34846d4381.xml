@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>sn_hr_workday.compensation_change_request_todos_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>compensation_change_request_todos_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-14 03:43:30</sys_created_on>
+        <sys_id>2c3ff6b347ca6590901d3a34846d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_hr_workday.compensation_change_request_todos_user</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_user_role_2c3ff6b347ca6590901d3a34846d4381</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-14 03:43:30</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_user_role_2c3ff6b347ca6590901d3a34846d4381</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>sn_hr_workday.compensation_change_request_todos_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>compensation_change_request_todos_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-14 03:43:30</sys_created_on><sys_id>2c3ff6b347ca6590901d3a34846d4381</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sn_hr_workday.compensation_change_request_todos_user</sys_name><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_update_name>sys_user_role_2c3ff6b347ca6590901d3a34846d4381</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-14 03:43:30</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>89179494</payload_hash>
+        <record_name>sn_hr_workday.compensation_change_request_todos_user</record_name>
+        <reverted_from/>
+        <source>6ec7ae9987aa2110d306cbb4dabb3568</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-05-01 04:11:12</sys_created_on>
+        <sys_id>0c982e9d87aa2110d306cbb4dabb3506</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187d581e60d0000001</sys_recorded_at>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-05-01 04:11:12</sys_updated_on>
+        <type>Role</type>
+        <update_guid>6c3ff6b3c5ca65909f1d1f0be49d6383</update_guid>
+        <update_guid_history>6c3ff6b3c5ca65909f1d1f0be49d6383:89179494</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="sn_hr_workday.compensation_change_request_todos_user">bee1443847b6691011ebca5c346d4323</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-11 13:01:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>071ba907a371499499761f0654708610</sys_id>
+        <sys_metadata>2c3ff6b347ca6590901d3a34846d4381</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_hr_workday.compensation_change_request_todos_user</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_user_role_2c3ff6b347ca6590901d3a34846d4381</sys_update_name>
+        <sys_update_version display_value="sys_user_role_2c3ff6b347ca6590901d3a34846d4381">0c982e9d87aa2110d306cbb4dabb3506</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-11 13:01:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

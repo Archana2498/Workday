@@ -4,7 +4,7 @@
         <hint/>
         <name>Time off Requests staging</name>
         <order/>
-        <roles>sn_hr_workday.time_off_request_staging_user</roles>
+        <roles/>
         <sys_class_name>sys_ui_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-29 09:01:07</sys_created_on>

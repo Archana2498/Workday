@@ -2,153 +2,183 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="sn_hr_workday_spend_authorization_request_staging" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>import_set_run</element>
-            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0233aac247ea611011ebca5c346d4385</list_id>
+            <element>u_workdayid</element>
+            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2bae9c05873aa910d306cbb4dabb3524</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-03 11:43:18</sys_created_on>
-            <sys_id>4233aac247ea611011ebca5c346d4386</sys_id>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
+            <sys_id>a3ae9c05873aa910d306cbb4dabb3525</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-03 11:43:18</sys_updated_on>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>template_import_log</element>
-            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0233aac247ea611011ebca5c346d4385</list_id>
+            <element>u_business_purpose</element>
+            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2bae9c05873aa910d306cbb4dabb3524</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-03 11:43:18</sys_created_on>
-            <sys_id>c633aac247ea611011ebca5c346d4386</sys_id>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
+            <sys_id>27ae9c05873aa910d306cbb4dabb3525</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-03 11:43:18</sys_updated_on>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_action_event</element>
-            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0233aac247ea611011ebca5c346d4385</list_id>
+            <element>u_cash_advance_requested</element>
+            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2bae9c05873aa910d306cbb4dabb3524</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-03 11:43:18</sys_created_on>
-            <sys_id>4a33aac247ea611011ebca5c346d4386</sys_id>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
+            <sys_id>a7ae9c05873aa910d306cbb4dabb3525</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-03 11:43:18</sys_updated_on>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_attachment_content</element>
-            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0233aac247ea611011ebca5c346d4385</list_id>
+            <element>u_comment</element>
+            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2bae9c05873aa910d306cbb4dabb3524</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-03 11:43:18</sys_created_on>
-            <sys_id>ca33aac247ea611011ebca5c346d4386</sys_id>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
+            <sys_id>2bae9c05873aa910d306cbb4dabb3525</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-03 11:43:18</sys_updated_on>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_attachment_content_type</element>
-            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0233aac247ea611011ebca5c346d4385</list_id>
+            <element>u_company</element>
+            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2bae9c05873aa910d306cbb4dabb3524</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-03 11:43:18</sys_created_on>
-            <sys_id>4e33aac247ea611011ebca5c346d4386</sys_id>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
+            <sys_id>abae9c05873aa910d306cbb4dabb3525</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-03 11:43:18</sys_updated_on>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_attachment_created_moment</element>
-            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0233aac247ea611011ebca5c346d4385</list_id>
+            <element>u_cost_center</element>
+            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2bae9c05873aa910d306cbb4dabb3524</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-03 11:43:18</sys_created_on>
-            <sys_id>ce33aac247ea611011ebca5c346d4386</sys_id>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
+            <sys_id>2fae9c05873aa910d306cbb4dabb3525</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-03 11:43:18</sys_updated_on>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_attachment_name</element>
-            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0233aac247ea611011ebca5c346d4385</list_id>
+            <element>sys_mod_count</element>
+            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2bae9c05873aa910d306cbb4dabb3524</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-03 11:43:18</sys_created_on>
-            <sys_id>4233aac247ea611011ebca5c346d4387</sys_id>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
+            <sys_id>afae9c05873aa910d306cbb4dabb3525</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-03 11:43:18</sys_updated_on>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_attachment_uploaded_by</element>
-            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0233aac247ea611011ebca5c346d4385</list_id>
+            <element>sys_row_error</element>
+            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2bae9c05873aa910d306cbb4dabb3524</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-03 11:43:18</sys_created_on>
-            <sys_id>c233aac247ea611011ebca5c346d4387</sys_id>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
+            <sys_id>23ae9c05873aa910d306cbb4dabb3526</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-03 11:43:18</sys_updated_on>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_attachment_workdayid</element>
-            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0233aac247ea611011ebca5c346d4385</list_id>
+            <element>sys_created_on</element>
+            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2bae9c05873aa910d306cbb4dabb3524</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-03 11:43:18</sys_created_on>
-            <sys_id>4633aac247ea611011ebca5c346d4387</sys_id>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
+            <sys_id>a3ae9c05873aa910d306cbb4dabb3526</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-03 11:43:18</sys_updated_on>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_business_process_type</element>
-            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0233aac247ea611011ebca5c346d4385</list_id>
+            <element>sys_created_by</element>
+            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2bae9c05873aa910d306cbb4dabb3524</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>9</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-03 11:43:18</sys_created_on>
-            <sys_id>c633aac247ea611011ebca5c346d4387</sys_id>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
+            <sys_id>27ae9c05873aa910d306cbb4dabb3526</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-03 11:43:18</sys_updated_on>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2bae9c05873aa910d306cbb4dabb3524</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
+            <sys_id>a7ae9c05873aa910d306cbb4dabb3526</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="sn_hr_workday_spend_authorization_request_staging" element="NULL" name="sn_hr_workday_spend_authorization_request_staging" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2bae9c05873aa910d306cbb4dabb3524</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
+            <sys_id>2bae9c05873aa910d306cbb4dabb3526</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -162,10 +192,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-03 11:43:18</sys_created_on>
+            <sys_created_on>2023-05-12 09:46:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>0233aac247ea611011ebca5c346d4385</sys_id>
+            <sys_id>2bae9c05873aa910d306cbb4dabb3524</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>sn_hr_workday_spend_authorization_request_staging</sys_name>
             <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
@@ -173,7 +203,7 @@
             <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
             <sys_update_name>sys_ui_list_sn_hr_workday_spend_authorization_request_staging_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-03 11:43:18</sys_updated_on>
+            <sys_updated_on>2023-05-12 09:46:01</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

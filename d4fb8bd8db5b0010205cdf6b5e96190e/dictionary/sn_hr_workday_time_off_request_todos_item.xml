@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="4769b5b68731e5d018c742ec0ebb3592" label="Time Off Request Todos Item" max_length="40" name="sn_hr_workday_time_off_request_todos_item" type="collection">
+    <element attributes="domain_master=sn_hr_workday_time_off_request_todos" db_object_id="4769b5b68731e5d018c742ec0ebb3592" label="Time Off Request Todos Item" max_length="40" name="sn_hr_workday_time_off_request_todos_item" type="collection">
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
         <element label="Action Event" max_length="250" name="u_action_event" type="string"/>
         <element label="Comment" max_length="4000" name="u_comment" type="string"/>
         <element label="Date" max_length="40" name="u_date" type="glide_date"/>
@@ -13,5 +14,8 @@
         <element label="Requested" max_length="40" name="u_units_requested_this_coordinated_leave_time_off" type="string"/>
         <element label="Unit of time" max_length="40" name="u_unit_time" type="string"/>
         <element label="Workday ID" max_length="50" name="u_workday_id" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
     </element>
 </database>

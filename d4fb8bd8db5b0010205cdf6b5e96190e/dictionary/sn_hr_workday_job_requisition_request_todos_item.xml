@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="35b27a558746a55018c742ec0ebb358f" label="Job Requisition Request Todos Item" max_length="40" name="sn_hr_workday_job_requisition_request_todos_item" type="collection">
+    <element attributes="domain_master=sn_hr_workday_job_requisition_request_todos" db_object_id="35b27a558746a55018c742ec0ebb358f" label="Job Requisition Request Todos Item" max_length="40" name="sn_hr_workday_job_requisition_request_todos_item" type="collection">
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
         <element label="Compensation grade" max_length="40" name="u_compensation_grade" type="string"/>
         <element label="Cost centre" max_length="40" name="u_cost_centre" type="string"/>
         <element label="Job title" max_length="100" name="u_job_title" type="string"/>
@@ -11,5 +12,8 @@
         <element label="Position request reason" max_length="250" name="u_position_request_reason" type="string"/>
         <element label="Replacement For" max_length="40" name="u_replacement_for" type="string"/>
         <element label="Workday ID" max_length="40" name="u_workday_id" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
     </element>
 </database>

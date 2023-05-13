@@ -7,7 +7,7 @@
         <hint/>
         <name>Termination Request Todos Item </name>
         <order>100</order>
-        <roles>sn_hr_workday.termination_request_todos_item_user</roles>
+        <roles/>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-03 16:33:02</sys_created_on>

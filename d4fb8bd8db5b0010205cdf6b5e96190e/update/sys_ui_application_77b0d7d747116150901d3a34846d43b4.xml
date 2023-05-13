@@ -4,7 +4,7 @@
         <hint/>
         <name>Termination staging</name>
         <order/>
-        <roles>sn_hr_workday.termination_staging_user</roles>
+        <roles/>
         <sys_class_name>sys_ui_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-06 08:56:09</sys_created_on>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-12 08:33:56</sys_created_on>
+        <sys_id>ff2e844587f6a910d306cbb4dabb355e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.sn_hr_workday.admin</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_security_acl display_value="">7b2e844587f6a910d306cbb4dabb355e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_ff2e844587f6a910d306cbb4dabb355e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-12 08:33:56</sys_updated_on>
+        <sys_user_role display_value="sn_hr_workday.admin" name="sn_hr_workday.admin">0ef5ade4dbe65850127e3764e29619fa</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_security_acl_role_ff2e844587f6a910d306cbb4dabb355e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-12 08:33:56</sys_created_on><sys_id>ff2e844587f6a910d306cbb4dabb355e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.sn_hr_workday.admin</sys_name><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_security_acl display_value="">7b2e844587f6a910d306cbb4dabb355e</sys_security_acl><sys_update_name>sys_security_acl_role_ff2e844587f6a910d306cbb4dabb355e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-12 08:33:56</sys_updated_on><sys_user_role display_value="sn_hr_workday.admin" name="sn_hr_workday.admin">0ef5ade4dbe65850127e3764e29619fa</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1119076174</payload_hash>
+        <record_name>.sn_hr_workday.admin</record_name>
+        <reverted_from/>
+        <source>0c2920c48776e510d306cbb4dabb35df</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-12 08:33:57</sys_created_on>
+        <sys_id>772e844587f6a910d306cbb4dabb3561</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1880f1865870000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-12 08:33:57</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>7b2e8445b6f6a910cac53d50b9894a60</update_guid>
+        <update_guid_history>7b2e8445b6f6a910cac53d50b9894a60:1119076174</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".sn_hr_workday.admin">45be408587f6a910d306cbb4dabb3593</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-12 08:36:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>087aa999d2544d5c8ed4557735d98de4</sys_id>
+        <sys_metadata>ff2e844587f6a910d306cbb4dabb355e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.sn_hr_workday.admin</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_ff2e844587f6a910d306cbb4dabb355e</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_ff2e844587f6a910d306cbb4dabb355e">772e844587f6a910d306cbb4dabb3561</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-12 08:36:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>sn_hr_workday.correct_time_off_request_todos_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>correct_time_off_request_todos_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>srishti.agrawal1@snc</sys_created_by>
+        <sys_created_on>2023-04-04 05:26:33</sys_created_on>
+        <sys_id>5ce677e08702e15018c742ec0ebb3517</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_hr_workday.correct_time_off_request_todos_user</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_update_name>sys_user_role_5ce677e08702e15018c742ec0ebb3517</sys_update_name>
+        <sys_updated_by>srishti.agrawal1@snc</sys_updated_by>
+        <sys_updated_on>2023-04-04 05:26:33</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</application>
+        <file_path/>
+        <instance_id>aed9b198db4d55543050ac44d4961941</instance_id>
+        <instance_name>sapsfr1</instance_name>
+        <name>sys_user_role_5ce677e08702e15018c742ec0ebb3517</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>sn_hr_workday.correct_time_off_request_todos_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>correct_time_off_request_todos_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>srishti.agrawal1@snc</sys_created_by><sys_created_on>2023-04-04 05:26:33</sys_created_on><sys_id>5ce677e08702e15018c742ec0ebb3517</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sn_hr_workday.correct_time_off_request_todos_user</sys_name><sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package><sys_policy/><sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope><sys_update_name>sys_user_role_5ce677e08702e15018c742ec0ebb3517</sys_update_name><sys_updated_by>srishti.agrawal1@snc</sys_updated_by><sys_updated_on>2023-04-04 05:26:33</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-559844995</payload_hash>
+        <record_name>sn_hr_workday.correct_time_off_request_todos_user</record_name>
+        <reverted_from/>
+        <source>04b52ad587aa2110d306cbb4dabb3555</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>divyanshu.dutt@snc</sys_created_by>
+        <sys_created_on>2023-05-01 04:00:22</sys_created_on>
+        <sys_id>41162e1987aa2110d306cbb4dabb35ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187d577f81f0000001</sys_recorded_at>
+        <sys_updated_by>divyanshu.dutt@snc</sys_updated_by>
+        <sys_updated_on>2023-05-01 04:00:22</sys_updated_on>
+        <type>Role</type>
+        <update_guid>5ce677e0ee02e150d57695ad99ff451a</update_guid>
+        <update_guid_history>5ce677e0ee02e150d57695ad99ff451a:-559844995</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="sn_hr_workday.correct_time_off_request_todos_user">5df1843847b6691011ebca5c346d437e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-11 13:02:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>d952e7db9b114d96b5b55ce998fec884</sys_id>
+        <sys_metadata>5ce677e08702e15018c742ec0ebb3517</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_hr_workday.correct_time_off_request_todos_user</sys_name>
+        <sys_package display_value="HR Service Delivery Integration with Workday" source="sn_hr_workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HR Service Delivery Integration with Workday">d4fb8bd8db5b0010205cdf6b5e96190e</sys_scope>
+        <sys_scope_delete display_value="">2b72f0f872474230a9dbcdf31f5e5440</sys_scope_delete>
+        <sys_update_name>sys_user_role_5ce677e08702e15018c742ec0ebb3517</sys_update_name>
+        <sys_update_version display_value="sys_user_role_5ce677e08702e15018c742ec0ebb3517">41162e1987aa2110d306cbb4dabb35ca</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-11 13:02:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

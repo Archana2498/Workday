@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="dc6c131587caa55018c742ec0ebb35cf" extends="sys_import_set_row" label="Termination Request Staging" max_length="40" name="sn_hr_workday_termination_request_staging" type="collection">
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Action_Event" label="Action_Event" max_length="200" name="u_action_event" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Attachment_Content" label="Attachment_Content" max_length="400000" name="u_attachment_content" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Attachment_Content_Type" label="Attachment_Content_Type" max_length="100" name="u_attachment_content_type" type="string"/>
@@ -36,5 +37,8 @@
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Secondary_Termination_Reason1" label="Secondary_Termination_Reason1" max_length="40" name="u_secondary_te_nation_reason1" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Termination_date" label="Termination_date" max_length="40" name="u_termination_date" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=workdayID" label="workdayID" max_length="40" name="u_workdayid" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
     </element>
 </database>
